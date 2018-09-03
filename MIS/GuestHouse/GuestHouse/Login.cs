@@ -77,12 +77,12 @@ namespace GuestHouse
             }
             else
             {
-<<<<<<< HEAD
+
                 MessageBox.Show("Incorrected username or password!");             
-=======
+
                 MessageBox.Show("Incorrected username or password!");
                // this.DialogResult = DialogResult.No;
->>>>>>> e7039f84a5ca5982791aa33f37a11f9c31871d16
+
             }
         }
     }
