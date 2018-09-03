@@ -18,7 +18,7 @@ namespace GuestHouse
             Application.SetCompatibleTextRenderingDefault(false);
             if (new Login().ShowDialog() == DialogResult.OK)
             {
-                Application.Run(new Form1());
+                Application.Run(new Customer());
             }
         }
     }
