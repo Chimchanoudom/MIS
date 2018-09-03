@@ -36,5 +36,10 @@ namespace GuestHouse
         {
             dom_Design.NumberOnly(e);
         }
+
+        private void txtID_MouseClick(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show(e.Clicks + "");
+        }
     }
 }
