@@ -128,6 +128,8 @@
     <Compile Include="RoomPrice.Designer.cs">
       <DependentUpon>RoomPrice.cs</DependentUpon>
     </Compile>
+    <Compile Include="ss\dataCon.cs" />
+    <Compile Include="UserLoginDetail.cs" />
     <EmbeddedResource Include="CheckRoom.resx">
       <DependentUpon>CheckRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -181,6 +183,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

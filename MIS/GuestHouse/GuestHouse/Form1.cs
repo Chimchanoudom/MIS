@@ -40,8 +40,7 @@ namespace GuestHouse
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Login LG = new Login();
-            LG.ShowDialog();
+
         }
 
         private void btnbook_Click(object sender, EventArgs e)
