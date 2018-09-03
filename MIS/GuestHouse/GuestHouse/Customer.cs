@@ -24,8 +24,7 @@ namespace GuestHouse
 
         private void txtID_KeyPress(object sender, KeyPressEventArgs e)
         {
-            int num = e.KeyChar;
-            MessageBox.Show(num + "");
+            dom_Design.NumberOnly(e);
         }
     }
 }
