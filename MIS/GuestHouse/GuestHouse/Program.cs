@@ -16,10 +16,11 @@ namespace GuestHouse
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            if (new Login().ShowDialog() == DialogResult.OK)
-            {
-                Application.Run(new Form1());
-            }
+            Application.Run(new Employee());
+            //if (new Login().ShowDialog() == DialogResult.OK)
+            //{
+            //    Application.Run(new Form1());
+            //}
         }
     }
 }

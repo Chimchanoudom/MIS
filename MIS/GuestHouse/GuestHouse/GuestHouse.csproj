@@ -129,7 +129,8 @@
       <DependentUpon>RoomPrice.cs</DependentUpon>
     </Compile>
     <Compile Include="ss\dataCon.cs" />
-    <Compile Include="UserLoginDetail.cs" />
+    <Compile Include="ss\EmpClass.cs" />
+    <Compile Include="ss\UserLoginDetail.cs" />
     <EmbeddedResource Include="CheckRoom.resx">
       <DependentUpon>CheckRoom.cs</DependentUpon>
     </EmbeddedResource>
