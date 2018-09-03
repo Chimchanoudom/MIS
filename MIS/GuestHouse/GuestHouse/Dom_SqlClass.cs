@@ -16,5 +16,17 @@ namespace GuestHouse
         {
 
         }
+        public static void Edite()
+        {
+
+        }
+        public static void Delete()
+        {
+
+        }
+        public static void Search()
+        {
+
+        }
     }
 }
