@@ -17,5 +17,14 @@ namespace GuestHouse
                 e.KeyChar='\0';
             }
         }
+        public static void CharaterOnly(KeyPressEventArgs e)
+        {
+            int ch = e.KeyChar;
+            //System.out.println(ch);
+            if (!((ch >= 65 && ch <= 90) || (ch >= 97 && ch <= 122) || (ch == 8 || ch == 32)))
+            {
+                e.KeyChar=('\0');
+            }
+        }
     }
 }

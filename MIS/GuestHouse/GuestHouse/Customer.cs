@@ -24,8 +24,16 @@ namespace GuestHouse
 
         private void txtID_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //int n = e.KeyChar;
-            //MessageBox.Show(n+"");
+            e.Handled = true;
+        }
+
+        private void txtFname_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            dom_Design.CharaterOnly(e);
+        }
+
+        private void txtTel_KeyPress(object sender, KeyPressEventArgs e)
+        {
             dom_Design.NumberOnly(e);
         }
     }
