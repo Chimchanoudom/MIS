@@ -21,5 +21,12 @@ namespace GuestHouse
         {
             this.Close();
         }
+
+        private void txtID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            //int n = e.KeyChar;
+            //MessageBox.Show(n+"");
+            dom_Design.NumberOnly(e);
+        }
     }
 }

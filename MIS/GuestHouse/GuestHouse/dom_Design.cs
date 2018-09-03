@@ -3,10 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GuestHouse
 {
-    class dom_Design
+   static class dom_Design
     {
+        public static void NumberOnly(KeyPressEventArgs e)
+        {
+            int num = e.KeyChar;
+            if (!(num>=48&&num<=57))
+            {
+                e.KeyChar='\0';
+            }
+        }
     }
 }
