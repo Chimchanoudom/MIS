@@ -19,3 +19,4 @@ D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.RoomPrice.res
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.GenerateResource.Cache
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
+D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csprojResolveAssemblyReference.cache

@@ -8,5 +8,13 @@ namespace GuestHouse
 {
     static class Dom_SqlClass
     {
+        public static void AddValue()
+        {
+
+        }
+        public static void retriveData(String TableName)
+        {
+
+        }
     }
 }

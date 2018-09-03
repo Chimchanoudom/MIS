@@ -36,10 +36,39 @@ namespace GuestHouse
         {
             dom_Design.NumberOnly(e);
         }
-
-        private void txtID_MouseClick(object sender, MouseEventArgs e)
+        private void btnAdd_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(e.Clicks + "");
+            if (!(txtFname.Text == "" && txtLname.Text == "" && (rndFemale.Checked == false || rndMale.Checked == false) && txtIDnum.Text == "" && txtTel.Text == ""))
+            {
+                String ID = txtID.Text;
+                String FName = txtFname.Text;
+                String Lname = txtLname.Text;
+                String Gender = rndMale.Checked == true ? rndMale.Text : rndFemale.Checked ? rndFemale.Text : "";
+                String IDNum = txtIDnum.Text;
+                String Tel = txtTel.Text;
+
+            }
+        }
+
+        private void Customer_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                dataCon.Con.Open();
+                MessageBox.Show("Connected");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+
+
+            
         }
     }
 }
