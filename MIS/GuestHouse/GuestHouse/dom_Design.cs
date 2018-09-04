@@ -26,5 +26,12 @@ namespace GuestHouse
                 e.KeyChar=('\0');
             }
         }
+        public static void GenerateColumHeader(String[] ColumnHeader, int numberColum, DataGridView Data)
+        {
+            for (int i = 0; i < numberColum; i++)
+            {
+                Data.Columns[i].HeaderText = ColumnHeader[i];
+            }
+        }
     }
 }
