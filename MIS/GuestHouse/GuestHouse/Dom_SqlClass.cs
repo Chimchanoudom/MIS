@@ -11,18 +11,54 @@ namespace GuestHouse
 {
     class Dom_SqlClass:UserLoginDetail
     {
+    
       static  SqlCommand SC = new SqlCommand();
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
+        static DataTable DT;
 
-        
-        public static void AddValue()
+        public static string GetIDFromDB(String column,string seperater,String TableName)
         {
-
+            object ID="";
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand();
+                SC.CommandText = @"getAutoID  " + " '" + column + "'," + " '" + seperater + "'," + " '" + TableName + "'";
+                SC.Connection = dataCon.Con;
+                ID=SC.ExecuteScalar();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            if (ID==null)
+            {
+                int num = int.Parse(ID + "") + 1;
+                ID = num + "";
+            }
+            MessageBox.Show(ID+"");
+            return ID+"";
+        }
+        public static void UpdateDate(DataTable Datatable)
+        {
+            try
+            {
+                SDA.Update(Datatable);
+                MessageBox.Show("Update SuccessFully !");
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Update Fails !" + e.Message);
+            }
         }
         public static DataTable retriveData(String TableName,DataGridView Data)
         {
-            DataTable DT = new DataTable();
+             DT = new DataTable();
             try
             {
                 dataCon.Con.Open();

@@ -33,5 +33,16 @@ namespace GuestHouse
                 Data.Columns[i].HeaderText = ColumnHeader[i];
             }
         }
+
+        public static String GenerateID(string ID,String Suffix) 
+        {
+            int num = 0;
+            if (ID == "")
+                num = 1;
+            else
+                num = int.Parse(ID)+1;
+            ID = Suffix+(num );
+            return ID;
+        }
     }
 }
