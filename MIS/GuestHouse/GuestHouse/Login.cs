@@ -95,5 +95,10 @@ namespace GuestHouse
             TextBox txb = (TextBox)sender;
             txb.Text = GuestHouse.ss.RestrictionClass.GetIntFromKhNumber(txb.Text);
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            txtUsername.Focus();
+        }
     }
 }

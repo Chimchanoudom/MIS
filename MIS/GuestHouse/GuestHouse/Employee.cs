@@ -17,17 +17,18 @@ namespace GuestHouse
         public Employee()
         {
             InitializeComponent();
-            
+
         }
         public static DataTable dataTable { get; set; }
         private void pictureBox1_Click(object sender, EventArgs e)
-        { 
-           this.Close();
+        {
+            this.Close();
         }
 
         private void Employee_Load(object sender, EventArgs e)
         {
             txtEmpId.Text = EmpClass.GetData.getIdFromDB();
+            defaultID = txtEmpId.Text;
             dataTable = new DataTable();
             UserLoginDetail.position = "admin";
             EmpClass.dataTableHeader = new List<string>();
@@ -62,40 +63,64 @@ namespace GuestHouse
             {
                 MessageBox.Show("Unable to Connect to Database!");
             }
-            dataCon.Con.Close();  
+            dataCon.Con.Close();
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            try
+            if (txtFirstName.Text == "" || txtLastName.Text == "" || txtUserName.Text == "" || txtPassword.Text == "" || txtSalary.Text == ""||cbxPosition.SelectedIndex<0)
             {
-                txtPassword_Leave(txtPassword, null);
-                txtPassword_Leave(txtUserName, null);
-                txtPassword_Leave(txtSalary, null);
-                string empID = txtEmpId.Text;
-                string address = (txtAddress.Text == "") ? "" : txtAddress.Text;
-                string firstname = txtFirstName.Text;
-                string lastname = txtLastName.Text;
-                string gender = (rndMale.Checked) ? "Male" : "Female";
-                string DOB = dTPickerBirthDate.Value.Year + "/" + dTPickerBirthDate.Value.Month + "/" + dTPickerBirthDate.Value.Day.ToString();
-                string Tel = (txtPhoneNumber.Text == "") ? "" : txtPhoneNumber.Text;
-                string position = cbxPosition.SelectedItem.ToString();
-                string salary = txtSalary.Text;
-                string username = txtUserName.Text;
-                string password = txtPassword.Text;
-                bool status = CheckActive.Checked;
-                string dateEmployed = dTPickerIn.Value.Year + "/" + dTPickerIn.Value.Month + "/" + dTPickerIn.Value.Day.ToString();
-                dataTable.Rows.Add(empID, dateEmployed, firstname, lastname, gender, DOB, Tel, address, position, salary, username, password, status);
-                txtEmpId.Text = (((Convert.ToInt32(txtEmpId.Text) + 1).ToString()).Length == 2) ? "0" + (Convert.ToInt32(txtEmpId.Text) + 1) : "00" + (Convert.ToInt32(txtEmpId.Text) + 1);
-                clearTextBox();
-                isSaved = false;
+                MessageBox.Show("Fill-in All Information required!");
+                return;
             }
-            catch (Exception){MessageBox.Show("Fill-in All Information required!");}
+            if (dataEmployee.SelectedRows.Count > 0)
+            {
+                DialogResult dialog = MessageBox.Show("You are selecting one or more rows!\nDo you want to clear selection?", "Warning", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    dataEmployee.ClearSelection();
+                    return;
+                }
+                else
+                    return;
+            }
+            if(EmpClass.isDuplicatedUserName(dataEmployee, txtUserName.Text, txtEmpId.Text))
+            {
+                MessageBox.Show("Username has been taken!\nPlease Kindly choose other name.");
+                return;
+            }
+            txtPassword_Leave(txtPassword, null);
+            txtPassword_Leave(txtUserName, null);
+            txtPassword_Leave(txtSalary, null);
+            string empID = txtEmpId.Text;
+            string address = /*(txtAddress.Text == "") ? "" : */txtAddress.Text;
+            string firstname = txtFirstName.Text;
+            string lastname = txtLastName.Text;
+            string gender = (rndMale.Checked) ? "Male" : "Female";
+            string DOB = dTPickerBirthDate.Value.Year + "/" + dTPickerBirthDate.Value.Month + "/" + dTPickerBirthDate.Value.Day.ToString();
+            string Tel = (txtPhoneNumber.Text == "") ? "" : txtPhoneNumber.Text;
+            string position = cbxPosition.SelectedItem.ToString();
+            string salary = txtSalary.Text;
+            string username = txtUserName.Text;
+            string password = txtPassword.Text;
+            bool status = CheckActive.Checked;
+            string dateEmployed = dTPickerIn.Value.Year + "/" + dTPickerIn.Value.Month + "/" + dTPickerIn.Value.Day.ToString();
+            dataTable.Rows.Add(empID, dateEmployed, firstname, lastname, gender, DOB, Tel, address, position, salary, username, password, status);
+            txtEmpId.Text = (((Convert.ToInt32(txtEmpId.Text) + 1).ToString()).Length == 2) ? "0" + (Convert.ToInt32(txtEmpId.Text) + 1) : "00" + (Convert.ToInt32(txtEmpId.Text) + 1);
+            defaultID = txtEmpId.Text;
+            clearTextBox();
+            isSaved = false;
+
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
             if (dataEmployee.SelectedRows.Count > 0)
             {
+                if (EmpClass.isDuplicatedUserName(dataEmployee, txtUserName.Text,txtEmpId.Text))
+                {
+                    MessageBox.Show("Username has been taken!\nPlease Kindly choose other name.");
+                    return;
+                }
                 txtPassword_Leave(txtPassword, null);
                 txtPassword_Leave(txtUserName, null);
                 txtPassword_Leave(txtSalary, null);
@@ -118,14 +143,13 @@ namespace GuestHouse
             }
         }
 
+        string defaultID;
         private void dataEmployee_SelectionChanged(object sender, EventArgs e)
         {
-            //btnDelete.Enabled = btnEdit.Enabled = (dataEmployee.SelectedRows.Count > 0);
-            
+            //btnDelete.Enabled = btnEdit.Enabled = (dataEmployee.SelectedRows.Count > 0);       
             if (dataEmployee.SelectedRows.Count > 0)
-            {
+            {      
                 int index = dataEmployee.SelectedRows[0].Index;
-
                 txtEmpId.Text = dataEmployee.Rows[index].Cells[0].Value.ToString();
                 txtAddress.Text = dataEmployee.Rows[index].Cells[7].Value.ToString();
                 txtFirstName.Text = dataEmployee.Rows[index].Cells[2].Value.ToString();
@@ -149,6 +173,7 @@ namespace GuestHouse
                 clearTextBox();
                 CheckActive.Checked = false;               
                 dTPickerIn.Value= System.DateTime.Now;
+                txtEmpId.Text = defaultID;
             }
         }
 
@@ -227,12 +252,12 @@ namespace GuestHouse
                     bool error = false;
                     //try { dataCon.Con.Open(); } catch (Exception) { MessageBox.Show("Unable to Connect to Database!"); }
                     string sqlCmd = @"UPDATE Employee 
-                                        SET FName='"+(allData[tempKeys])["FName"].ToString()+"'," +
-                                        "LName='"+(allData[tempKeys])["LName"].ToString()+"'," +
+                                        SET FName=N'"+(allData[tempKeys])["FName"].ToString()+ "'COLLATE Latin1_General_100_CI_AI," +
+                                        "LName=N'"+(allData[tempKeys])["LName"].ToString()+ "'COLLATE Latin1_General_100_CI_AI," +
                                         "Phone='"+ (allData[tempKeys])["Tel"].ToString() + "'," +
                                         "Gender='"+ (allData[tempKeys])["Gender"].ToString() + "'," +
                                         "DOB='"+(allData[tempKeys])["DOB"].ToString() + "'," +
-                                        "Address='"+ (allData[tempKeys])["Address"].ToString() + "'," +
+                                        "Address=N'"+ (allData[tempKeys])["Address"].ToString() + "'COLLATE Latin1_General_100_CI_AI," +
                                         "Position='"+ (allData[tempKeys])["Position"].ToString() + "'," +
                                         "Salary="+ (allData[tempKeys])["Salary"] + "," +
                                         "DateEmployed='"+ (allData[tempKeys])["DateEmployed"].ToString() + "'," +
@@ -258,12 +283,12 @@ namespace GuestHouse
                 {
                     bool error = false;
                     string sqlCmd = @"INSERT INTO Employee (FName,LName,Phone,Gender,DOB,Address,Position,Salary,DateEmployed,Active,EmpID) 
-                                        VALUES ('" + (allData[tempKeys])["FName"].ToString() + "'," +
-                                        "'" + (allData[tempKeys])["LName"].ToString() + "'," +
+                                        VALUES (N'" + (allData[tempKeys])["FName"].ToString() + "'COLLATE Latin1_General_100_CI_AI," +
+                                        "N'" + (allData[tempKeys])["LName"].ToString() + "'COLLATE Latin1_General_100_CI_AI," +
                                         "'" + (allData[tempKeys])["Tel"].ToString() + "'," +
                                         "'" + (allData[tempKeys])["Gender"].ToString() + "'," +
                                         "'" + (allData[tempKeys])["DOB"].ToString() + "'," +
-                                        "'" + (allData[tempKeys])["Address"].ToString() + "'," +
+                                        "N'" + (allData[tempKeys])["Address"].ToString() + "'COLLATE Latin1_General_100_CI_AI," +
                                         "'" + (allData[tempKeys])["Position"].ToString() + "'," +
                                         "" + (allData[tempKeys])["Salary"] + "," +
                                         "'" + (allData[tempKeys])["DateEmployed"].ToString() + "'," +

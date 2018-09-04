@@ -4,6 +4,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace GuestHouse.ss
 {
@@ -12,9 +13,18 @@ namespace GuestHouse.ss
         public static List<string> dataTableHeader { get; set; }
 
 
-        public static void AddDataToDB()
+        public static bool isDuplicatedUserName(DataGridView dgvEmp,string username,string empId)
         {
-
+            bool isDuplicated = false;
+            for(int i = 0; i < dgvEmp.RowCount; i++)
+            {
+                if (dgvEmp.Rows[i].Cells["Username"].Value.ToString().ToLower() == username.ToLower()&&dgvEmp.Rows[i].Cells["EmpID"].Value.ToString()!=empId)
+                {
+                    isDuplicated = true;
+                        break;
+                }
+            }
+            return isDuplicated;            
         }
 
 
