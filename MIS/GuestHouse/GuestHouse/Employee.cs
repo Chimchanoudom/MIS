@@ -27,20 +27,27 @@ namespace GuestHouse
 
         private void Employee_Load(object sender, EventArgs e)
         {
+            txtEmpId.Text = EmpClass.GetData.getIdFromDB();
             dataTable = new DataTable();
             UserLoginDetail.position = "admin";
             EmpClass.dataTableHeader = new List<string>();
+            for (int i = 0; i < dataEmployee.ColumnCount - 1; i++)
+            {
+                String st = dataEmployee.Columns[i].Name;
+                dataTable.Columns.Add(st);
+                EmpClass.dataTableHeader.Add(dataEmployee.Columns[i].HeaderText);
+            }
+            dataTable.Columns.Add("Status", typeof(bool));
+            EmpClass.dataTableHeader.Add(dataEmployee.Columns[12].HeaderText);
+            dataEmployee.Columns.Clear();
+            dataEmployee.DataSource = dataTable;
+            for (int i = 0; i < dataTable.Columns.Count; i++)
+            {
+                dataEmployee.Columns[i].HeaderText = EmpClass.dataTableHeader[i];
+            }
+
             try
             {
-                for (int i = 0; i < dataEmployee.ColumnCount-1; i++)
-                {
-                    String st = dataEmployee.Columns[i].Name;
-                    dataTable.Columns.Add(st);
-                    EmpClass.dataTableHeader.Add(dataEmployee.Columns[i].HeaderText);
-                }
-                dataTable.Columns.Add("Status",typeof(bool));
-                EmpClass.dataTableHeader.Add(dataEmployee.Columns[12].HeaderText);
-                dataEmployee.Columns.Clear();
                 dataCon.Con.Open();
                 string sqlCmd = "";
                 if (UserLoginDetail.position == "admin")
@@ -53,16 +60,10 @@ namespace GuestHouse
             }
             catch (Exception)
             {
-              // throw;
+                MessageBox.Show("Unable to Connect to Database!");
             }
-            dataCon.Con.Close();
-            dataEmployee.DataSource = dataTable;
-            for (int i = 0; i < dataTable.Columns.Count; i++)
-            {
-               dataEmployee.Columns[i].HeaderText = EmpClass.dataTableHeader[i];
-            }
+            dataCon.Con.Close();  
         }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             try
@@ -80,12 +81,11 @@ namespace GuestHouse
                 string password = txtPassword.Text;
                 bool status = CheckActive.Checked;
                 string dateEmployed = dTPickerIn.Value.Year + "/" + dTPickerIn.Value.Month + "/" + dTPickerIn.Value.Day.ToString();
-                dataEmployee.Rows.Add(empID, dateEmployed, firstname, lastname, gender, DOB, Tel, address, position, salary, username, password, status);
+                dataTable.Rows.Add(empID, dateEmployed, firstname, lastname, gender, DOB, Tel, address, position, salary, username, password, status);
+                txtEmpId.Text = (((Convert.ToInt32(txtEmpId.Text) + 1).ToString()).Length == 2) ? "0" + (Convert.ToInt32(txtEmpId.Text) + 1) : "00" + (Convert.ToInt32(txtEmpId.Text) + 1);
+                clearTextBox();
             }
-            catch (Exception)
-            {
-                MessageBox.Show("Fill-in All Information required!");
-            }
+            catch (Exception){MessageBox.Show("Fill-in All Information required!");}
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -108,7 +108,6 @@ namespace GuestHouse
                 dataEmployee.Rows[index].Cells[12].Value = CheckActive.Checked;
                 dataEmployee.Rows[index].Cells[1].Value = dTPickerIn.Value.Year + "/" + dTPickerIn.Value.Month + "/" + dTPickerIn.Value.Day.ToString();
             }
-            
         }
 
         private void dataEmployee_SelectionChanged(object sender, EventArgs e)
@@ -128,7 +127,7 @@ namespace GuestHouse
                 DateTime dob = new DateTime(int.Parse(stDob[0]), int.Parse(stDob[1]), int.Parse(stDob[2]), 0, 0, 0);
                 dTPickerBirthDate.Value = dob;
                 txtPhoneNumber.Text = dataEmployee.Rows[index].Cells[6].Value.ToString();
-                cbxPosition.SelectedItem = dataEmployee.Rows[index].Cells[8].Value.ToString();
+                cbxPosition.SelectedItem = dataEmployee.Rows[index].Cells[8].Value.ToString()[0].ToString().ToUpper()+ dataEmployee.Rows[index].Cells[8].Value.ToString().Substring(1);
                 txtSalary.Text = dataEmployee.Rows[index].Cells[9].Value.ToString();
                 txtUserName.Text = dataEmployee.Rows[index].Cells[10].Value.ToString();
                 txtPassword.Text = dataEmployee.Rows[index].Cells[11].Value.ToString();
@@ -140,6 +139,8 @@ namespace GuestHouse
             else
             {
                 clearTextBox();
+                CheckActive.Checked = false;               
+                dTPickerIn.Value= System.DateTime.Now;
             }
         }
 
@@ -159,7 +160,7 @@ namespace GuestHouse
         public void clearTextBox()
         {
             txtAddress.Text = "";
-            txtEmpId.Text = "";
+            //txtEmpId.Text = "";
             txtFirstName.Text = "";
             txtLastName.Text = "";
             txtPassword.Text = "";
@@ -189,6 +190,121 @@ namespace GuestHouse
         private void txtEmpId_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            Dictionary<string, Dictionary<string, string>> allData = new Dictionary<string, Dictionary<string, string>>();
+            Dictionary<string, string> row;
+
+            for(int NumberOfrow = 0; NumberOfrow < dataEmployee.RowCount; NumberOfrow++)
+            {
+                row = new Dictionary<string, string>();
+                for (int NumberOfColumn = 0; NumberOfColumn < dataEmployee.ColumnCount; NumberOfColumn++)
+                {
+                    string value = dataEmployee.Rows[NumberOfrow].Cells[NumberOfColumn].Value.ToString();
+                    string keys = dataEmployee.Columns[NumberOfColumn].Name;
+                    row.Add(keys, value);
+                }
+                allData.Add(dataEmployee.Rows[NumberOfrow].Cells[0].Value.ToString(), row);
+            }
+
+            List<int> errorIndex = new List<int>();
+            EmpClass.GetData.getAllEmployeeData();
+            foreach(string tempKeys in allData.Keys)
+            {
+                if (EmpClass.GetData.empData.ContainsKey(tempKeys))
+                {
+                    bool error = false;
+                    //try { dataCon.Con.Open(); } catch (Exception) { MessageBox.Show("Unable to Connect to Database!"); }
+                    string sqlCmd = @"UPDATE Employee 
+                                        SET FName='"+(allData[tempKeys])["FName"].ToString()+"'," +
+                                        "LName='"+(allData[tempKeys])["LName"].ToString()+"'," +
+                                        "Phone='"+ (allData[tempKeys])["Tel"].ToString() + "'," +
+                                        "Gender='"+ (allData[tempKeys])["Gender"].ToString() + "'," +
+                                        "DOB='"+(allData[tempKeys])["DOB"].ToString() + "'," +
+                                        "Address='"+ (allData[tempKeys])["Address"].ToString() + "'," +
+                                        "Position='"+ (allData[tempKeys])["Position"].ToString() + "'," +
+                                        "Salary="+ (allData[tempKeys])["Salary"] + "," +
+                                        "DateEmployed='"+ (allData[tempKeys])["DateEmployed"].ToString() + "'," +
+                                        "Active='"+ (allData[tempKeys])["Status"].ToString() + "'" +
+                                        " WHERE EmpID='" +tempKeys+"';"
+                                        ;
+                    string sqlCmd1 = @"UPDATE UserAcc 
+                                        SET Username='" + (allData[tempKeys])["Username"].ToString() + "'," +
+                                        "Password='" + (allData[tempKeys])["Password"].ToString() + "' " +
+                                        "WHERE EmpID='" + tempKeys + "';"
+                                        ;
+                    dataCon.ExecuteActionQry(sqlCmd, ref error);
+                    dataCon.ExecuteActionQry(sqlCmd1, ref error);
+                    if (error)
+                    {
+                        int index = 0;
+                        for (int i = 0; i < dataEmployee.RowCount; i++)
+                            if (dataEmployee.Rows[i].Cells[0].Value.ToString() == tempKeys)
+                                errorIndex.Add(index);                       
+                    }
+                }
+                else
+                {
+                    bool error = false;
+                    string sqlCmd = @"INSERT INTO Employee (FName,LName,Phone,Gender,DOB,Address,Position,Salary,DateEmployed,Active,EmpID) 
+                                        VALUES ('" + (allData[tempKeys])["FName"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["LName"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["Tel"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["Gender"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["DOB"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["Address"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["Position"].ToString() + "'," +
+                                        "" + (allData[tempKeys])["Salary"] + "," +
+                                        "'" + (allData[tempKeys])["DateEmployed"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["Status"].ToString() + "'," +
+                                        "'" + tempKeys + "');";
+                    //MessageBox.Show((allData[tempKeys])["Username"].ToString());
+                    string sqlCmd1 = @"INSERT INTO UserAcc (EmpID,Username,Password) 
+                                        VALUES ('" + tempKeys + "'," +
+                                        "'" + (allData[tempKeys])["Username"].ToString() + "'," +
+                                        "'" + (allData[tempKeys])["Password"].ToString() + "'" +
+                                        ");"
+                                        ;
+                    dataCon.ExecuteActionQry(sqlCmd, ref error);
+                    dataCon.ExecuteActionQry(sqlCmd1, ref error);
+                    if (error)
+                    {
+                        int index = 0;
+                        for (int i = 0; i < dataEmployee.RowCount; i++)
+                            if (dataEmployee.Rows[i].Cells[0].Value.ToString() == tempKeys)
+                                errorIndex.Add(index);
+                    }
+                }
+            }
+
+            foreach(string tempKeys in EmpClass.GetData.empData.Keys)
+            {
+                if (!allData.ContainsKey(tempKeys))
+                {
+                    bool error = false;
+                    string sqlCmd = @"DELETE FROM Employee
+                                    WHERE EmpID='" + tempKeys + "';";
+                    dataCon.ExecuteActionQry(sqlCmd, ref error); 
+                    if (error)
+                    {
+                        int index = 0;
+                        for (int i = 0; i < dataEmployee.RowCount; i++)
+                            if (dataEmployee.Rows[i].Cells[0].Value.ToString() == tempKeys)
+                                errorIndex.Add(index);
+                    }
+                }
+            }
+
+            string errorString = "Error Founded on:\nRow:\t";
+            for (int i = 0; i < errorIndex.Count; i++)
+            {
+                errorString+=errorIndex[i] + "\n\t";
+            }
+            if(errorIndex.Count>0)
+                MessageBox.Show(errorString);
+            MessageBox.Show("Successfully Saved!");
         }
     }
 }
