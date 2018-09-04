@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace GuestHouse
 {
-    class UserLoginDetail
+    static class UserLoginDetail
     {
         public static string position { get; set; }
         public static string empID { get; set; }
