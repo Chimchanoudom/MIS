@@ -52,23 +52,12 @@ namespace GuestHouse
 
         private void Customer_Load(object sender, EventArgs e)
         {
-            try
-            {
-                dataCon.Con.Open();
-                MessageBox.Show("Connected");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                
-            }
-            finally
-            {
-                dataCon.Con.Close();
-            }
-
-
-            
+            string[] columnHeaderName = {"លេខកូដសម្គាល់","នាមត្រកូល","គោត្តនាម-នាមខ្លួន","ភេទ","លេខអត្តសញ្ញាណប័ណ្ណ","លេខទូរស័ព្ទ" };
+            dataCustomer.DataSource= Dom_SqlClass.retriveData("Customer", dataCustomer);
+            dom_Design.GenerateColumHeader(columnHeaderName, dataCustomer.ColumnCount, dataCustomer);
+            Dom_SqlClass.GetIDFromDB("cusID", "_", "customer");
+            // MessageBox.Show(Dom_SqlClass.GetIDFromDB("cusID", "_", "customer"));
+            txtID.Text=dom_Design.GenerateID(Dom_SqlClass.GetIDFromDB("cusID", "_", "customer"), "Cus_00");
         }
     }
 }
