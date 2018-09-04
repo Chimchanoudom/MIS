@@ -21,8 +21,8 @@ namespace GuestHouse
         }
         public static DataTable dataTable { get; set; }
         private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
+        { 
+           this.Close();
         }
 
         private void Employee_Load(object sender, EventArgs e)
@@ -68,6 +68,9 @@ namespace GuestHouse
         {
             try
             {
+                txtPassword_Leave(txtPassword, null);
+                txtPassword_Leave(txtUserName, null);
+                txtPassword_Leave(txtSalary, null);
                 string empID = txtEmpId.Text;
                 string address = (txtAddress.Text == "") ? "" : txtAddress.Text;
                 string firstname = txtFirstName.Text;
@@ -84,6 +87,7 @@ namespace GuestHouse
                 dataTable.Rows.Add(empID, dateEmployed, firstname, lastname, gender, DOB, Tel, address, position, salary, username, password, status);
                 txtEmpId.Text = (((Convert.ToInt32(txtEmpId.Text) + 1).ToString()).Length == 2) ? "0" + (Convert.ToInt32(txtEmpId.Text) + 1) : "00" + (Convert.ToInt32(txtEmpId.Text) + 1);
                 clearTextBox();
+                isSaved = false;
             }
             catch (Exception){MessageBox.Show("Fill-in All Information required!");}
         }
@@ -92,6 +96,9 @@ namespace GuestHouse
         {
             if (dataEmployee.SelectedRows.Count > 0)
             {
+                txtPassword_Leave(txtPassword, null);
+                txtPassword_Leave(txtUserName, null);
+                txtPassword_Leave(txtSalary, null);
                 int index = dataEmployee.SelectedRows[0].Index;
 
                 dataEmployee.Rows[index].Cells[0].Value = txtEmpId.Text;
@@ -107,6 +114,7 @@ namespace GuestHouse
                 dataEmployee.Rows[index].Cells[11].Value = txtPassword.Text;
                 dataEmployee.Rows[index].Cells[12].Value = CheckActive.Checked;
                 dataEmployee.Rows[index].Cells[1].Value = dTPickerIn.Value.Year + "/" + dTPickerIn.Value.Month + "/" + dTPickerIn.Value.Day.ToString();
+                isSaved = false;
             }
         }
 
@@ -154,6 +162,7 @@ namespace GuestHouse
                     dataEmployee.Rows.RemoveAt(index);
                 }
                 dataEmployee.ClearSelection();
+                isSaved = false;
             }
         }
 
@@ -191,7 +200,7 @@ namespace GuestHouse
         {
             e.Handled = true;
         }
-
+        bool isSaved = true;
         private void btnSave_Click(object sender, EventArgs e)
         {
             Dictionary<string, Dictionary<string, string>> allData = new Dictionary<string, Dictionary<string, string>>();
@@ -305,6 +314,46 @@ namespace GuestHouse
             if(errorIndex.Count>0)
                 MessageBox.Show(errorString);
             MessageBox.Show("Successfully Saved!");
+            isSaved = true;
+        }
+
+        private void txtFirstName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            RestrictionClass.restrictFromKeyboard.restrictNumberAndSigns(e);
+        }
+
+        private void txtSalary_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string[] st = { "" };
+            RestrictionClass.restrictFromKeyboard.restrictAlphabet(e,st);
+        }
+
+        private void txtPhoneNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            string[] st = { "+" };
+            RestrictionClass.restrictFromKeyboard.restrictAlphabet(e, st);
+        }
+
+        private void txtPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            RestrictionClass.restrictFromKeyboard.restrictUnicodeAlphabets(e);
+        }
+
+        private void txtPassword_Leave(object sender, EventArgs e)
+        {
+            TextBox txb = (TextBox)sender;
+            txb.Text = RestrictionClass.GetIntFromKhNumber(txb.Text);
+        }
+
+        private void Employee_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (isSaved==false)
+            {
+                DialogResult dialog = MessageBox.Show("Do you want to save?", "Warning", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                    btnSave_Click(null, null);
+            }
+            
         }
     }
 }

@@ -43,3 +43,4 @@ D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.RoomPrice.res
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.GenerateResource.Cache
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
+D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Booking.resources
