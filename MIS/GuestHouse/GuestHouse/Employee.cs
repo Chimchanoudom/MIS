@@ -38,7 +38,7 @@ namespace GuestHouse
                     dataTable.Columns.Add(st);
                     EmpClass.dataTableHeader.Add(dataEmployee.Columns[i].HeaderText);
                 }
-                dataTable.Columns.Add("Active",typeof(bool));
+                dataTable.Columns.Add("Status",typeof(bool));
                 EmpClass.dataTableHeader.Add(dataEmployee.Columns[12].HeaderText);
                 dataEmployee.Columns.Clear();
                 dataCon.Con.Open();
@@ -65,24 +65,27 @@ namespace GuestHouse
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            string empID = txtEmpId.Text;
-            string address = txtAddress.Text;
-            string firstname = txtFirstName.Text;
-            string lastname = txtLastName.Text;
-            string gender = (rndMale.Checked) ? "Male" : "Female";
-            string DOB = dTPickerBirthDate.Value.Year +"/"+ dTPickerBirthDate.Value.Month+ "/"+ dTPickerBirthDate.Value.Day.ToString();
-            string Tel = txtPhoneNumber.Text;
-            string position = cbxPosition.SelectedItem.ToString();
-            string salary = txtSalary.Text;
-            string username = txtUserName.Text;
-            string password = txtPassword.Text;
-            bool status = CheckActive.Checked;
-            string dateEmployed = dTPickerIn.Value.Year + "/" + dTPickerIn.Value.Month + "/" + dTPickerIn.Value.Day.ToString();
-
-            //string[] dt = DOB.Split(',');
-            DateTime dt = new DateTime();
-            
-            dataEmployee.Rows.Add(empID, dateEmployed, firstname, lastname, gender, DOB, Tel, address, position, salary, username, password, status);
+            try
+            {
+                string empID = txtEmpId.Text;
+                string address = (txtAddress.Text == "") ? "" : txtAddress.Text;
+                string firstname = txtFirstName.Text;
+                string lastname = txtLastName.Text;
+                string gender = (rndMale.Checked) ? "Male" : "Female";
+                string DOB = dTPickerBirthDate.Value.Year + "/" + dTPickerBirthDate.Value.Month + "/" + dTPickerBirthDate.Value.Day.ToString();
+                string Tel = (txtPhoneNumber.Text == "") ? "" : txtPhoneNumber.Text;
+                string position = cbxPosition.SelectedItem.ToString();
+                string salary = txtSalary.Text;
+                string username = txtUserName.Text;
+                string password = txtPassword.Text;
+                bool status = CheckActive.Checked;
+                string dateEmployed = dTPickerIn.Value.Year + "/" + dTPickerIn.Value.Month + "/" + dTPickerIn.Value.Day.ToString();
+                dataEmployee.Rows.Add(empID, dateEmployed, firstname, lastname, gender, DOB, Tel, address, position, salary, username, password, status);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Fill-in All Information required!");
+            }
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
@@ -110,7 +113,7 @@ namespace GuestHouse
 
         private void dataEmployee_SelectionChanged(object sender, EventArgs e)
         {
-            btnDelete.Enabled = btnEdit.Enabled = (dataEmployee.SelectedRows.Count > 0);
+            //btnDelete.Enabled = btnEdit.Enabled = (dataEmployee.SelectedRows.Count > 0);
             
             if (dataEmployee.SelectedRows.Count > 0)
             {
@@ -169,12 +172,23 @@ namespace GuestHouse
         {
             if (txtSearch.Text != "")
             {
-                          
+                string filter = (rndSearchFname.Checked ? "FName='" + txtSearch.Text + "'" : rndSearchLname.Checked ? "LName='" + txtSearch.Text + "'" : rndSearchID.Checked ? "EmpID='" + txtSearch.Text + "'" : rndSearchPosition.Checked ? "Position='" + txtSearch.Text + "'" : rndSearchTelephone.Checked ? "Tel='" + txtSearch.Text + "'" : "");
+                dataTable.DefaultView.RowFilter = filter;
             }
             else
             {
                 MessageBox.Show("Please Enter any text to search!");
             }
+        }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            dataTable.DefaultView.RowFilter = string.Empty;
+        }
+
+        private void txtEmpId_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }

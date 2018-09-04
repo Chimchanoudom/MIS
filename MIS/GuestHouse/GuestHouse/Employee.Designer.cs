@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Employee));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -114,19 +113,20 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataEmployee = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.EmpID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateEmployed = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tel = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Address = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Position = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Salary = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Password = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Status = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -153,7 +153,7 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1444, 40);
+            this.panel1.Size = new System.Drawing.Size(1480, 40);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -161,7 +161,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1302, 0);
+            this.label1.Location = new System.Drawing.Point(1338, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 40);
@@ -203,7 +203,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 841);
             this.panel2.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1444, 40);
+            this.panel2.Size = new System.Drawing.Size(1480, 40);
             this.panel2.TabIndex = 1;
             // 
             // panel3
@@ -216,7 +216,7 @@
             this.panel3.Location = new System.Drawing.Point(0, 40);
             this.panel3.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1444, 381);
+            this.panel3.Size = new System.Drawing.Size(1480, 381);
             this.panel3.TabIndex = 2;
             // 
             // groupBox6
@@ -227,19 +227,20 @@
             this.groupBox6.Font = new System.Drawing.Font("Khmer SN Kampot", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(1009, 0);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(377, 379);
+            this.groupBox6.Size = new System.Drawing.Size(458, 379);
             this.groupBox6.TabIndex = 2;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "ស្វែងរក";
             // 
             // panel7
             // 
+            this.panel7.Controls.Add(this.bunifuThinButton21);
             this.panel7.Controls.Add(this.btnSearch);
             this.panel7.Controls.Add(this.txtSearch);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 151);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(371, 36);
+            this.panel7.Size = new System.Drawing.Size(452, 36);
             this.panel7.TabIndex = 1;
             // 
             // btnSearch
@@ -264,7 +265,7 @@
             this.btnSearch.Location = new System.Drawing.Point(234, 0);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(137, 36);
+            this.btnSearch.Size = new System.Drawing.Size(105, 36);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -289,7 +290,7 @@
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox7.Location = new System.Drawing.Point(3, 33);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(371, 118);
+            this.groupBox7.Size = new System.Drawing.Size(452, 118);
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "លក្ខខណ្ឌ";
@@ -341,6 +342,7 @@
             // rndSearchID
             // 
             this.rndSearchID.AutoSize = true;
+            this.rndSearchID.Checked = true;
             this.rndSearchID.Location = new System.Drawing.Point(21, 36);
             this.rndSearchID.Name = "rndSearchID";
             this.rndSearchID.Size = new System.Drawing.Size(130, 34);
@@ -1042,8 +1044,10 @@
             this.txtEmpId.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpId.Location = new System.Drawing.Point(165, 33);
             this.txtEmpId.Name = "txtEmpId";
+            this.txtEmpId.ShortcutsEnabled = false;
             this.txtEmpId.Size = new System.Drawing.Size(145, 29);
             this.txtEmpId.TabIndex = 1;
+            this.txtEmpId.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtEmpId_KeyPress);
             // 
             // label2
             // 
@@ -1062,7 +1066,7 @@
             this.panel4.Location = new System.Drawing.Point(0, 421);
             this.panel4.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1444, 420);
+            this.panel4.Size = new System.Drawing.Size(1480, 420);
             this.panel4.TabIndex = 3;
             // 
             // groupBox4
@@ -1072,7 +1076,7 @@
             this.groupBox4.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1442, 418);
+            this.groupBox4.Size = new System.Drawing.Size(1478, 418);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = " បញ្ជីបុគ្គលិក";
@@ -1081,145 +1085,164 @@
             // 
             this.dataEmployee.AllowUserToAddRows = false;
             this.dataEmployee.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataEmployee.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.dataEmployee.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataEmployee.BackgroundColor = System.Drawing.Color.White;
             this.dataEmployee.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataEmployee.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6,
-            this.Column7,
-            this.Column8,
-            this.Column9,
-            this.Column10,
-            this.Column11,
-            this.Column12,
-            this.Column13});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataEmployee.DefaultCellStyle = dataGridViewCellStyle12;
+            this.EmpID,
+            this.DateEmployed,
+            this.FName,
+            this.LName,
+            this.Gender,
+            this.DOB,
+            this.Tel,
+            this.Address,
+            this.Position,
+            this.Salary,
+            this.Username,
+            this.Password,
+            this.Status});
             this.dataEmployee.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataEmployee.GridColor = System.Drawing.Color.Teal;
             this.dataEmployee.Location = new System.Drawing.Point(3, 36);
             this.dataEmployee.Name = "dataEmployee";
             this.dataEmployee.ReadOnly = true;
-            this.dataEmployee.Size = new System.Drawing.Size(1436, 379);
+            this.dataEmployee.Size = new System.Drawing.Size(1472, 379);
             this.dataEmployee.TabIndex = 0;
             this.dataEmployee.SelectionChanged += new System.EventHandler(this.dataEmployee_SelectionChanged);
             // 
-            // Column1
-            // 
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle10;
-            this.Column1.FillWeight = 33.87097F;
-            this.Column1.HeaderText = "លេខកូដសម្គាល់";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
+            // EmpID
             // 
             dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle11;
-            this.Column2.FillWeight = 28.22581F;
-            this.Column2.HeaderText = "ថ្ងៃចូលធ្វើការ";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.EmpID.DefaultCellStyle = dataGridViewCellStyle11;
+            this.EmpID.FillWeight = 33.87097F;
+            this.EmpID.HeaderText = "លេខកូដសម្គាល់";
+            this.EmpID.Name = "EmpID";
+            this.EmpID.ReadOnly = true;
             // 
-            // Column3
+            // DateEmployed
             // 
-            this.Column3.FillWeight = 28.22581F;
-            this.Column3.HeaderText = "នាមត្រកូល";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateEmployed.DefaultCellStyle = dataGridViewCellStyle12;
+            this.DateEmployed.FillWeight = 28.22581F;
+            this.DateEmployed.HeaderText = "ថ្ងៃចូលធ្វើការ";
+            this.DateEmployed.Name = "DateEmployed";
+            this.DateEmployed.ReadOnly = true;
             // 
-            // Column4
+            // FName
             // 
-            this.Column4.FillWeight = 80F;
-            this.Column4.HeaderText = "គោត្តនាម​-នាមខ្លួន";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            this.FName.FillWeight = 28.22581F;
+            this.FName.HeaderText = "នាមត្រកូល";
+            this.FName.Name = "FName";
+            this.FName.ReadOnly = true;
             // 
-            // Column5
+            // LName
             // 
-            this.Column5.FillWeight = 16.93548F;
-            this.Column5.HeaderText = "ភេទ";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
+            this.LName.FillWeight = 80F;
+            this.LName.HeaderText = "គោត្តនាម​-នាមខ្លួន";
+            this.LName.Name = "LName";
+            this.LName.ReadOnly = true;
             // 
-            // Column6
+            // Gender
             // 
-            this.Column6.FillWeight = 28.22581F;
-            this.Column6.HeaderText = "ថ្ងៃខែឆ្នាំកំណើត";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
+            this.Gender.FillWeight = 16.93548F;
+            this.Gender.HeaderText = "ភេទ";
+            this.Gender.Name = "Gender";
+            this.Gender.ReadOnly = true;
             // 
-            // Column7
+            // DOB
             // 
-            this.Column7.FillWeight = 28.22581F;
-            this.Column7.HeaderText = "លេខទូរស័ព្ទ";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
+            this.DOB.FillWeight = 28.22581F;
+            this.DOB.HeaderText = "ថ្ងៃខែឆ្នាំកំណើត";
+            this.DOB.Name = "DOB";
+            this.DOB.ReadOnly = true;
             // 
-            // Column8
+            // Tel
             // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column8.HeaderText = "អាសយដ្ឋាន";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            this.Column8.Width = 119;
+            this.Tel.FillWeight = 28.22581F;
+            this.Tel.HeaderText = "លេខទូរស័ព្ទ";
+            this.Tel.Name = "Tel";
+            this.Tel.ReadOnly = true;
             // 
-            // Column9
+            // Address
             // 
-            this.Column9.FillWeight = 28.22581F;
-            this.Column9.HeaderText = "តួរនាទី/មុខងារ";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
+            this.Address.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Address.HeaderText = "អាសយដ្ឋាន";
+            this.Address.Name = "Address";
+            this.Address.ReadOnly = true;
+            this.Address.Width = 119;
             // 
-            // Column10
+            // Position
             // 
-            this.Column10.FillWeight = 50F;
-            this.Column10.HeaderText = "ប្រាក់បៀរ៍វត្ស";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
+            this.Position.FillWeight = 28.22581F;
+            this.Position.HeaderText = "តួរនាទី/មុខងារ";
+            this.Position.Name = "Position";
+            this.Position.ReadOnly = true;
             // 
-            // Column11
+            // Salary
             // 
-            this.Column11.FillWeight = 28.22581F;
-            this.Column11.HeaderText = "ឈ្មោះគណនី";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
+            this.Salary.FillWeight = 50F;
+            this.Salary.HeaderText = "ប្រាក់បៀរ៍វត្ស";
+            this.Salary.Name = "Salary";
+            this.Salary.ReadOnly = true;
             // 
-            // Column12
+            // Username
             // 
-            this.Column12.FillWeight = 28.22581F;
-            this.Column12.HeaderText = "លេខសម្ងាត់";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
+            this.Username.FillWeight = 28.22581F;
+            this.Username.HeaderText = "ឈ្មោះគណនី";
+            this.Username.Name = "Username";
+            this.Username.ReadOnly = true;
             // 
-            // Column13
+            // Password
             // 
-            this.Column13.FalseValue = "False";
-            this.Column13.FillWeight = 56.45161F;
-            this.Column13.HeaderText = "ស្ថានភាព";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
-            this.Column13.TrueValue = "True";
+            this.Password.FillWeight = 28.22581F;
+            this.Password.HeaderText = "លេខសម្ងាត់";
+            this.Password.Name = "Password";
+            this.Password.ReadOnly = true;
+            // 
+            // Status
+            // 
+            this.Status.FalseValue = "False";
+            this.Status.FillWeight = 56.45161F;
+            this.Status.HeaderText = "ស្ថានភាព";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
+            this.Status.TrueValue = "True";
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Red;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Red;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "បោះបង់";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Red;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.Red;
+            this.bunifuThinButton21.Location = new System.Drawing.Point(339, 0);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(105, 36);
+            this.bunifuThinButton21.TabIndex = 2;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1444, 881);
+            this.ClientSize = new System.Drawing.Size(1480, 881);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -1338,19 +1361,20 @@
         private System.Windows.Forms.CheckBox CheckActive;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Column13;
         private Bunifu.Framework.UI.BunifuThinButton2 btnSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmpID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateEmployed;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tel;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Address;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Position;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Salary;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Password;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Status;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
     }
 }
