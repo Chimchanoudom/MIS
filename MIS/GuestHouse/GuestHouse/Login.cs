@@ -77,15 +77,7 @@ namespace GuestHouse
             }
             else
             {
-
                 MessageBox.Show("Incorrected username or password!");             
-
-
-                MessageBox.Show("Incorrected username or password!");             
-
-                MessageBox.Show("Incorrected username or password!");
-
-
             }
         }
     }

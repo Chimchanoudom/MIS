@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GuestHouse.ss;
 
 namespace GuestHouse
 {
@@ -16,8 +17,9 @@ namespace GuestHouse
         public Employee()
         {
             InitializeComponent();
+            
         }
-        
+        public static DataTable dataTable { get; set; }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -25,9 +27,20 @@ namespace GuestHouse
 
         private void Employee_Load(object sender, EventArgs e)
         {
+            dataTable = new DataTable();
             UserLoginDetail.position = "admin";
+            EmpClass.dataTableHeader = new List<string>();
             try
             {
+                for (int i = 0; i < dataEmployee.ColumnCount-1; i++)
+                {
+                    String st = dataEmployee.Columns[i].Name;
+                    dataTable.Columns.Add(st);
+                    EmpClass.dataTableHeader.Add(dataEmployee.Columns[i].HeaderText);
+                }
+                dataTable.Columns.Add("Active",typeof(bool));
+                EmpClass.dataTableHeader.Add(dataEmployee.Columns[12].HeaderText);
+                dataEmployee.Columns.Clear();
                 dataCon.Con.Open();
                 string sqlCmd = "";
                 if (UserLoginDetail.position == "admin")
@@ -35,17 +48,21 @@ namespace GuestHouse
                 SqlDataReader dr = dataCon.ExecuteQry(sqlCmd);
                 while (dr.Read())
                 {
-                    dataEmployee.Rows.Add(dr["EmpID"], dr["DateEmployed"], dr["FName"], dr["LName"], dr["Gender"], dr["DOB"], dr["Phone"], dr["Address"], dr["Position"], dr["Salary"], dr["Username"], dr["Password"], dr["Active"]);
+                    dataTable.Rows.Add(dr["EmpID"], dr["DateEmployed"], dr["FName"], dr["LName"], dr["Gender"], dr["DOB"], dr["Phone"], dr["Address"], dr["Position"], dr["Salary"], dr["Username"], dr["Password"], dr["Active"]);
                 }
             }
             catch (Exception)
             {
-
               // throw;
             }
             dataCon.Con.Close();
+            dataEmployee.DataSource = dataTable;
+            for (int i = 0; i < dataTable.Columns.Count; i++)
+            {
+               dataEmployee.Columns[i].HeaderText = EmpClass.dataTableHeader[i];
+            }
         }
-        
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string empID = txtEmpId.Text;
@@ -94,7 +111,7 @@ namespace GuestHouse
         private void dataEmployee_SelectionChanged(object sender, EventArgs e)
         {
             btnDelete.Enabled = btnEdit.Enabled = (dataEmployee.SelectedRows.Count > 0);
-            btnDelete.TextAlign = btnEdit.TextAlign = btnAdd.TextAlign;
+            
             if (dataEmployee.SelectedRows.Count > 0)
             {
                 int index = dataEmployee.SelectedRows[0].Index;
@@ -146,6 +163,18 @@ namespace GuestHouse
             txtPhoneNumber.Text = "";
             txtSalary.Text = "";
             txtUserName.Text = "";
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text != "")
+            {
+                          
+            }
+            else
+            {
+                MessageBox.Show("Please Enter any text to search!");
+            }
         }
     }
 }

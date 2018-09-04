@@ -9,10 +9,17 @@ namespace GuestHouse.ss
 {
     class EmpClass
     {
+        public static List<string> dataTableHeader { get; set; }
+
+
         public static void AddDataToDB()
         {
 
         }
+
+
+
+
         class GetData
         {
             static Dictionary<string, Dictionary<string, string>> empData = new Dictionary<string, Dictionary<string, string>>();
@@ -47,7 +54,6 @@ namespace GuestHouse.ss
                 }
                 catch (Exception)
                 {
-
                     throw;
                 }
                 dataCon.Con.Close();
