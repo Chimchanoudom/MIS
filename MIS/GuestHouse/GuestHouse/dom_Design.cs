@@ -44,5 +44,19 @@ namespace GuestHouse
             ID = Suffix+(num );
             return ID;
         }
+
+        public static void ColumnName(DataGridView data,int column,String[]columnName)
+        {
+            
+            for (int i = 0; i < column; i++)
+            {
+                data.Columns[i].Name = columnName[i];
+            }
+        }
+        public static String SetID(int indexsubstring,String ID,String suffix)
+        {
+            ID = dom_Design.GenerateID(ID.Substring(indexsubstring), suffix);
+            return ID;
+        }
     }
 }

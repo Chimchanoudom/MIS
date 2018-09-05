@@ -26,24 +26,23 @@ namespace GuestHouse
                 SC = new SqlCommand();
                 SC.CommandText = @"getAutoID  " + " '" + column + "'," + " '" + seperater + "'," + " '" + TableName + "'";
                 SC.Connection = dataCon.Con;
-                ID=SC.ExecuteScalar();
+                ID=SC.ExecuteScalar().ToString();
             }
-            catch (Exception e)
+            catch (Exception)
             {
-                MessageBox.Show(e.Message);
+               //MessageBox.Show(e.Message);
             }
             finally
             {
                 dataCon.Con.Close();
             }
-            if (ID==null)
+            if (ID==null||ID.Equals(""))
             {
-                int num = int.Parse(ID + "")+1 ;
-                ID = num + "";
+                ID ="";
             }
             else
             {
-                int num = int.Parse(ID + "") -1;
+                int num = int.Parse(ID+"") -1;
                 ID = num + "";
             }
             return ID+"";
@@ -51,6 +50,7 @@ namespace GuestHouse
         }
         public static void UpdateDate(DataTable Datatable)
         {
+            DT=new DataTable();
             DT = Datatable;
             try
             {
