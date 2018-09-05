@@ -116,7 +116,7 @@
             this.btnExit.Margin = new System.Windows.Forms.Padding(5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(118, 44);
-            this.btnExit.TabIndex = 1;
+            this.btnExit.TabIndex = 3;
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -143,7 +143,7 @@
             this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(118, 44);
-            this.btnLogin.TabIndex = 0;
+            this.btnLogin.TabIndex = 2;
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
@@ -187,13 +187,18 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(177, 38);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
+            this.txtPassword.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
             // 
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(152, 14);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(177, 38);
-            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TabIndex = 0;
+            this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
+            this.txtUsername.MouseLeave += new System.EventHandler(this.txtPassword_MouseLeave);
             // 
             // label2
             // 
@@ -230,6 +235,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);

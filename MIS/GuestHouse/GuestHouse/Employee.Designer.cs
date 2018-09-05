@@ -415,7 +415,7 @@
             this.btnSave.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(460, 62);
-            this.btnSave.TabIndex = 4;
+            this.btnSave.TabIndex = 12;
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
@@ -453,7 +453,7 @@
             this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(157, 58);
-            this.btnDelete.TabIndex = 4;
+            this.btnDelete.TabIndex = 11;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -480,7 +480,7 @@
             this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(153, 58);
-            this.btnEdit.TabIndex = 3;
+            this.btnEdit.TabIndex = 10;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
@@ -507,7 +507,7 @@
             this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(151, 58);
-            this.btnAdd.TabIndex = 2;
+            this.btnAdd.TabIndex = 9;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
@@ -541,7 +541,7 @@
             this.CheckActive.Location = new System.Drawing.Point(160, 182);
             this.CheckActive.Name = "CheckActive";
             this.CheckActive.Size = new System.Drawing.Size(15, 14);
-            this.CheckActive.TabIndex = 3;
+            this.CheckActive.TabIndex = 8;
             this.CheckActive.UseVisualStyleBackColor = true;
             // 
             // cbxPosition
@@ -555,7 +555,7 @@
             this.cbxPosition.Location = new System.Drawing.Point(157, 7);
             this.cbxPosition.Name = "cbxPosition";
             this.cbxPosition.Size = new System.Drawing.Size(185, 29);
-            this.cbxPosition.TabIndex = 2;
+            this.cbxPosition.TabIndex = 4;
             // 
             // txtSalary
             // 
@@ -564,7 +564,9 @@
             this.txtSalary.MaxLength = 3;
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(185, 29);
-            this.txtSalary.TabIndex = 1;
+            this.txtSalary.TabIndex = 5;
+            this.txtSalary.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalary_KeyPress);
+            this.txtSalary.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // label28
             // 
@@ -590,7 +592,9 @@
             this.txtUserName.Location = new System.Drawing.Point(157, 96);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(185, 29);
-            this.txtUserName.TabIndex = 1;
+            this.txtUserName.TabIndex = 6;
+            this.txtUserName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
+            this.txtUserName.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // label18
             // 
@@ -607,7 +611,9 @@
             this.txtPassword.Location = new System.Drawing.Point(157, 139);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(185, 29);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 7;
+            this.txtPassword.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword_KeyPress);
+            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // label19
             // 
@@ -978,7 +984,7 @@
             this.txtAddress.Location = new System.Drawing.Point(165, 302);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(284, 62);
-            this.txtAddress.TabIndex = 2;
+            this.txtAddress.TabIndex = 3;
             this.txtAddress.Text = "";
             // 
             // txtPhoneNumber
@@ -987,7 +993,8 @@
             this.txtPhoneNumber.Location = new System.Drawing.Point(165, 267);
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.Size = new System.Drawing.Size(284, 29);
-            this.txtPhoneNumber.TabIndex = 1;
+            this.txtPhoneNumber.TabIndex = 2;
+            this.txtPhoneNumber.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPhoneNumber_KeyPress);
             // 
             // label9
             // 
@@ -1032,6 +1039,7 @@
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(284, 29);
             this.txtLastName.TabIndex = 1;
+            this.txtLastName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstName_KeyPress);
             // 
             // label5
             // 
@@ -1048,7 +1056,8 @@
             this.txtFirstName.Location = new System.Drawing.Point(165, 103);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(284, 29);
-            this.txtFirstName.TabIndex = 1;
+            this.txtFirstName.TabIndex = 0;
+            this.txtFirstName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstName_KeyPress);
             // 
             // label4
             // 
@@ -1256,6 +1265,7 @@
             this.Name = "Employee";
             this.Text = "Employee";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Employee_FormClosing);
             this.Load += new System.EventHandler(this.Employee_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

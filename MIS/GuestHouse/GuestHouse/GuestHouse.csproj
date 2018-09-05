@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="ss\dataCon.cs" />
     <Compile Include="ss\EmpClass.cs" />
+    <Compile Include="ss\RestrictionClass.cs" />
     <Compile Include="ss\UserLoginDetail.cs" />
     <EmbeddedResource Include="Booking.resx">
       <DependentUpon>Booking.cs</DependentUpon>
