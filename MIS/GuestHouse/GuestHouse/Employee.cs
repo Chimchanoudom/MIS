@@ -88,6 +88,11 @@ namespace GuestHouse
                 MessageBox.Show("Username has been taken!\nPlease Kindly choose other name.");
                 return;
             }
+            if (txtPassword.Text.Length < 4)
+            {
+                MessageBox.Show("Password must be at least 4 characters!");
+                return;
+            }
             txtPassword_Leave(txtPassword, null);
             txtPassword_Leave(txtUserName, null);
             txtPassword_Leave(txtSalary, null);
