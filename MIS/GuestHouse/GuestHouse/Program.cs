@@ -17,15 +17,15 @@ namespace GuestHouse
             Application.EnableVisualStyles();
 
             Application.SetCompatibleTextRenderingDefault(false);
-            //  Application.Run(new Employee());
+            // Application.Run(new Employee());
+            if (new Login().ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Form1());
+            }
+            //Application.SetCompatibleTextRenderingDefault(false);
             //if (new Login().ShowDialog() == DialogResult.OK)
             //{
-            //    Application.Run(new Form1());
-            //}
-                //Application.SetCompatibleTextRenderingDefault(false);
-                //if (new Login().ShowDialog() == DialogResult.OK)
-                //{
-                Application.Run(new Customer());
+            Application.Run(new Customer());
 
                 //}
                 //Application.Run(new RoomData());
