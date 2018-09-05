@@ -219,6 +219,7 @@ namespace GuestHouse
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             dataTable.DefaultView.RowFilter = string.Empty;
+            txtSearch.Text = String.Empty;
         }
 
         private void txtEmpId_KeyPress(object sender, KeyPressEventArgs e)

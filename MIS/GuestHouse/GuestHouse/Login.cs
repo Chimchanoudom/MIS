@@ -43,7 +43,6 @@ namespace GuestHouse
             catch (Exception)
             {
                 MessageBox.Show("Unable to Connect to Database!");
-                throw;
             }
             dataCon.Con.Close();
         }

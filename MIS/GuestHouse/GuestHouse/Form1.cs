@@ -30,7 +30,7 @@ namespace GuestHouse
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Restart();
         }
 
         private void btnstay_Click(object sender, EventArgs e)
