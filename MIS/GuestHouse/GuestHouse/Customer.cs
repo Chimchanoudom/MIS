@@ -44,6 +44,21 @@ namespace GuestHouse
             rndMale.Checked = true;
             txtIDnum.Text = "";
             txtTel.Text = "";
+            txtID.Text = ID;
+        }
+        private void SetID()
+        {
+            ID = dom_Design.GenerateID(ID.Substring(6), "Cus_00");
+            txtID.Text = ID;
+        }
+        private void ColumnName()
+        {
+            dataCustomer.Columns[0].Name = "CusID";
+            dataCustomer.Columns[1].Name = "FName";
+            dataCustomer.Columns[2].Name = "LName";
+            dataCustomer.Columns[3].Name = "Gender";
+            dataCustomer.Columns[4].Name = "IDNum";
+            dataCustomer.Columns[5].Name = "Tel";
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -57,8 +72,8 @@ namespace GuestHouse
                 String Tel = txtTel.Text;
                 object[] Data = { ID, FName, Lname, Gender, IDNum, Tel };
                 DT.Rows.Add(Data);
-                ID= dom_Design.GenerateID(ID.Substring(6), "Cus_00");
-                txtID.Text= ID;
+                SetID();
+                dataCustomer.ClearSelection();
                 clear();
             }
             else
@@ -73,6 +88,7 @@ namespace GuestHouse
             string[] columnHeaderName = {"លេខកូដសម្គាល់","នាមត្រកូល","គោត្តនាម-នាមខ្លួន","ភេទ","លេខអត្តសញ្ញាណប័ណ្ណ","លេខទូរស័ព្ទ" };
             DT= Dom_SqlClass.retriveData("Customer", dataCustomer);
             dataCustomer.DataSource = DT;
+            ColumnName();
             dom_Design.GenerateColumHeader(columnHeaderName, dataCustomer.ColumnCount, dataCustomer);
             Dom_SqlClass.GetIDFromDB("cusID", "_", "customer");
             ID=dom_Design.GenerateID(Dom_SqlClass.GetIDFromDB("cusID", "_", "customer"), "Cus_00");
@@ -84,6 +100,7 @@ namespace GuestHouse
         {
             if (dataCustomer.SelectedRows.Count > 0)
             {
+           
                 int i = dataCustomer.SelectedRows[0].Index;
                 txtID.Text= dataCustomer.Rows[i].Cells[0].Value.ToString();
                 txtFname.Text = dataCustomer.Rows[i].Cells[1].Value.ToString();
@@ -102,6 +119,7 @@ namespace GuestHouse
         {
             if (dataCustomer.SelectedRows.Count == 1)
             {
+                
                 int i = dataCustomer.SelectedRows[0].Index;
                 dataCustomer.Rows[i].Cells[0].Value= txtID.Text;
                 dataCustomer.Rows[i].Cells[1].Value = txtFname.Text;
@@ -109,12 +127,18 @@ namespace GuestHouse
                 dataCustomer.Rows[i].Cells[3].Value = rndMale.Checked == true ? "ប្រុស" : "ស្រី";
                 dataCustomer.Rows[i].Cells[4].Value = txtIDnum.Text;
                 dataCustomer.Rows[i].Cells[5].Value = txtTel.Text;
+                
+               
             }
             else
             {
                 MessageBox.Show("Please ! Select Any Rows in List");
             }
+            //ID = dom_Design.GenerateID(ID.Substring(6), "Cus_00");
+            //txtID.Text = ID;
+            
             dataCustomer.ClearSelection();
+            clear();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -128,12 +152,31 @@ namespace GuestHouse
                     dataCustomer.Rows.RemoveAt(i);
                 }
             }
+            //ID = dom_Design.GenerateID(ID.Substring(6), "Cus_00");
+            //txtID.Text = ID;
+            SetID();
             dataCustomer.ClearSelection();
+            clear();
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             Dom_SqlClass.UpdateDate(DT);
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text != "")
+            {
+                string filter = (rndSearchFname.Checked ? "FName='" + txtSearch.Text + "'" : rndSearchLname.Checked ? "LName='" + txtSearch.Text + "'" : rndSearchID.Checked ? "CusID='" + txtSearch.Text + "'" : rndSearchIDNum.Checked ? "IDNum='" + txtSearch.Text + "'" : rndSearchTelephone.Checked ? "Tel='" + txtSearch.Text + "'" : "");
+                DT.DefaultView.RowFilter = filter;
+                dataCustomer.ClearSelection();
+            }
+            else
+            {
+                MessageBox.Show("Please Enter any text to search!");
+            }
+        }
     }
+    
 }

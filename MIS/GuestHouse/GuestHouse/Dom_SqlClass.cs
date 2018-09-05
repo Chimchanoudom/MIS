@@ -41,7 +41,13 @@ namespace GuestHouse
                 int num = int.Parse(ID + "")+1 ;
                 ID = num + "";
             }
+            else
+            {
+                int num = int.Parse(ID + "") -1;
+                ID = num + "";
+            }
             return ID+"";
+           
         }
         public static void UpdateDate(DataTable Datatable)
         {
