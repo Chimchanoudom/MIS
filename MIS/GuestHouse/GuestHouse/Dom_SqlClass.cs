@@ -38,17 +38,17 @@ namespace GuestHouse
             }
             if (ID==null)
             {
-                int num = int.Parse(ID + "") + 1;
+                int num = int.Parse(ID + "")+1 ;
                 ID = num + "";
             }
-            MessageBox.Show(ID+"");
             return ID+"";
         }
         public static void UpdateDate(DataTable Datatable)
         {
+            DT = Datatable;
             try
             {
-                SDA.Update(Datatable);
+                SDA.Update(DT);
                 MessageBox.Show("Update SuccessFully !");
             }
             catch (Exception e)
