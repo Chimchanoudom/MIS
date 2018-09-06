@@ -69,7 +69,7 @@ namespace GuestHouse
 
         public static class exActionQuery
         {
-            public static void addDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues)
+            public static void insertDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues)
             {
                 string cmdInsert = "INSERT INTO " + TableName + " ";
                 string columns = "(";
@@ -79,7 +79,7 @@ namespace GuestHouse
                 foreach (string columnName in columnNameAndDataValues.Keys)
                 {
                     columns += columnName + ",";
-                    values += "'"+columnNameAndDataValues[columnName] + "',";
+                    values += "N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
                     countIndexOfDic++;
                 }
                 columns = columns.Substring(0, columns.Length - 1) + ")";
@@ -99,7 +99,7 @@ namespace GuestHouse
                 int countIndexOfDic = 0;
                 foreach (string columnName in columnNameAndDataValues.Keys)
                 {
-                    Operation += columnName + "='"+columnNameAndDataValues[columnName] + "',";
+                    Operation += columnName + "=N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
                     countIndexOfDic++;
                 }
                 Operation = Operation.Substring(0, Operation.Length - 1) + " ";
