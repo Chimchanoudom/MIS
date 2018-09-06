@@ -28,11 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expens));
             this.dataExpens = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtID = new System.Windows.Forms.TextBox();
@@ -47,6 +53,9 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txtNamePay = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.datePay = new System.Windows.Forms.DateTimePicker();
             this.dateNote = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -61,18 +70,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txtNamePay = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ghDataSet = new GuestHouse.ghDataSet();
-            this.expenseTypeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.expenseTypeTableAdapter = new GuestHouse.ghDataSetTableAdapters.ExpenseTypeTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataExpens)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -81,18 +78,24 @@
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ghDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expenseTypeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataExpens
             // 
             this.dataExpens.AllowUserToAddRows = false;
             this.dataExpens.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.dataExpens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.dataExpens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.dataExpens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataExpens.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataExpens.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataExpens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataExpens.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -101,21 +104,61 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataExpens.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataExpens.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataExpens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataExpens.GridColor = System.Drawing.Color.Teal;
             this.dataExpens.Location = new System.Drawing.Point(3, 36);
             this.dataExpens.Name = "dataExpens";
             this.dataExpens.ReadOnly = true;
+            this.dataExpens.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataExpens.Size = new System.Drawing.Size(872, 345);
             this.dataExpens.TabIndex = 0;
+            this.dataExpens.SelectionChanged += new System.EventHandler(this.dataExpens_SelectionChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "លេខកូដសម្គាល់";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "ថ្ងៃកត់ត្រា";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.Column3.HeaderText = "ឈ្មោះប្រភេទចំណាយ";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            this.Column3.Width = 179;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "ឈ្មោះចំណាយ";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "ថ្ងៃចំណាយ";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "តម្លៃចំណាយ";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
             // 
             // groupBox4
             // 
@@ -141,6 +184,7 @@
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtID.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.txtID.Location = new System.Drawing.Point(192, 11);
             this.txtID.Name = "txtID";
             this.txtID.ShortcutsEnabled = false;
@@ -191,6 +235,7 @@
             this.btnDelete.Size = new System.Drawing.Size(110, 39);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -217,6 +262,7 @@
             this.btnEdit.Size = new System.Drawing.Size(110, 39);
             this.btnEdit.TabIndex = 3;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // label25
             // 
@@ -252,6 +298,7 @@
             this.btnAdd.Size = new System.Drawing.Size(110, 39);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel6
             // 
@@ -323,6 +370,32 @@
             this.panel5.Size = new System.Drawing.Size(530, 251);
             this.panel5.TabIndex = 4;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(169, 125);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(20, 32);
+            this.label9.TabIndex = 7;
+            this.label9.Text = ":";
+            // 
+            // txtNamePay
+            // 
+            this.txtNamePay.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNamePay.Location = new System.Drawing.Point(192, 125);
+            this.txtNamePay.Name = "txtNamePay";
+            this.txtNamePay.Size = new System.Drawing.Size(293, 29);
+            this.txtNamePay.TabIndex = 6;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(11, 126);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(107, 32);
+            this.label10.TabIndex = 5;
+            this.label10.Text = "ឈ្មោះចំណាយ";
+            // 
             // datePay
             // 
             this.datePay.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -350,15 +423,14 @@
             // 
             // CMexpensType
             // 
-            this.CMexpensType.DataSource = this.expenseTypeBindingSource;
-            this.CMexpensType.DisplayMember = "ExpDesc";
+            this.CMexpensType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CMexpensType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.CMexpensType.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CMexpensType.FormattingEnabled = true;
             this.CMexpensType.Location = new System.Drawing.Point(192, 86);
             this.CMexpensType.Name = "CMexpensType";
             this.CMexpensType.Size = new System.Drawing.Size(293, 29);
             this.CMexpensType.TabIndex = 3;
-            this.CMexpensType.ValueMember = "ExpTypeID";
             // 
             // label4
             // 
@@ -476,84 +548,6 @@
             this.panel1.Size = new System.Drawing.Size(880, 40);
             this.panel1.TabIndex = 9;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(169, 125);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 32);
-            this.label9.TabIndex = 7;
-            this.label9.Text = ":";
-            // 
-            // txtNamePay
-            // 
-            this.txtNamePay.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNamePay.Location = new System.Drawing.Point(192, 125);
-            this.txtNamePay.Name = "txtNamePay";
-            this.txtNamePay.Size = new System.Drawing.Size(293, 29);
-            this.txtNamePay.TabIndex = 6;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(11, 126);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 32);
-            this.label10.TabIndex = 5;
-            this.label10.Text = "ឈ្មោះចំណាយ";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "លេខកូដសម្គាល់";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "ថ្ងៃកត់ត្រា";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.Column3.HeaderText = "ឈ្មោះប្រភេទចំណាយ";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            this.Column3.Width = 179;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "ឈ្មោះចំណាយ";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "ថ្ងៃចំណាយ";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "តម្លៃចំណាយ";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // ghDataSet
-            // 
-            this.ghDataSet.DataSetName = "ghDataSet";
-            this.ghDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // expenseTypeBindingSource
-            // 
-            this.expenseTypeBindingSource.DataMember = "ExpenseType";
-            this.expenseTypeBindingSource.DataSource = this.ghDataSet;
-            // 
-            // expenseTypeTableAdapter
-            // 
-            this.expenseTypeTableAdapter.ClearBeforeFill = true;
-            // 
             // Expens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -578,8 +572,6 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ghDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expenseTypeBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -623,8 +615,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNamePay;
         private System.Windows.Forms.Label label10;
-        private ghDataSet ghDataSet;
-        private System.Windows.Forms.BindingSource expenseTypeBindingSource;
-        private ghDataSetTableAdapters.ExpenseTypeTableAdapter expenseTypeTableAdapter;
     }
 }

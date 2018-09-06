@@ -15,6 +15,7 @@ class Dom_SqlClass:UserLoginDetail
       static  SqlCommand SC = new SqlCommand();
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
+        static SqlDataReader SDR;
         static DataTable DT;
 
         public static string GetIDFromDB(String column,string seperater,String TableName)
@@ -92,7 +93,7 @@ class Dom_SqlClass:UserLoginDetail
             }
             return DT;
         }
-        public static Boolean InsertData(String TableName,String[]DBcolumn,String[]Value)
+        public static Boolean InsertData(String TableName,object[]Value)
         {
             bool insert = false;
             try
@@ -105,10 +106,36 @@ class Dom_SqlClass:UserLoginDetail
                 }
                 Values = Values.Substring(0, Values.Length - 1) + ");";
                 string sqlCmd = commandInsert+ Values;
-
                 dataCon.Con.Open();
-                SC.CommandText = "";
+                SC = new SqlCommand(sqlCmd, dataCon.Con);
+                SC.ExecuteNonQuery();
+                MessageBox.Show("HI");
                 insert = true;
+                commandInsert = Values = null;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            return insert;
+        }
+        public static void  FillItemToCombobox(String StatemenSelect ,String Valuemember,String DisplayMember,ComboBox cm)
+        {
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand(StatemenSelect, dataCon.Con);
+                SqlDataReader SDR = SC.ExecuteReader();
+                while (SDR.Read())
+                {
+                    cm.Items.Add(SDR[DisplayMember].ToString());
+                    cm.ValueMember = SDR[Valuemember].ToString();
+                    cm.DisplayMember = SDR[DisplayMember].ToString();
+                }
             }
             catch (Exception)
             {
@@ -117,15 +144,42 @@ class Dom_SqlClass:UserLoginDetail
             {
                 dataCon.Con.Close();
             }
-            return insert;
         }
-        public static void Delete()
+        public static Boolean Edit(object Edit)
         {
-
+            bool edit = false;
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand(Edit.ToString(), dataCon.Con);
+                SC.ExecuteNonQuery();
+                MessageBox.Show("Update Successfully");
+                edit = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            return edit;
         }
-        public static void Search()
+        public static Boolean Delete(object Delete)
         {
-
+            bool delete = false;
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand(Delete.ToString(), dataCon.Con);
+                SC.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return delete;
         }
     }
 }
