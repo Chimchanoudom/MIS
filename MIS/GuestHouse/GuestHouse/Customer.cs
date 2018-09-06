@@ -87,7 +87,7 @@ namespace GuestHouse
         private void Customer_Load(object sender, EventArgs e)
         {
             string[] columnHeaderName = {"លេខកូដសម្គាល់","នាមត្រកូល","គោត្តនាម-នាមខ្លួន","ភេទ","លេខអត្តសញ្ញាណប័ណ្ណ","លេខទូរស័ព្ទ" };
-            DT= Dom_SqlClass.retriveData("Customer", dataCustomer);
+            DT= Dom_SqlClass.retriveData("Customer","Where 1=1",new string[] { "*"});
             dataCustomer.DataSource = DT;
             String[] Name = { "CusID", "FName", "LName", "Gender", "IDNum", "Tel" };
             dom_Design.ColumnName(dataCustomer, 6, Name);

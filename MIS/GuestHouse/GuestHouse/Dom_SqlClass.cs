@@ -9,7 +9,7 @@ using System.Data;
 
 namespace GuestHouse
 {
-    class Dom_SqlClass:UserLoginDetail
+class Dom_SqlClass:UserLoginDetail
     {
     
       static  SqlCommand SC = new SqlCommand();
@@ -62,13 +62,20 @@ namespace GuestHouse
                 MessageBox.Show("Update Fails !" + e.Message);
             }
         }
-        public static DataTable retriveData(String TableName,DataGridView Data)
+        public static DataTable retriveData(String TableName,String Condition,String[]ColumnName)
         {
              DT = new DataTable();
             try
             {
+                String Select = "SELECT ";
+                for (int i = 0; i < ColumnName.Length; i++)
+                {
+                    Select += ColumnName[i] + ",";
+                }
+                Select = Select.TrimEnd(',') + " From ";
+                MessageBox.Show(Select);
                 dataCon.Con.Open();
-                SC = new SqlCommand("Select * from "+TableName+";", dataCon.Con);
+                SC = new SqlCommand(Select+TableName+" "+Condition+" ;", dataCon.Con);
                 SDA = new SqlDataAdapter(SC);
                 SCB = new SqlCommandBuilder(SDA);
                 SDA.Fill(DT);
@@ -76,7 +83,7 @@ namespace GuestHouse
             }
             catch (Exception e )
             {
-                if (Data.RowCount <= 0)
+                if (DT.Rows.Count <= 0)
                     MessageBox.Show("NO Data "+ e.Message);
             }
             finally
@@ -85,9 +92,32 @@ namespace GuestHouse
             }
             return DT;
         }
-        public static void Edite()
+        public static Boolean InsertData(String TableName,String[]DBcolumn,String[]Value)
         {
+            bool insert = false;
+            try
+            {
+                String commandInsert = @"INSERT INTO "+TableName+" ";
+                String Values = " Values(";
+                for (int i = 0; i < Value.Length; i++)
+                {
+                    Values += "N'" + Value[i] + "'COLLATE Latin1_General_100_CI_AI,";
+                }
+                Values = Values.Substring(0, Values.Length - 1) + ");";
+                string sqlCmd = commandInsert+ Values;
 
+                dataCon.Con.Open();
+                SC.CommandText = "";
+                insert = true;
+            }
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            return insert;
         }
         public static void Delete()
         {
