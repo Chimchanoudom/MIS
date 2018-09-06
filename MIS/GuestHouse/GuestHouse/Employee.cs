@@ -67,6 +67,10 @@ namespace GuestHouse
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            Dictionary<string, string> a = new Dictionary<string, string>();
+            a.Add("EmpID", "005");
+            a.Add("FName", "Test");
+            dataCon.exActionQuery.updateDataToDB("Employee",a,"");
             if (txtFirstName.Text == "" || txtLastName.Text == "" || txtUserName.Text == "" || txtPassword.Text == "" || txtSalary.Text == ""||cbxPosition.SelectedIndex<0)
             {
                 MessageBox.Show("Fill-in All Information required!");
@@ -124,6 +128,11 @@ namespace GuestHouse
                 if (EmpClass.isDuplicatedUserName(dataEmployee, txtUserName.Text,txtEmpId.Text))
                 {
                     MessageBox.Show("Username has been taken!\nPlease Kindly choose other name.");
+                    return;
+                }
+                if (txtPassword.Text.Length < 4)
+                {
+                    MessageBox.Show("Password must be at least 4 characters!");
                     return;
                 }
                 txtPassword_Leave(txtPassword, null);

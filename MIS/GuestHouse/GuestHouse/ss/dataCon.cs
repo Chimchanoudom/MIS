@@ -67,6 +67,62 @@ namespace GuestHouse
             }
         }
 
+        public static class exActionQuery
+        {
+            public static void addDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues)
+            {
+                string cmdInsert = "INSERT INTO " + TableName + " ";
+                string columns = "(";
+                string values = " VALUES (";
 
+                int countIndexOfDic = 0;
+                foreach (string columnName in columnNameAndDataValues.Keys)
+                {
+                    columns += columnName + ",";
+                    values += "'"+columnNameAndDataValues[columnName] + "',";
+                    countIndexOfDic++;
+                }
+                columns = columns.Substring(0, columns.Length - 1) + ")";
+                values = values.Substring(0, values.Length - 1) + ")";
+
+                string sqlCmd =cmdInsert+ columns + values + ";";
+                //MessageBox.Show(sqlCmd);
+                bool error = false;
+                dataCon.ExecuteActionQry(sqlCmd, ref error);
+            }
+
+            public static void updateDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues,string condition="")
+            {
+                string cmdUpdate = "update " + TableName + " SET ";
+                string Operation = "";
+
+                int countIndexOfDic = 0;
+                foreach (string columnName in columnNameAndDataValues.Keys)
+                {
+                    Operation += columnName + "='"+columnNameAndDataValues[columnName] + "',";
+                    countIndexOfDic++;
+                }
+                Operation = Operation.Substring(0, Operation.Length - 1) + " ";
+                condition = (condition == String.Empty) ? ";" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";
+
+                string sqlCmd = cmdUpdate + Operation + condition;
+                //MessageBox.Show(sqlCmd);
+                bool error = false;
+                dataCon.ExecuteActionQry(sqlCmd, ref error);
+            }
+
+            public static void deleteDataFromDB(string TableName,string condition="")
+            {
+                string cmdDelete = "DELETE FROM " + TableName + " ";
+
+                condition = (condition == String.Empty) ? "WHERE 1=1;" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";
+
+                string sqlCmd = cmdDelete+ condition;
+                //MessageBox.Show(sqlCmd);
+                bool error = false;
+                dataCon.ExecuteActionQry(sqlCmd, ref error);
+            }
+        }
     }
+
 }
