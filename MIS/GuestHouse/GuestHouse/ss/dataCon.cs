@@ -71,22 +71,37 @@ namespace GuestHouse
         {
             public static void insertDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues)
             {
+                ///Example: INSERT INTO Employee (ColumnName) VALUES (dataToInsert);
                 string cmdInsert = "INSERT INTO " + TableName + " ";
                 string columns = "(";
                 string values = " VALUES (";
-
-                int countIndexOfDic = 0;
+          
                 foreach (string columnName in columnNameAndDataValues.Keys)
                 {
                     columns += columnName + ",";
                     values += "N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
-                    countIndexOfDic++;
                 }
                 columns = columns.Substring(0, columns.Length - 1) + ")";
                 values = values.Substring(0, values.Length - 1) + ")";
 
                 string sqlCmd =cmdInsert+ columns + values + ";";
                 //MessageBox.Show(sqlCmd);
+                bool error = false;
+                dataCon.ExecuteActionQry(sqlCmd, ref error); 
+            }
+
+            public static void insertDataToDB(string TableName, string[] dataToInsert)
+            {
+                ///Example: INSERT INTO Employee VALUES (dataToInsert);
+                string cmdInsert = "INSERT INTO " + TableName + " ";
+                string values = " VALUES (";
+
+                for(int i = 0; i < dataToInsert.Length; i++)
+                {
+                    values+= "N'"+dataToInsert[i]+ "'COLLATE Latin1_General_100_CI_AI,"; 
+                }
+                values = values.Substring(0, values.Length - 1) + ");";
+                string sqlCmd = cmdInsert + values;
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
             }
@@ -96,11 +111,9 @@ namespace GuestHouse
                 string cmdUpdate = "update " + TableName + " SET ";
                 string Operation = "";
 
-                int countIndexOfDic = 0;
                 foreach (string columnName in columnNameAndDataValues.Keys)
                 {
                     Operation += columnName + "=N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
-                    countIndexOfDic++;
                 }
                 Operation = Operation.Substring(0, Operation.Length - 1) + " ";
                 condition = (condition == String.Empty) ? ";" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";

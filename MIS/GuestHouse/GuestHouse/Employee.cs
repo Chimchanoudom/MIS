@@ -67,10 +67,10 @@ namespace GuestHouse
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            Dictionary<string, string> a = new Dictionary<string, string>();
-            a.Add("EmpID", "005");
-            a.Add("FName", "Test");
-            dataCon.exActionQuery.updateDataToDB("Employee",a,"");
+            //Dictionary<string, string> a = new Dictionary<string, string>();
+            //a.Add("EmpID", "005");
+            //a.Add("FName", "Test");
+            //dataCon.exActionQuery.insertDataToDB()
             if (txtFirstName.Text == "" || txtLastName.Text == "" || txtUserName.Text == "" || txtPassword.Text == "" || txtSalary.Text == ""||cbxPosition.SelectedIndex<0)
             {
                 MessageBox.Show("Fill-in All Information required!");
