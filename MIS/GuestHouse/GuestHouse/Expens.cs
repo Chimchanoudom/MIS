@@ -164,5 +164,35 @@ namespace GuestHouse
                 MessageBox.Show("Please ! Select Any Rows in List");
             }
         }
+
+        private void rndSearchFname_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rndSearchDateNote.Checked)
+            {
+                DateSearch.Visible = true;
+                txtSearch.Visible = false;
+            }
+        }
+
+        private void rndSearchAll_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rndSearchID.Checked || rndSearchAll.Checked)
+            {
+                DateSearch.Visible = false;
+                txtSearch.Visible = true;
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (rndSearchAll.Checked)
+            {
+
+            }
+            else
+            {
+
+            }
+        }
     }
 }

@@ -136,6 +136,7 @@ class Dom_SqlClass:UserLoginDetail
                     cm.ValueMember = SDR[Valuemember].ToString();
                     cm.DisplayMember = SDR[DisplayMember].ToString();
                 }
+                SDR.Close();
             }
             catch (Exception)
             {
@@ -180,6 +181,33 @@ class Dom_SqlClass:UserLoginDetail
                 MessageBox.Show(e.Message);
             }
             return delete;
+        }
+        public static void retriveData(String TableName, String Condition, String[] ColumnName, DataGridView Data)
+        {
+            try
+            {
+                String SelectStatement = "SELECT ";
+                for (int i = 0; i < ColumnName.Length; i++)
+                {
+                    SelectStatement += ColumnName[i] + ",";
+                }
+                SelectStatement = SelectStatement.TrimEnd(',') + " From ";
+                dataCon.Con.Open();
+                SC = new SqlCommand(SelectStatement.ToString(), dataCon.Con);
+                SDR = SC.ExecuteReader();
+                while(SDR.Read())
+                {
+                    Data.Rows.Add(SDR["ExpID"], SDR["ExpID"], SDR["ExpID"], SDR["ExpID"], SDR["ExpID"], SDR["ExpID"]);
+                }
+            }
+            catch (Exception)
+            {
+
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
         }
     }
 }
