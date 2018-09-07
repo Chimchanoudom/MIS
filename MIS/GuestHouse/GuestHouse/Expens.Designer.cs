@@ -28,9 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expens));
             this.dataExpens = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +68,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.rndSearchTelephone = new System.Windows.Forms.RadioButton();
+            this.rndSearchFname = new System.Windows.Forms.RadioButton();
+            this.rndSearchID = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataExpens)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -78,24 +85,19 @@
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataExpens
             // 
             this.dataExpens.AllowUserToAddRows = false;
             this.dataExpens.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.dataExpens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.dataExpens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataExpens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataExpens.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataExpens.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataExpens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataExpens.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -104,21 +106,13 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataExpens.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataExpens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataExpens.GridColor = System.Drawing.Color.Teal;
             this.dataExpens.Location = new System.Drawing.Point(3, 36);
             this.dataExpens.Name = "dataExpens";
             this.dataExpens.ReadOnly = true;
             this.dataExpens.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataExpens.Size = new System.Drawing.Size(872, 345);
+            this.dataExpens.Size = new System.Drawing.Size(928, 345);
             this.dataExpens.TabIndex = 0;
             this.dataExpens.SelectionChanged += new System.EventHandler(this.dataExpens_SelectionChanged);
             // 
@@ -167,7 +161,7 @@
             this.groupBox4.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(878, 384);
+            this.groupBox4.Size = new System.Drawing.Size(934, 384);
             this.groupBox4.TabIndex = 1;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = " បញ្ជីចំណាយ";
@@ -318,18 +312,19 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 374);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(880, 386);
+            this.panel4.Size = new System.Drawing.Size(936, 386);
             this.panel4.TabIndex = 12;
             // 
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(0, 40);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(880, 334);
+            this.panel3.Size = new System.Drawing.Size(936, 334);
             this.panel3.TabIndex = 11;
             // 
             // groupBox1
@@ -493,7 +488,7 @@
             this.panel2.Location = new System.Drawing.Point(0, 760);
             this.panel2.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(880, 40);
+            this.panel2.Size = new System.Drawing.Size(936, 40);
             this.panel2.TabIndex = 10;
             // 
             // label1
@@ -501,7 +496,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(709, 0);
+            this.label1.Location = new System.Drawing.Point(765, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 40);
@@ -545,14 +540,142 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(880, 40);
+            this.panel1.Size = new System.Drawing.Size(936, 40);
             this.panel1.TabIndex = 9;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.panel7);
+            this.groupBox2.Controls.Add(this.groupBox7);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox2.Location = new System.Drawing.Point(536, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(387, 332);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "ស្វែងរក";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnCancel);
+            this.panel7.Controls.Add(this.btnSearch);
+            this.panel7.Controls.Add(this.txtSearch);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(3, 154);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(381, 31);
+            this.panel7.TabIndex = 3;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ActiveBorderThickness = 1;
+            this.btnCancel.ActiveCornerRadius = 20;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.ButtonText = "បោះបង់";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCancel.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleCornerRadius = 20;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+            this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+            this.btnCancel.Location = new System.Drawing.Point(296, 0);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(79, 31);
+            this.btnCancel.TabIndex = 17;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ActiveBorderThickness = 1;
+            this.btnSearch.ActiveCornerRadius = 20;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.Purple;
+            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.Purple;
+            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.ButtonText = " ស្វែងរក";
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSearch.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.IdleBorderThickness = 1;
+            this.btnSearch.IdleCornerRadius = 20;
+            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+            this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
+            this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
+            this.btnSearch.Location = new System.Drawing.Point(217, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(79, 31);
+            this.btnSearch.TabIndex = 16;
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(0, 0);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(217, 29);
+            this.txtSearch.TabIndex = 15;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.rndSearchTelephone);
+            this.groupBox7.Controls.Add(this.rndSearchFname);
+            this.groupBox7.Controls.Add(this.rndSearchID);
+            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox7.Location = new System.Drawing.Point(3, 36);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(381, 118);
+            this.groupBox7.TabIndex = 2;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "លក្ខខណ្ឌ";
+            // 
+            // rndSearchTelephone
+            // 
+            this.rndSearchTelephone.AutoSize = true;
+            this.rndSearchTelephone.Location = new System.Drawing.Point(11, 39);
+            this.rndSearchTelephone.Name = "rndSearchTelephone";
+            this.rndSearchTelephone.Size = new System.Drawing.Size(89, 36);
+            this.rndSearchTelephone.TabIndex = 13;
+            this.rndSearchTelephone.Text = "ទាំងអស់";
+            this.rndSearchTelephone.UseVisualStyleBackColor = true;
+            // 
+            // rndSearchFname
+            // 
+            this.rndSearchFname.AutoSize = true;
+            this.rndSearchFname.Location = new System.Drawing.Point(264, 36);
+            this.rndSearchFname.Name = "rndSearchFname";
+            this.rndSearchFname.Size = new System.Drawing.Size(14, 13);
+            this.rndSearchFname.TabIndex = 11;
+            this.rndSearchFname.UseVisualStyleBackColor = true;
+            // 
+            // rndSearchID
+            // 
+            this.rndSearchID.AutoSize = true;
+            this.rndSearchID.Checked = true;
+            this.rndSearchID.Location = new System.Drawing.Point(113, 36);
+            this.rndSearchID.Name = "rndSearchID";
+            this.rndSearchID.Size = new System.Drawing.Size(137, 36);
+            this.rndSearchID.TabIndex = 10;
+            this.rndSearchID.TabStop = true;
+            this.rndSearchID.Text = "លេខកូដសម្គាល់";
+            this.rndSearchID.UseVisualStyleBackColor = true;
             // 
             // Expens
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(880, 800);
+            this.ClientSize = new System.Drawing.Size(936, 800);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
@@ -572,6 +695,11 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -615,5 +743,14 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtNamePay;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Panel panel7;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.RadioButton rndSearchTelephone;
+        private System.Windows.Forms.RadioButton rndSearchFname;
+        private System.Windows.Forms.RadioButton rndSearchID;
     }
 }
