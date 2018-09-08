@@ -31,10 +31,10 @@ namespace GuestHouse
             //Application.Run(new RoomPrice());
             //Application.Run(new CheckRoom());
             //Application.Run(new expensType());
-            Application.Run(new Expens());
+            //Application.Run(new Expens());
             //Application.Run(new Form1());
             //Application.Run(new Customer());
-            //Application.Run(new ExpensAndIncome());
+            Application.Run(new ExpensAndIncome());
 
         }
     }

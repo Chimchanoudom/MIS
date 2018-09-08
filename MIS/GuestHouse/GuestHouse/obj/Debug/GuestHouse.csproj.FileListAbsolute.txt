@@ -8,7 +8,6 @@ D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.CheckRoom.resources
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Customer.resources
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Employee.resources
-D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Expens.resources
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.ExpensAndIncome.resources
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.expensType.resources
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Form1.resources

@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ExpensAndIncome));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -41,8 +41,8 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.dateEnd = new System.Windows.Forms.DateTimePicker();
-            this.dateStart = new System.Windows.Forms.DateTimePicker();
+            this.DTdateEnd = new System.Windows.Forms.DateTimePicker();
+            this.DTdateStart = new System.Windows.Forms.DateTimePicker();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -53,7 +53,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblTotalProfit = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -62,13 +62,13 @@
             this.pnList = new System.Windows.Forms.Panel();
             this.GroupIncome = new System.Windows.Forms.GroupBox();
             this.dataProfit = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GroupExpens = new System.Windows.Forms.GroupBox();
-            this.dataExpens = new System.Windows.Forms.DataGridView();
+            this.dataExpense = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel6.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -80,7 +80,7 @@
             this.GroupIncome.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataProfit)).BeginInit();
             this.GroupExpens.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataExpens)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataExpense)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -144,6 +144,7 @@
             this.btngenerate.Size = new System.Drawing.Size(144, 39);
             this.btngenerate.TabIndex = 2;
             this.btngenerate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btngenerate.Click += new System.EventHandler(this.btngenerate_Click);
             // 
             // panel6
             // 
@@ -168,8 +169,8 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.dateEnd);
-            this.panel5.Controls.Add(this.dateStart);
+            this.panel5.Controls.Add(this.DTdateEnd);
+            this.panel5.Controls.Add(this.DTdateStart);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label25);
             this.panel5.Controls.Add(this.label24);
@@ -180,21 +181,21 @@
             this.panel5.Size = new System.Drawing.Size(433, 98);
             this.panel5.TabIndex = 4;
             // 
-            // dateEnd
+            // DTdateEnd
             // 
-            this.dateEnd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateEnd.Location = new System.Drawing.Point(104, 53);
-            this.dateEnd.Name = "dateEnd";
-            this.dateEnd.Size = new System.Drawing.Size(295, 29);
-            this.dateEnd.TabIndex = 3;
+            this.DTdateEnd.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTdateEnd.Location = new System.Drawing.Point(104, 53);
+            this.DTdateEnd.Name = "DTdateEnd";
+            this.DTdateEnd.Size = new System.Drawing.Size(295, 29);
+            this.DTdateEnd.TabIndex = 3;
             // 
-            // dateStart
+            // DTdateStart
             // 
-            this.dateStart.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateStart.Location = new System.Drawing.Point(104, 11);
-            this.dateStart.Name = "dateStart";
-            this.dateStart.Size = new System.Drawing.Size(295, 29);
-            this.dateStart.TabIndex = 3;
+            this.DTdateStart.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DTdateStart.Location = new System.Drawing.Point(104, 11);
+            this.DTdateStart.Name = "DTdateStart";
+            this.DTdateStart.Size = new System.Drawing.Size(295, 29);
+            this.DTdateStart.TabIndex = 3;
             // 
             // panel3
             // 
@@ -228,7 +229,7 @@
             this.panel7.Controls.Add(this.label8);
             this.panel7.Controls.Add(this.label4);
             this.panel7.Controls.Add(this.label5);
-            this.panel7.Controls.Add(this.label7);
+            this.panel7.Controls.Add(this.lblTotalProfit);
             this.panel7.Controls.Add(this.label6);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 36);
@@ -296,14 +297,14 @@
             this.label5.TabIndex = 1;
             this.label5.Text = ":";
             // 
-            // label7
+            // lblTotalProfit
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 93);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(137, 32);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "សរុបប្រាក់ចំណេញ";
+            this.lblTotalProfit.AutoSize = true;
+            this.lblTotalProfit.Location = new System.Drawing.Point(11, 93);
+            this.lblTotalProfit.Name = "lblTotalProfit";
+            this.lblTotalProfit.Size = new System.Drawing.Size(137, 32);
+            this.lblTotalProfit.TabIndex = 0;
+            this.lblTotalProfit.Text = "សរុបប្រាក់ចំណេញ";
             // 
             // label6
             // 
@@ -419,24 +420,9 @@
             this.dataProfit.Size = new System.Drawing.Size(486, 496);
             this.dataProfit.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridViewTextBoxColumn1.FillWeight = 60F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "ថ្ងៃចំណាយ";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "តម្លៃចំណូល";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            // 
             // GroupExpens
             // 
-            this.GroupExpens.Controls.Add(this.dataExpens);
+            this.GroupExpens.Controls.Add(this.dataExpense);
             this.GroupExpens.Dock = System.Windows.Forms.DockStyle.Left;
             this.GroupExpens.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GroupExpens.Location = new System.Drawing.Point(0, 0);
@@ -446,26 +432,26 @@
             this.GroupExpens.TabStop = false;
             this.GroupExpens.Text = " បញ្ជីចំណាយ";
             // 
-            // dataExpens
+            // dataExpense
             // 
-            this.dataExpens.AllowUserToAddRows = false;
-            this.dataExpens.AllowUserToDeleteRows = false;
+            this.dataExpense.AllowUserToAddRows = false;
+            this.dataExpense.AllowUserToDeleteRows = false;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataExpens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataExpens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataExpens.BackgroundColor = System.Drawing.Color.White;
-            this.dataExpens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataExpens.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataExpense.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataExpense.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataExpense.BackgroundColor = System.Drawing.Color.White;
+            this.dataExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataExpense.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dataExpens.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataExpens.GridColor = System.Drawing.Color.Teal;
-            this.dataExpens.Location = new System.Drawing.Point(3, 36);
-            this.dataExpens.Name = "dataExpens";
-            this.dataExpens.ReadOnly = true;
-            this.dataExpens.Size = new System.Drawing.Size(486, 496);
-            this.dataExpens.TabIndex = 0;
+            this.dataExpense.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataExpense.GridColor = System.Drawing.Color.Teal;
+            this.dataExpense.Location = new System.Drawing.Point(3, 36);
+            this.dataExpense.Name = "dataExpense";
+            this.dataExpense.ReadOnly = true;
+            this.dataExpense.Size = new System.Drawing.Size(486, 496);
+            this.dataExpense.TabIndex = 0;
             // 
             // Column1
             // 
@@ -487,6 +473,21 @@
             this.Column3.HeaderText = "តម្លៃចំណាយ";
             this.Column3.Name = "Column3";
             this.Column3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewTextBoxColumn1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn1.FillWeight = 60F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "កាលបរិច្ឆេទ";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "តម្លៃចំណូល";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
             // 
             // ExpensAndIncome
             // 
@@ -516,7 +517,7 @@
             this.GroupIncome.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataProfit)).EndInit();
             this.GroupExpens.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataExpens)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataExpense)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -535,18 +536,16 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnback;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateEnd;
-        private System.Windows.Forms.DateTimePicker dateStart;
+        private System.Windows.Forms.DateTimePicker DTdateEnd;
+        private System.Windows.Forms.DateTimePicker DTdateStart;
         private System.Windows.Forms.Panel pnList;
         private System.Windows.Forms.GroupBox GroupExpens;
-        private System.Windows.Forms.DataGridView dataExpens;
+        private System.Windows.Forms.DataGridView dataExpense;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.GroupBox GroupIncome;
         private System.Windows.Forms.DataGridView dataProfit;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.TextBox txttotalProfit;
@@ -556,7 +555,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblTotalProfit;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
     }
 }
