@@ -30,6 +30,8 @@ namespace GuestHouse
             return dataReader;
         }
 
+        
+
         public static DateTime ConvertStringToDateTime(string st)
         {
             int day = int.Parse(st.Substring(0, 2));
@@ -113,6 +115,17 @@ namespace GuestHouse
                 string cmdUpdate = "update " + TableName + " SET ";
                 string Operation = "";
 
+<<<<<<< HEAD
+        public static void CollateData(ref List<string> data)
+        {
+            List<string> temp = new List<string>();
+            foreach (string st in data)
+            {
+                temp.Add("N'" + st + "' COLLATE Latin1_General_100_CI_AI");
+            }
+
+            data = temp;
+=======
                 foreach (string columnName in columnNameAndDataValues.Keys)
                 {
                     Operation += columnName + "=N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
@@ -139,6 +152,7 @@ namespace GuestHouse
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
                 MessageBox.Show("Successfully DELETED!");
             }
+>>>>>>> e7909f4493068a49520336c5d03503728a254f97
         }
     }
 
