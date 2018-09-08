@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace GuestHouse
 {
-    public partial class Expens : Form
+    public partial class Booking : Form
     {
-        public Expens()
+        public Booking()
         {
             InitializeComponent();
-        }
-
-        private void btnback_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

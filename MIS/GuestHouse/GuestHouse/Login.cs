@@ -43,7 +43,6 @@ namespace GuestHouse
             catch (Exception)
             {
                 MessageBox.Show("Unable to Connect to Database!");
-                throw;
             }
             dataCon.Con.Close();
         }
@@ -55,6 +54,8 @@ namespace GuestHouse
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            txtPassword_MouseLeave(txtPassword,null);
+            txtPassword_MouseLeave(txtUsername, null);
             string inputPassword = txtPassword.Text;
             string inputUsername = txtUsername.Text;
             bool isCorrected = false;
@@ -77,9 +78,26 @@ namespace GuestHouse
             }
             else
             {
-                MessageBox.Show("Incorrected username or password!");
-               // this.DialogResult = DialogResult.No;
+                MessageBox.Show("Incorrected username or password!");             
             }
+        }
+
+        private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                btnLogin_Click(null, null);
+            GuestHouse.ss.RestrictionClass.restrictFromKeyboard.restrictUnicodeAlphabets(e);
+        }
+
+        private void txtPassword_MouseLeave(object sender, EventArgs e)
+        {
+            TextBox txb = (TextBox)sender;
+            txb.Text = GuestHouse.ss.RestrictionClass.GetIntFromKhNumber(txb.Text);
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            txtUsername.Focus();
         }
     }
 }

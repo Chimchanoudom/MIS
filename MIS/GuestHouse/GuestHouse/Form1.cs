@@ -30,7 +30,7 @@ namespace GuestHouse
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Application.Restart();
         }
 
         private void btnstay_Click(object sender, EventArgs e)
@@ -82,8 +82,7 @@ namespace GuestHouse
 
         private void btnNoteExpen_Click(object sender, EventArgs e)
         {
-            Expens exp = new Expens();
-            exp.ShowDialog();
+
         }
 
         private void btnExpensType_Click(object sender, EventArgs e)
