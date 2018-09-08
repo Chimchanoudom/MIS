@@ -68,8 +68,6 @@ C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
 =======
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csprojResolveAssemblyReference.cache
-<<<<<<< HEAD
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Expense.resources
-=======
 >>>>>>> e7909f4493068a49520336c5d03503728a254f97
 >>>>>>> ada4ddc34bbc47ad096af1b0707f7cefbd7925d8

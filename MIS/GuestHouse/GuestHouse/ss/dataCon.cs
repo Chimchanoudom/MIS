@@ -115,7 +115,7 @@ namespace GuestHouse
                 string cmdUpdate = "update " + TableName + " SET ";
                 string Operation = "";
 
-<<<<<<< HEAD
+
         public static void CollateData(ref List<string> data)
         {
             List<string> temp = new List<string>();
@@ -125,7 +125,7 @@ namespace GuestHouse
             }
 
             data = temp;
-=======
+
                 foreach (string columnName in columnNameAndDataValues.Keys)
                 {
                     Operation += columnName + "=N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
@@ -152,7 +152,7 @@ namespace GuestHouse
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
                 MessageBox.Show("Successfully DELETED!");
             }
->>>>>>> e7909f4493068a49520336c5d03503728a254f97
+
         }
     }
 
