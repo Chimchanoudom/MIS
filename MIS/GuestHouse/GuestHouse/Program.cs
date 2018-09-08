@@ -26,7 +26,7 @@ namespace GuestHouse
             //if (new Login().ShowDialog() == DialogResult.OK)
             //{
 
-                Application.Run(new RoomData());
+                //Application.Run(new RoomData());
 
             //  Application.Run(new Customer());
 

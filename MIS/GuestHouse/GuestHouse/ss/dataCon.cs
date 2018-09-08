@@ -110,35 +110,35 @@ namespace GuestHouse
                 MessageBox.Show("Successfully ADDED!");
             }
 
-            public static void updateDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues,string condition="")
+            public static void updateDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues, string condition = "")
             {
                 string cmdUpdate = "update " + TableName + " SET ";
                 string Operation = "";
-
-
-        public static void CollateData(ref List<string> data)
-        {
-            List<string> temp = new List<string>();
-            foreach (string st in data)
-            {
-                temp.Add("N'" + st + "' COLLATE Latin1_General_100_CI_AI");
             }
 
-            data = temp;
+        //public static void CollateData(ref List<string> data)
+        //{
+        //    List<string> temp = new List<string>();
+        //    foreach (string st in data)
+        //    {
+        //        temp.Add("N'" + st + "' COLLATE Latin1_General_100_CI_AI");
+        //    }
 
-                foreach (string columnName in columnNameAndDataValues.Keys)
-                {
-                    Operation += columnName + "=N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
-                }
-                Operation = Operation.Substring(0, Operation.Length - 1) + " ";
-                condition = (condition == String.Empty) ? ";" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";
+        //    data = temp;
 
-                string sqlCmd = cmdUpdate + Operation + condition;
-                //MessageBox.Show(sqlCmd);
-                bool error = false;
-                dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully UPDATED!");
-            }
+        //        foreach (string columnName in columnNameAndDataValues.Keys)
+        //        {
+        //            Operation += columnName + "=N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
+        //        }
+        //        Operation = Operation.Substring(0, Operation.Length - 1) + " ";
+        //        condition = (condition == String.Empty) ? ";" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";
+
+        //        string sqlCmd = cmdUpdate + Operation + condition;
+        //        //MessageBox.Show(sqlCmd);
+        //        bool error = false;
+        //        dataCon.ExecuteActionQry(sqlCmd, ref error);
+        //        MessageBox.Show("Successfully UPDATED!");
+        //    }
 
             public static void deleteDataFromDB(string TableName,string condition="")
             {

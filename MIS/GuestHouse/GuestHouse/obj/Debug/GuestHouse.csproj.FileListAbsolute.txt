@@ -42,7 +42,6 @@ D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.RoomPrice.res
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.GenerateResource.Cache
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
-<<<<<<< HEAD
 C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.exe.config
 C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.exe
 C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.pdb
@@ -66,8 +65,5 @@ C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.
 C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.CopyComplete
 C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
-=======
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csprojResolveAssemblyReference.cache
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Expense.resources
->>>>>>> e7909f4493068a49520336c5d03503728a254f97
->>>>>>> ada4ddc34bbc47ad096af1b0707f7cefbd7925d8
