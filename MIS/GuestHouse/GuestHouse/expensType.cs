@@ -31,7 +31,7 @@ namespace GuestHouse
         }
         private void expensType_Load(object sender, EventArgs e)
         {
-            DT = Dom_SqlClass.retriveData("ExpenseType", dataTypeExpens);
+            DT = Dom_SqlClass.retriveData("ExpenseType","Where 1=1",new string[] { "*"});
             dataTypeExpens.DataSource = DT;
             dom_Design.GenerateColumHeader(new string[] {"លេខកូដសម្គាល់","ឈ្មោះប្រភេទចំណាយ" }, dataTypeExpens.ColumnCount, dataTypeExpens);
             ID = dom_Design.GenerateID(Dom_SqlClass.GetIDFromDB("ExpTypeID", "_", "ExpenseType"), "EXT_00");

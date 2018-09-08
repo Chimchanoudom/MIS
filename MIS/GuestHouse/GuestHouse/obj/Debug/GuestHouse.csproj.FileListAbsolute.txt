@@ -21,6 +21,7 @@ D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.CopyComplete
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
+D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Booking.resources
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.exe.config
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.exe
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.pdb
@@ -28,7 +29,7 @@ D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\Bunifu_UI_v1.5.3.dll
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\Microsoft.ReportViewer.Common.dll
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
-D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csprojResolveAssemblyReference.cache
+D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Booking.resources
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.CheckRoom.resources
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Customer.resources
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Employee.resources
@@ -43,5 +44,4 @@ D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.RoomPrice.res
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.GenerateResource.Cache
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
-D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Booking.resources
-D:\OneDrive\Documents\GitHub\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Booking.resources
+D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csprojResolveAssemblyReference.cache

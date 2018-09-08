@@ -9,12 +9,13 @@ using System.Data;
 
 namespace GuestHouse
 {
-    class Dom_SqlClass:UserLoginDetail
+class Dom_SqlClass:UserLoginDetail
     {
     
       static  SqlCommand SC = new SqlCommand();
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
+        static SqlDataReader SDR;
         static DataTable DT;
 
         public static string GetIDFromDB(String column,string seperater,String TableName)
@@ -62,13 +63,20 @@ namespace GuestHouse
                 MessageBox.Show("Update Fails !" + e.Message);
             }
         }
-        public static DataTable retriveData(String TableName,DataGridView Data)
+        public static DataTable retriveData(String TableName,String Condition,String[]ColumnName)
         {
              DT = new DataTable();
             try
             {
+                String Select = "SELECT ";
+                for (int i = 0; i < ColumnName.Length; i++)
+                {
+                    Select += ColumnName[i] + ",";
+                }
+                Select = Select.TrimEnd(',') + " From ";
+                MessageBox.Show(Select);
                 dataCon.Con.Open();
-                SC = new SqlCommand("Select * from "+TableName+";", dataCon.Con);
+                SC = new SqlCommand(Select+TableName+" "+Condition+" ;", dataCon.Con);
                 SDA = new SqlDataAdapter(SC);
                 SCB = new SqlCommandBuilder(SDA);
                 SDA.Fill(DT);
@@ -76,7 +84,7 @@ namespace GuestHouse
             }
             catch (Exception e )
             {
-                if (Data.RowCount <= 0)
+                if (DT.Rows.Count <= 0)
                     MessageBox.Show("NO Data "+ e.Message);
             }
             finally
@@ -85,17 +93,110 @@ namespace GuestHouse
             }
             return DT;
         }
-        public static void Edite()
+        public static Boolean InsertData(String TableName,object[]Value)
         {
-
+            bool insert = false;
+            try
+            {
+                String commandInsert = @"INSERT INTO "+TableName+" ";
+                String Values = " Values(";
+                for (int i = 0; i < Value.Length; i++)
+                {
+                    Values += "N'" + Value[i] + "'COLLATE Latin1_General_100_CI_AI,";
+                }
+                Values = Values.Substring(0, Values.Length - 1) + ");";
+                string sqlCmd = commandInsert+ Values;
+                dataCon.Con.Open();
+                SC = new SqlCommand(sqlCmd, dataCon.Con);
+                SC.ExecuteNonQuery();
+                insert = true;
+                commandInsert = Values = null;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            return insert;
         }
-        public static void Delete()
+        public static void  FillItemToCombobox(String StatemenSelect ,String Valuemember,String DisplayMember,ComboBox cm)
         {
-
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand(StatemenSelect, dataCon.Con);
+                SqlDataReader SDR = SC.ExecuteReader();
+                while (SDR.Read())
+                {
+                    cm.Items.Add(SDR[DisplayMember].ToString());
+                    cm.ValueMember = SDR[Valuemember].ToString();
+                    cm.DisplayMember = SDR[DisplayMember].ToString();
+                }
+                SDR.Close();
+            }
+            catch (Exception)
+            {
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
         }
-        public static void Search()
+        public static Boolean Edit(object Edit)
         {
+            bool edit = false;
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand(Edit.ToString(), dataCon.Con);
+                SC.ExecuteNonQuery();
+                edit = true;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            return edit;
+        }
+        public static Boolean Delete(object Delete)
+        {
+            bool delete = false;
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand(Delete.ToString(), dataCon.Con);
+                SC.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
+            }
+            return delete;
+        }
+        public static SqlDataReader retriveData(String SelectStatement)
+        {
+            try
+            {
+                dataCon.Con.Open();
+                SC = new SqlCommand(SelectStatement.ToString(), dataCon.Con);
+                SDR = SC.ExecuteReader();
+            }
+            catch (Exception)
+            {
 
+            }
+            finally
+            {
+                
+            }
+            return SDR;
         }
     }
 }
