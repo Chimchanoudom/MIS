@@ -263,6 +263,7 @@
             this.btnAdd.Size = new System.Drawing.Size(144, 39);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel6
             // 

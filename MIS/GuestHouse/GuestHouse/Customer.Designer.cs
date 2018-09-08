@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Customer));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -90,6 +91,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataCustomer = new System.Windows.Forms.DataGridView();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox6.SuspendLayout();
@@ -499,6 +501,7 @@
             // 
             // txtFname
             // 
+            this.txtFname.ContextMenuStrip = this.contextMenuStrip1;
             this.txtFname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFname.Location = new System.Drawing.Point(190, 42);
             this.txtFname.Name = "txtFname";
@@ -581,6 +584,7 @@
             // 
             // txtLname
             // 
+            this.txtLname.ContextMenuStrip = this.contextMenuStrip1;
             this.txtLname.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLname.Location = new System.Drawing.Point(190, 77);
             this.txtLname.Name = "txtLname";
@@ -799,6 +803,7 @@
             // 
             // txtIDnum
             // 
+            this.txtIDnum.ContextMenuStrip = this.contextMenuStrip1;
             this.txtIDnum.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDnum.Location = new System.Drawing.Point(190, 169);
             this.txtIDnum.Name = "txtIDnum";
@@ -807,6 +812,7 @@
             // 
             // txtTel
             // 
+            this.txtTel.ContextMenuStrip = this.contextMenuStrip1;
             this.txtTel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTel.Location = new System.Drawing.Point(190, 208);
             this.txtTel.Name = "txtTel";
@@ -862,6 +868,11 @@
             this.dataCustomer.Size = new System.Drawing.Size(1176, 233);
             this.dataCustomer.TabIndex = 12345;
             this.dataCustomer.SelectionChanged += new System.EventHandler(this.dataCustomer_SelectionChanged);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Customer
             // 
@@ -962,5 +973,6 @@
         private System.Windows.Forms.DataGridView dataCustomer;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
