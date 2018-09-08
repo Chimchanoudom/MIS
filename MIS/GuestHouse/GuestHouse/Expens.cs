@@ -194,9 +194,11 @@ namespace GuestHouse
         {
             if (rndSearchAll.Checked)
             {
+                
                 String STS = @"SELECT ExpID,DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpDate,Amount
                     FROM Expense JOIN ExpenseDetail ON Expense.ExpID=ExpenseDetail.ExpID JOIN ExpenseType ON ExpenseDetail.ExpTypeID=ExpenseType.ExpTypeID;";
-               SDR = Dom_SqlClass.retriveData(STS);
+                dataCon.Con.Open();
+                SqlDataReader SDR = dataCon.ExecuteQry(STS);
                 while (SDR.Read())
                 {
                     dataExpens.Rows.Add(SDR["ExpID"],SDR["DateCreated"],SDR["ExpDesc"],SDR["ExpDes"],SDR["ExpDate"],SDR["Amount"]);
