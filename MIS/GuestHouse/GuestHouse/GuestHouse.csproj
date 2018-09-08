@@ -96,6 +96,12 @@
     <Compile Include="ExpensAndIncome.Designer.cs">
       <DependentUpon>ExpensAndIncome.cs</DependentUpon>
     </Compile>
+    <Compile Include="Expense.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expense.Designer.cs">
+      <DependentUpon>Expense.cs</DependentUpon>
+    </Compile>
     <Compile Include="expensType.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ExpensAndIncome.resx">
       <DependentUpon>ExpensAndIncome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expense.resx">
+      <DependentUpon>Expense.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="expensType.resx">
       <DependentUpon>expensType.cs</DependentUpon>
