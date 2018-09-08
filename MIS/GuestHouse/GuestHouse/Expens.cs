@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,6 +50,7 @@ namespace GuestHouse
             ID = dom_Design.GenerateID(Dom_SqlClass.GetIDFromDB("ExpID", "_", "Expense"), "EXP_00");
             txtID.Text = ID;
             dataExpens.ClearSelection();
+            rndSearchAll.Checked = true;
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -176,22 +178,72 @@ namespace GuestHouse
 
         private void rndSearchAll_CheckedChanged(object sender, EventArgs e)
         {
-            if (rndSearchID.Checked || rndSearchAll.Checked)
+            if (rndSearchAll.Checked)
+            {
+                DateSearch.Visible = false;
+                txtSearch.Visible = false;
+            }
+            else if (rndSearchID.Checked)
             {
                 DateSearch.Visible = false;
                 txtSearch.Visible = true;
             }
         }
-
+        SqlDataReader SDR;
         private void btnSearch_Click(object sender, EventArgs e)
         {
             if (rndSearchAll.Checked)
             {
-
+                String STS = @"SELECT ExpID,DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpDate,Amount
+                    FROM Expense JOIN ExpenseDetail ON Expense.ExpID=ExpenseDetail.ExpID JOIN ExpenseType ON ExpenseDetail.ExpTypeID=ExpenseType.ExpTypeID;";
+               SDR = Dom_SqlClass.retriveData(STS);
+                while (SDR.Read())
+                {
+                    dataExpens.Rows.Add(SDR["ExpID"],SDR["DateCreated"],SDR["ExpDesc"],SDR["ExpDes"],SDR["ExpDate"],SDR["Amount"]);
+                }
+                SDR.Close();
+                dataCon.Con.Close();
+                dataExpens.ClearSelection();
+            }
+            else if(rndSearchID.Checked)
+            {
+                String STS = @"SELECT ExpID,DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpDate,Amount
+                    FROM Expense JOIN ExpenseDetail ON Expense.ExpID=ExpenseDetail.ExpID JOIN ExpenseType ON ExpenseDetail.ExpTypeID=ExpenseType.ExpTypeID WHERE LOWWER(ExpID)=" + txtSearch.Text.ToLower() +";";
+               SDR = Dom_SqlClass.retriveData(STS);
+                while (SDR.Read())
+                {
+                    dataExpens.Rows.Add(SDR["ExpID"], SDR["DateCreated"], SDR["ExpDesc"], SDR["ExpDes"], SDR["ExpDate"], SDR["Amount"]);
+                }
+                SDR.Close();
+                dataCon.Con.Close();
+                dataExpens.ClearSelection();
+            }else if (rndSearchDateNote.Checked)
+            {
+                String STS = @"SELECT ExpID,DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpDate,Amount
+                    FROM Expense JOIN ExpenseDetail ON Expense.ExpID=ExpenseDetail.ExpID JOIN ExpenseType ON ExpenseDetail.ExpTypeID=ExpenseType.ExpTypeID
+                        WHERE DateCreate='"+DateSearch.Value.Date+"';";
+                SDR = Dom_SqlClass.retriveData(STS);
+                while (SDR.Read())
+                {
+                    dataExpens.Rows.Add(SDR["ExpID"], SDR["DateCreated"], SDR["ExpDesc"], SDR["ExpDes"], SDR["ExpDate"], SDR["Amount"]);
+                }
+                SDR.Close();
+                dataCon.Con.Close();
+                dataExpens.ClearSelection();
             }
             else
             {
-
+                String STS = @"SELECT ExpID,DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpDate,Amount
+                    FROM Expense JOIN ExpenseDetail ON Expense.ExpID=ExpenseDetail.ExpID JOIN ExpenseType ON ExpenseDetail.ExpTypeID=ExpenseType.ExpTypeID 
+                    WHERE ExpDate='" + DateSearch.Value.Date + "';";
+                 SDR = Dom_SqlClass.retriveData(STS);
+                while (SDR.Read())
+                {
+                    dataExpens.Rows.Add(SDR["ExpID"], SDR["DateCreated"], SDR["ExpDesc"], SDR["ExpDes"], SDR["ExpDate"], SDR["Amount"]);
+                }
+                SDR.Close();
+                dataCon.Con.Close();
+                dataExpens.ClearSelection();
             }
         }
     }

@@ -109,7 +109,6 @@ class Dom_SqlClass:UserLoginDetail
                 dataCon.Con.Open();
                 SC = new SqlCommand(sqlCmd, dataCon.Con);
                 SC.ExecuteNonQuery();
-                MessageBox.Show("HI");
                 insert = true;
                 commandInsert = Values = null;
             }
@@ -154,7 +153,6 @@ class Dom_SqlClass:UserLoginDetail
                 dataCon.Con.Open();
                 SC = new SqlCommand(Edit.ToString(), dataCon.Con);
                 SC.ExecuteNonQuery();
-                MessageBox.Show("Update Successfully");
                 edit = true;
             }
             catch (Exception e)
@@ -182,23 +180,13 @@ class Dom_SqlClass:UserLoginDetail
             }
             return delete;
         }
-        public static void retriveData(String TableName, String Condition, String[] ColumnName, DataGridView Data)
+        public static SqlDataReader retriveData(String SelectStatement)
         {
             try
             {
-                String SelectStatement = "SELECT ";
-                for (int i = 0; i < ColumnName.Length; i++)
-                {
-                    SelectStatement += ColumnName[i] + ",";
-                }
-                SelectStatement = SelectStatement.TrimEnd(',') + " From ";
                 dataCon.Con.Open();
                 SC = new SqlCommand(SelectStatement.ToString(), dataCon.Con);
                 SDR = SC.ExecuteReader();
-                while(SDR.Read())
-                {
-                    Data.Rows.Add(SDR["ExpID"], SDR["ExpID"], SDR["ExpID"], SDR["ExpID"], SDR["ExpID"], SDR["ExpID"]);
-                }
             }
             catch (Exception)
             {
@@ -206,8 +194,9 @@ class Dom_SqlClass:UserLoginDetail
             }
             finally
             {
-                dataCon.Con.Close();
+                
             }
+            return SDR;
         }
     }
 }

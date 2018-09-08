@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expens));
             this.dataExpens = new System.Windows.Forms.DataGridView();
@@ -51,8 +52,12 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DateSearch = new System.Windows.Forms.DateTimePicker();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.rndSearchDatepay = new System.Windows.Forms.RadioButton();
             this.rndSearchAll = new System.Windows.Forms.RadioButton();
             this.rndSearchDateNote = new System.Windows.Forms.RadioButton();
             this.rndSearchID = new System.Windows.Forms.RadioButton();
@@ -75,10 +80,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rndSearchDatepay = new System.Windows.Forms.RadioButton();
-            this.DateSearch = new System.Windows.Forms.DateTimePicker();
-            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             ((System.ComponentModel.ISupportInitialize)(this.dataExpens)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -96,8 +97,8 @@
             // 
             this.dataExpens.AllowUserToAddRows = false;
             this.dataExpens.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.dataExpens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.dataExpens.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataExpens.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataExpens.BackgroundColor = System.Drawing.Color.White;
             this.dataExpens.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -108,6 +109,14 @@
             this.Column4,
             this.Column5,
             this.Column6});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataExpens.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataExpens.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataExpens.GridColor = System.Drawing.Color.Teal;
             this.dataExpens.Location = new System.Drawing.Point(3, 36);
@@ -353,6 +362,71 @@
             this.panel7.Size = new System.Drawing.Size(381, 31);
             this.panel7.TabIndex = 3;
             // 
+            // btnSearch
+            // 
+            this.btnSearch.ActiveBorderThickness = 1;
+            this.btnSearch.ActiveCornerRadius = 20;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.Purple;
+            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.Purple;
+            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.ButtonText = " ស្វែងរក";
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSearch.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.IdleBorderThickness = 1;
+            this.btnSearch.IdleCornerRadius = 20;
+            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+            this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
+            this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
+            this.btnSearch.Location = new System.Drawing.Point(223, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(79, 31);
+            this.btnSearch.TabIndex = 20;
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ActiveBorderThickness = 1;
+            this.btnCancel.ActiveCornerRadius = 20;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.ButtonText = "បោះបង់";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCancel.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleCornerRadius = 20;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+            this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+            this.btnCancel.Location = new System.Drawing.Point(302, 0);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(79, 31);
+            this.btnCancel.TabIndex = 19;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DateSearch
+            // 
+            this.DateSearch.CustomFormat = "ddd-dd-MMMM-yyyy";
+            this.DateSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.DateSearch.Font = new System.Drawing.Font("Times New Roman", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateSearch.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateSearch.Location = new System.Drawing.Point(217, 0);
+            this.DateSearch.Name = "DateSearch";
+            this.DateSearch.Size = new System.Drawing.Size(214, 27);
+            this.DateSearch.TabIndex = 4;
+            this.DateSearch.Visible = false;
+            // 
             // txtSearch
             // 
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Left;
@@ -376,15 +450,24 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "លក្ខខណ្ឌ";
             // 
+            // rndSearchDatepay
+            // 
+            this.rndSearchDatepay.AutoSize = true;
+            this.rndSearchDatepay.Location = new System.Drawing.Point(11, 76);
+            this.rndSearchDatepay.Name = "rndSearchDatepay";
+            this.rndSearchDatepay.Size = new System.Drawing.Size(101, 36);
+            this.rndSearchDatepay.TabIndex = 14;
+            this.rndSearchDatepay.Text = "ថ្ងៃចំណាយ";
+            this.rndSearchDatepay.UseVisualStyleBackColor = true;
+            this.rndSearchDatepay.CheckedChanged += new System.EventHandler(this.rndSearchFname_CheckedChanged);
+            // 
             // rndSearchAll
             // 
             this.rndSearchAll.AutoSize = true;
-            this.rndSearchAll.Checked = true;
             this.rndSearchAll.Location = new System.Drawing.Point(11, 39);
             this.rndSearchAll.Name = "rndSearchAll";
             this.rndSearchAll.Size = new System.Drawing.Size(89, 36);
             this.rndSearchAll.TabIndex = 13;
-            this.rndSearchAll.TabStop = true;
             this.rndSearchAll.Text = "ទាំងអស់";
             this.rndSearchAll.UseVisualStyleBackColor = true;
             this.rndSearchAll.CheckedChanged += new System.EventHandler(this.rndSearchAll_CheckedChanged);
@@ -626,82 +709,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(936, 40);
             this.panel1.TabIndex = 9;
-            // 
-            // rndSearchDatepay
-            // 
-            this.rndSearchDatepay.AutoSize = true;
-            this.rndSearchDatepay.Location = new System.Drawing.Point(11, 76);
-            this.rndSearchDatepay.Name = "rndSearchDatepay";
-            this.rndSearchDatepay.Size = new System.Drawing.Size(101, 36);
-            this.rndSearchDatepay.TabIndex = 14;
-            this.rndSearchDatepay.Text = "ថ្ងៃចំណាយ";
-            this.rndSearchDatepay.UseVisualStyleBackColor = true;
-            this.rndSearchDatepay.CheckedChanged += new System.EventHandler(this.rndSearchFname_CheckedChanged);
-            // 
-            // DateSearch
-            // 
-            this.DateSearch.CustomFormat = "ddd-dd-MMMM-yyyy";
-            this.DateSearch.Dock = System.Windows.Forms.DockStyle.Left;
-            this.DateSearch.Font = new System.Drawing.Font("Times New Roman", 12.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DateSearch.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DateSearch.Location = new System.Drawing.Point(217, 0);
-            this.DateSearch.Name = "DateSearch";
-            this.DateSearch.Size = new System.Drawing.Size(214, 27);
-            this.DateSearch.TabIndex = 4;
-            this.DateSearch.Visible = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.ActiveBorderThickness = 1;
-            this.btnCancel.ActiveCornerRadius = 20;
-            this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
-            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
-            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
-            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
-            this.btnCancel.ButtonText = "បោះបង់";
-            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnCancel.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnCancel.IdleBorderThickness = 1;
-            this.btnCancel.IdleCornerRadius = 20;
-            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
-            this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
-            this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(302, 0);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(79, 31);
-            this.btnCancel.TabIndex = 19;
-            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.Purple;
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.Purple;
-            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.ButtonText = " ស្វែងរក";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnSearch.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
-            this.btnSearch.Location = new System.Drawing.Point(223, 0);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(79, 31);
-            this.btnSearch.TabIndex = 20;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // Expens
             // 
