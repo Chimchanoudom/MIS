@@ -19,3 +19,26 @@ D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.RoomPrice.res
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.GenerateResource.Cache
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
 D:\Team Project\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.exe.config
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.exe
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\GuestHouse.pdb
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\bin\Debug\Microsoft.ReportViewer.WebForms.DLL
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csprojAssemblyReference.cache
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.CheckRoom.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Customer.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Employee.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Expens.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.ExpensAndIncome.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.expensType.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Form1.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Login.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.Properties.Resources.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.RoomData.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.RoomPrice.resources
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.GenerateResource.cache
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.csproj.CopyComplete
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.exe
+C:\Users\User\Desktop\MIS\MIS\GuestHouse\GuestHouse\obj\Debug\GuestHouse.pdb

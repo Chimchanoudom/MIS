@@ -30,6 +30,8 @@ namespace GuestHouse
             return dataReader;
         }
 
+        
+
         public static DateTime ConvertStringToDateTime(string st)
         {
             int day = int.Parse(st.Substring(0, 2));
@@ -68,5 +70,15 @@ namespace GuestHouse
         }
 
 
+        public static void CollateData(ref List<string> data)
+        {
+            List<string> temp = new List<string>();
+            foreach (string st in data)
+            {
+                temp.Add("N'" + st + "' COLLATE Latin1_General_100_CI_AI");
+            }
+
+            data = temp;
+        }
     }
 }
