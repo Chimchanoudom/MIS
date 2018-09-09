@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace GuestHouse
 {
-   static class dom_Design
+  class dom_Design:Desing
     {
         public static void NumberOnly(KeyPressEventArgs e)
         {
