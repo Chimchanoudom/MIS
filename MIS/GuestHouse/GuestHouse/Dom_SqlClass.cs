@@ -180,13 +180,15 @@ class Dom_SqlClass:UserLoginDetail
             }
             return delete;
         }
-        public static SqlDataReader retriveData(String SelectStatement)
+        public static DataTable retriveDataMultiTable(String SelectStatement)
         {
             try
             {
                 dataCon.Con.Open();
                 SC = new SqlCommand(SelectStatement.ToString(), dataCon.Con);
-                SDR = SC.ExecuteReader();
+                 SDA = new SqlDataAdapter(SC);
+                SCB = new SqlCommandBuilder(SDA);
+                SDA.Fill(DT);
             }
             catch (Exception)
             {
@@ -196,7 +198,7 @@ class Dom_SqlClass:UserLoginDetail
             {
                 
             }
-            return SDR;
+            return DT;
         }
     }
 }

@@ -116,29 +116,29 @@ namespace GuestHouse
                 string Operation = "";
             }
 
-        //public static void CollateData(ref List<string> data)
-        //{
-        //    List<string> temp = new List<string>();
-        //    foreach (string st in data)
-        //    {
-        //        temp.Add("N'" + st + "' COLLATE Latin1_General_100_CI_AI");
-        //    }
+            //public static void CollateData(ref List<string> data)
+            //{
+            //    List<string> temp = new List<string>();
+            //    foreach (string st in data)
+            //    {
+            //        temp.Add("N'" + st + "' COLLATE Latin1_General_100_CI_AI");
+            //    }
 
-        //    data = temp;
+            //    data = temp;
 
-        //        foreach (string columnName in columnNameAndDataValues.Keys)
-        //        {
-        //            Operation += columnName + "=N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
-        //        }
-        //        Operation = Operation.Substring(0, Operation.Length - 1) + " ";
-        //        condition = (condition == String.Empty) ? ";" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";
+            //    foreach (string columnName in columnNameAndDataValues.Keys)
+            //    {
+            //        Operation += columnName + "=N'" + columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
+            //    }
+            //    Operation = Operation.Substring(0, Operation.Length - 1) + " ";
+            //    condition = (condition == String.Empty) ? ";" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";
 
-        //        string sqlCmd = cmdUpdate + Operation + condition;
-        //        //MessageBox.Show(sqlCmd);
-        //        bool error = false;
-        //        dataCon.ExecuteActionQry(sqlCmd, ref error);
-        //        MessageBox.Show("Successfully UPDATED!");
-        //    }
+            //    string sqlCmd = cmdUpdate + Operation + condition;
+            //    //MessageBox.Show(sqlCmd);
+            //    bool error = false;
+            //    dataCon.ExecuteActionQry(sqlCmd, ref error);
+            //    MessageBox.Show("Successfully UPDATED!");
+            //}
 
             public static void deleteDataFromDB(string TableName,string condition="")
             {

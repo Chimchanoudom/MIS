@@ -41,7 +41,11 @@ namespace GuestHouse
                 num = 1;
             else
                 num = int.Parse(ID)+1;
-            ID = Suffix+(num );
+
+            if (Suffix != null)
+            {
+                ID = Suffix + (num);
+            }
             return ID;
         }
 
