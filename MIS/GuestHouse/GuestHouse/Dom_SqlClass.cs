@@ -16,7 +16,7 @@ class Dom_SqlClass:UserLoginDetail
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
         static SqlDataReader SDR;
-        static DataTable DT;
+        static DataTable DT = new DataTable();
 
         public static string GetIDFromDB(String column,string seperater,String TableName)
         {
@@ -29,9 +29,9 @@ class Dom_SqlClass:UserLoginDetail
                 SC.Connection = dataCon.Con;
                 ID=SC.ExecuteScalar().ToString();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-               //MessageBox.Show(e.Message);
+               MessageBox.Show(e.Message);
             }
             finally
             {
@@ -185,20 +185,48 @@ class Dom_SqlClass:UserLoginDetail
             try
             {
                 dataCon.Con.Open();
-                SC = new SqlCommand(SelectStatement.ToString(), dataCon.Con);
+                SC = new SqlCommand(SelectStatement, dataCon.Con);
                  SDA = new SqlDataAdapter(SC);
                 SCB = new SqlCommandBuilder(SDA);
                 SDA.Fill(DT);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                MessageBox.Show(e.Message);
             }
             finally
             {
-                
+                dataCon.Con.Close();
             }
             return DT;
+        }
+        public static bool SQLMultiTable(String[]Statement)
+        {
+            bool success = false;
+            dataCon.Con.Open();
+            SqlTransaction tran = dataCon.Con.BeginTransaction();
+            try
+            {
+
+                for (int i = 0; i < Statement.Length; i++)
+                {
+                    SC = new SqlCommand(Statement[i], dataCon.Con, tran);
+                    SC.ExecuteNonQuery();
+                }
+                tran.Commit();
+                success = true;
+            }
+            catch (SqlException e)
+            {
+                success = false;
+                MessageBox.Show(e.Message);
+                tran.Rollback();
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            return success;
         }
     }
 }
