@@ -29,6 +29,7 @@ namespace GuestHouse
         String ID;
         DataTable DT=new DataTable();
         String Statement1="", Statement2="";
+        int n = 0;
         void Clear()
         {
             DataExpense.ClearSelection();
@@ -41,24 +42,26 @@ namespace GuestHouse
         }
         void GeneratData()
         {
-            for (int i = 0; i < DT.Rows.Count; i++)
+            DataExpense.Rows.Clear();
+
+                for (int i = 0; i < DT.Rows.Count; i++)
+                {
+                    DataExpense.Rows.Add(DT.Rows[i]["ExpID"], DT.Rows[i]["DateCreated"], DT.Rows[i]["ExpDesc"], DT.Rows[i]["ExpDes"], DT.Rows[i]["ExpDate"], DT.Rows[i]["Amount"]);
+                }
+            
+            foreach(DataGridViewColumn column in DataExpense.Columns)
             {
-                DataExpense.Rows.Add(DT.Rows[i]["ExpID"], DT.Rows[i]["DateCreated"], DT.Rows[i]["ExpDesc"], DT.Rows[i]["ExpDes"], DT.Rows[i]["ExpDate"], DT.Rows[i]["Amount"]);
+                DataExpense.Columns["column1"].SortMode = DataGridViewColumnSortMode.Automatic;
             }
             DataExpense.Columns[1].DefaultCellStyle.Format = "ddd-dd-MMMM-yyyy";
             DataExpense.Columns[4].DefaultCellStyle.Format = "ddd-dd-MMMM-yyyy";
         }
         private void Expense_Load(object sender, EventArgs e)
         {
-            String Statement = @" SELECT Expense.ExpID,Expense.DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpenseDetail.ExpDate,ExpenseDetail.Amount FROM Expense JOIN ExpenseDetail ON Expense.ExpID=ExpenseDetail.ExpID JOIN ExpenseType ON ExpenseType.ExpTypeID=ExpenseDetail.ExpTypeID; ";        
-            DT = Dom_SqlClass.retriveDataMultiTable(Statement);
-           // MessageBox.Show(DT.Rows.Count.ToString());
-            GeneratData();
-            DataExpense.ClearSelection();
             ID = dom_Design.GenerateID(Dom_SqlClass.GetIDFromDB("ExpID", "_", "Expense"), "EXP_00");
             txtID.Text = ID;
             Dom_SqlClass.FillItemToCombobox("SELECT ExpTypeID,ExpDesc FROM ExpenseType", "ExpTypeID", "ExpDesc", cmType);
-            
+           
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -79,6 +82,7 @@ namespace GuestHouse
                    if( Dom_SqlClass.SQLMultiTable(new string[] { Statement1, Statement2 }) == true)
                     {
                         DataExpense.Rows.Add(new object[] { EID,DN,Type,Name,DP,Amount});
+                        n++;
                     }
                     DataExpense.ClearSelection();
                     ID = dom_Design.SetID(6, ID, "EXP_00");
@@ -133,22 +137,84 @@ namespace GuestHouse
                 Statement1 = @"DELETE FROM Expense WHERE ExpID in(";
                 for (int i = 0; i < DataExpense.SelectedRows.Count; i++)
                 {
-                    Statement1 += "'" + DataExpense.Rows[i].Cells[0].Value.ToString()+"',";
+                    Statement1 += "'" + DataExpense.SelectedRows[i].Cells[0].Value.ToString()+"',";
                 }
                 Statement1 = Statement1.TrimEnd(',') + ");";
-                //MessageBox.Show(Statement1);
+                MessageBox.Show(Statement1);
                 if (Dom_SqlClass.SQLMultiTable(new string[] { Statement1})==true)
                 {
                     while (DataExpense.SelectedRows.Count > 0)
                     {
                         int i = DataExpense.SelectedRows[0].Index;
                         DataExpense.Rows.RemoveAt(i);
+                        if (n != 0)
+                        {
+                            n--;
+                        }
                     }
                 }
             }
             //ID = dom_Design.GenerateID(ID.Substring(6), "Cus_00");
             //txtID.Text = ID;
             Clear();
+        }
+
+        private void rndSearchID_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rndSearcAll.Checked)
+            {
+                txtSearch.Visible = false;
+                DateSearch.Visible = false;
+            }
+            else if(rndSearchNote.Checked||rndSearchPay.Checked)
+            {
+                txtSearch.Visible = false;
+                DateSearch.Visible = true;
+            }
+            else
+            {
+                txtSearch.Visible = true;
+                DateSearch.Visible = false;
+            }
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            if (rndSearchID.Checked)
+            {
+                DT.Rows.Clear();
+                String ST= @"SELECT Expense.ExpID,Expense.DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpenseDetail.ExpDate,ExpenseDetail.Amount FROM Expense JOIN ExpenseDetail ON ExpenseDetail.ExpID=Expense.ExpID JOIN ExpenseType ON ExpenseDetail.ExpTypeID=ExpenseType.ExpTypeID WHERE LOWER(Expense.ExpID)='"+txtSearch.Text+"';";
+                DT = Dom_SqlClass.retriveDataMultiTable(ST);
+                GeneratData();
+                DataExpense.ClearSelection();
+
+            }
+            else if (rndSearcAll.Checked)
+            {
+                DT.Rows.Clear();
+                String Statement = @" SELECT Expense.ExpID,Expense.DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpenseDetail.ExpDate,ExpenseDetail.Amount FROM Expense JOIN ExpenseDetail ON Expense.ExpID=ExpenseDetail.ExpID JOIN ExpenseType ON ExpenseType.ExpTypeID=ExpenseDetail.ExpTypeID; ";
+                DT = Dom_SqlClass.retriveDataMultiTable(Statement);
+                GeneratData();
+                DataExpense.ClearSelection();
+            }
+            else 
+            {
+                DT.Rows.Clear();
+                String ST = @"SELECT Expense.ExpID,Expense.DateCreated,ExpenseType.ExpDesc,ExpenseDetail.ExpDes,ExpenseDetail.ExpDate,ExpenseDetail.Amount FROM Expense JOIN ExpenseDetail ON ExpenseDetail.ExpID=Expense.ExpID JOIN ExpenseType ON ExpenseDetail.ExpTypeID=ExpenseType.ExpTypeID WHERE Expense.DateCreated='"+DateSearch.Value.ToShortDateString()+"'or ExpenseDetail.ExpDate='"+ DateSearch.Value.ToShortDateString()+"';";
+                DT = Dom_SqlClass.retriveDataMultiTable(ST);
+                GeneratData();
+                DataExpense.ClearSelection();
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < DT.Rows.Count; i++)
+            {
+                DataExpense.Rows.RemoveAt(0);
+            }
+            rndSearchID.Checked=true;
+            txtSearch.Text = "";
         }
 
         private void DataExpense_SelectionChanged(object sender, EventArgs e)

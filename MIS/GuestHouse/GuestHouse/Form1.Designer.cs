@@ -45,6 +45,7 @@
             this.btnbooknote = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnbook = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnRoom = new System.Windows.Forms.Panel();
+            this.btnRoomPrice = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnAddRoom = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnCheckRoom = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnRoom = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -59,7 +60,6 @@
             this.btnExpensType = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNoteExpen = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnExpenAndIncome = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRoomPrice = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Pntopbar.SuspendLayout();
             this.pnMenu.SuspendLayout();
             this.pnlogout.SuspendLayout();
@@ -353,6 +353,7 @@
             this.btnbookData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbookData.Textcolor = System.Drawing.Color.White;
             this.btnbookData.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbookData.Click += new System.EventHandler(this.btnbookData_Click);
             // 
             // btnbooknote
             // 
@@ -388,6 +389,7 @@
             this.btnbooknote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbooknote.Textcolor = System.Drawing.Color.White;
             this.btnbooknote.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbooknote.Click += new System.EventHandler(this.btnbooknote_Click);
             // 
             // btnbook
             // 
@@ -435,6 +437,42 @@
             this.pnRoom.Name = "pnRoom";
             this.pnRoom.Size = new System.Drawing.Size(222, 194);
             this.pnRoom.TabIndex = 4;
+            // 
+            // btnRoomPrice
+            // 
+            this.btnRoomPrice.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRoomPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRoomPrice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRoomPrice.BorderRadius = 0;
+            this.btnRoomPrice.ButtonText = "ព័ត៌មានតម្លៃបន្ទប់";
+            this.btnRoomPrice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRoomPrice.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRoomPrice.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRoomPrice.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRoomPrice.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRoomPrice.Iconimage")));
+            this.btnRoomPrice.Iconimage_right = null;
+            this.btnRoomPrice.Iconimage_right_Selected = null;
+            this.btnRoomPrice.Iconimage_Selected = null;
+            this.btnRoomPrice.IconMarginLeft = 0;
+            this.btnRoomPrice.IconMarginRight = 0;
+            this.btnRoomPrice.IconRightVisible = true;
+            this.btnRoomPrice.IconRightZoom = 0D;
+            this.btnRoomPrice.IconVisible = true;
+            this.btnRoomPrice.IconZoom = 90D;
+            this.btnRoomPrice.IsTab = false;
+            this.btnRoomPrice.Location = new System.Drawing.Point(0, 144);
+            this.btnRoomPrice.Name = "btnRoomPrice";
+            this.btnRoomPrice.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnRoomPrice.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
+            this.btnRoomPrice.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRoomPrice.selected = false;
+            this.btnRoomPrice.Size = new System.Drawing.Size(222, 48);
+            this.btnRoomPrice.TabIndex = 3;
+            this.btnRoomPrice.Text = "ព័ត៌មានតម្លៃបន្ទប់";
+            this.btnRoomPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoomPrice.Textcolor = System.Drawing.Color.White;
+            this.btnRoomPrice.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoomPrice.Click += new System.EventHandler(this.btnRoomPrice_Click);
             // 
             // btnAddRoom
             // 
@@ -860,42 +898,6 @@
             this.btnExpenAndIncome.Textcolor = System.Drawing.Color.White;
             this.btnExpenAndIncome.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpenAndIncome.Click += new System.EventHandler(this.btnExpenAndIncome_Click);
-            // 
-            // btnRoomPrice
-            // 
-            this.btnRoomPrice.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRoomPrice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRoomPrice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnRoomPrice.BorderRadius = 0;
-            this.btnRoomPrice.ButtonText = "ព័ត៌មានតម្លៃបន្ទប់";
-            this.btnRoomPrice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRoomPrice.DisabledColor = System.Drawing.Color.Gray;
-            this.btnRoomPrice.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRoomPrice.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnRoomPrice.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnRoomPrice.Iconimage")));
-            this.btnRoomPrice.Iconimage_right = null;
-            this.btnRoomPrice.Iconimage_right_Selected = null;
-            this.btnRoomPrice.Iconimage_Selected = null;
-            this.btnRoomPrice.IconMarginLeft = 0;
-            this.btnRoomPrice.IconMarginRight = 0;
-            this.btnRoomPrice.IconRightVisible = true;
-            this.btnRoomPrice.IconRightZoom = 0D;
-            this.btnRoomPrice.IconVisible = true;
-            this.btnRoomPrice.IconZoom = 90D;
-            this.btnRoomPrice.IsTab = false;
-            this.btnRoomPrice.Location = new System.Drawing.Point(0, 144);
-            this.btnRoomPrice.Name = "btnRoomPrice";
-            this.btnRoomPrice.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnRoomPrice.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
-            this.btnRoomPrice.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnRoomPrice.selected = false;
-            this.btnRoomPrice.Size = new System.Drawing.Size(222, 48);
-            this.btnRoomPrice.TabIndex = 3;
-            this.btnRoomPrice.Text = "ព័ត៌មានតម្លៃបន្ទប់";
-            this.btnRoomPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoomPrice.Textcolor = System.Drawing.Color.White;
-            this.btnRoomPrice.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoomPrice.Click += new System.EventHandler(this.btnRoomPrice_Click);
             // 
             // Form1
             // 

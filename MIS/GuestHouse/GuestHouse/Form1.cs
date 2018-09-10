@@ -82,7 +82,8 @@ namespace GuestHouse
 
         private void btnNoteExpen_Click(object sender, EventArgs e)
         {
-
+            Expense EX = new Expense();
+            EX.ShowDialog();
         }
 
         private void btnExpensType_Click(object sender, EventArgs e)
@@ -113,6 +114,18 @@ namespace GuestHouse
         {
             RoomPrice RP = new RoomPrice();
             RP.ShowDialog();
+        }
+
+        private void btnbooknote_Click(object sender, EventArgs e)
+        {
+            Booking BK = new Booking();
+            BK.ShowDialog();
+        }
+
+        private void btnbookData_Click(object sender, EventArgs e)
+        {
+            BookingData BKD = new BookingData();
+            BKD.ShowDialog();
         }
     }
 }
