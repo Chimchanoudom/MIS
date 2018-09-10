@@ -17,7 +17,7 @@ class Dom_SqlClass:UserLoginDetail
         static SqlDataAdapter SDA = new SqlDataAdapter();
         static SqlDataReader SDR;
 
-        static DataTable DT;
+        //static DataTable DT;
         
 
         static DataTable DT = new DataTable();
