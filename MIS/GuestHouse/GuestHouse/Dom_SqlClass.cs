@@ -16,10 +16,6 @@ class Dom_SqlClass:UserLoginDetail
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
         static SqlDataReader SDR;
-
-        //static DataTable DT;
-        
-
         static DataTable DT = new DataTable();
 
 
