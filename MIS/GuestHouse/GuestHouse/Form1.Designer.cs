@@ -121,12 +121,18 @@
             // pnMenu
             // 
             this.pnMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pnMenu.Controls.Add(this.pnExpent);
+            this.pnMenu.Controls.Add(this.pnEmployee);
+            this.pnMenu.Controls.Add(this.pncustomer);
+            this.pnMenu.Controls.Add(this.pnRoom);
+            this.pnMenu.Controls.Add(this.pnBook);
+            this.pnMenu.Controls.Add(this.pnStay);
             this.pnMenu.Controls.Add(this.pnlogout);
             this.pnMenu.Controls.Add(this.pnLogo);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 29);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(222, 691);
+            this.pnMenu.Size = new System.Drawing.Size(237, 691);
             this.pnMenu.TabIndex = 1;
             // 
             // pnlogout
@@ -135,7 +141,7 @@
             this.pnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlogout.Location = new System.Drawing.Point(0, 650);
             this.pnlogout.Name = "pnlogout";
-            this.pnlogout.Size = new System.Drawing.Size(222, 41);
+            this.pnlogout.Size = new System.Drawing.Size(237, 41);
             this.pnlogout.TabIndex = 2;
             // 
             // btnExit
@@ -179,7 +185,7 @@
             this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLogo.Location = new System.Drawing.Point(0, 0);
             this.pnLogo.Name = "pnLogo";
-            this.pnLogo.Size = new System.Drawing.Size(222, 84);
+            this.pnLogo.Size = new System.Drawing.Size(237, 84);
             this.pnLogo.TabIndex = 2;
             // 
             // pictureBox1
@@ -188,7 +194,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(222, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(237, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -198,10 +204,11 @@
             this.pnStay.Controls.Add(this.btncheckout);
             this.pnStay.Controls.Add(this.btncheckin);
             this.pnStay.Controls.Add(this.btnstay);
-            this.pnStay.Location = new System.Drawing.Point(294, 35);
+            this.pnStay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnStay.Location = new System.Drawing.Point(0, 84);
             this.pnStay.Name = "pnStay";
-            this.pnStay.Size = new System.Drawing.Size(222, 145);
-            this.pnStay.TabIndex = 2;
+            this.pnStay.Size = new System.Drawing.Size(237, 48);
+            this.pnStay.TabIndex = 3;
             // 
             // btncheckout
             // 
@@ -231,7 +238,7 @@
             this.btncheckout.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btncheckout.OnHoverTextColor = System.Drawing.Color.White;
             this.btncheckout.selected = false;
-            this.btncheckout.Size = new System.Drawing.Size(222, 48);
+            this.btncheckout.Size = new System.Drawing.Size(237, 48);
             this.btncheckout.TabIndex = 2;
             this.btncheckout.Text = "ការចាកចេញ";
             this.btncheckout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -266,7 +273,7 @@
             this.btncheckin.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btncheckin.OnHoverTextColor = System.Drawing.Color.White;
             this.btncheckin.selected = false;
-            this.btncheckin.Size = new System.Drawing.Size(222, 48);
+            this.btncheckin.Size = new System.Drawing.Size(237, 48);
             this.btncheckin.TabIndex = 1;
             this.btncheckin.Text = "ការស្នាក់នៅ";
             this.btncheckin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -301,23 +308,24 @@
             this.btnstay.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnstay.OnHoverTextColor = System.Drawing.Color.White;
             this.btnstay.selected = false;
-            this.btnstay.Size = new System.Drawing.Size(222, 48);
+            this.btnstay.Size = new System.Drawing.Size(237, 48);
             this.btnstay.TabIndex = 0;
             this.btnstay.Text = "កត់ត្រាការស្នាក់នៅ";
             this.btnstay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnstay.Textcolor = System.Drawing.Color.White;
             this.btnstay.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnstay.Click += new System.EventHandler(this.btnstay_Click);
+            this.btnstay.Click += new System.EventHandler(this.btnstay_Click_1);
             // 
             // pnBook
             // 
             this.pnBook.Controls.Add(this.btnbookData);
             this.pnBook.Controls.Add(this.btnbooknote);
             this.pnBook.Controls.Add(this.btnbook);
-            this.pnBook.Location = new System.Drawing.Point(522, 35);
+            this.pnBook.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnBook.Location = new System.Drawing.Point(0, 132);
             this.pnBook.Name = "pnBook";
-            this.pnBook.Size = new System.Drawing.Size(222, 145);
-            this.pnBook.TabIndex = 3;
+            this.pnBook.Size = new System.Drawing.Size(237, 160);
+            this.pnBook.TabIndex = 4;
             // 
             // btnbookData
             // 
@@ -347,13 +355,12 @@
             this.btnbookData.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnbookData.OnHoverTextColor = System.Drawing.Color.White;
             this.btnbookData.selected = false;
-            this.btnbookData.Size = new System.Drawing.Size(222, 48);
+            this.btnbookData.Size = new System.Drawing.Size(237, 48);
             this.btnbookData.TabIndex = 2;
             this.btnbookData.Text = "ទិន្នន័យប្រចាំថ្ងៃ";
             this.btnbookData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbookData.Textcolor = System.Drawing.Color.White;
             this.btnbookData.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbookData.Click += new System.EventHandler(this.btnbookData_Click);
             // 
             // btnbooknote
             // 
@@ -383,13 +390,13 @@
             this.btnbooknote.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnbooknote.OnHoverTextColor = System.Drawing.Color.White;
             this.btnbooknote.selected = false;
-            this.btnbooknote.Size = new System.Drawing.Size(222, 48);
+            this.btnbooknote.Size = new System.Drawing.Size(237, 48);
             this.btnbooknote.TabIndex = 1;
             this.btnbooknote.Text = "ការកក់បន្ទប់";
             this.btnbooknote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbooknote.Textcolor = System.Drawing.Color.White;
             this.btnbooknote.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbooknote.Click += new System.EventHandler(this.btnbooknote_Click);
+            this.btnbooknote.Click += new System.EventHandler(this.btnbooknote_Click_1);
             // 
             // btnbook
             // 
@@ -419,13 +426,13 @@
             this.btnbook.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnbook.OnHoverTextColor = System.Drawing.Color.White;
             this.btnbook.selected = false;
-            this.btnbook.Size = new System.Drawing.Size(222, 48);
+            this.btnbook.Size = new System.Drawing.Size(237, 48);
             this.btnbook.TabIndex = 0;
             this.btnbook.Text = "កត់ត្រាការកក់បន្ទប់";
             this.btnbook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbook.Textcolor = System.Drawing.Color.White;
             this.btnbook.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbook.Click += new System.EventHandler(this.btnbook_Click);
+            this.btnbook.Click += new System.EventHandler(this.btnbook_Click_1);
             // 
             // pnRoom
             // 
@@ -433,10 +440,11 @@
             this.pnRoom.Controls.Add(this.btnAddRoom);
             this.pnRoom.Controls.Add(this.btnCheckRoom);
             this.pnRoom.Controls.Add(this.btnRoom);
-            this.pnRoom.Location = new System.Drawing.Point(750, 35);
+            this.pnRoom.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnRoom.Location = new System.Drawing.Point(0, 292);
             this.pnRoom.Name = "pnRoom";
-            this.pnRoom.Size = new System.Drawing.Size(222, 194);
-            this.pnRoom.TabIndex = 4;
+            this.pnRoom.Size = new System.Drawing.Size(237, 48);
+            this.pnRoom.TabIndex = 5;
             // 
             // btnRoomPrice
             // 
@@ -466,13 +474,12 @@
             this.btnRoomPrice.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnRoomPrice.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRoomPrice.selected = false;
-            this.btnRoomPrice.Size = new System.Drawing.Size(222, 48);
+            this.btnRoomPrice.Size = new System.Drawing.Size(237, 48);
             this.btnRoomPrice.TabIndex = 3;
             this.btnRoomPrice.Text = "ព័ត៌មានតម្លៃបន្ទប់";
             this.btnRoomPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRoomPrice.Textcolor = System.Drawing.Color.White;
             this.btnRoomPrice.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoomPrice.Click += new System.EventHandler(this.btnRoomPrice_Click);
             // 
             // btnAddRoom
             // 
@@ -502,13 +509,12 @@
             this.btnAddRoom.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnAddRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddRoom.selected = false;
-            this.btnAddRoom.Size = new System.Drawing.Size(222, 48);
+            this.btnAddRoom.Size = new System.Drawing.Size(237, 48);
             this.btnAddRoom.TabIndex = 2;
             this.btnAddRoom.Text = "ព័ត៌មានបន្ទប់";
             this.btnAddRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAddRoom.Textcolor = System.Drawing.Color.White;
             this.btnAddRoom.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddRoom.Click += new System.EventHandler(this.btnAddRoom_Click);
             // 
             // btnCheckRoom
             // 
@@ -538,13 +544,12 @@
             this.btnCheckRoom.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnCheckRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCheckRoom.selected = false;
-            this.btnCheckRoom.Size = new System.Drawing.Size(222, 48);
+            this.btnCheckRoom.Size = new System.Drawing.Size(237, 48);
             this.btnCheckRoom.TabIndex = 1;
             this.btnCheckRoom.Text = "ពិនិត្យបន្ទប់";
             this.btnCheckRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCheckRoom.Textcolor = System.Drawing.Color.White;
             this.btnCheckRoom.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCheckRoom.Click += new System.EventHandler(this.btnCheckRoom_Click);
             // 
             // btnRoom
             // 
@@ -574,22 +579,23 @@
             this.btnRoom.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRoom.selected = false;
-            this.btnRoom.Size = new System.Drawing.Size(222, 48);
+            this.btnRoom.Size = new System.Drawing.Size(237, 48);
             this.btnRoom.TabIndex = 0;
             this.btnRoom.Text = "កត់ត្រាការព័ត៌មានបន្ទប់";
             this.btnRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRoom.Textcolor = System.Drawing.Color.White;
             this.btnRoom.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRoom.Click += new System.EventHandler(this.btnRoom_Click);
+            this.btnRoom.Click += new System.EventHandler(this.btnRoom_Click_1);
             // 
             // pncustomer
             // 
             this.pncustomer.Controls.Add(this.btnDataCustomer);
             this.pncustomer.Controls.Add(this.btnCustomer);
-            this.pncustomer.Location = new System.Drawing.Point(294, 236);
+            this.pncustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pncustomer.Location = new System.Drawing.Point(0, 340);
             this.pncustomer.Name = "pncustomer";
-            this.pncustomer.Size = new System.Drawing.Size(222, 96);
-            this.pncustomer.TabIndex = 2;
+            this.pncustomer.Size = new System.Drawing.Size(237, 48);
+            this.pncustomer.TabIndex = 6;
             // 
             // btnDataCustomer
             // 
@@ -619,13 +625,12 @@
             this.btnDataCustomer.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnDataCustomer.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDataCustomer.selected = false;
-            this.btnDataCustomer.Size = new System.Drawing.Size(222, 48);
+            this.btnDataCustomer.Size = new System.Drawing.Size(237, 48);
             this.btnDataCustomer.TabIndex = 2;
             this.btnDataCustomer.Text = "ព័តមានអតិថិជន";
             this.btnDataCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDataCustomer.Textcolor = System.Drawing.Color.White;
             this.btnDataCustomer.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDataCustomer.Click += new System.EventHandler(this.btnDataCustomer_Click);
             // 
             // btnCustomer
             // 
@@ -655,22 +660,23 @@
             this.btnCustomer.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnCustomer.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCustomer.selected = false;
-            this.btnCustomer.Size = new System.Drawing.Size(222, 48);
+            this.btnCustomer.Size = new System.Drawing.Size(237, 48);
             this.btnCustomer.TabIndex = 0;
             this.btnCustomer.Text = "កត់ត្រាព័ត៌មានអតិថិជន";
             this.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCustomer.Textcolor = System.Drawing.Color.White;
             this.btnCustomer.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click);
+            this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click_1);
             // 
             // pnEmployee
             // 
             this.pnEmployee.Controls.Add(this.btnEmployeeData);
             this.pnEmployee.Controls.Add(this.btnEmployee);
-            this.pnEmployee.Location = new System.Drawing.Point(522, 236);
+            this.pnEmployee.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnEmployee.Location = new System.Drawing.Point(0, 388);
             this.pnEmployee.Name = "pnEmployee";
-            this.pnEmployee.Size = new System.Drawing.Size(222, 96);
-            this.pnEmployee.TabIndex = 2;
+            this.pnEmployee.Size = new System.Drawing.Size(237, 48);
+            this.pnEmployee.TabIndex = 7;
             // 
             // btnEmployeeData
             // 
@@ -700,13 +706,12 @@
             this.btnEmployeeData.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnEmployeeData.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEmployeeData.selected = false;
-            this.btnEmployeeData.Size = new System.Drawing.Size(222, 48);
+            this.btnEmployeeData.Size = new System.Drawing.Size(237, 48);
             this.btnEmployeeData.TabIndex = 2;
             this.btnEmployeeData.Text = "ព័ត៌មានបុគ្គលិក";
             this.btnEmployeeData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployeeData.Textcolor = System.Drawing.Color.White;
             this.btnEmployeeData.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployeeData.Click += new System.EventHandler(this.btnEmployeeData_Click);
             // 
             // btnEmployee
             // 
@@ -736,13 +741,13 @@
             this.btnEmployee.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnEmployee.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEmployee.selected = false;
-            this.btnEmployee.Size = new System.Drawing.Size(222, 48);
+            this.btnEmployee.Size = new System.Drawing.Size(237, 48);
             this.btnEmployee.TabIndex = 0;
             this.btnEmployee.Text = "កត់ត្រាព័ត៌មានបុគ្គលិក";
             this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEmployee.Textcolor = System.Drawing.Color.White;
             this.btnEmployee.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click_1);
             // 
             // pnExpent
             // 
@@ -750,10 +755,11 @@
             this.pnExpent.Controls.Add(this.btnExpensType);
             this.pnExpent.Controls.Add(this.btnNoteExpen);
             this.pnExpent.Controls.Add(this.btnExpenAndIncome);
-            this.pnExpent.Location = new System.Drawing.Point(750, 235);
+            this.pnExpent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnExpent.Location = new System.Drawing.Point(0, 436);
             this.pnExpent.Name = "pnExpent";
-            this.pnExpent.Size = new System.Drawing.Size(222, 193);
-            this.pnExpent.TabIndex = 2;
+            this.pnExpent.Size = new System.Drawing.Size(237, 48);
+            this.pnExpent.TabIndex = 8;
             // 
             // btnPaymentAndIncome
             // 
@@ -783,13 +789,12 @@
             this.btnPaymentAndIncome.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnPaymentAndIncome.OnHoverTextColor = System.Drawing.Color.White;
             this.btnPaymentAndIncome.selected = false;
-            this.btnPaymentAndIncome.Size = new System.Drawing.Size(222, 48);
+            this.btnPaymentAndIncome.Size = new System.Drawing.Size(237, 48);
             this.btnPaymentAndIncome.TabIndex = 3;
             this.btnPaymentAndIncome.Text = "ពិនិត្យចំណូល ចំណាយ";
             this.btnPaymentAndIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPaymentAndIncome.Textcolor = System.Drawing.Color.White;
             this.btnPaymentAndIncome.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPaymentAndIncome.Click += new System.EventHandler(this.btnPaymentAndIncome_Click);
             // 
             // btnExpensType
             // 
@@ -819,13 +824,12 @@
             this.btnExpensType.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnExpensType.OnHoverTextColor = System.Drawing.Color.White;
             this.btnExpensType.selected = false;
-            this.btnExpensType.Size = new System.Drawing.Size(222, 48);
+            this.btnExpensType.Size = new System.Drawing.Size(237, 48);
             this.btnExpensType.TabIndex = 2;
             this.btnExpensType.Text = "បង្កើតប្រភេទចំណាយ";
             this.btnExpensType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExpensType.Textcolor = System.Drawing.Color.White;
             this.btnExpensType.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpensType.Click += new System.EventHandler(this.btnExpensType_Click);
             // 
             // btnNoteExpen
             // 
@@ -855,13 +859,12 @@
             this.btnNoteExpen.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnNoteExpen.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNoteExpen.selected = false;
-            this.btnNoteExpen.Size = new System.Drawing.Size(222, 48);
+            this.btnNoteExpen.Size = new System.Drawing.Size(237, 48);
             this.btnNoteExpen.TabIndex = 1;
             this.btnNoteExpen.Text = "កត់ត្រាការចំណាយ";
             this.btnNoteExpen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNoteExpen.Textcolor = System.Drawing.Color.White;
             this.btnNoteExpen.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNoteExpen.Click += new System.EventHandler(this.btnNoteExpen_Click);
             // 
             // btnExpenAndIncome
             // 
@@ -891,25 +894,19 @@
             this.btnExpenAndIncome.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnExpenAndIncome.OnHoverTextColor = System.Drawing.Color.White;
             this.btnExpenAndIncome.selected = false;
-            this.btnExpenAndIncome.Size = new System.Drawing.Size(222, 48);
+            this.btnExpenAndIncome.Size = new System.Drawing.Size(237, 48);
             this.btnExpenAndIncome.TabIndex = 0;
             this.btnExpenAndIncome.Text = "ទិន្នន័យចំណូល ចំណាយ";
             this.btnExpenAndIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExpenAndIncome.Textcolor = System.Drawing.Color.White;
             this.btnExpenAndIncome.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExpenAndIncome.Click += new System.EventHandler(this.btnExpenAndIncome_Click);
+            this.btnExpenAndIncome.Click += new System.EventHandler(this.btnExpenAndIncome_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 720);
-            this.Controls.Add(this.pnExpent);
-            this.Controls.Add(this.pnEmployee);
-            this.Controls.Add(this.pncustomer);
-            this.Controls.Add(this.pnStay);
-            this.Controls.Add(this.pnRoom);
-            this.Controls.Add(this.pnBook);
             this.Controls.Add(this.pnMenu);
             this.Controls.Add(this.Pntopbar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -941,30 +938,30 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnMaximize;
         private System.Windows.Forms.Panel pnlogout;
         private Bunifu.Framework.UI.BunifuFlatButton btnExit;
-        private System.Windows.Forms.Panel pnStay;
-        private Bunifu.Framework.UI.BunifuFlatButton btncheckout;
-        private Bunifu.Framework.UI.BunifuFlatButton btncheckin;
-        private Bunifu.Framework.UI.BunifuFlatButton btnstay;
+        private System.Windows.Forms.Panel pnExpent;
+        private Bunifu.Framework.UI.BunifuFlatButton btnPaymentAndIncome;
+        private Bunifu.Framework.UI.BunifuFlatButton btnExpensType;
+        private Bunifu.Framework.UI.BunifuFlatButton btnNoteExpen;
+        private Bunifu.Framework.UI.BunifuFlatButton btnExpenAndIncome;
+        private System.Windows.Forms.Panel pnEmployee;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEmployeeData;
+        private Bunifu.Framework.UI.BunifuFlatButton btnEmployee;
+        private System.Windows.Forms.Panel pncustomer;
+        private Bunifu.Framework.UI.BunifuFlatButton btnDataCustomer;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCustomer;
+        private System.Windows.Forms.Panel pnRoom;
+        private Bunifu.Framework.UI.BunifuFlatButton btnRoomPrice;
+        private Bunifu.Framework.UI.BunifuFlatButton btnAddRoom;
+        private Bunifu.Framework.UI.BunifuFlatButton btnCheckRoom;
+        private Bunifu.Framework.UI.BunifuFlatButton btnRoom;
         private System.Windows.Forms.Panel pnBook;
         private Bunifu.Framework.UI.BunifuFlatButton btnbookData;
         private Bunifu.Framework.UI.BunifuFlatButton btnbooknote;
         private Bunifu.Framework.UI.BunifuFlatButton btnbook;
-        private System.Windows.Forms.Panel pnRoom;
-        private Bunifu.Framework.UI.BunifuFlatButton btnAddRoom;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCheckRoom;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRoom;
-        private System.Windows.Forms.Panel pncustomer;
-        private Bunifu.Framework.UI.BunifuFlatButton btnDataCustomer;
-        private Bunifu.Framework.UI.BunifuFlatButton btnCustomer;
-        private System.Windows.Forms.Panel pnEmployee;
-        private Bunifu.Framework.UI.BunifuFlatButton btnEmployeeData;
-        private Bunifu.Framework.UI.BunifuFlatButton btnEmployee;
-        private System.Windows.Forms.Panel pnExpent;
-        private Bunifu.Framework.UI.BunifuFlatButton btnExpensType;
-        private Bunifu.Framework.UI.BunifuFlatButton btnNoteExpen;
-        private Bunifu.Framework.UI.BunifuFlatButton btnExpenAndIncome;
-        private Bunifu.Framework.UI.BunifuFlatButton btnPaymentAndIncome;
-        private Bunifu.Framework.UI.BunifuFlatButton btnRoomPrice;
+        private System.Windows.Forms.Panel pnStay;
+        private Bunifu.Framework.UI.BunifuFlatButton btncheckout;
+        private Bunifu.Framework.UI.BunifuFlatButton btncheckin;
+        private Bunifu.Framework.UI.BunifuFlatButton btnstay;
     }
 }
 

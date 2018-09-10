@@ -127,5 +127,40 @@ namespace GuestHouse
             BookingData BKD = new BookingData();
             BKD.ShowDialog();
         }
+
+        private void btnstay_Click_1(object sender, EventArgs e)
+        {
+            dom_Design.dropdown(pnStay, 48, 3);
+        }
+
+        private void btnbook_Click_1(object sender, EventArgs e)
+        {
+            dom_Design.dropdown(pnBook, 48, 3);
+        }
+
+        private void btnRoom_Click_1(object sender, EventArgs e)
+        {
+            dom_Design.dropdown(pnRoom, 48, 4);
+        }
+
+        private void btnCustomer_Click_1(object sender, EventArgs e)
+        {
+            dom_Design.dropdown(pncustomer, 48, 2);
+        }
+
+        private void btnEmployee_Click_1(object sender, EventArgs e)
+        {
+            dom_Design.dropdown(pnEmployee, 48, 2);
+        }
+
+        private void btnExpenAndIncome_Click_1(object sender, EventArgs e)
+        {
+            dom_Design.dropdown(pnExpent, 48, 4);
+        }
+
+        private void btnbooknote_Click_1(object sender, EventArgs e)
+        {
+            Booking bk = new Booking();
+        }
     }
 }
