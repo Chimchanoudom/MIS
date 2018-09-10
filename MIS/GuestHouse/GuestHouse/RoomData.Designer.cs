@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RoomData));
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -40,14 +40,15 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.btnCancelSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.rndSearchRoomDouble = new System.Windows.Forms.RadioButton();
+            this.rndStutus = new System.Windows.Forms.RadioButton();
             this.rndSearchFloor = new System.Windows.Forms.RadioButton();
-            this.rndSearchRoomVIP = new System.Windows.Forms.RadioButton();
-            this.rndSearchSingle = new System.Windows.Forms.RadioButton();
+            this.rndSearchRoomType = new System.Windows.Forms.RadioButton();
             this.rndSearchRoomNum = new System.Windows.Forms.RadioButton();
             this.groupDataEmployee = new System.Windows.Forms.GroupBox();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -76,6 +77,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataRoom)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupDataEmployee.SuspendLayout();
@@ -114,8 +116,8 @@
             // 
             this.dataRoom.AllowUserToAddRows = false;
             this.dataRoom.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataRoom.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataRoom.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataRoom.BackgroundColor = System.Drawing.Color.White;
             this.dataRoom.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -137,8 +139,8 @@
             // 
             // Column1
             // 
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column1.FillWeight = 60F;
             this.Column1.HeaderText = "លេខកូដសម្គាល់";
             this.Column1.Name = "Column1";
@@ -176,6 +178,7 @@
             // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.panel8);
             this.groupBox6.Controls.Add(this.panel7);
             this.groupBox6.Controls.Add(this.groupBox7);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Left;
@@ -189,6 +192,42 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "ស្វែងរក";
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.btnCancelSearch);
+            this.panel8.Location = new System.Drawing.Point(315, 234);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(183, 46);
+            this.panel8.TabIndex = 5;
+            // 
+            // btnCancelSearch
+            // 
+            this.btnCancelSearch.ActiveBorderThickness = 1;
+            this.btnCancelSearch.ActiveCornerRadius = 20;
+            this.btnCancelSearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancelSearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancelSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancelSearch.BackgroundImage")));
+            this.btnCancelSearch.ButtonText = "Cancel";
+            this.btnCancelSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancelSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnCancelSearch.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCancelSearch.IdleBorderThickness = 1;
+            this.btnCancelSearch.IdleCornerRadius = 20;
+            this.btnCancelSearch.IdleFillColor = System.Drawing.Color.White;
+            this.btnCancelSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnCancelSearch.Location = new System.Drawing.Point(0, 0);
+            this.btnCancelSearch.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.btnCancelSearch.Name = "btnCancelSearch";
+            this.btnCancelSearch.Size = new System.Drawing.Size(183, 46);
+            this.btnCancelSearch.TabIndex = 5;
+            this.btnCancelSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancelSearch.Visible = false;
+            this.btnCancelSearch.Click += new System.EventHandler(this.btnCancelSearch_Click);
+            // 
             // panel7
             // 
             this.panel7.Controls.Add(this.btnSearch);
@@ -197,7 +236,7 @@
             this.panel7.Location = new System.Drawing.Point(4, 187);
             this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(495, 44);
+            this.panel7.Size = new System.Drawing.Size(495, 40);
             this.panel7.TabIndex = 1;
             // 
             // btnSearch
@@ -211,7 +250,7 @@
             this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
             this.btnSearch.ButtonText = " ស្វែងរក";
             this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnSearch.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
             this.btnSearch.IdleBorderThickness = 1;
@@ -222,9 +261,10 @@
             this.btnSearch.Location = new System.Drawing.Point(311, 0);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(183, 44);
+            this.btnSearch.Size = new System.Drawing.Size(184, 44);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // txtSearch
             // 
@@ -232,17 +272,15 @@
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(0, 0);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(311, 44);
+            this.txtSearch.Size = new System.Drawing.Size(311, 34);
             this.txtSearch.TabIndex = 0;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.rndSearchRoomDouble);
+            this.groupBox7.Controls.Add(this.rndStutus);
             this.groupBox7.Controls.Add(this.rndSearchFloor);
-            this.groupBox7.Controls.Add(this.rndSearchRoomVIP);
-            this.groupBox7.Controls.Add(this.rndSearchSingle);
+            this.groupBox7.Controls.Add(this.rndSearchRoomType);
             this.groupBox7.Controls.Add(this.rndSearchRoomNum);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox7.Location = new System.Drawing.Point(4, 42);
@@ -254,57 +292,43 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "លក្ខខណ្ឌ";
             // 
-            // rndSearchRoomDouble
+            // rndStutus
             // 
-            this.rndSearchRoomDouble.AutoSize = true;
-            this.rndSearchRoomDouble.Location = new System.Drawing.Point(352, 44);
-            this.rndSearchRoomDouble.Margin = new System.Windows.Forms.Padding(4);
-            this.rndSearchRoomDouble.Name = "rndSearchRoomDouble";
-            this.rndSearchRoomDouble.Size = new System.Drawing.Size(129, 42);
-            this.rndSearchRoomDouble.TabIndex = 0;
-            this.rndSearchRoomDouble.TabStop = true;
-            this.rndSearchRoomDouble.Text = "បន្ទប់គ្រែពីរ";
-            this.rndSearchRoomDouble.UseVisualStyleBackColor = true;
+            this.rndStutus.AutoSize = true;
+            this.rndStutus.Location = new System.Drawing.Point(28, 80);
+            this.rndStutus.Margin = new System.Windows.Forms.Padding(4);
+            this.rndStutus.Name = "rndStutus";
+            this.rndStutus.Size = new System.Drawing.Size(108, 42);
+            this.rndStutus.TabIndex = 1;
+            this.rndStutus.Text = "ស្ថានភាព";
+            this.rndStutus.UseVisualStyleBackColor = true;
             // 
             // rndSearchFloor
             // 
             this.rndSearchFloor.AutoSize = true;
-            this.rndSearchFloor.Location = new System.Drawing.Point(209, 94);
+            this.rndSearchFloor.Location = new System.Drawing.Point(373, 44);
             this.rndSearchFloor.Margin = new System.Windows.Forms.Padding(4);
             this.rndSearchFloor.Name = "rndSearchFloor";
             this.rndSearchFloor.Size = new System.Drawing.Size(69, 42);
             this.rndSearchFloor.TabIndex = 0;
-            this.rndSearchFloor.TabStop = true;
             this.rndSearchFloor.Text = "ជាន់";
             this.rndSearchFloor.UseVisualStyleBackColor = true;
             // 
-            // rndSearchRoomVIP
+            // rndSearchRoomType
             // 
-            this.rndSearchRoomVIP.AutoSize = true;
-            this.rndSearchRoomVIP.Location = new System.Drawing.Point(28, 94);
-            this.rndSearchRoomVIP.Margin = new System.Windows.Forms.Padding(4);
-            this.rndSearchRoomVIP.Name = "rndSearchRoomVIP";
-            this.rndSearchRoomVIP.Size = new System.Drawing.Size(140, 42);
-            this.rndSearchRoomVIP.TabIndex = 0;
-            this.rndSearchRoomVIP.TabStop = true;
-            this.rndSearchRoomVIP.Text = "បន្ទប់ពិសេស";
-            this.rndSearchRoomVIP.UseVisualStyleBackColor = true;
-            // 
-            // rndSearchSingle
-            // 
-            this.rndSearchSingle.AutoSize = true;
-            this.rndSearchSingle.Location = new System.Drawing.Point(197, 44);
-            this.rndSearchSingle.Margin = new System.Windows.Forms.Padding(4);
-            this.rndSearchSingle.Name = "rndSearchSingle";
-            this.rndSearchSingle.Size = new System.Drawing.Size(139, 42);
-            this.rndSearchSingle.TabIndex = 0;
-            this.rndSearchSingle.TabStop = true;
-            this.rndSearchSingle.Text = "បន្ទប់គ្រែមួយ";
-            this.rndSearchSingle.UseVisualStyleBackColor = true;
+            this.rndSearchRoomType.AutoSize = true;
+            this.rndSearchRoomType.Location = new System.Drawing.Point(197, 44);
+            this.rndSearchRoomType.Margin = new System.Windows.Forms.Padding(4);
+            this.rndSearchRoomType.Name = "rndSearchRoomType";
+            this.rndSearchRoomType.Size = new System.Drawing.Size(134, 42);
+            this.rndSearchRoomType.TabIndex = 0;
+            this.rndSearchRoomType.Text = "ប្រភេទបន្ទប់";
+            this.rndSearchRoomType.UseVisualStyleBackColor = true;
             // 
             // rndSearchRoomNum
             // 
             this.rndSearchRoomNum.AutoSize = true;
+            this.rndSearchRoomNum.Checked = true;
             this.rndSearchRoomNum.Location = new System.Drawing.Point(28, 44);
             this.rndSearchRoomNum.Margin = new System.Windows.Forms.Padding(4);
             this.rndSearchRoomNum.Name = "rndSearchRoomNum";
@@ -657,6 +681,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataRoom)).EndInit();
             this.panel3.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
+            this.panel8.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
             this.groupBox7.ResumeLayout(false);
@@ -682,10 +707,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.RadioButton rndSearchRoomDouble;
         private System.Windows.Forms.RadioButton rndSearchFloor;
-        private System.Windows.Forms.RadioButton rndSearchRoomVIP;
-        private System.Windows.Forms.RadioButton rndSearchSingle;
         private System.Windows.Forms.RadioButton rndSearchRoomNum;
         private System.Windows.Forms.GroupBox groupDataEmployee;
         private System.Windows.Forms.Panel panel2;
@@ -713,5 +735,9 @@
         private System.Windows.Forms.ComboBox CMFloor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.RadioButton rndSearchRoomType;
+        private System.Windows.Forms.Panel panel8;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCancelSearch;
+        private System.Windows.Forms.RadioButton rndStutus;
     }
 }
