@@ -16,23 +16,12 @@ class Dom_SqlClass:UserLoginDetail
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
         static SqlDataReader SDR;
-<<<<<<< HEAD
-=======
 
-<<<<<<< HEAD
-
-=======
         //static DataTable DT;
->>>>>>> e5c8e37bddf74453d5e949c1cd188248f6a7429a
-        
 
->>>>>>> 23441ec47b2f4bd1529b376ae2cd7ba47c4ffe6b
         static DataTable DT = new DataTable();
 
-<<<<<<< HEAD
-=======
 
->>>>>>> e5c8e37bddf74453d5e949c1cd188248f6a7429a
         public static string GetIDFromDB(String column,string seperater,String TableName)
         {
             object ID="";
