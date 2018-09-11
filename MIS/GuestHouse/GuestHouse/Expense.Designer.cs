@@ -183,10 +183,17 @@
             // 
             // panel7
             // 
+
+            this.panel7.Controls.Add(this.DateSearch);
+            this.panel7.Controls.Add(this.btnSearch);
+            this.panel7.Controls.Add(this.btnCancel);
+            this.panel7.Controls.Add(this.txtSearch);
+
             this.panel7.Controls.Add(this.btnSearch);
             this.panel7.Controls.Add(this.btnCancel);
             this.panel7.Controls.Add(this.txtSearch);
             this.panel7.Controls.Add(this.DateSearch);
+
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 151);
             this.panel7.Name = "panel7";
@@ -197,7 +204,11 @@
             // 
             this.DateSearch.Dock = System.Windows.Forms.DockStyle.Left;
             this.DateSearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+            this.DateSearch.Location = new System.Drawing.Point(234, 0);
+
             this.DateSearch.Location = new System.Drawing.Point(0, 0);
+
             this.DateSearch.Name = "DateSearch";
             this.DateSearch.Size = new System.Drawing.Size(234, 26);
             this.DateSearch.TabIndex = 2;
@@ -228,7 +239,10 @@
             this.btnSearch.Size = new System.Drawing.Size(79, 31);
             this.btnSearch.TabIndex = 18;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+
             // 
             // btnCancel
             // 
@@ -255,13 +269,20 @@
             this.btnCancel.Size = new System.Drawing.Size(79, 31);
             this.btnCancel.TabIndex = 17;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+
+
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+
             // 
             // txtSearch
             // 
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Left;
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
+            this.txtSearch.Location = new System.Drawing.Point(0, 0);
+
             this.txtSearch.Location = new System.Drawing.Point(234, 0);
+
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(234, 29);
             this.txtSearch.TabIndex = 15;
@@ -289,7 +310,10 @@
             this.rndSearchNote.TabIndex = 12;
             this.rndSearchNote.Text = "ថ្ងៃកត់ត្រា";
             this.rndSearchNote.UseVisualStyleBackColor = true;
+
+
             this.rndSearchNote.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
+
             // 
             // rndSearchPay
             // 
@@ -300,7 +324,10 @@
             this.rndSearchPay.TabIndex = 13;
             this.rndSearchPay.Text = "ថ្ងៃចំណាយ";
             this.rndSearchPay.UseVisualStyleBackColor = true;
+
+
             this.rndSearchPay.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
+
             // 
             // rndSearcAll
             // 
@@ -311,7 +338,10 @@
             this.rndSearcAll.TabIndex = 11;
             this.rndSearcAll.Text = "ទាំងអស់";
             this.rndSearcAll.UseVisualStyleBackColor = true;
+
+
             this.rndSearcAll.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
+
             // 
             // rndSearchID
             // 
@@ -324,7 +354,10 @@
             this.rndSearchID.TabStop = true;
             this.rndSearchID.Text = "លេខកូដសម្គាល់";
             this.rndSearchID.UseVisualStyleBackColor = true;
+
+
             this.rndSearchID.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
+
             // 
             // groupBox1
             // 

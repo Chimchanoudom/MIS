@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Bunifu.Framework.Lib;
+using Bunifu.Framework.UI;
 
 namespace GuestHouse
 {
@@ -37,10 +39,14 @@ namespace GuestHouse
         {
             Desing.dropdown(pnStay, 48, 3);
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            BunifuFlatButton[] btn = { btnstay,btnbook,btnRoom,btnCustomer,btnEmployee,btnExpenAndIncome};
+            foreach(BunifuFlatButton button in btn)
+            {
+                
+            }
         }
 
         private void btnbook_Click(object sender, EventArgs e)
@@ -127,7 +133,7 @@ namespace GuestHouse
             BookingData BKD = new BookingData();
             BKD.ShowDialog();
         }
-
+        Button[] btn;
         private void btnstay_Click_1(object sender, EventArgs e)
         {
             dom_Design.dropdown(pnStay, 48, 3);
@@ -161,6 +167,60 @@ namespace GuestHouse
         private void btnbooknote_Click_1(object sender, EventArgs e)
         {
             Booking bk = new Booking();
+        }
+
+        private void btnbookData_Click_1(object sender, EventArgs e)
+        {
+            BookingData BD = new BookingData();
+            BD.ShowDialog();
+        }
+
+        private void btnRoomPrice_Click_1(object sender, EventArgs e)
+        {
+            RoomPrice RP = new RoomPrice();
+            RP.ShowDialog();
+        }
+
+        private void btnAddRoom_Click_1(object sender, EventArgs e)
+        {
+            RoomData RD = new RoomData();
+            RD.ShowDialog();
+        }
+
+        private void btnCheckRoom_Click_1(object sender, EventArgs e)
+        {
+            CheckRoom CR = new CheckRoom();
+            CR.ShowDialog();
+        }
+
+        private void btnDataCustomer_Click_1(object sender, EventArgs e)
+        {
+            Customer Cus = new Customer();
+            Cus.ShowDialog();
+        }
+
+        private void btnEmployeeData_Click_1(object sender, EventArgs e)
+        {
+            Employee Emp = new Employee();
+            Emp.ShowDialog();
+        }
+
+        private void btnNoteExpen_Click_1(object sender, EventArgs e)
+        {
+            Expense EXP = new Expense();
+            EXP.ShowDialog();
+        }
+
+        private void btnExpensType_Click_1(object sender, EventArgs e)
+        {
+            expensType EXT = new expensType();
+            EXT.ShowDialog();
+        }
+        
+        private void btnPaymentAndIncome_Click_1(object sender, EventArgs e)
+        {
+            ExpensAndIncome EAI = new ExpensAndIncome();
+            EAI.ShowDialog();
         }
     }
 }
