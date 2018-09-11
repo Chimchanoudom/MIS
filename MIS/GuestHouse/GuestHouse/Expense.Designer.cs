@@ -29,10 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expense));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -40,29 +39,28 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton24 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEdit = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.datePay = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmType = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DateNote = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.txtID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtAmount = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.DataExpense = new System.Windows.Forms.DataGridView();
@@ -72,6 +70,17 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.rndSearchNote = new System.Windows.Forms.RadioButton();
+            this.rndSearchPay = new System.Windows.Forms.RadioButton();
+            this.rndSearcAll = new System.Windows.Forms.RadioButton();
+            this.rndSearchID = new System.Windows.Forms.RadioButton();
+            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.DateSearch = new System.Windows.Forms.DateTimePicker();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -80,6 +89,9 @@
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataExpense)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -147,6 +159,7 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.groupBox6);
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 40);
@@ -170,140 +183,116 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.bunifuThinButton24);
-            this.panel6.Controls.Add(this.bunifuThinButton23);
-            this.panel6.Controls.Add(this.bunifuThinButton22);
-            this.panel6.Controls.Add(this.bunifuThinButton21);
+            this.panel6.Controls.Add(this.btnDelete);
+            this.panel6.Controls.Add(this.btnEdit);
+            this.panel6.Controls.Add(this.btnAdd);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(3, 258);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(463, 42);
             this.panel6.TabIndex = 11022;
             // 
-            // bunifuThinButton24
+            // btnDelete
             // 
-            this.bunifuThinButton24.ActiveBorderThickness = 1;
-            this.bunifuThinButton24.ActiveCornerRadius = 20;
-            this.bunifuThinButton24.ActiveFillColor = System.Drawing.Color.Navy;
-            this.bunifuThinButton24.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton24.ActiveLineColor = System.Drawing.Color.Navy;
-            this.bunifuThinButton24.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton24.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton24.BackgroundImage")));
-            this.bunifuThinButton24.ButtonText = "រក្សាទុក";
-            this.bunifuThinButton24.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton24.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuThinButton24.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton24.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton24.IdleBorderThickness = 1;
-            this.bunifuThinButton24.IdleCornerRadius = 20;
-            this.bunifuThinButton24.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton24.IdleForecolor = System.Drawing.Color.Blue;
-            this.bunifuThinButton24.IdleLineColor = System.Drawing.Color.Blue;
-            this.bunifuThinButton24.Location = new System.Drawing.Point(345, 0);
-            this.bunifuThinButton24.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.bunifuThinButton24.Name = "bunifuThinButton24";
-            this.bunifuThinButton24.Size = new System.Drawing.Size(115, 42);
-            this.bunifuThinButton24.TabIndex = 4;
-            this.bunifuThinButton24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.ActiveBorderThickness = 1;
+            this.btnDelete.ActiveCornerRadius = 20;
+            this.btnDelete.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDelete.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnDelete.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
+            this.btnDelete.ButtonText = "លុប";
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnDelete.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnDelete.IdleBorderThickness = 1;
+            this.btnDelete.IdleCornerRadius = 20;
+            this.btnDelete.IdleFillColor = System.Drawing.Color.White;
+            this.btnDelete.IdleForecolor = System.Drawing.Color.Red;
+            this.btnDelete.IdleLineColor = System.Drawing.Color.Red;
+            this.btnDelete.Location = new System.Drawing.Point(230, 0);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(115, 42);
+            this.btnDelete.TabIndex = 3;
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
-            // bunifuThinButton23
+            // btnEdit
             // 
-            this.bunifuThinButton23.ActiveBorderThickness = 1;
-            this.bunifuThinButton23.ActiveCornerRadius = 20;
-            this.bunifuThinButton23.ActiveFillColor = System.Drawing.Color.Red;
-            this.bunifuThinButton23.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton23.ActiveLineColor = System.Drawing.Color.Red;
-            this.bunifuThinButton23.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton23.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton23.BackgroundImage")));
-            this.bunifuThinButton23.ButtonText = "លុប";
-            this.bunifuThinButton23.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton23.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuThinButton23.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton23.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton23.IdleBorderThickness = 1;
-            this.bunifuThinButton23.IdleCornerRadius = 20;
-            this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Red;
-            this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Red;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(230, 0);
-            this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(115, 42);
-            this.bunifuThinButton23.TabIndex = 3;
-            this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEdit.ActiveBorderThickness = 1;
+            this.btnEdit.ActiveCornerRadius = 20;
+            this.btnEdit.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEdit.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
+            this.btnEdit.ButtonText = "កែប្រែ";
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnEdit.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnEdit.IdleBorderThickness = 1;
+            this.btnEdit.IdleCornerRadius = 20;
+            this.btnEdit.IdleFillColor = System.Drawing.Color.White;
+            this.btnEdit.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.Location = new System.Drawing.Point(115, 0);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(115, 42);
+            this.btnEdit.TabIndex = 2;
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // bunifuThinButton22
+            // btnAdd
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "កែប្រែ";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(115, 0);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(115, 42);
-            this.bunifuThinButton22.TabIndex = 2;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Green;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Green;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "បញ្ចូល";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(0, 0);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(115, 42);
-            this.bunifuThinButton21.TabIndex = 1;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.ActiveBorderThickness = 1;
+            this.btnAdd.ActiveCornerRadius = 20;
+            this.btnAdd.ActiveFillColor = System.Drawing.Color.Green;
+            this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAdd.ActiveLineColor = System.Drawing.Color.Green;
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.ButtonText = "បញ្ចូល";
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAdd.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnAdd.IdleBorderThickness = 1;
+            this.btnAdd.IdleCornerRadius = 20;
+            this.btnAdd.IdleFillColor = System.Drawing.Color.White;
+            this.btnAdd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.Location = new System.Drawing.Point(0, 0);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(115, 42);
+            this.btnAdd.TabIndex = 1;
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.label6);
-            this.panel5.Controls.Add(this.dateTimePicker2);
+            this.panel5.Controls.Add(this.datePay);
             this.panel5.Controls.Add(this.label10);
             this.panel5.Controls.Add(this.label9);
             this.panel5.Controls.Add(this.label12);
             this.panel5.Controls.Add(this.label11);
             this.panel5.Controls.Add(this.label13);
-            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.cmType);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Controls.Add(this.dateTimePicker1);
+            this.panel5.Controls.Add(this.DateNote);
             this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.textBox1);
+            this.panel5.Controls.Add(this.txtName);
             this.panel5.Controls.Add(this.txtID);
             this.panel5.Controls.Add(this.label3);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Controls.Add(this.label8);
             this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.txtAmount);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(3, 34);
             this.panel5.Name = "panel5";
@@ -315,19 +304,19 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 185);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(118, 30);
+            this.label6.Size = new System.Drawing.Size(88, 30);
             this.label6.TabIndex = 11013;
-            this.label6.Text = "គោត្តនាម​-នាមខ្លួន";
+            this.label6.Text = "តម្លៃចំណាយ";
             // 
-            // dateTimePicker2
+            // datePay
             // 
-            this.dateTimePicker2.CustomFormat = "ddd-dd-MMMM-yyyy";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(184, 151);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(233, 29);
-            this.dateTimePicker2.TabIndex = 3;
+            this.datePay.CustomFormat = "ddd-dd-MMMM-yyyy";
+            this.datePay.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datePay.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datePay.Location = new System.Drawing.Point(184, 151);
+            this.datePay.Name = "datePay";
+            this.datePay.Size = new System.Drawing.Size(233, 29);
+            this.datePay.TabIndex = 3;
             // 
             // label10
             // 
@@ -343,9 +332,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(3, 147);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 30);
+            this.label9.Size = new System.Drawing.Size(77, 30);
             this.label9.TabIndex = 11018;
-            this.label9.Text = "នាមត្រកូល";
+            this.label9.Text = "ថ្ងៃចំណាយ";
             // 
             // label12
             // 
@@ -374,49 +363,52 @@
             this.label13.TabIndex = 11006;
             this.label13.Text = ":";
             // 
-            // comboBox1
+            // cmType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(184, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(233, 38);
-            this.comboBox1.TabIndex = 1;
+            this.cmType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmType.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmType.FormattingEnabled = true;
+            this.cmType.Location = new System.Drawing.Point(184, 76);
+            this.cmType.Name = "cmType";
+            this.cmType.Size = new System.Drawing.Size(233, 29);
+            this.cmType.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 74);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 30);
+            this.label5.Size = new System.Drawing.Size(105, 30);
             this.label5.TabIndex = 11005;
-            this.label5.Text = "គោត្តនាម​-នាមខ្លួន";
+            this.label5.Text = "ប្រភេទចំណាយ";
             // 
-            // dateTimePicker1
+            // DateNote
             // 
-            this.dateTimePicker1.CustomFormat = "ddd-dd-MMMM-yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(184, 40);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(233, 29);
-            this.dateTimePicker1.TabIndex = 0;
+            this.DateNote.CustomFormat = "ddd-dd-MMMM-yyyy";
+            this.DateNote.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateNote.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DateNote.Location = new System.Drawing.Point(184, 40);
+            this.DateNote.Name = "DateNote";
+            this.DateNote.Size = new System.Drawing.Size(233, 29);
+            this.DateNote.TabIndex = 0;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 36);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 30);
+            this.label4.Size = new System.Drawing.Size(49, 30);
             this.label4.TabIndex = 11004;
-            this.label4.Text = "នាមត្រកូល";
+            this.label4.Text = "ថ្ងៃកត់";
             // 
-            // textBox1
+            // txtName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(184, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 29);
-            this.textBox1.TabIndex = 2;
+            this.txtName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(184, 114);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(233, 29);
+            this.txtName.TabIndex = 2;
             // 
             // txtID
             // 
@@ -432,9 +424,9 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(1, 112);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 30);
+            this.label3.Size = new System.Drawing.Size(100, 30);
             this.label3.TabIndex = 11012;
-            this.label3.Text = "នាមត្រកូល";
+            this.label3.Text = "ឈ្មោះចំណាយ";
             // 
             // label2
             // 
@@ -463,13 +455,13 @@
             this.label7.TabIndex = 11014;
             this.label7.Text = ":";
             // 
-            // textBox2
+            // txtAmount
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(184, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(233, 29);
-            this.textBox2.TabIndex = 4;
+            this.txtAmount.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount.Location = new System.Drawing.Point(184, 186);
+            this.txtAmount.Name = "txtAmount";
+            this.txtAmount.Size = new System.Drawing.Size(233, 29);
+            this.txtAmount.TabIndex = 4;
             // 
             // panel4
             // 
@@ -499,14 +491,7 @@
             this.DataExpense.AllowUserToDeleteRows = false;
             this.DataExpense.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataExpense.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Khmer SN Kampot", 11F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataExpense.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataExpense.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataExpense.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataExpense.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -515,34 +500,19 @@
             this.Column4,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataExpense.DefaultCellStyle = dataGridViewCellStyle2;
             this.DataExpense.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataExpense.GridColor = System.Drawing.Color.Green;
             this.DataExpense.Location = new System.Drawing.Point(3, 34);
             this.DataExpense.Name = "DataExpense";
             this.DataExpense.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Khmer SN Kampot", 11F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataExpense.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            this.DataExpense.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.DataExpense.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DataExpense.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataExpense.Size = new System.Drawing.Size(922, 381);
             this.DataExpense.TabIndex = 0;
+            this.DataExpense.SelectionChanged += new System.EventHandler(this.DataExpense_SelectionChanged);
             // 
             // Column1
             // 
@@ -552,6 +522,8 @@
             // 
             // Column2
             // 
+            dataGridViewCellStyle1.Format = "ddd-dd-MMMM-yyyy";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column2.HeaderText = "ថ្ងៃកត់ត្រា";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -570,6 +542,8 @@
             // 
             // Column5
             // 
+            dataGridViewCellStyle2.Format = "ddd-dd-MMMM-yyyy";
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column5.HeaderText = "ថ្ងៃចំណាយ";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -579,6 +553,158 @@
             this.Column6.HeaderText = "តម្លៃចំណាយ";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.panel7);
+            this.groupBox6.Controls.Add(this.groupBox7);
+            this.groupBox6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox6.Font = new System.Drawing.Font("Khmer SN Kampot", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(469, 0);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(400, 298);
+            this.groupBox6.TabIndex = 4;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "ស្វែងរក";
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.DateSearch);
+            this.panel7.Controls.Add(this.btnSearch);
+            this.panel7.Controls.Add(this.btnCancel);
+            this.panel7.Controls.Add(this.txtSearch);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel7.Location = new System.Drawing.Point(3, 151);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(394, 31);
+            this.panel7.TabIndex = 1;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.ActiveBorderThickness = 1;
+            this.btnCancel.ActiveCornerRadius = 20;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
+            this.btnCancel.ButtonText = "បោះបង់";
+            this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCancel.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCancel.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCancel.IdleBorderThickness = 1;
+            this.btnCancel.IdleCornerRadius = 20;
+            this.btnCancel.IdleFillColor = System.Drawing.Color.White;
+            this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
+            this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
+            this.btnCancel.Location = new System.Drawing.Point(315, 0);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(79, 31);
+            this.btnCancel.TabIndex = 17;
+            this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(0, 0);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(234, 29);
+            this.txtSearch.TabIndex = 15;
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.rndSearchNote);
+            this.groupBox7.Controls.Add(this.rndSearchPay);
+            this.groupBox7.Controls.Add(this.rndSearcAll);
+            this.groupBox7.Controls.Add(this.rndSearchID);
+            this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox7.Location = new System.Drawing.Point(3, 33);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(394, 118);
+            this.groupBox7.TabIndex = 0;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "លក្ខខណ្ឌ";
+            // 
+            // rndSearchNote
+            // 
+            this.rndSearchNote.AutoSize = true;
+            this.rndSearchNote.Location = new System.Drawing.Point(264, 36);
+            this.rndSearchNote.Name = "rndSearchNote";
+            this.rndSearchNote.Size = new System.Drawing.Size(87, 34);
+            this.rndSearchNote.TabIndex = 12;
+            this.rndSearchNote.Text = "ថ្ងៃកត់ត្រា";
+            this.rndSearchNote.UseVisualStyleBackColor = true;
+            // 
+            // rndSearchPay
+            // 
+            this.rndSearchPay.AutoSize = true;
+            this.rndSearchPay.Location = new System.Drawing.Point(21, 76);
+            this.rndSearchPay.Name = "rndSearchPay";
+            this.rndSearchPay.Size = new System.Drawing.Size(95, 34);
+            this.rndSearchPay.TabIndex = 13;
+            this.rndSearchPay.Text = "ថ្ងៃចំណាយ";
+            this.rndSearchPay.UseVisualStyleBackColor = true;
+            // 
+            // rndSearcAll
+            // 
+            this.rndSearcAll.AutoSize = true;
+            this.rndSearcAll.Location = new System.Drawing.Point(157, 36);
+            this.rndSearcAll.Name = "rndSearcAll";
+            this.rndSearcAll.Size = new System.Drawing.Size(84, 34);
+            this.rndSearcAll.TabIndex = 11;
+            this.rndSearcAll.Text = "ទាំងអស់";
+            this.rndSearcAll.UseVisualStyleBackColor = true;
+            // 
+            // rndSearchID
+            // 
+            this.rndSearchID.AutoSize = true;
+            this.rndSearchID.Checked = true;
+            this.rndSearchID.Location = new System.Drawing.Point(21, 36);
+            this.rndSearchID.Name = "rndSearchID";
+            this.rndSearchID.Size = new System.Drawing.Size(130, 34);
+            this.rndSearchID.TabIndex = 10;
+            this.rndSearchID.TabStop = true;
+            this.rndSearchID.Text = "លេខកូដសម្គាល់";
+            this.rndSearchID.UseVisualStyleBackColor = true;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.ActiveBorderThickness = 1;
+            this.btnSearch.ActiveCornerRadius = 20;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.Purple;
+            this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.Purple;
+            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
+            this.btnSearch.ButtonText = " ស្វែងរក";
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSearch.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnSearch.IdleBorderThickness = 1;
+            this.btnSearch.IdleCornerRadius = 20;
+            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
+            this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
+            this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
+            this.btnSearch.Location = new System.Drawing.Point(236, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(79, 31);
+            this.btnSearch.TabIndex = 18;
+            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // DateSearch
+            // 
+            this.DateSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.DateSearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateSearch.Location = new System.Drawing.Point(234, 0);
+            this.DateSearch.Name = "DateSearch";
+            this.DateSearch.Size = new System.Drawing.Size(234, 26);
+            this.DateSearch.TabIndex = 2;
+            this.DateSearch.Visible = false;
             // 
             // Expense
             // 
@@ -593,6 +719,7 @@
             this.Name = "Expense";
             this.Text = "Expense";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.Expense_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -602,6 +729,11 @@
             this.panel4.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DataExpense)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -615,13 +747,13 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ComboBox cmType;
+        private System.Windows.Forms.DateTimePicker DateNote;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtAmount;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtID;
@@ -631,14 +763,13 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel6;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAdd;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker datePay;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label11;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton24;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEdit;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView DataExpense;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
@@ -647,5 +778,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.DateTimePicker DateSearch;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.RadioButton rndSearchNote;
+        private System.Windows.Forms.RadioButton rndSearchPay;
+        private System.Windows.Forms.RadioButton rndSearcAll;
+        private System.Windows.Forms.RadioButton rndSearchID;
     }
 }

@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace GuestHouse
 {
-    static class Desing
+   class Desing
     {
         public static void dropdown(Panel pn,int Hieght,int numberbutton)
         {

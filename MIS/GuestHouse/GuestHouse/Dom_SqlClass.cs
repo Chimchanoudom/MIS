@@ -16,8 +16,13 @@ class Dom_SqlClass:UserLoginDetail
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
         static SqlDataReader SDR;
+<<<<<<< HEAD
         static DataTable DT;
         
+=======
+        static DataTable DT = new DataTable();
+
+>>>>>>> ea42a259d254475c0a0a5b78133c83ff5b11156a
         public static string GetIDFromDB(String column,string seperater,String TableName)
         {
             object ID="";
@@ -29,9 +34,9 @@ class Dom_SqlClass:UserLoginDetail
                 SC.Connection = dataCon.Con;
                 ID=SC.ExecuteScalar().ToString();
             }
-            catch (Exception)
+            catch (Exception e)
             {
-               //MessageBox.Show(e.Message);
+               MessageBox.Show(e.Message);
             }
             finally
             {
@@ -180,23 +185,53 @@ class Dom_SqlClass:UserLoginDetail
             }
             return delete;
         }
-        public static SqlDataReader retriveData(String SelectStatement)
+        public static DataTable retriveDataMultiTable(String SelectStatement)
         {
             try
             {
                 dataCon.Con.Open();
-                SC = new SqlCommand(SelectStatement.ToString(), dataCon.Con);
-                SDR = SC.ExecuteReader();
+                SC = new SqlCommand(SelectStatement, dataCon.Con);
+                 SDA = new SqlDataAdapter(SC);
+                SCB = new SqlCommandBuilder(SDA);
+                SDA.Fill(DT);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
+                MessageBox.Show(e.Message);
             }
             finally
             {
-                
+                dataCon.Con.Close();
             }
-            return SDR;
+            return DT;
+        }
+        public static bool SQLMultiTable(String[]Statement)
+        {
+            bool success = false;
+            dataCon.Con.Open();
+            SqlTransaction tran = dataCon.Con.BeginTransaction();
+            try
+            {
+
+                for (int i = 0; i < Statement.Length; i++)
+                {
+                    SC = new SqlCommand(Statement[i], dataCon.Con, tran);
+                    SC.ExecuteNonQuery();
+                }
+                tran.Commit();
+                success = true;
+            }
+            catch (SqlException e)
+            {
+                success = false;
+                MessageBox.Show(e.Message);
+                tran.Rollback();
+            }
+            finally
+            {
+                dataCon.Con.Close();
+            }
+            return success;
         }
     }
 }

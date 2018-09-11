@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GuestHouse
 {
-    public partial class Booking : Form
+    public partial class BookingData : Form
     {
-        public Booking()
+        public BookingData()
         {
             InitializeComponent();
         }
@@ -20,6 +20,11 @@ namespace GuestHouse
         private void btnback_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BookingData_Resize(object sender, EventArgs e)
+        {
+            dom_Design.resizewidth(this.Width, new Control[] { groupBox1, groupBox2 }, 2);
         }
     }
 }

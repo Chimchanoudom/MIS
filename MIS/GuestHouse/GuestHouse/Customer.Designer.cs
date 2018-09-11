@@ -552,6 +552,7 @@
             // 
             // txtID
             // 
+            this.txtID.ContextMenuStrip = this.contextMenuStrip1;
             this.txtID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.Location = new System.Drawing.Point(253, 9);
             this.txtID.Margin = new System.Windows.Forms.Padding(4);
