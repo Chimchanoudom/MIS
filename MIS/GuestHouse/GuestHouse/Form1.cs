@@ -133,7 +133,6 @@ namespace GuestHouse
             BookingData BKD = new BookingData();
             BKD.ShowDialog();
         }
-        Button[] btn;
         private void btnstay_Click_1(object sender, EventArgs e)
         {
             dom_Design.dropdown(pnStay, 48, 3);

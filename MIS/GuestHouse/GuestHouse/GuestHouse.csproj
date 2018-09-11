@@ -78,6 +78,24 @@
     <Compile Include="BookingData.Designer.cs">
       <DependentUpon>BookingData.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInData.Designer.cs">
+      <DependentUpon>CheckInData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,6 +175,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="BookingData.resx">
       <DependentUpon>BookingData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInData.resx">
+      <DependentUpon>CheckInData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckRoom.resx">
       <DependentUpon>CheckRoom.cs</DependentUpon>

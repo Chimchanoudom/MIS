@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -1041,9 +1041,9 @@
             this.groupBox7.Controls.Add(this.dataGridView2);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(567, 0);
+            this.groupBox7.Location = new System.Drawing.Point(589, 0);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(855, 315);
+            this.groupBox7.Size = new System.Drawing.Size(833, 315);
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "បញ្ជីកក់បន្ទប់លំអិត";
@@ -1067,12 +1067,12 @@
             this.dataGridView2.Location = new System.Drawing.Point(3, 30);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView2.Size = new System.Drawing.Size(849, 282);
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.Size = new System.Drawing.Size(827, 282);
             this.dataGridView2.TabIndex = 0;
             // 
             // Column3
@@ -1118,7 +1118,7 @@
             this.groupBox6.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(0, 0);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(567, 315);
+            this.groupBox6.Size = new System.Drawing.Size(589, 315);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "បញ្ជីកក់បន្ទប់";
@@ -1141,12 +1141,12 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Size = new System.Drawing.Size(561, 282);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Size = new System.Drawing.Size(583, 282);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1

@@ -1,6 +1,6 @@
 ﻿namespace GuestHouse
 {
-    partial class BookingData
+    partial class CheckInData
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BookingData));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckInData));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,7 +48,10 @@
             this.rndTell = new System.Windows.Forms.RadioButton();
             this.rndID = new System.Windows.Forms.RadioButton();
             this.rndAll = new System.Windows.Forms.RadioButton();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel7 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -68,8 +71,6 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -92,15 +93,15 @@
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1440, 40);
-            this.panel1.TabIndex = 18;
+            this.panel1.Size = new System.Drawing.Size(1424, 40);
+            this.panel1.TabIndex = 20;
             // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1269, 0);
+            this.label1.Location = new System.Drawing.Point(1253, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(171, 40);
@@ -133,17 +134,16 @@
             this.btnback.Size = new System.Drawing.Size(67, 40);
             this.btnback.TabIndex = 2;
             this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 611);
+            this.panel2.Location = new System.Drawing.Point(0, 572);
             this.panel2.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1440, 40);
-            this.panel2.TabIndex = 19;
+            this.panel2.Size = new System.Drawing.Size(1424, 40);
+            this.panel2.TabIndex = 21;
             // 
             // panel3
             // 
@@ -151,8 +151,8 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 40);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1440, 159);
-            this.panel3.TabIndex = 20;
+            this.panel3.Size = new System.Drawing.Size(1424, 159);
+            this.panel3.TabIndex = 22;
             // 
             // groupBox3
             // 
@@ -162,10 +162,10 @@
             this.groupBox3.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(488, 159);
+            this.groupBox3.Size = new System.Drawing.Size(489, 159);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "លក្ខខណ្ធពិនិត្យបន្ទប់";
+            this.groupBox3.Text = "លក្ខខណ្ធពិនិត្យការស្នាក់នៅ";
             // 
             // panel5
             // 
@@ -176,7 +176,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(3, 121);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(482, 36);
+            this.panel5.Size = new System.Drawing.Size(483, 36);
             this.panel5.TabIndex = 5;
             // 
             // btnSearch
@@ -198,7 +198,7 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.White;
             this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
             this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
-            this.btnSearch.Location = new System.Drawing.Point(290, 0);
+            this.btnSearch.Location = new System.Drawing.Point(291, 0);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(100, 36);
@@ -224,7 +224,7 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
             this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(390, 0);
+            this.btnCancel.Location = new System.Drawing.Point(391, 0);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(92, 36);
@@ -253,6 +253,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.radioButton1);
             this.panel6.Controls.Add(this.rndName);
             this.panel6.Controls.Add(this.rndDateBook);
             this.panel6.Controls.Add(this.rndTell);
@@ -261,13 +262,13 @@
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(3, 34);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(482, 87);
+            this.panel6.Size = new System.Drawing.Size(483, 87);
             this.panel6.TabIndex = 4;
             // 
             // rndName
             // 
             this.rndName.AutoSize = true;
-            this.rndName.Location = new System.Drawing.Point(321, 9);
+            this.rndName.Location = new System.Drawing.Point(349, 9);
             this.rndName.Name = "rndName";
             this.rndName.Size = new System.Drawing.Size(123, 34);
             this.rndName.TabIndex = 1;
@@ -277,11 +278,11 @@
             // rndDateBook
             // 
             this.rndDateBook.AutoSize = true;
-            this.rndDateBook.Location = new System.Drawing.Point(248, 9);
+            this.rndDateBook.Location = new System.Drawing.Point(226, 9);
             this.rndDateBook.Name = "rndDateBook";
-            this.rndDateBook.Size = new System.Drawing.Size(67, 34);
+            this.rndDateBook.Size = new System.Drawing.Size(124, 34);
             this.rndDateBook.TabIndex = 1;
-            this.rndDateBook.Text = "ថ្ងៃកក់";
+            this.rndDateBook.Text = "ថ្ងៃចូលស្នាក់នៅ";
             this.rndDateBook.UseVisualStyleBackColor = true;
             // 
             // rndTell
@@ -297,7 +298,7 @@
             // rndID
             // 
             this.rndID.AutoSize = true;
-            this.rndID.Location = new System.Drawing.Point(110, 9);
+            this.rndID.Location = new System.Drawing.Point(91, 9);
             this.rndID.Name = "rndID";
             this.rndID.Size = new System.Drawing.Size(130, 34);
             this.rndID.TabIndex = 4;
@@ -316,15 +317,77 @@
             this.rndAll.Text = "ទាំងអស់";
             this.rndAll.UseVisualStyleBackColor = true;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(166, 47);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(103, 34);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.Text = "ថ្ងៃចាកចេញ";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.bunifuThinButton22);
             this.panel4.Controls.Add(this.bunifuThinButton21);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(0, 577);
+            this.panel4.Location = new System.Drawing.Point(0, 538);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1440, 34);
-            this.panel4.TabIndex = 21;
+            this.panel4.Size = new System.Drawing.Size(1424, 34);
+            this.panel4.TabIndex = 23;
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "កែប្រែ";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Dock = System.Windows.Forms.DockStyle.Right;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton22.Location = new System.Drawing.Point(1120, 0);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(139, 34);
+            this.bunifuThinButton22.TabIndex = 1;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "ចាកចេញពីការស្នាក់នៅ";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Right;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 20;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(1259, 0);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(165, 34);
+            this.bunifuThinButton21.TabIndex = 0;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel7
             // 
@@ -333,20 +396,20 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 199);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1440, 378);
-            this.panel7.TabIndex = 22;
+            this.panel7.Size = new System.Drawing.Size(1424, 339);
+            this.panel7.TabIndex = 24;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.dataGridView2);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(747, 0);
+            this.groupBox2.Location = new System.Drawing.Point(588, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(693, 378);
+            this.groupBox2.Size = new System.Drawing.Size(836, 339);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "បញ្ជីព័តមានលំអិតនៃការកក់បន្ទន់";
+            this.groupBox2.Text = "បញ្ជីព័តមានលំអិតនៃការស្នាក់នៅ";
             // 
             // dataGridView2
             // 
@@ -375,7 +438,7 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView2.Size = new System.Drawing.Size(687, 341);
+            this.dataGridView2.Size = new System.Drawing.Size(830, 302);
             this.dataGridView2.TabIndex = 1;
             // 
             // Column6
@@ -440,10 +503,10 @@
             this.groupBox1.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(741, 378);
+            this.groupBox1.Size = new System.Drawing.Size(588, 339);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "ទិន្នន័យការកក់បន្ទប់";
+            this.groupBox1.Text = "ទិន្នន័យការស្នាក់នៅ";
             // 
             // dataGridView1
             // 
@@ -470,7 +533,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(735, 341);
+            this.dataGridView1.Size = new System.Drawing.Size(582, 302);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -481,7 +544,7 @@
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "ថ្ងៃកក់";
+            this.Column2.HeaderText = "ថ្ងៃចូលស្នាក់នៅ";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
@@ -509,73 +572,19 @@
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
             // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "ចូលស្នាកនៅ";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(1301, 0);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(139, 34);
-            this.bunifuThinButton21.TabIndex = 0;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "កែប្រែ";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(1162, 0);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(139, 34);
-            this.bunifuThinButton22.TabIndex = 1;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // BookingData
+            // CheckInData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1440, 651);
+            this.ClientSize = new System.Drawing.Size(1424, 612);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "BookingData";
-            this.Text = "BookingData";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Resize += new System.EventHandler(this.BookingData_Resize);
+            this.Name = "CheckInData";
+            this.Text = "CheckInData";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
@@ -607,6 +616,7 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton rndName;
         private System.Windows.Forms.RadioButton rndDateBook;
         private System.Windows.Forms.RadioButton rndTell;
