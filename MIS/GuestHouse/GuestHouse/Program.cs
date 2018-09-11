@@ -19,6 +19,7 @@ namespace GuestHouse
             Application.SetCompatibleTextRenderingDefault(false);
 
             //Application.Run(new Employee());
+<<<<<<< HEAD
             //if (new Login().ShowDialog() == DialogResult.OK)
             //{
             //    Application.Run(new Form1());
@@ -26,6 +27,8 @@ namespace GuestHouse
 
 
             //Application.Run(new Employee());
+=======
+>>>>>>> f880db08ebbf43b1aa144caee7c80ed60f90d538
 
             // Application.Run(new Employee());
 
