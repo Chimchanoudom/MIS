@@ -35,16 +35,16 @@ namespace GuestHouse
             //Application.Run(new RoomPrice());
             //Application.Run(new CheckRoom());
             //Application.Run(new expensType());
-<<<<<<< HEAD
+
             Application.Run(new RoomData());
-=======
+
             //Application.Run(new Expense());
->>>>>>> ea42a259d254475c0a0a5b78133c83ff5b11156a
+
             //Application.Run(new Form1());
             //Application.Run(new Customer());
             //Application.Run(new ExpensAndIncome());
-            //Application.Run(new Booking());
-            Application.Run(new BookingData());
+           // Application.Run(new Booking());
+           // Application.Run(new BookingData());
             //Application.Run(new ExpensAndIncome());
             //Application.Run(new ExpensAndIncome());
             //Application.Run(new ExpensAndIncome());
