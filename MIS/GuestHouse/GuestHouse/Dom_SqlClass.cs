@@ -17,7 +17,7 @@ class Dom_SqlClass:UserLoginDetail
         static SqlDataAdapter SDA = new SqlDataAdapter();
         static SqlDataReader SDR;
         static DataTable DT;
-
+        
         public static string GetIDFromDB(String column,string seperater,String TableName)
         {
             object ID="";
