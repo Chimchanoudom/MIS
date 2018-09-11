@@ -16,7 +16,15 @@ class Dom_SqlClass:UserLoginDetail
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
         static SqlDataReader SDR;
+
+
+
+        
+
+
+
         static DataTable DT = new DataTable();
+
 
         public static string GetIDFromDB(String column,string seperater,String TableName)
         {
@@ -74,7 +82,7 @@ class Dom_SqlClass:UserLoginDetail
                     Select += ColumnName[i] + ",";
                 }
                 Select = Select.TrimEnd(',') + " From ";
-                MessageBox.Show(Select);
+                //MessageBox.Show(Select);
                 dataCon.Con.Open();
                 SC = new SqlCommand(Select+TableName+" "+Condition+" ;", dataCon.Con);
                 SDA = new SqlDataAdapter(SC);
@@ -227,6 +235,15 @@ class Dom_SqlClass:UserLoginDetail
                 dataCon.Con.Close();
             }
             return success;
+        }
+        public static DataTable Search(String Select)
+        {
+            dataCon.Con.Open();
+            SC = new SqlCommand(Select, dataCon.Con);
+            SDA = new SqlDataAdapter(SC);
+            SCB = new SqlCommandBuilder(SDA);
+            SDA.Fill(DT);
+            return DT;
         }
     }
 }

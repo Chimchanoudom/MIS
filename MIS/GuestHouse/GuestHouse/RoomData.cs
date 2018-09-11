@@ -24,9 +24,12 @@ namespace GuestHouse
         }
         string sql = "";
         SqlDataReader dataReader;
-        List<Room> rooms = new List<Room>();
+        
         Dictionary<int, string> RoomType = new Dictionary<int, string>();
         bool error;
+        DataTable dtRoom=new DataTable();
+        bool CancelSelection = false;
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             if (btnAdd.ButtonText == "Cancel")
@@ -51,22 +54,18 @@ namespace GuestHouse
             string roomType = GetRoomTypeDesc();
             
 
-
-
             int roomTypeID = RoomType.FirstOrDefault(x => x.Value == roomType).Key;
 
             
             
             sql = "insert into room values('" + id + "'," + roomTypeID + "," + floor + ",'Free');";
-            error = false;
+            
             dataCon.ExecuteActionQry(sql,ref error);
             if (!error)
             {
+                dtRoom.Rows.Add(id, floor, roomType, "Free");
                 MessageBox.Show("New room inserted","Inserted successfull", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dataRoom.DataSource = null;
-                rooms.Add(new Room(id, floor, roomType, "Free"));
-                dataRoom.DataSource = rooms;
-                btnAdd_Click(null, null);
+                
             }
             
         }
@@ -106,33 +105,17 @@ namespace GuestHouse
             dataCon.Con.Close();
 
 
-            sql = "select RoomID as លេខកូដសម្គាល់,RoomTypeID as ប្រភេទបន្ទប់,Floor as ជាន់,Status as ស្ថានភាព from room;";
-            
+            sql = "select RoomID as លេខកូដសម្គាល់,Floor as ជាន់,case RoomTypeID when 1 then 'Single'when 2 then 'Double'when 3 then 'VIP'end as ប្រភេទបន្ទប់,Status as ស្ថានភាព from room;";
 
-            dataCon.Con.Open();
-            dataReader = dataCon.ExecuteQry(sql);
-            
-            if (dataReader.HasRows)
-            {
-                dataRoom.Columns.Clear();
-            }
+            dataRoom.Columns.Clear();
 
-            while (dataReader.Read())
-            {
-                string id = dataReader.GetString(0);
-                string roomType=RoomType[dataReader.GetInt32(1)];
+            SqlDataAdapter adapter = new SqlDataAdapter(sql, dataCon.Con);
+            adapter.Fill(dtRoom);
+            dataRoom.DataSource = dtRoom;
 
-                
-                string floor = dataReader.GetInt32(2)+"";
-                string status = dataReader.GetString(3);
+            btnAdd.ButtonText = "បញ្ចូល";
+            dataRoom.ClearSelection();
 
-                rooms.Add(new Room(id, floor,roomType, status));
-
-            }
-            dataCon.Con.Close();
-            dataRoom.DataSource = rooms;
-            if(btnAdd.Text=="Cancel")
-                btnAdd_Click(null, null);
 
         }
 
@@ -141,23 +124,27 @@ namespace GuestHouse
             txtID.Text = "";
             CMFloor.SelectedIndex = -1;
             rndSingle.Checked = true;
+            
         }
 
         private void dataRoom_SelectionChanged(object sender, EventArgs e)
         {
-            if (dataRoom.SelectedRows.Count == 0)
-                return;
-            if (dataRoom.SelectedRows.Count > 1)
+            if (dataRoom.SelectedRows.Count != 1)
             {
                 ClearControls();
                 return;
             }
+            if (CancelSelection)
+            {
+                return;
+            }
 
             int selectedIndex = dataRoom.SelectedRows[0].Index;
-            txtID.Text = rooms[selectedIndex].ID;
-            CMFloor.SelectedItem = rooms[selectedIndex].Floor+"";
 
-            switch (rooms[selectedIndex].RoomType)
+            txtID.Text = dataRoom.Rows[selectedIndex].Cells[0].Value + "";
+            CMFloor.SelectedItem = dataRoom.Rows[selectedIndex].Cells[1].Value + "";
+
+            switch (dataRoom.Rows[selectedIndex].Cells[2].Value + "")
             {
                 case "Single":
                     rndSingle.Checked = true;
@@ -169,9 +156,6 @@ namespace GuestHouse
                     rndVip.Checked = true;
                     break;
             }
-
-            txtID.Text = rooms[dataRoom.SelectedRows[0].Index].ID;
-
             btnAdd.ButtonText = "Cancel";
         }
 
@@ -182,58 +166,98 @@ namespace GuestHouse
                 MessageBox.Show("Please select a row", "", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
+
+
             int selectedIndex = dataRoom.SelectedRows[0].Index;
-            string roomID = rooms[selectedIndex].ID;
+            string roomID =txtID.Text;
             string floor = CMFloor.Text;
             string roomTypeDesc = GetRoomTypeDesc();
             int roomTypeID = RoomType.FirstOrDefault(x => x.Value == roomTypeDesc).Key;
 
-            sql = "update Room set roomID='" + txtID.Text + "',roomTypeID="+roomTypeID+",floor="+floor+" where roomID='" + roomID + "'";
+            sql = "update Room set roomID='" + roomID + "',roomTypeID=" + roomTypeID + ",floor=" + floor + " where roomID='" + dataRoom.Rows[selectedIndex].Cells[0].Value + "" + "'";
 
             error = false;
             dataCon.ExecuteActionQry(sql,ref error);
 
             if (!error)
             {
+                dtRoom.Rows[selectedIndex][0] = roomID;
+                dtRoom.Rows[selectedIndex][1] = floor;
+                dtRoom.Rows[selectedIndex][2] = roomTypeDesc;
                 MessageBox.Show("A row has edited", "Successfully edited", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                dataRoom.DataSource = null;
-                rooms[selectedIndex].ID = txtID.Text;
-                rooms[selectedIndex].Floor = floor;
-                rooms[selectedIndex].RoomType = roomTypeDesc;
-                dataRoom.DataSource = rooms;
             }
+            dataRoom.ClearSelection();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            List<int> selectedIndexToDelete = new List<int>();
-            sql = "delete from room where roomID in(";
-            for (int i = 0; i < dataRoom.SelectedRows.Count; i++)
+            DialogResult dialog = MessageBox.Show("Are you sure you want to delete selected row(s)?", "Confirmation", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+
+            if (dialog == DialogResult.No)
+                return;
+
+            string roomToCheck = "";
+            for(int i = 0; i < dataRoom.SelectedRows.Count; i++)
             {
-                int index = dataRoom.SelectedRows[i].Index;
-                sql += "'" + rooms[index].ID + "',";
-                selectedIndexToDelete.Add(dataRoom.SelectedRows[i].Index);
+                int selectedIndex = dataRoom.SelectedRows[i].Index;
+                roomToCheck += "'"+dataRoom.Rows[selectedIndex].Cells[0].Value + "',";
             }
 
-            sql = sql.Substring(0, sql.Length - 1) + ")";
+            roomToCheck = roomToCheck.Substring(0, roomToCheck.Length - 1);
 
+            sql = "select count(*) from bookDetail where roomId in(" + roomToCheck + ") and status!='Checked Out';";
+
+            dataCon.Con.Open();
+            dataReader = dataCon.ExecuteQry(sql);
+            dataReader.Read();
+            if (dataReader.GetInt32(0) > 0)
+            {
+                MessageBox.Show("Some rooms have been booked or busy", "Cannot delete", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                return;
+            }
+
+            dataCon.Con.Close();
+
+            sql = "delete from room where roomid in(" + roomToCheck + ")" ;
             dataCon.ExecuteActionQry(sql,ref error);
             if (!error)
             {
-                dataRoom.DataSource = null;
-                while (selectedIndexToDelete.Count > 0)
+                CancelSelection = true;
+                int selectedRowCount = dataRoom.SelectedRows.Count;
+                for(int i = 0; i < selectedRowCount; i++)
                 {
-                    int lastIndexOfSelectedIndexToDelete = selectedIndexToDelete.Count - 1;
-                    rooms.RemoveAt(selectedIndexToDelete[lastIndexOfSelectedIndexToDelete]);
-                    selectedIndexToDelete.RemoveAt(lastIndexOfSelectedIndexToDelete);
+                   
+                    int selectedIndex = dataRoom.SelectedRows[0].Index;
+                    dtRoom.Rows.RemoveAt(selectedIndex);
+                    
                 }
-                dataRoom.DataSource = rooms;
-                MessageBox.Show("Selected rows has been deleted successfully", "Successfully deleted", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                btnAdd_Click(null, null);
+                dataRoom.ClearSelection();
+                btnAdd.ButtonText = "បញ្ចូល";
+                CancelSelection = false;
             }
-            
+        }
 
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            string filter = "";
+            if (rndSearchRoomNum.Checked) filter = "លេខកូដសម្គាល់=";
+            else if (rndSearchRoomType.Checked) filter = "ប្រភេទបន្ទប់=";
+            else if (rndSearchFloor.Checked) filter = "ជាន់=";
+            else filter = "ស្ថានភាព=";
+
+            filter += "'" + txtSearch.Text + "'";
+
+            dtRoom.DefaultView.RowFilter = filter;
+            btnCancelSearch.Visible = true;
+            dataRoom.ClearSelection();
+        }
+
+        private void btnCancelSearch_Click(object sender, EventArgs e)
+        {
+            dtRoom.DefaultView.RowFilter = string.Empty;
+            btnCancelSearch.Visible = false;
+            dataRoom.ClearSelection();
         }
     }
 }
