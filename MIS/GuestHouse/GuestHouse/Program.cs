@@ -17,11 +17,11 @@ namespace GuestHouse
             Application.EnableVisualStyles();
 
             Application.SetCompatibleTextRenderingDefault(false);
-            // Application.Run(new Employee());
-            //if (new Login().ShowDialog() == DialogResult.OK)
-            //{
-            //    Application.Run(new Form1());
-            //}
+            //Application.Run(new Employee());
+            if (new Login().ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Form1());
+            }
             //Application.SetCompatibleTextRenderingDefault(false);
             //if (new Login().ShowDialog() == DialogResult.OK)
             //{
@@ -36,7 +36,7 @@ namespace GuestHouse
             //Application.Run(new CheckRoom());
             //Application.Run(new expensType());
 
-            Application.Run(new RoomData());
+            //Application.Run(new RoomData());
 
             //Application.Run(new Expense());
 
