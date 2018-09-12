@@ -43,12 +43,12 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.rndName = new System.Windows.Forms.RadioButton();
             this.rndDateBook = new System.Windows.Forms.RadioButton();
             this.rndTell = new System.Windows.Forms.RadioButton();
             this.rndID = new System.Windows.Forms.RadioButton();
             this.rndAll = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -265,6 +265,16 @@
             this.panel6.Size = new System.Drawing.Size(483, 87);
             this.panel6.TabIndex = 4;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(166, 47);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(103, 34);
+            this.radioButton1.TabIndex = 6;
+            this.radioButton1.Text = "ថ្ងៃចាកចេញ";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // rndName
             // 
             this.rndName.AutoSize = true;
@@ -316,16 +326,6 @@
             this.rndAll.TabStop = true;
             this.rndAll.Text = "ទាំងអស់";
             this.rndAll.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(166, 47);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 34);
-            this.radioButton1.TabIndex = 6;
-            this.radioButton1.Text = "ថ្ងៃចាកចេញ";
-            this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 

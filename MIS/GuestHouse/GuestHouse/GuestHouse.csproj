@@ -141,6 +141,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ghDataSet.cs">
+      <DependentUpon>ghDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ghDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
