@@ -50,9 +50,8 @@ namespace GuestHouse
 
             //Application.Run(new RoomData());
 
-
-
-
+            //Application.Run(new CheckIn());
+            //Application.Run(new CheckInData());
             //Application.Run(new Expense());
 
             //Application.Run(new Form1());
