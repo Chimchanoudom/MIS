@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace GuestHouse
 {
-    public partial class CheckIn : Form
+    public partial class CheckoutData : Form
     {
-        public CheckIn()
+        public CheckoutData()
         {
             InitializeComponent();
-        }
-
-        private void bunifuThinButton22_Click(object sender, EventArgs e)
-        {
-            BookingData BD = new BookingData();
-            BD.ShowDialog();
         }
 
         private void btnback_Click(object sender, EventArgs e)

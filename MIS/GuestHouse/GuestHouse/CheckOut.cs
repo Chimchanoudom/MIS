@@ -16,5 +16,14 @@ namespace GuestHouse
         {
             InitializeComponent();
         }
+
+        private void monthCalendar2_DateChanged(object sender, DateRangeEventArgs e)
+        {
+                   }
+
+        private void btnback_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
