@@ -345,11 +345,11 @@
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-<<<<<<< HEAD
+
             this.bunifuThinButton22.Location = new System.Drawing.Point(1136, 0);
-=======
+
             this.bunifuThinButton22.Location = new System.Drawing.Point(1162, 0);
->>>>>>> da1f85ea99f8b7fd685fa43c324142fc79d7915e
+
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(139, 34);
@@ -365,11 +365,11 @@
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-<<<<<<< HEAD
+
             this.bunifuThinButton21.ButtonText = "បញ្ជូនទៅការចាកចេញ";
-=======
+
             this.bunifuThinButton21.ButtonText = "ចូលស្នាកនៅ";
->>>>>>> da1f85ea99f8b7fd685fa43c324142fc79d7915e
+
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Right;
             this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -379,17 +379,17 @@
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-<<<<<<< HEAD
+
             this.bunifuThinButton21.Location = new System.Drawing.Point(1275, 0);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(165, 34);
-=======
+
             this.bunifuThinButton21.Location = new System.Drawing.Point(1301, 0);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(139, 34);
->>>>>>> da1f85ea99f8b7fd685fa43c324142fc79d7915e
+
             this.bunifuThinButton21.TabIndex = 0;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
