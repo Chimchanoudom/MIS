@@ -21,5 +21,11 @@ namespace GuestHouse
         {
             this.Close();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            new CheckOut().Show();
+            btnback_Click(null,null);
+        }
     }
 }

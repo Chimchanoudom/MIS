@@ -21,11 +21,13 @@ namespace GuestHouse
         {
             BookingData BD = new BookingData();
             BD.ShowDialog();
+            this.Hide();
         }
 
         private void btnback_Click(object sender, EventArgs e)
         {
             this.Close();
+            
         }
     }
 }

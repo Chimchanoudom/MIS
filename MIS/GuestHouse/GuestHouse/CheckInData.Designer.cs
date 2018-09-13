@@ -71,6 +71,7 @@
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -254,6 +255,7 @@
             // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.radioButton2);
             this.panel6.Controls.Add(this.radioButton1);
             this.panel6.Controls.Add(this.rndName);
             this.panel6.Controls.Add(this.rndDateBook);
@@ -389,6 +391,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(165, 34);
             this.bunifuThinButton21.TabIndex = 0;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // panel7
             // 
@@ -573,6 +576,16 @@
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
             // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Location = new System.Drawing.Point(275, 47);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(94, 34);
+            this.radioButton2.TabIndex = 7;
+            this.radioButton2.Text = "លេខបន្ទប់";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // CheckInData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -646,5 +659,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }

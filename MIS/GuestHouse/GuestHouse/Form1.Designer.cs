@@ -35,58 +35,63 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.pnMenu = new System.Windows.Forms.Panel();
             this.pnSetting = new System.Windows.Forms.Panel();
+            this.btnHelp = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnPlayAndStop = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnSetting = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnlogout = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnReport = new System.Windows.Forms.Panel();
+            this.btnreportYears = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnReportMonth = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAllReport = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnExpent = new System.Windows.Forms.Panel();
+            this.btnPaymentAndIncome = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnExpensType = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnNoteExpen = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnExpenAndIncome = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnEmployee = new System.Windows.Forms.Panel();
+            this.btnEmployeeData = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnEmployee = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pncustomer = new System.Windows.Forms.Panel();
+            this.btnDataCustomer = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnCustomer = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnRoom = new System.Windows.Forms.Panel();
+            this.btnRoomPrice = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnAddRoom = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnCheckRoom = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRoom = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pncheckout = new System.Windows.Forms.Panel();
+            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnCheckout = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btncheckoutNote = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnBook = new System.Windows.Forms.Panel();
+            this.btnbookData = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnbooknote = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnbook = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnStay = new System.Windows.Forms.Panel();
+            this.btncheckINData = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btncheckin = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnstay = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LBLTime = new System.Windows.Forms.Label();
             this.Pntopbar = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.ph31 = new GuestHouse.Ph3();
-            this.ph21 = new GuestHouse.Ph2();
-            this.ph11 = new GuestHouse.Ph1();
             this.Transition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Transition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Tslide = new System.Windows.Forms.Timer(this.components);
             this.Transition3 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Tdate = new System.Windows.Forms.Timer(this.components);
-            this.btnHelp = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnPlayAndStop = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnSetting = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnreportYears = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnReportMonth = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAllReport = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnPaymentAndIncome = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnExpensType = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnNoteExpen = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnExpenAndIncome = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnEmployeeData = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnEmployee = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDataCustomer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCustomer = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRoomPrice = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnAddRoom = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCheckRoom = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnRoom = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnCheckout = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btncheckoutNote = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnbookData = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnbooknote = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnbook = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btncheckINData = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btncheckin = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnstay = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lblPosition = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblposition2 = new System.Windows.Forms.Label();
+            this.ph31 = new GuestHouse.Ph3();
+            this.ph21 = new GuestHouse.Ph2();
+            this.ph11 = new GuestHouse.Ph1();
             this.pnMenu.SuspendLayout();
             this.pnSetting.SuspendLayout();
             this.pnlogout.SuspendLayout();
@@ -99,9 +104,10 @@
             this.pnBook.SuspendLayout();
             this.pnStay.SuspendLayout();
             this.pnLogo.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.Pntopbar.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnMenu
@@ -140,311 +146,6 @@
             this.pnSetting.Name = "pnSetting";
             this.pnSetting.Size = new System.Drawing.Size(282, 48);
             this.pnSetting.TabIndex = 15;
-            // 
-            // pnlogout
-            // 
-            this.pnlogout.Controls.Add(this.bunifuFlatButton2);
-            this.pnlogout.Controls.Add(this.btnExit);
-            this.Transition1.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
-            this.pnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlogout.Location = new System.Drawing.Point(0, 679);
-            this.pnlogout.Name = "pnlogout";
-            this.pnlogout.Size = new System.Drawing.Size(282, 41);
-            this.pnlogout.TabIndex = 2;
-            // 
-            // pnReport
-            // 
-            this.pnReport.Controls.Add(this.btnreportYears);
-            this.pnReport.Controls.Add(this.btnReportMonth);
-            this.pnReport.Controls.Add(this.btnAllReport);
-            this.Transition1.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
-            this.pnReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnReport.Location = new System.Drawing.Point(0, 420);
-            this.pnReport.Name = "pnReport";
-            this.pnReport.Size = new System.Drawing.Size(282, 48);
-            this.pnReport.TabIndex = 14;
-            // 
-            // pnExpent
-            // 
-            this.pnExpent.Controls.Add(this.btnPaymentAndIncome);
-            this.pnExpent.Controls.Add(this.btnExpensType);
-            this.pnExpent.Controls.Add(this.btnNoteExpen);
-            this.pnExpent.Controls.Add(this.btnExpenAndIncome);
-            this.Transition1.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
-            this.pnExpent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnExpent.Location = new System.Drawing.Point(0, 372);
-            this.pnExpent.Name = "pnExpent";
-            this.pnExpent.Size = new System.Drawing.Size(282, 48);
-            this.pnExpent.TabIndex = 18;
-            // 
-            // pnEmployee
-            // 
-            this.pnEmployee.Controls.Add(this.btnEmployeeData);
-            this.pnEmployee.Controls.Add(this.btnEmployee);
-            this.Transition1.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
-            this.pnEmployee.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnEmployee.Location = new System.Drawing.Point(0, 324);
-            this.pnEmployee.Name = "pnEmployee";
-            this.pnEmployee.Size = new System.Drawing.Size(282, 48);
-            this.pnEmployee.TabIndex = 17;
-            // 
-            // pncustomer
-            // 
-            this.pncustomer.Controls.Add(this.btnDataCustomer);
-            this.pncustomer.Controls.Add(this.btnCustomer);
-            this.Transition1.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
-            this.pncustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pncustomer.Location = new System.Drawing.Point(0, 276);
-            this.pncustomer.Name = "pncustomer";
-            this.pncustomer.Size = new System.Drawing.Size(282, 48);
-            this.pncustomer.TabIndex = 16;
-            // 
-            // pnRoom
-            // 
-            this.pnRoom.Controls.Add(this.btnRoomPrice);
-            this.pnRoom.Controls.Add(this.btnAddRoom);
-            this.pnRoom.Controls.Add(this.btnCheckRoom);
-            this.pnRoom.Controls.Add(this.btnRoom);
-            this.Transition1.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
-            this.pnRoom.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnRoom.Location = new System.Drawing.Point(0, 228);
-            this.pnRoom.Name = "pnRoom";
-            this.pnRoom.Size = new System.Drawing.Size(282, 48);
-            this.pnRoom.TabIndex = 15;
-            // 
-            // pncheckout
-            // 
-            this.pncheckout.Controls.Add(this.bunifuFlatButton1);
-            this.pncheckout.Controls.Add(this.btnCheckout);
-            this.pncheckout.Controls.Add(this.btncheckoutNote);
-            this.Transition1.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
-            this.pncheckout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pncheckout.Location = new System.Drawing.Point(0, 180);
-            this.pncheckout.Name = "pncheckout";
-            this.pncheckout.Size = new System.Drawing.Size(282, 48);
-            this.pncheckout.TabIndex = 14;
-            // 
-            // pnBook
-            // 
-            this.pnBook.Controls.Add(this.btnbookData);
-            this.pnBook.Controls.Add(this.btnbooknote);
-            this.pnBook.Controls.Add(this.btnbook);
-            this.Transition1.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
-            this.pnBook.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnBook.Location = new System.Drawing.Point(0, 132);
-            this.pnBook.Name = "pnBook";
-            this.pnBook.Size = new System.Drawing.Size(282, 48);
-            this.pnBook.TabIndex = 4;
-            // 
-            // pnStay
-            // 
-            this.pnStay.Controls.Add(this.btncheckINData);
-            this.pnStay.Controls.Add(this.btncheckin);
-            this.pnStay.Controls.Add(this.btnstay);
-            this.Transition1.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
-            this.pnStay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnStay.Location = new System.Drawing.Point(0, 84);
-            this.pnStay.Name = "pnStay";
-            this.pnStay.Size = new System.Drawing.Size(282, 48);
-            this.pnStay.TabIndex = 3;
-            // 
-            // pnLogo
-            // 
-            this.pnLogo.Controls.Add(this.pictureBox1);
-            this.Transition1.SetDecoration(this.pnLogo, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.pnLogo, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.pnLogo, BunifuAnimatorNS.DecorationType.None);
-            this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnLogo.Location = new System.Drawing.Point(0, 0);
-            this.pnLogo.Name = "pnLogo";
-            this.pnLogo.Size = new System.Drawing.Size(282, 84);
-            this.pnLogo.TabIndex = 2;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.panel1.Controls.Add(this.LBLTime);
-            this.Transition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(282, 679);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(918, 41);
-            this.panel1.TabIndex = 13;
-            // 
-            // LBLTime
-            // 
-            this.Transition3.SetDecoration(this.LBLTime, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.LBLTime, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.LBLTime, BunifuAnimatorNS.DecorationType.None);
-            this.LBLTime.Dock = System.Windows.Forms.DockStyle.Right;
-            this.LBLTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.LBLTime.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LBLTime.ForeColor = System.Drawing.Color.White;
-            this.LBLTime.Location = new System.Drawing.Point(585, 0);
-            this.LBLTime.Name = "LBLTime";
-            this.LBLTime.Size = new System.Drawing.Size(333, 41);
-            this.LBLTime.TabIndex = 0;
-            this.LBLTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // Pntopbar
-            // 
-            this.Pntopbar.BackColor = System.Drawing.Color.DarkSlateBlue;
-            this.Transition1.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
-            this.Pntopbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Pntopbar.Location = new System.Drawing.Point(282, 0);
-            this.Pntopbar.Name = "Pntopbar";
-            this.Pntopbar.Size = new System.Drawing.Size(918, 42);
-            this.Pntopbar.TabIndex = 14;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Silver;
-            this.panel2.Controls.Add(this.ph31);
-            this.panel2.Controls.Add(this.ph21);
-            this.panel2.Controls.Add(this.ph11);
-            this.Transition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition3.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(282, 42);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(918, 637);
-            this.panel2.TabIndex = 15;
-            // 
-            // ph31
-            // 
-            this.Transition3.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.ph31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph31.Location = new System.Drawing.Point(0, 0);
-            this.ph31.Name = "ph31";
-            this.ph31.Size = new System.Drawing.Size(918, 637);
-            this.ph31.TabIndex = 2;
-            this.ph31.Visible = false;
-            // 
-            // ph21
-            // 
-            this.Transition3.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.ph21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph21.Location = new System.Drawing.Point(0, 0);
-            this.ph21.Name = "ph21";
-            this.ph21.Size = new System.Drawing.Size(918, 637);
-            this.ph21.TabIndex = 1;
-            this.ph21.Visible = false;
-            // 
-            // ph11
-            // 
-            this.Transition3.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.ph11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph11.Location = new System.Drawing.Point(0, 0);
-            this.ph11.Name = "ph11";
-            this.ph11.Size = new System.Drawing.Size(918, 637);
-            this.ph11.TabIndex = 0;
-            // 
-            // Transition1
-            // 
-            this.Transition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate;
-            this.Transition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(50);
-            animation3.RotateCoeff = 1F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 1F;
-            this.Transition1.DefaultAnimation = animation3;
-            this.Transition1.Interval = 1000;
-            this.Transition1.TimeStep = 1F;
-            // 
-            // Transition2
-            // 
-            this.Transition2.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
-            this.Transition2.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 20;
-            animation2.Padding = new System.Windows.Forms.Padding(30);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.Transition2.DefaultAnimation = animation2;
-            this.Transition2.Interval = 1000;
-            this.Transition2.TimeStep = 1F;
-            // 
-            // Tslide
-            // 
-            this.Tslide.Interval = 3000;
-            this.Tslide.Tick += new System.EventHandler(this.Tslide_Tick);
-            // 
-            // Transition3
-            // 
-            this.Transition3.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
-            this.Transition3.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.Transition3.DefaultAnimation = animation1;
-            this.Transition3.Interval = 1000;
-            this.Transition3.TimeStep = 1F;
-            // 
-            // Tdate
-            // 
-            this.Tdate.Tick += new System.EventHandler(this.Tdate_Tick);
             // 
             // btnHelp
             // 
@@ -562,6 +263,19 @@
             this.btnSetting.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
+            // pnlogout
+            // 
+            this.pnlogout.Controls.Add(this.bunifuFlatButton2);
+            this.pnlogout.Controls.Add(this.btnExit);
+            this.Transition1.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
+            this.pnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlogout.Location = new System.Drawing.Point(0, 679);
+            this.pnlogout.Name = "pnlogout";
+            this.pnlogout.Size = new System.Drawing.Size(282, 41);
+            this.pnlogout.TabIndex = 2;
+            // 
             // bunifuFlatButton2
             // 
             this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
@@ -636,6 +350,20 @@
             this.btnExit.Textcolor = System.Drawing.Color.White;
             this.btnExit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // pnReport
+            // 
+            this.pnReport.Controls.Add(this.btnreportYears);
+            this.pnReport.Controls.Add(this.btnReportMonth);
+            this.pnReport.Controls.Add(this.btnAllReport);
+            this.Transition1.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
+            this.pnReport.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnReport.Location = new System.Drawing.Point(0, 420);
+            this.pnReport.Name = "pnReport";
+            this.pnReport.Size = new System.Drawing.Size(282, 48);
+            this.pnReport.TabIndex = 14;
             // 
             // btnreportYears
             // 
@@ -751,6 +479,21 @@
             this.btnAllReport.Textcolor = System.Drawing.Color.White;
             this.btnAllReport.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAllReport.Click += new System.EventHandler(this.btnAllReport_Click);
+            // 
+            // pnExpent
+            // 
+            this.pnExpent.Controls.Add(this.btnPaymentAndIncome);
+            this.pnExpent.Controls.Add(this.btnExpensType);
+            this.pnExpent.Controls.Add(this.btnNoteExpen);
+            this.pnExpent.Controls.Add(this.btnExpenAndIncome);
+            this.Transition1.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
+            this.pnExpent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnExpent.Location = new System.Drawing.Point(0, 372);
+            this.pnExpent.Name = "pnExpent";
+            this.pnExpent.Size = new System.Drawing.Size(282, 48);
+            this.pnExpent.TabIndex = 18;
             // 
             // btnPaymentAndIncome
             // 
@@ -908,6 +651,19 @@
             this.btnExpenAndIncome.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExpenAndIncome.Click += new System.EventHandler(this.btnExpenAndIncome_Click_2);
             // 
+            // pnEmployee
+            // 
+            this.pnEmployee.Controls.Add(this.btnEmployeeData);
+            this.pnEmployee.Controls.Add(this.btnEmployee);
+            this.Transition1.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
+            this.pnEmployee.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnEmployee.Location = new System.Drawing.Point(0, 324);
+            this.pnEmployee.Name = "pnEmployee";
+            this.pnEmployee.Size = new System.Drawing.Size(282, 48);
+            this.pnEmployee.TabIndex = 17;
+            // 
             // btnEmployeeData
             // 
             this.btnEmployeeData.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -986,6 +742,19 @@
             this.btnEmployee.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click_2);
             // 
+            // pncustomer
+            // 
+            this.pncustomer.Controls.Add(this.btnDataCustomer);
+            this.pncustomer.Controls.Add(this.btnCustomer);
+            this.Transition1.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
+            this.pncustomer.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pncustomer.Location = new System.Drawing.Point(0, 276);
+            this.pncustomer.Name = "pncustomer";
+            this.pncustomer.Size = new System.Drawing.Size(282, 48);
+            this.pncustomer.TabIndex = 16;
+            // 
             // btnDataCustomer
             // 
             this.btnDataCustomer.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1063,6 +832,21 @@
             this.btnCustomer.Textcolor = System.Drawing.Color.White;
             this.btnCustomer.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.Click += new System.EventHandler(this.btnCustomer_Click_2);
+            // 
+            // pnRoom
+            // 
+            this.pnRoom.Controls.Add(this.btnRoomPrice);
+            this.pnRoom.Controls.Add(this.btnAddRoom);
+            this.pnRoom.Controls.Add(this.btnCheckRoom);
+            this.pnRoom.Controls.Add(this.btnRoom);
+            this.Transition1.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
+            this.pnRoom.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnRoom.Location = new System.Drawing.Point(0, 228);
+            this.pnRoom.Name = "pnRoom";
+            this.pnRoom.Size = new System.Drawing.Size(282, 48);
+            this.pnRoom.TabIndex = 15;
             // 
             // btnRoomPrice
             // 
@@ -1220,6 +1004,20 @@
             this.btnRoom.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRoom.Click += new System.EventHandler(this.btnRoom_Click_2);
             // 
+            // pncheckout
+            // 
+            this.pncheckout.Controls.Add(this.bunifuFlatButton1);
+            this.pncheckout.Controls.Add(this.btnCheckout);
+            this.pncheckout.Controls.Add(this.btncheckoutNote);
+            this.Transition1.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
+            this.pncheckout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pncheckout.Location = new System.Drawing.Point(0, 180);
+            this.pncheckout.Name = "pncheckout";
+            this.pncheckout.Size = new System.Drawing.Size(282, 48);
+            this.pncheckout.TabIndex = 14;
+            // 
             // bunifuFlatButton1
             // 
             this.bunifuFlatButton1.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1336,6 +1134,20 @@
             this.btncheckoutNote.Textcolor = System.Drawing.Color.White;
             this.btncheckoutNote.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncheckoutNote.Click += new System.EventHandler(this.btncheckoutNote_Click);
+            // 
+            // pnBook
+            // 
+            this.pnBook.Controls.Add(this.btnbookData);
+            this.pnBook.Controls.Add(this.btnbooknote);
+            this.pnBook.Controls.Add(this.btnbook);
+            this.Transition1.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
+            this.pnBook.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnBook.Location = new System.Drawing.Point(0, 132);
+            this.pnBook.Name = "pnBook";
+            this.pnBook.Size = new System.Drawing.Size(282, 48);
+            this.pnBook.TabIndex = 4;
             // 
             // btnbookData
             // 
@@ -1454,6 +1266,20 @@
             this.btnbook.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbook.Click += new System.EventHandler(this.btnbook_Click_1);
             // 
+            // pnStay
+            // 
+            this.pnStay.Controls.Add(this.btncheckINData);
+            this.pnStay.Controls.Add(this.btncheckin);
+            this.pnStay.Controls.Add(this.btnstay);
+            this.Transition1.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
+            this.pnStay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnStay.Location = new System.Drawing.Point(0, 84);
+            this.pnStay.Name = "pnStay";
+            this.pnStay.Size = new System.Drawing.Size(282, 48);
+            this.pnStay.TabIndex = 3;
+            // 
             // btncheckINData
             // 
             this.btncheckINData.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -1571,6 +1397,18 @@
             this.btnstay.TextFont = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnstay.Click += new System.EventHandler(this.btnstay_Click_1);
             // 
+            // pnLogo
+            // 
+            this.pnLogo.Controls.Add(this.pictureBox1);
+            this.Transition1.SetDecoration(this.pnLogo, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.pnLogo, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.pnLogo, BunifuAnimatorNS.DecorationType.None);
+            this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnLogo.Name = "pnLogo";
+            this.pnLogo.Size = new System.Drawing.Size(282, 84);
+            this.pnLogo.TabIndex = 2;
+            // 
             // pictureBox1
             // 
             this.Transition3.SetDecoration(this.pictureBox1, BunifuAnimatorNS.DecorationType.None);
@@ -1584,6 +1422,252 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.panel1.Controls.Add(this.LBLTime);
+            this.Transition1.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(282, 679);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(918, 41);
+            this.panel1.TabIndex = 13;
+            // 
+            // LBLTime
+            // 
+            this.Transition3.SetDecoration(this.LBLTime, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.LBLTime, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.LBLTime, BunifuAnimatorNS.DecorationType.None);
+            this.LBLTime.Dock = System.Windows.Forms.DockStyle.Right;
+            this.LBLTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.LBLTime.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LBLTime.ForeColor = System.Drawing.Color.White;
+            this.LBLTime.Location = new System.Drawing.Point(585, 0);
+            this.LBLTime.Name = "LBLTime";
+            this.LBLTime.Size = new System.Drawing.Size(333, 41);
+            this.LBLTime.TabIndex = 0;
+            this.LBLTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // Pntopbar
+            // 
+            this.Pntopbar.BackColor = System.Drawing.Color.DarkSlateBlue;
+            this.Pntopbar.Controls.Add(this.lblposition2);
+            this.Pntopbar.Controls.Add(this.label2);
+            this.Pntopbar.Controls.Add(this.lblName);
+            this.Pntopbar.Controls.Add(this.label1);
+            this.Pntopbar.Controls.Add(this.lblPosition);
+            this.Transition1.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
+            this.Pntopbar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Pntopbar.Location = new System.Drawing.Point(282, 0);
+            this.Pntopbar.Name = "Pntopbar";
+            this.Pntopbar.Size = new System.Drawing.Size(918, 42);
+            this.Pntopbar.TabIndex = 14;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Silver;
+            this.panel2.Controls.Add(this.ph31);
+            this.panel2.Controls.Add(this.ph21);
+            this.panel2.Controls.Add(this.ph11);
+            this.Transition1.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition3.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(282, 42);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(918, 637);
+            this.panel2.TabIndex = 15;
+            // 
+            // Transition1
+            // 
+            this.Transition1.AnimationType = BunifuAnimatorNS.AnimationType.Rotate;
+            this.Transition1.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(50);
+            animation3.RotateCoeff = 1F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.Transition1.DefaultAnimation = animation3;
+            this.Transition1.Interval = 1000;
+            this.Transition1.TimeStep = 1F;
+            // 
+            // Transition2
+            // 
+            this.Transition2.AnimationType = BunifuAnimatorNS.AnimationType.Mosaic;
+            this.Transition2.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 20;
+            animation2.Padding = new System.Windows.Forms.Padding(30);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.Transition2.DefaultAnimation = animation2;
+            this.Transition2.Interval = 1000;
+            this.Transition2.TimeStep = 1F;
+            // 
+            // Tslide
+            // 
+            this.Tslide.Interval = 3000;
+            this.Tslide.Tick += new System.EventHandler(this.Tslide_Tick);
+            // 
+            // Transition3
+            // 
+            this.Transition3.AnimationType = BunifuAnimatorNS.AnimationType.Scale;
+            this.Transition3.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.Transition3.DefaultAnimation = animation1;
+            this.Transition3.Interval = 1000;
+            this.Transition3.TimeStep = 1F;
+            // 
+            // Tdate
+            // 
+            this.Tdate.Tick += new System.EventHandler(this.Tdate_Tick);
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.lblPosition.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblPosition.Location = new System.Drawing.Point(119, 4);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(0, 34);
+            this.lblPosition.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.Transition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 34);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "បុគ្គលិក :";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.lblName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblName.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblName.Location = new System.Drawing.Point(99, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(99, 34);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "បុគ្គលិក :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.Transition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(198, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 34);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "តួនាទី :";
+            // 
+            // lblposition2
+            // 
+            this.lblposition2.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.lblposition2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblposition2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblposition2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblposition2.Location = new System.Drawing.Point(283, 0);
+            this.lblposition2.Name = "lblposition2";
+            this.lblposition2.Size = new System.Drawing.Size(99, 34);
+            this.lblposition2.TabIndex = 5;
+            this.lblposition2.Text = "បុគ្គលិក :";
+            // 
+            // ph31
+            // 
+            this.Transition3.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.ph31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph31.Location = new System.Drawing.Point(0, 0);
+            this.ph31.Name = "ph31";
+            this.ph31.Size = new System.Drawing.Size(918, 637);
+            this.ph31.TabIndex = 2;
+            this.ph31.Visible = false;
+            // 
+            // ph21
+            // 
+            this.Transition3.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.ph21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph21.Location = new System.Drawing.Point(0, 0);
+            this.ph21.Name = "ph21";
+            this.ph21.Size = new System.Drawing.Size(918, 637);
+            this.ph21.TabIndex = 1;
+            this.ph21.Visible = false;
+            // 
+            // ph11
+            // 
+            this.Transition3.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.ph11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph11.Location = new System.Drawing.Point(0, 0);
+            this.ph11.Name = "ph11";
+            this.ph11.Size = new System.Drawing.Size(918, 637);
+            this.ph11.TabIndex = 0;
             // 
             // Form1
             // 
@@ -1613,9 +1697,11 @@
             this.pnBook.ResumeLayout(false);
             this.pnStay.ResumeLayout(false);
             this.pnLogo.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.Pntopbar.ResumeLayout(false);
+            this.Pntopbar.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1675,6 +1761,11 @@
         private System.Windows.Forms.Label LBLTime;
         private System.Windows.Forms.Timer Tdate;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private System.Windows.Forms.Label lblPosition;
+        private System.Windows.Forms.Label lblName;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblposition2;
     }
 }
 

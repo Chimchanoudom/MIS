@@ -25,5 +25,12 @@ namespace GuestHouse
         {
             this.Close();
         }
+
+        private void bunifuThinButton22_Click(object sender, EventArgs e)
+        {
+            CheckInData CI = new CheckInData();
+            CI.Show();
+            
+        }
     }
 }

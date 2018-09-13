@@ -19,6 +19,11 @@ namespace GuestHouse
             InitializeComponent();
             Tslide.Start();
             Tdate.Start();
+            lblName.Text = UserLoginDetail.fName +" "+ UserLoginDetail.lName;
+            label2.Dock = DockStyle.Left;
+            lblposition2.Text = UserLoginDetail.position;
+            lblposition2.Dock = DockStyle.Left;
+            lblPosition.Visible = false;
         }
        
         

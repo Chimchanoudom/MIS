@@ -94,13 +94,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -109,6 +102,13 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -646,6 +646,7 @@
             this.bunifuThinButton22.Size = new System.Drawing.Size(123, 44);
             this.bunifuThinButton22.TabIndex = 4;
             this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
             // panel6
             // 
@@ -913,6 +914,67 @@
             this.dataGridView2.Size = new System.Drawing.Size(777, 365);
             this.dataGridView2.TabIndex = 1;
             // 
+            // Column7
+            // 
+            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column7.FillWeight = 170.3354F;
+            this.Column7.HeaderText = "ថ្ងៃចូលស្នាក់នៅ";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column8.FillWeight = 50.79859F;
+            this.Column8.HeaderText = "AppointcheckOut";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column12
+            // 
+            this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column12.FillWeight = 50.79859F;
+            this.Column12.HeaderText = "ប្រភេទម៉ោង";
+            this.Column12.Name = "Column12";
+            this.Column12.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column11.FillWeight = 50.79859F;
+            this.Column11.HeaderText = "លេខបន្ទប់";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column10.FillWeight = 50.79859F;
+            this.Column10.HeaderText = "ជម្រើស";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.FillWeight = 324.8731F;
+            this.Column6.HeaderText = "តម្លៃកង្ហារ ឫ ម៉ាស៊ីនត្រជាក់";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.FillWeight = 50.79859F;
+            this.Column9.HeaderText = "តម្លៃបន្ទប់";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column13
+            // 
+            this.Column13.FillWeight = 50.79859F;
+            this.Column13.HeaderText = "តម្លៃសរុប";
+            this.Column13.Name = "Column13";
+            this.Column13.ReadOnly = true;
+            // 
             // groupBox4
             // 
             this.groupBox4.Controls.Add(this.dataGridView1);
@@ -981,67 +1043,6 @@
             this.Column5.HeaderText = "បុគ្គលិកទទួលការចាកចេញ";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
-            // 
-            // Column7
-            // 
-            this.Column7.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column7.FillWeight = 170.3354F;
-            this.Column7.HeaderText = "ថ្ងៃចូលស្នាក់នៅ";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
-            // 
-            // Column8
-            // 
-            this.Column8.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column8.FillWeight = 50.79859F;
-            this.Column8.HeaderText = "AppointcheckOut";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
-            // 
-            // Column12
-            // 
-            this.Column12.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column12.FillWeight = 50.79859F;
-            this.Column12.HeaderText = "ប្រភេទម៉ោង";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
-            // 
-            // Column11
-            // 
-            this.Column11.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column11.FillWeight = 50.79859F;
-            this.Column11.HeaderText = "លេខបន្ទប់";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
-            // 
-            // Column10
-            // 
-            this.Column10.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column10.FillWeight = 50.79859F;
-            this.Column10.HeaderText = "ជម្រើស";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
-            // 
-            // Column6
-            // 
-            this.Column6.FillWeight = 324.8731F;
-            this.Column6.HeaderText = "តម្លៃកង្ហារ ឫ ម៉ាស៊ីនត្រជាក់";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
-            // 
-            // Column9
-            // 
-            this.Column9.FillWeight = 50.79859F;
-            this.Column9.HeaderText = "តម្លៃបន្ទប់";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
-            // 
-            // Column13
-            // 
-            this.Column13.FillWeight = 50.79859F;
-            this.Column13.HeaderText = "តម្លៃសរុប";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
             // 
             // CheckOut
             // 

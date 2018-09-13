@@ -26,5 +26,15 @@ namespace GuestHouse
         {
             dom_Design.resizewidth(this.Width, new Control[] { groupBox1, groupBox2 }, 2);
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            BookingData BD = new BookingData();
+            BD.Close();
+            CheckIn CI = new CheckIn();
+            CI.Show();
+
+
+        }
     }
 }
