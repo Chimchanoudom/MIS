@@ -216,7 +216,6 @@
             this.panel3.TabIndex = 18;
             // 
             // groupBox1
-<<<<<<< HEAD
             // 
             this.groupBox1.Controls.Add(this.panel12);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -462,7 +461,7 @@
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(579, 48);
             this.panel9.TabIndex = 5;
-=======
+
             // 
             this.groupBox1.Controls.Add(this.panel12);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -485,11 +484,10 @@
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = " ព័ត៌មានការកក់";
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             // 
             // panel12
             // 
-<<<<<<< HEAD
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Blue;
@@ -513,18 +511,16 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(141, 48);
             this.bunifuThinButton21.TabIndex = 9;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-=======
             this.panel12.Controls.Add(this.panel10);
             this.panel12.Controls.Add(this.panel11);
             this.panel12.Location = new System.Drawing.Point(199, 92);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(200, 59);
             this.panel12.TabIndex = 100018;
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
             // 
             // panel10
             // 
-<<<<<<< HEAD
+
             this.btnDelete.ActiveBorderThickness = 1;
             this.btnDelete.ActiveCornerRadius = 20;
             this.btnDelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -548,7 +544,7 @@
             this.btnDelete.Size = new System.Drawing.Size(141, 48);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-=======
+
             this.panel10.Controls.Add(this.comboBox2);
             this.panel10.Controls.Add(this.checkBox1);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
@@ -556,11 +552,11 @@
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(200, 29);
             this.panel10.TabIndex = 100018;
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             // 
             // comboBox2
             // 
-<<<<<<< HEAD
+
             this.btnEdit.ActiveBorderThickness = 1;
             this.btnEdit.ActiveCornerRadius = 20;
             this.btnEdit.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
@@ -584,7 +580,7 @@
             this.btnEdit.Size = new System.Drawing.Size(141, 48);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-=======
+
             this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.comboBox2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -595,11 +591,11 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(138, 29);
             this.comboBox2.TabIndex = 1;
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             // 
             // checkBox1
             // 
-<<<<<<< HEAD
+ 
             this.btnAdd.ActiveBorderThickness = 1;
             this.btnAdd.ActiveCornerRadius = 20;
             this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
@@ -623,7 +619,7 @@
             this.btnAdd.Size = new System.Drawing.Size(141, 48);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-=======
+
             this.checkBox1.AutoSize = true;
             this.checkBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.checkBox1.Location = new System.Drawing.Point(0, 0);
@@ -632,7 +628,7 @@
             this.checkBox1.TabIndex = 0;
             this.checkBox1.Text = "ចាស់";
             this.checkBox1.UseVisualStyleBackColor = true;
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             // 
             // panel11
             // 
@@ -917,8 +913,7 @@
             this.panel8.TabIndex = 4;
             // 
             // comboBox4
-<<<<<<< HEAD
-=======
+
             // 
             this.comboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -979,7 +974,7 @@
             this.rndMale.UseVisualStyleBackColor = true;
             // 
             // label24
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             // 
             this.comboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
@@ -1361,11 +1356,11 @@
             this.dateTimePicker3.Location = new System.Drawing.Point(180, 80);
             this.dateTimePicker3.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker3.Name = "dateTimePicker3";
-<<<<<<< HEAD
+
             this.dateTimePicker3.Size = new System.Drawing.Size(265, 30);
-=======
+
             this.dateTimePicker3.Size = new System.Drawing.Size(158, 26);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dateTimePicker3.TabIndex = 0;
             // 
             // label23
@@ -1426,11 +1421,11 @@
             this.dateTimePicker2.Location = new System.Drawing.Point(180, 41);
             this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
-<<<<<<< HEAD
+
             this.dateTimePicker2.Size = new System.Drawing.Size(265, 30);
-=======
+
             this.dateTimePicker2.Size = new System.Drawing.Size(158, 26);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dateTimePicker2.TabIndex = 0;
             // 
             // label22
@@ -1476,32 +1471,32 @@
             // label9
             // 
             this.label9.AutoSize = true;
-<<<<<<< HEAD
+
             this.label9.Location = new System.Drawing.Point(12, 43);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(134, 38);
-=======
+
             this.label9.Location = new System.Drawing.Point(9, 35);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(106, 30);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.label9.TabIndex = 100010;
             this.label9.Text = "ថ្ងៃចូលស្នាក់នៅ";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-<<<<<<< HEAD
+
             this.label11.Location = new System.Drawing.Point(152, 42);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(23, 38);
-=======
+
             this.label11.Location = new System.Drawing.Point(114, 34);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(17, 30);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.label11.TabIndex = 100011;
             this.label11.Text = ":";
             // 
@@ -1511,16 +1506,16 @@
             this.panel4.Controls.Add(this.groupBox7);
             this.panel4.Controls.Add(this.groupBox6);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-<<<<<<< HEAD
+
             this.panel4.Location = new System.Drawing.Point(0, 371);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1899, 391);
-=======
+
             this.panel4.Location = new System.Drawing.Point(0, 302);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1424, 317);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.panel4.TabIndex = 19;
             // 
             // groupBox7
@@ -1528,17 +1523,17 @@
             this.groupBox7.Controls.Add(this.dataGridView2);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox7.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-<<<<<<< HEAD
+
             this.groupBox7.Location = new System.Drawing.Point(756, 0);
             this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox7.Size = new System.Drawing.Size(1141, 389);
-=======
+
             this.groupBox7.Location = new System.Drawing.Point(589, 0);
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.Size = new System.Drawing.Size(833, 315);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "បញ្ជីកក់បន្ទប់លំអិត";
@@ -1559,12 +1554,12 @@
             this.Column8});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.GridColor = System.Drawing.Color.DarkSlateBlue;
-<<<<<<< HEAD
+
             this.dataGridView2.Location = new System.Drawing.Point(4, 37);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.dataGridView2.Location = new System.Drawing.Point(3, 30);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1572,11 +1567,11 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle1;
-<<<<<<< HEAD
+
             this.dataGridView2.Size = new System.Drawing.Size(1133, 348);
-=======
+
             this.dataGridView2.Size = new System.Drawing.Size(827, 282);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dataGridView2.TabIndex = 0;
             // 
             // Column3
@@ -1621,15 +1616,15 @@
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox6.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(0, 0);
-<<<<<<< HEAD
+
             this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(756, 389);
-=======
+
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(589, 315);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "បញ្ជីកក់បន្ទប់";
@@ -1649,12 +1644,12 @@
             this.Column14});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.DarkSlateBlue;
-<<<<<<< HEAD
+
             this.dataGridView1.Location = new System.Drawing.Point(4, 37);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-=======
+
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1662,11 +1657,11 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
-<<<<<<< HEAD
+
             this.dataGridView1.Size = new System.Drawing.Size(748, 348);
-=======
+
             this.dataGridView1.Size = new System.Drawing.Size(583, 282);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1

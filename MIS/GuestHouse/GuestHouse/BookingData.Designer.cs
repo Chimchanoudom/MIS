@@ -164,12 +164,12 @@
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-<<<<<<< HEAD
+
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(651, 196);
-=======
+
             this.groupBox3.Size = new System.Drawing.Size(489, 159);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "លក្ខខណ្ធពិនិត្យបន្ទប់";
@@ -184,11 +184,11 @@
             this.panel5.Location = new System.Drawing.Point(4, 149);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-<<<<<<< HEAD
+
             this.panel5.Size = new System.Drawing.Size(643, 44);
-=======
+
             this.panel5.Size = new System.Drawing.Size(483, 36);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.panel5.TabIndex = 5;
             // 
             // btnSearch
@@ -210,13 +210,12 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.White;
             this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
             this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
-<<<<<<< HEAD
+
             this.btnSearch.Location = new System.Drawing.Point(387, 0);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
-=======
+
             this.btnSearch.Location = new System.Drawing.Point(291, 0);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(133, 44);
             this.btnSearch.TabIndex = 2;
@@ -241,13 +240,13 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
             this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-<<<<<<< HEAD
+
             this.btnCancel.Location = new System.Drawing.Point(520, 0);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
-=======
+
             this.btnCancel.Location = new System.Drawing.Point(391, 0);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(123, 44);
             this.btnCancel.TabIndex = 1;
@@ -286,11 +285,11 @@
             this.panel6.Location = new System.Drawing.Point(4, 42);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-<<<<<<< HEAD
+
             this.panel6.Size = new System.Drawing.Size(643, 107);
-=======
+
             this.panel6.Size = new System.Drawing.Size(483, 87);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.panel6.TabIndex = 4;
             // 
             // rndName
@@ -352,7 +351,7 @@
             // 
             // panel4
             // 
-<<<<<<< HEAD
+
             this.panel4.Controls.Add(this.groupBox2);
             this.panel4.Controls.Add(this.groupBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -360,14 +359,14 @@
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1920, 507);
-=======
+
             this.panel4.Controls.Add(this.bunifuThinButton22);
             this.panel4.Controls.Add(this.bunifuThinButton21);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 577);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1440, 34);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.panel4.TabIndex = 21;
             // 
             // bunifuThinButton22
@@ -441,12 +440,12 @@
             this.groupBox2.Location = new System.Drawing.Point(996, 0);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-<<<<<<< HEAD
+
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(924, 507);
-=======
+
             this.groupBox2.Size = new System.Drawing.Size(693, 378);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "បញ្ជីព័តមានលំអិតនៃការកក់បន្ទន់";
@@ -479,11 +478,11 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-<<<<<<< HEAD
+
             this.dataGridView2.Size = new System.Drawing.Size(916, 461);
-=======
+
             this.dataGridView2.Size = new System.Drawing.Size(687, 341);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dataGridView2.TabIndex = 1;
             // 
             // Column6
@@ -549,12 +548,12 @@
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-<<<<<<< HEAD
+
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(988, 507);
-=======
+
             this.groupBox1.Size = new System.Drawing.Size(741, 378);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ទិន្នន័យការកក់បន្ទប់";
@@ -585,11 +584,11 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-<<<<<<< HEAD
+
             this.dataGridView1.Size = new System.Drawing.Size(980, 461);
-=======
+
             this.dataGridView1.Size = new System.Drawing.Size(735, 341);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -632,12 +631,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(1920, 801);
-=======
+
             this.ClientSize = new System.Drawing.Size(1440, 651);
             this.Controls.Add(this.panel7);
->>>>>>> 8d1c26aa6778928e93c654b3ddb11e3d3175ca95
+
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
