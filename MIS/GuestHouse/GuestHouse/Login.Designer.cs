@@ -234,7 +234,7 @@
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 30;
-            this.bunifuElipse1.TargetControl = this.txtPassword;
+            this.bunifuElipse1.TargetControl = this;
             // 
             // Login
             // 
