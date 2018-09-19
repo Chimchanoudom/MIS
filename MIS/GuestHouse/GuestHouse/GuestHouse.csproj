@@ -78,6 +78,30 @@
     <Compile Include="BookingData.Designer.cs">
       <DependentUpon>BookingData.cs</DependentUpon>
     </Compile>
+    <Compile Include="CheckIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckIn.Designer.cs">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckInData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckInData.Designer.cs">
+      <DependentUpon>CheckInData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CheckoutData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CheckoutData.Designer.cs">
+      <DependentUpon>CheckoutData.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckRoom.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -123,6 +147,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ghDataSet.cs">
+      <DependentUpon>ghDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ghDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -133,6 +160,24 @@
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ph1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ph1.Designer.cs">
+      <DependentUpon>Ph1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ph2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ph2.Designer.cs">
+      <DependentUpon>Ph2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ph3.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Ph3.Designer.cs">
+      <DependentUpon>Ph3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -158,6 +203,18 @@
     <EmbeddedResource Include="BookingData.resx">
       <DependentUpon>BookingData.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CheckIn.resx">
+      <DependentUpon>CheckIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckInData.resx">
+      <DependentUpon>CheckInData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CheckoutData.resx">
+      <DependentUpon>CheckoutData.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CheckRoom.resx">
       <DependentUpon>CheckRoom.cs</DependentUpon>
     </EmbeddedResource>
@@ -182,6 +239,15 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Ph1.resx">
+      <DependentUpon>Ph1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ph2.resx">
+      <DependentUpon>Ph2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ph3.resx">
+      <DependentUpon>Ph3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -190,6 +256,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="RoomData.resx">
       <DependentUpon>RoomData.cs</DependentUpon>
@@ -224,6 +291,66 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pov\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\114553915.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\114553922.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\114553950.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Help1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogOut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RoomPrice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cusomter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\employee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\note.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profits.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loss.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maintenance1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pause1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
