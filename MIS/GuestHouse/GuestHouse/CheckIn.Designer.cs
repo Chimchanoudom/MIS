@@ -29,72 +29,52 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckIn));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnEdit = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.txtIDnum = new System.Windows.Forms.TextBox();
+            this.cmCusName = new System.Windows.Forms.ComboBox();
             this.panel13 = new System.Windows.Forms.Panel();
             this.rndFemale = new System.Windows.Forms.RadioButton();
             this.rndMale = new System.Windows.Forms.RadioButton();
             this.label24 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.txtTelephone = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnsearch = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.CMRoom = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
+            this.rndAir = new System.Windows.Forms.RadioButton();
+            this.rndFan = new System.Windows.Forms.RadioButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.rnd24 = new System.Windows.Forms.RadioButton();
+            this.rnd12 = new System.Windows.Forms.RadioButton();
+            this.rnd6 = new System.Windows.Forms.RadioButton();
+            this.rnd3 = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rndVIP = new System.Windows.Forms.RadioButton();
+            this.rndDouble = new System.Windows.Forms.RadioButton();
+            this.rndSingle = new System.Windows.Forms.RadioButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateout = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dateIN = new System.Windows.Forms.DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -117,13 +97,37 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCheckID = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel9 = new System.Windows.Forms.Panel();
+            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnEdit = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.btnPrice = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel13.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -136,6 +140,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel10.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -203,306 +212,39 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Controls.Add(this.groupBox2);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 40);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1424, 262);
-            this.panel3.TabIndex = 30;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.panel12);
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtID);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(891, 0);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(345, 260);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = " ព័ត៌មានការស្នាក់នៅ";
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.panel11);
-            this.panel12.Location = new System.Drawing.Point(199, 92);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(110, 29);
-            this.panel12.TabIndex = 100018;
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.textBox1);
-            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(0, 0);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(110, 29);
-            this.panel11.TabIndex = 100017;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(0, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(109, 29);
-            this.textBox1.TabIndex = 1;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(199, 60);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(110, 26);
-            this.dateTimePicker1.TabIndex = 0;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(170, 127);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 30);
-            this.label5.TabIndex = 100014;
-            this.label5.Text = ":";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(199, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ShortcutsEnabled = false;
-            this.textBox2.Size = new System.Drawing.Size(110, 29);
-            this.textBox2.TabIndex = 100015;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 127);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(159, 30);
-            this.label6.TabIndex = 100013;
-            this.label6.Text = "លេខកូដសម្គាល់បុគ្គលិក";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(170, 62);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(17, 30);
-            this.label8.TabIndex = 100011;
-            this.label8.Text = ":";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(170, 91);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 30);
-            this.label3.TabIndex = 100011;
-            this.label3.Text = ":";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 62);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(106, 30);
-            this.label7.TabIndex = 100010;
-            this.label7.Text = "ថ្ងៃចូលស្នាក់នៅ";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(5, 91);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(165, 30);
-            this.label4.TabIndex = 100010;
-            this.label4.Text = "លេខកូដសម្គាល់អតិថិជន";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(170, 27);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(17, 30);
-            this.label10.TabIndex = 100008;
-            this.label10.Text = ":";
-            // 
-            // txtID
-            // 
-            this.txtID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(199, 28);
-            this.txtID.Name = "txtID";
-            this.txtID.ShortcutsEnabled = false;
-            this.txtID.Size = new System.Drawing.Size(110, 29);
-            this.txtID.TabIndex = 100009;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(5, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 30);
-            this.label2.TabIndex = 100007;
-            this.label2.Text = "លេខកូដសម្គាល់";
+            this.panel3.Size = new System.Drawing.Size(1424, 362);
+            this.panel3.TabIndex = 1;
             // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.panel9);
+            this.groupBox3.Controls.Add(this.panel10);
             this.groupBox3.Controls.Add(this.panel8);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(446, 0);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(445, 260);
-            this.groupBox3.TabIndex = 2;
+            this.groupBox3.Size = new System.Drawing.Size(445, 360);
+            this.groupBox3.TabIndex = 0;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = " ព័ត៌មានអតិថិជន";
             // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.bunifuThinButton21);
-            this.panel9.Controls.Add(this.btnDelete);
-            this.panel9.Controls.Add(this.btnEdit);
-            this.panel9.Controls.Add(this.btnAdd);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(3, 222);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(439, 39);
-            this.panel9.TabIndex = 5;
-            // 
-            // bunifuThinButton21
-            // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Blue;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Blue;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "រក្សាទុក";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Blue;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(327, 0);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(109, 39);
-            this.bunifuThinButton21.TabIndex = 9;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.ActiveBorderThickness = 1;
-            this.btnDelete.ActiveCornerRadius = 20;
-            this.btnDelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
-            this.btnDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.BackColor = System.Drawing.SystemColors.Control;
-            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
-            this.btnDelete.ButtonText = "លុប";
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnDelete.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnDelete.IdleBorderThickness = 1;
-            this.btnDelete.IdleCornerRadius = 20;
-            this.btnDelete.IdleFillColor = System.Drawing.Color.White;
-            this.btnDelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.Location = new System.Drawing.Point(218, 0);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(109, 39);
-            this.btnDelete.TabIndex = 8;
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnEdit
-            // 
-            this.btnEdit.ActiveBorderThickness = 1;
-            this.btnEdit.ActiveCornerRadius = 20;
-            this.btnEdit.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEdit.ActiveForecolor = System.Drawing.Color.White;
-            this.btnEdit.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEdit.BackColor = System.Drawing.SystemColors.Control;
-            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
-            this.btnEdit.ButtonText = "កែប្រែ";
-            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnEdit.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnEdit.IdleBorderThickness = 1;
-            this.btnEdit.IdleCornerRadius = 20;
-            this.btnEdit.IdleFillColor = System.Drawing.Color.White;
-            this.btnEdit.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEdit.Location = new System.Drawing.Point(109, 0);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(109, 39);
-            this.btnEdit.TabIndex = 7;
-            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnAdd
-            // 
-            this.btnAdd.ActiveBorderThickness = 1;
-            this.btnAdd.ActiveCornerRadius = 20;
-            this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
-            this.btnAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdd.BackColor = System.Drawing.SystemColors.Control;
-            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
-            this.btnAdd.ButtonText = "បញ្ចូល";
-            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnAdd.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdd.IdleBorderThickness = 1;
-            this.btnAdd.IdleCornerRadius = 20;
-            this.btnAdd.IdleFillColor = System.Drawing.Color.White;
-            this.btnAdd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnAdd.Location = new System.Drawing.Point(0, 0);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(109, 39);
-            this.btnAdd.TabIndex = 6;
-            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.comboBox4);
-            this.panel8.Controls.Add(this.comboBox3);
+            this.panel8.Controls.Add(this.label18);
+            this.panel8.Controls.Add(this.label19);
+            this.panel8.Controls.Add(this.txtIDnum);
+            this.panel8.Controls.Add(this.cmCusName);
             this.panel8.Controls.Add(this.panel13);
             this.panel8.Controls.Add(this.label24);
             this.panel8.Controls.Add(this.label27);
             this.panel8.Controls.Add(this.label28);
-            this.panel8.Controls.Add(this.label29);
-            this.panel8.Controls.Add(this.label30);
             this.panel8.Controls.Add(this.label31);
             this.panel8.Controls.Add(this.label32);
             this.panel8.Controls.Add(this.label35);
@@ -510,39 +252,53 @@
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(3, 34);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(439, 188);
+            this.panel8.Size = new System.Drawing.Size(439, 146);
             this.panel8.TabIndex = 4;
             // 
-            // comboBox4
+            // label18
             // 
-            this.comboBox4.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox4.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(190, 55);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(234, 29);
-            this.comboBox4.TabIndex = 100021;
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(161, 109);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(17, 30);
+            this.label18.TabIndex = 100023;
+            this.label18.Text = ":";
             // 
-            // comboBox3
+            // label19
             // 
-            this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(190, 13);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(234, 29);
-            this.comboBox3.TabIndex = 100020;
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 108);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(150, 30);
+            this.label19.TabIndex = 100022;
+            this.label19.Text = "លេខអត្តសញ្ញាណប័ណ្ណ";
+            // 
+            // txtIDnum
+            // 
+            this.txtIDnum.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDnum.Location = new System.Drawing.Point(190, 110);
+            this.txtIDnum.Name = "txtIDnum";
+            this.txtIDnum.Size = new System.Drawing.Size(234, 26);
+            this.txtIDnum.TabIndex = 100021;
+            // 
+            // cmCusName
+            // 
+            this.cmCusName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cmCusName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmCusName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmCusName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmCusName.FormattingEnabled = true;
+            this.cmCusName.Location = new System.Drawing.Point(190, 13);
+            this.cmCusName.Name = "cmCusName";
+            this.cmCusName.Size = new System.Drawing.Size(234, 29);
+            this.cmCusName.TabIndex = 100020;
             // 
             // panel13
             // 
             this.panel13.Controls.Add(this.rndFemale);
             this.panel13.Controls.Add(this.rndMale);
             this.panel13.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel13.Location = new System.Drawing.Point(192, 93);
+            this.panel13.Location = new System.Drawing.Point(192, 46);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(232, 27);
             this.panel13.TabIndex = 100019;
@@ -576,7 +332,7 @@
             // label24
             // 
             this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(161, 125);
+            this.label24.Location = new System.Drawing.Point(161, 78);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(17, 30);
             this.label24.TabIndex = 100000;
@@ -594,29 +350,11 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(161, 96);
+            this.label28.Location = new System.Drawing.Point(161, 49);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(17, 30);
             this.label28.TabIndex = 1000;
             this.label28.Text = ":";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(11, 53);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(118, 30);
-            this.label29.TabIndex = 1000;
-            this.label29.Text = "គោត្តនាម​-នាមខ្លួន";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(163, 54);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(17, 30);
-            this.label30.TabIndex = 1000;
-            this.label30.Text = ":";
             // 
             // label31
             // 
@@ -630,7 +368,7 @@
             // label32
             // 
             this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(9, 95);
+            this.label32.Location = new System.Drawing.Point(9, 48);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(40, 30);
             this.label32.TabIndex = 1000;
@@ -639,7 +377,7 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(9, 124);
+            this.label35.Location = new System.Drawing.Point(9, 77);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(87, 30);
             this.label35.TabIndex = 1000;
@@ -648,26 +386,36 @@
             // txtTelephone
             // 
             this.txtTelephone.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTelephone.Location = new System.Drawing.Point(190, 126);
+            this.txtTelephone.Location = new System.Drawing.Point(190, 79);
             this.txtTelephone.Name = "txtTelephone";
             this.txtTelephone.Size = new System.Drawing.Size(234, 26);
             this.txtTelephone.TabIndex = 1;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.bunifuThinButton22);
-            this.groupBox2.Controls.Add(this.comboBox1);
+            this.groupBox2.Controls.Add(this.btnPrice);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.label8);
+            this.groupBox2.Controls.Add(this.textBox3);
+            this.groupBox2.Controls.Add(this.label30);
+            this.groupBox2.Controls.Add(this.label25);
+            this.groupBox2.Controls.Add(this.label29);
+            this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.btnsearch);
+            this.groupBox2.Controls.Add(this.CMRoom);
             this.groupBox2.Controls.Add(this.panel6);
             this.groupBox2.Controls.Add(this.panel7);
             this.groupBox2.Controls.Add(this.panel5);
             this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.dateTimePicker3);
+            this.groupBox2.Controls.Add(this.dateout);
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label15);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.dateTimePicker2);
+            this.groupBox2.Controls.Add(this.dateIN);
             this.groupBox2.Controls.Add(this.label22);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.label14);
@@ -679,201 +427,206 @@
             this.groupBox2.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(0, 0);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(446, 260);
-            this.groupBox2.TabIndex = 1;
+            this.groupBox2.Size = new System.Drawing.Size(446, 360);
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = " ព័ត៌មានបន្ទប់ត្រូវស្នាក់នៅ";
             // 
-            // bunifuThinButton22
+            // btnsearch
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "ស្វែងរកការកក់";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton22.Location = new System.Drawing.Point(316, 26);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(106, 44);
-            this.bunifuThinButton22.TabIndex = 4;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuThinButton22.Click += new System.EventHandler(this.bunifuThinButton22_Click);
+            this.btnsearch.ActiveBorderThickness = 1;
+            this.btnsearch.ActiveCornerRadius = 20;
+            this.btnsearch.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnsearch.ActiveForecolor = System.Drawing.Color.White;
+            this.btnsearch.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnsearch.BackColor = System.Drawing.SystemColors.Control;
+            this.btnsearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsearch.BackgroundImage")));
+            this.btnsearch.ButtonText = "ស្វែងរកការកក់";
+            this.btnsearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsearch.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsearch.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnsearch.IdleBorderThickness = 1;
+            this.btnsearch.IdleCornerRadius = 35;
+            this.btnsearch.IdleFillColor = System.Drawing.Color.White;
+            this.btnsearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnsearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnsearch.Location = new System.Drawing.Point(316, 26);
+            this.btnsearch.Margin = new System.Windows.Forms.Padding(4, 7, 4, 7);
+            this.btnsearch.Name = "btnsearch";
+            this.btnsearch.Size = new System.Drawing.Size(106, 44);
+            this.btnsearch.TabIndex = 4;
+            this.btnsearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnsearch.Click += new System.EventHandler(this.bunifuThinButton22_Click);
             // 
-            // comboBox1
+            // CMRoom
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(135, 186);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(200, 25);
-            this.comboBox1.TabIndex = 100013;
+            this.CMRoom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CMRoom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.CMRoom.BackColor = System.Drawing.Color.White;
+            this.CMRoom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.CMRoom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.CMRoom.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMRoom.FormattingEnabled = true;
+            this.CMRoom.Location = new System.Drawing.Point(135, 186);
+            this.CMRoom.Name = "CMRoom";
+            this.CMRoom.Size = new System.Drawing.Size(200, 26);
+            this.CMRoom.TabIndex = 100013;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.radioButton5);
-            this.panel6.Controls.Add(this.radioButton6);
+            this.panel6.Controls.Add(this.rndAir);
+            this.panel6.Controls.Add(this.rndFan);
             this.panel6.Location = new System.Drawing.Point(135, 145);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(242, 35);
-            this.panel6.TabIndex = 100012;
+            this.panel6.TabIndex = 0;
             // 
-            // radioButton5
+            // rndAir
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton5.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(57, 0);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(100, 35);
-            this.radioButton5.TabIndex = 100013;
-            this.radioButton5.Text = "ម៉ាស៊ីនត្រជាក់";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rndAir.AutoSize = true;
+            this.rndAir.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rndAir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rndAir.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rndAir.Location = new System.Drawing.Point(57, 0);
+            this.rndAir.Name = "rndAir";
+            this.rndAir.Size = new System.Drawing.Size(100, 35);
+            this.rndAir.TabIndex = 0;
+            this.rndAir.Text = "ម៉ាស៊ីនត្រជាក់";
+            this.rndAir.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rndFan
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = true;
-            this.radioButton6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton6.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(0, 0);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(57, 35);
-            this.radioButton6.TabIndex = 100013;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "កង្ហារ";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rndFan.AutoSize = true;
+            this.rndFan.Checked = true;
+            this.rndFan.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rndFan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rndFan.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rndFan.Location = new System.Drawing.Point(0, 0);
+            this.rndFan.Name = "rndFan";
+            this.rndFan.Size = new System.Drawing.Size(57, 35);
+            this.rndFan.TabIndex = 1;
+            this.rndFan.TabStop = true;
+            this.rndFan.Text = "កង្ហារ";
+            this.rndFan.UseVisualStyleBackColor = true;
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.radioButton9);
-            this.panel7.Controls.Add(this.radioButton4);
-            this.panel7.Controls.Add(this.radioButton7);
-            this.panel7.Controls.Add(this.radioButton8);
+            this.panel7.Controls.Add(this.rnd24);
+            this.panel7.Controls.Add(this.rnd12);
+            this.panel7.Controls.Add(this.rnd6);
+            this.panel7.Controls.Add(this.rnd3);
             this.panel7.Location = new System.Drawing.Point(135, 217);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(242, 35);
-            this.panel7.TabIndex = 100012;
+            this.panel7.TabIndex = 0;
             // 
-            // radioButton9
+            // rnd24
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(158, 0);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(58, 35);
-            this.radioButton9.TabIndex = 100014;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "24Hr";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rnd24.AutoSize = true;
+            this.rnd24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd24.Location = new System.Drawing.Point(158, 0);
+            this.rnd24.Name = "rnd24";
+            this.rnd24.Size = new System.Drawing.Size(58, 35);
+            this.rnd24.TabIndex = 100014;
+            this.rnd24.TabStop = true;
+            this.rnd24.Text = "24Hr";
+            this.rnd24.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rnd12
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(100, 0);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 35);
-            this.radioButton4.TabIndex = 100013;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "12Hr";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rnd12.AutoSize = true;
+            this.rnd12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd12.Location = new System.Drawing.Point(100, 0);
+            this.rnd12.Name = "rnd12";
+            this.rnd12.Size = new System.Drawing.Size(58, 35);
+            this.rnd12.TabIndex = 100013;
+            this.rnd12.TabStop = true;
+            this.rnd12.Text = "12Hr";
+            this.rnd12.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rnd6
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(50, 0);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(50, 35);
-            this.radioButton7.TabIndex = 100013;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "6Hr";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rnd6.AutoSize = true;
+            this.rnd6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd6.Location = new System.Drawing.Point(50, 0);
+            this.rnd6.Name = "rnd6";
+            this.rnd6.Size = new System.Drawing.Size(50, 35);
+            this.rnd6.TabIndex = 100013;
+            this.rnd6.TabStop = true;
+            this.rnd6.Text = "6Hr";
+            this.rnd6.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // rnd3
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(0, 0);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(50, 35);
-            this.radioButton8.TabIndex = 100013;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "3Hr";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rnd3.AutoSize = true;
+            this.rnd3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd3.Location = new System.Drawing.Point(0, 0);
+            this.rnd3.Name = "rnd3";
+            this.rnd3.Size = new System.Drawing.Size(50, 35);
+            this.rnd3.TabIndex = 100013;
+            this.rnd3.TabStop = true;
+            this.rnd3.Text = "3Hr";
+            this.rnd3.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.radioButton3);
-            this.panel5.Controls.Add(this.radioButton2);
-            this.panel5.Controls.Add(this.radioButton1);
+            this.panel5.Controls.Add(this.rndVIP);
+            this.panel5.Controls.Add(this.rndDouble);
+            this.panel5.Controls.Add(this.rndSingle);
             this.panel5.Location = new System.Drawing.Point(135, 102);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(242, 35);
-            this.panel5.TabIndex = 100012;
+            this.panel5.TabIndex = 4;
             // 
-            // radioButton3
+            // rndVIP
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton3.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(135, 0);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(99, 35);
-            this.radioButton3.TabIndex = 100013;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "បន្ទប់ពិសេស";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rndVIP.AutoSize = true;
+            this.rndVIP.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rndVIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rndVIP.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rndVIP.Location = new System.Drawing.Point(135, 0);
+            this.rndVIP.Name = "rndVIP";
+            this.rndVIP.Size = new System.Drawing.Size(99, 35);
+            this.rndVIP.TabIndex = 2;
+            this.rndVIP.TabStop = true;
+            this.rndVIP.Text = "បន្ទប់ពិសេស";
+            this.rndVIP.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rndDouble
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton2.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(71, 0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(64, 35);
-            this.radioButton2.TabIndex = 100013;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "គ្រែពីរ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rndDouble.AutoSize = true;
+            this.rndDouble.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rndDouble.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rndDouble.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rndDouble.Location = new System.Drawing.Point(71, 0);
+            this.rndDouble.Name = "rndDouble";
+            this.rndDouble.Size = new System.Drawing.Size(64, 35);
+            this.rndDouble.TabIndex = 2;
+            this.rndDouble.TabStop = true;
+            this.rndDouble.Text = "គ្រែពីរ";
+            this.rndDouble.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // rndSingle
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton1.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(0, 0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 35);
-            this.radioButton1.TabIndex = 100013;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "គ្រែមួយ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rndSingle.AutoSize = true;
+            this.rndSingle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rndSingle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rndSingle.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rndSingle.Location = new System.Drawing.Point(0, 0);
+            this.rndSingle.Name = "rndSingle";
+            this.rndSingle.Size = new System.Drawing.Size(71, 35);
+            this.rndSingle.TabIndex = 2;
+            this.rndSingle.TabStop = true;
+            this.rndSingle.Text = "គ្រែមួយ";
+            this.rndSingle.UseVisualStyleBackColor = true;
             // 
             // label21
             // 
@@ -884,15 +637,15 @@
             this.label21.TabIndex = 100010;
             this.label21.Text = "ជម្រើស";
             // 
-            // dateTimePicker3
+            // dateout
             // 
-            this.dateTimePicker3.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dateTimePicker3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(135, 65);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(158, 26);
-            this.dateTimePicker3.TabIndex = 0;
+            this.dateout.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dateout.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateout.Location = new System.Drawing.Point(135, 65);
+            this.dateout.Name = "dateout";
+            this.dateout.Size = new System.Drawing.Size(158, 26);
+            this.dateout.TabIndex = 1;
             // 
             // label23
             // 
@@ -939,15 +692,15 @@
             this.label20.TabIndex = 100011;
             this.label20.Text = ":";
             // 
-            // dateTimePicker2
+            // dateIN
             // 
-            this.dateTimePicker2.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(135, 33);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(158, 26);
-            this.dateTimePicker2.TabIndex = 0;
+            this.dateIN.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dateIN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateIN.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateIN.Location = new System.Drawing.Point(135, 33);
+            this.dateIN.Name = "dateIN";
+            this.dateIN.Size = new System.Drawing.Size(158, 26);
+            this.dateIN.TabIndex = 0;
             // 
             // label22
             // 
@@ -973,7 +726,7 @@
             this.label14.Location = new System.Drawing.Point(114, 108);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(17, 30);
-            this.label14.TabIndex = 100011;
+            this.label14.TabIndex = 1;
             this.label14.Text = ":";
             // 
             // label12
@@ -1007,9 +760,9 @@
             // 
             this.panel4.Controls.Add(this.panel14);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 302);
+            this.panel4.Location = new System.Drawing.Point(0, 402);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1424, 419);
+            this.panel4.Size = new System.Drawing.Size(1424, 319);
             this.panel4.TabIndex = 31;
             // 
             // panel14
@@ -1020,7 +773,7 @@
             this.panel14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel14.Location = new System.Drawing.Point(0, 0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(1424, 419);
+            this.panel14.Size = new System.Drawing.Size(1424, 319);
             this.panel14.TabIndex = 20;
             // 
             // groupBox7
@@ -1030,7 +783,7 @@
             this.groupBox7.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(589, 0);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(833, 417);
+            this.groupBox7.Size = new System.Drawing.Size(833, 317);
             this.groupBox7.TabIndex = 1;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "បញ្ជីការចូលស្នាក់នៅលំអិត";
@@ -1054,12 +807,12 @@
             this.dataGridView2.Location = new System.Drawing.Point(3, 30);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView2.Size = new System.Drawing.Size(827, 384);
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView2.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView2.Size = new System.Drawing.Size(827, 284);
             this.dataGridView2.TabIndex = 0;
             // 
             // Column3
@@ -1105,7 +858,7 @@
             this.groupBox6.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(0, 0);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(589, 417);
+            this.groupBox6.Size = new System.Drawing.Size(589, 317);
             this.groupBox6.TabIndex = 0;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "បញ្ជីការចូលស្នាក់នៅ";
@@ -1127,12 +880,12 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 30);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Size = new System.Drawing.Size(583, 384);
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView1.Size = new System.Drawing.Size(583, 284);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -1159,6 +912,354 @@
             this.Column14.Name = "Column14";
             this.Column14.ReadOnly = true;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(156, 288);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(17, 30);
+            this.label7.TabIndex = 100029;
+            this.label7.Text = ":";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(4, 287);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(160, 30);
+            this.label8.TabIndex = 100028;
+            this.label8.Text = "តម្លៃកង្ហា​ឬម៉ាស៊ីនត្រជាក់";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(185, 289);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(192, 26);
+            this.textBox3.TabIndex = 100027;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(114, 255);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(17, 30);
+            this.label25.TabIndex = 100026;
+            this.label25.Text = ":";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(4, 256);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(72, 30);
+            this.label26.TabIndex = 100025;
+            this.label26.Text = "តម្លៃបន្ទប់";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(137, 256);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(240, 26);
+            this.textBox4.TabIndex = 100024;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(137, 320);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(240, 26);
+            this.textBox5.TabIndex = 100024;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(4, 320);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(74, 30);
+            this.label29.TabIndex = 100025;
+            this.label29.Text = "តម្លៃសរុប";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(114, 319);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(17, 30);
+            this.label30.TabIndex = 100026;
+            this.label30.Text = ":";
+            // 
+            // panel10
+            // 
+            this.panel10.Controls.Add(this.groupBox1);
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel10.Location = new System.Drawing.Point(3, 180);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(439, 138);
+            this.panel10.TabIndex = 6;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.panel12);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.txtCheckID);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox1.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(0, 0);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(439, 138);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = " ព័ត៌មានការស្នាក់នៅ";
+            // 
+            // panel12
+            // 
+            this.panel12.Controls.Add(this.panel11);
+            this.panel12.Location = new System.Drawing.Point(199, 63);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(114, 29);
+            this.panel12.TabIndex = 100018;
+            // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.textBox1);
+            this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel11.Location = new System.Drawing.Point(0, 0);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(114, 29);
+            this.panel11.TabIndex = 100017;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(0, 0);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(114, 29);
+            this.textBox1.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(170, 98);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 30);
+            this.label5.TabIndex = 100014;
+            this.label5.Text = ":";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(199, 99);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ShortcutsEnabled = false;
+            this.textBox2.Size = new System.Drawing.Size(114, 29);
+            this.textBox2.TabIndex = 100015;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(5, 98);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(159, 30);
+            this.label6.TabIndex = 100013;
+            this.label6.Text = "លេខកូដសម្គាល់បុគ្គលិក";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(170, 62);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(17, 30);
+            this.label3.TabIndex = 100011;
+            this.label3.Text = ":";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(5, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(165, 30);
+            this.label4.TabIndex = 100010;
+            this.label4.Text = "លេខកូដសម្គាល់អតិថិជន";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(170, 27);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(17, 30);
+            this.label10.TabIndex = 100008;
+            this.label10.Text = ":";
+            // 
+            // txtCheckID
+            // 
+            this.txtCheckID.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCheckID.Location = new System.Drawing.Point(199, 28);
+            this.txtCheckID.Name = "txtCheckID";
+            this.txtCheckID.ShortcutsEnabled = false;
+            this.txtCheckID.Size = new System.Drawing.Size(114, 29);
+            this.txtCheckID.TabIndex = 100009;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(5, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(112, 30);
+            this.label2.TabIndex = 100007;
+            this.label2.Text = "លេខកូដសម្គាល់";
+            // 
+            // panel9
+            // 
+            this.panel9.Controls.Add(this.bunifuThinButton21);
+            this.panel9.Controls.Add(this.btnDelete);
+            this.panel9.Controls.Add(this.btnEdit);
+            this.panel9.Controls.Add(this.btnAdd);
+            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel9.Location = new System.Drawing.Point(3, 318);
+            this.panel9.Name = "panel9";
+            this.panel9.Size = new System.Drawing.Size(439, 39);
+            this.panel9.TabIndex = 7;
+            // 
+            // bunifuThinButton21
+            // 
+            this.bunifuThinButton21.ActiveBorderThickness = 1;
+            this.bunifuThinButton21.ActiveCornerRadius = 20;
+            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Blue;
+            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Blue;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
+            this.bunifuThinButton21.ButtonText = "រក្សាទុក";
+            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Left;
+            this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.bunifuThinButton21.IdleBorderThickness = 1;
+            this.bunifuThinButton21.IdleCornerRadius = 30;
+            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Blue;
+            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bunifuThinButton21.Location = new System.Drawing.Point(327, 0);
+            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.bunifuThinButton21.Name = "bunifuThinButton21";
+            this.bunifuThinButton21.Size = new System.Drawing.Size(109, 39);
+            this.bunifuThinButton21.TabIndex = 9;
+            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.ActiveBorderThickness = 1;
+            this.btnDelete.ActiveCornerRadius = 20;
+            this.btnDelete.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.ActiveForecolor = System.Drawing.Color.White;
+            this.btnDelete.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.BackColor = System.Drawing.SystemColors.Control;
+            this.btnDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDelete.BackgroundImage")));
+            this.btnDelete.ButtonText = "លុប";
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnDelete.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnDelete.IdleBorderThickness = 1;
+            this.btnDelete.IdleCornerRadius = 30;
+            this.btnDelete.IdleFillColor = System.Drawing.Color.White;
+            this.btnDelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDelete.Location = new System.Drawing.Point(218, 0);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(109, 39);
+            this.btnDelete.TabIndex = 8;
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnEdit
+            // 
+            this.btnEdit.ActiveBorderThickness = 1;
+            this.btnEdit.ActiveCornerRadius = 20;
+            this.btnEdit.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.ActiveForecolor = System.Drawing.Color.White;
+            this.btnEdit.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEdit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEdit.BackgroundImage")));
+            this.btnEdit.ButtonText = "កែប្រែ";
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnEdit.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnEdit.IdleBorderThickness = 1;
+            this.btnEdit.IdleCornerRadius = 30;
+            this.btnEdit.IdleFillColor = System.Drawing.Color.White;
+            this.btnEdit.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btnEdit.Location = new System.Drawing.Point(109, 0);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(109, 39);
+            this.btnEdit.TabIndex = 7;
+            this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.ActiveBorderThickness = 1;
+            this.btnAdd.ActiveCornerRadius = 20;
+            this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.ActiveForecolor = System.Drawing.Color.White;
+            this.btnAdd.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.BackColor = System.Drawing.SystemColors.Control;
+            this.btnAdd.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAdd.BackgroundImage")));
+            this.btnAdd.ButtonText = "បញ្ចូល";
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAdd.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnAdd.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.IdleBorderThickness = 1;
+            this.btnAdd.IdleCornerRadius = 30;
+            this.btnAdd.IdleFillColor = System.Drawing.Color.White;
+            this.btnAdd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnAdd.Location = new System.Drawing.Point(0, 0);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(109, 39);
+            this.btnAdd.TabIndex = 6;
+            this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnPrice
+            // 
+            this.btnPrice.ActiveBorderThickness = 1;
+            this.btnPrice.ActiveCornerRadius = 20;
+            this.btnPrice.ActiveFillColor = System.Drawing.Color.SeaGreen;
+            this.btnPrice.ActiveForecolor = System.Drawing.Color.White;
+            this.btnPrice.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.btnPrice.BackColor = System.Drawing.SystemColors.Control;
+            this.btnPrice.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPrice.BackgroundImage")));
+            this.btnPrice.ButtonText = "ThinButton";
+            this.btnPrice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPrice.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrice.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnPrice.IdleBorderThickness = 1;
+            this.btnPrice.IdleCornerRadius = 20;
+            this.btnPrice.IdleFillColor = System.Drawing.Color.White;
+            this.btnPrice.IdleForecolor = System.Drawing.Color.SeaGreen;
+            this.btnPrice.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.btnPrice.Location = new System.Drawing.Point(385, 239);
+            this.btnPrice.Margin = new System.Windows.Forms.Padding(5);
+            this.btnPrice.Name = "btnPrice";
+            this.btnPrice.Size = new System.Drawing.Size(49, 43);
+            this.btnPrice.TabIndex = 100030;
+            this.btnPrice.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CheckIn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1172,15 +1273,10 @@
             this.Name = "CheckIn";
             this.Text = "CheckIn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CheckIn_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.panel12.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
             this.groupBox3.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel13.ResumeLayout(false);
@@ -1198,6 +1294,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel10.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.panel12.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
+            this.panel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1208,64 +1311,41 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtID;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Panel panel9;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnEdit;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnAdd;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cmCusName;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.RadioButton rndFemale;
         private System.Windows.Forms.RadioButton rndMale;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.TextBox txtTelephone;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox CMRoom;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
+        private System.Windows.Forms.RadioButton rndAir;
+        private System.Windows.Forms.RadioButton rndFan;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton rnd24;
+        private System.Windows.Forms.RadioButton rnd12;
+        private System.Windows.Forms.RadioButton rnd6;
+        private System.Windows.Forms.RadioButton rnd3;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton rndVIP;
+        private System.Windows.Forms.RadioButton rndDouble;
+        private System.Windows.Forms.RadioButton rndSingle;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateout;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateIN;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label14;
@@ -1284,10 +1364,41 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.GroupBox groupBox6;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnsearch;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox txtIDnum;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Panel panel9;
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnEdit;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnAdd;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox txtCheckID;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.TextBox textBox5;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnPrice;
     }
 }

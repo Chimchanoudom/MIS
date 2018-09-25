@@ -15,16 +15,7 @@ class Dom_SqlClass:UserLoginDetail
       static  SqlCommand SC = new SqlCommand();
        static SqlCommandBuilder SCB = new SqlCommandBuilder();
         static SqlDataAdapter SDA = new SqlDataAdapter();
-
-
-
-        
-
-
-
         static DataTable DT = new DataTable();
-
-
         public static string GetIDFromDB(String column,string seperater,String TableName)
         {
             object ID="";
