@@ -78,20 +78,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.LBLTime = new System.Windows.Forms.Label();
             this.Pntopbar = new System.Windows.Forms.Panel();
+            this.lblposition2 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblPosition = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ph31 = new GuestHouse.Ph3();
+            this.ph21 = new GuestHouse.Ph2();
+            this.ph11 = new GuestHouse.Ph1();
             this.Transition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Transition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Tslide = new System.Windows.Forms.Timer(this.components);
             this.Transition3 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Tdate = new System.Windows.Forms.Timer(this.components);
-            this.lblPosition = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblposition2 = new System.Windows.Forms.Label();
-            this.ph31 = new GuestHouse.Ph3();
-            this.ph21 = new GuestHouse.Ph2();
-            this.ph11 = new GuestHouse.Ph1();
             this.pnMenu.SuspendLayout();
             this.pnSetting.SuspendLayout();
             this.pnlogout.SuspendLayout();
@@ -1468,6 +1468,79 @@
             this.Pntopbar.Size = new System.Drawing.Size(918, 42);
             this.Pntopbar.TabIndex = 14;
             // 
+            // lblposition2
+            // 
+            this.lblposition2.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.lblposition2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblposition2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblposition2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblposition2.Location = new System.Drawing.Point(283, 0);
+            this.lblposition2.Name = "lblposition2";
+            this.lblposition2.Size = new System.Drawing.Size(99, 34);
+            this.lblposition2.TabIndex = 5;
+            this.lblposition2.Text = "បុគ្គលិក :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.Transition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(198, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 34);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "តួនាទី :";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.lblName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblName.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblName.Location = new System.Drawing.Point(99, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(99, 34);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "បុគ្គលិក :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.Transition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 34);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "បុគ្គលិក :";
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.lblPosition.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblPosition.Location = new System.Drawing.Point(119, 4);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(0, 34);
+            this.lblPosition.TabIndex = 1;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
@@ -1482,6 +1555,41 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(918, 637);
             this.panel2.TabIndex = 15;
+            // 
+            // ph31
+            // 
+            this.Transition3.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.ph31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph31.Location = new System.Drawing.Point(0, 0);
+            this.ph31.Name = "ph31";
+            this.ph31.Size = new System.Drawing.Size(918, 637);
+            this.ph31.TabIndex = 2;
+            this.ph31.Visible = false;
+            // 
+            // ph21
+            // 
+            this.Transition3.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.ph21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph21.Location = new System.Drawing.Point(0, 0);
+            this.ph21.Name = "ph21";
+            this.ph21.Size = new System.Drawing.Size(918, 637);
+            this.ph21.TabIndex = 1;
+            this.ph21.Visible = false;
+            // 
+            // ph11
+            // 
+            this.Transition3.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.ph11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph11.Location = new System.Drawing.Point(0, 0);
+            this.ph11.Name = "ph11";
+            this.ph11.Size = new System.Drawing.Size(918, 637);
+            this.ph11.TabIndex = 0;
             // 
             // Transition1
             // 
@@ -1560,114 +1668,6 @@
             // Tdate
             // 
             this.Tdate.Tick += new System.EventHandler(this.Tdate_Tick);
-            // 
-            // lblPosition
-            // 
-            this.lblPosition.AutoSize = true;
-            this.Transition3.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
-            this.lblPosition.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblPosition.Location = new System.Drawing.Point(119, 4);
-            this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(0, 34);
-            this.lblPosition.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.Transition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 34);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "បុគ្គលិក :";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.Transition3.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
-            this.lblName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblName.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblName.Location = new System.Drawing.Point(99, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(99, 34);
-            this.lblName.TabIndex = 3;
-            this.lblName.Text = "បុគ្គលិក :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.Transition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(198, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 34);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "តួនាទី :";
-            // 
-            // lblposition2
-            // 
-            this.lblposition2.AutoSize = true;
-            this.Transition3.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
-            this.lblposition2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblposition2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblposition2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblposition2.Location = new System.Drawing.Point(283, 0);
-            this.lblposition2.Name = "lblposition2";
-            this.lblposition2.Size = new System.Drawing.Size(99, 34);
-            this.lblposition2.TabIndex = 5;
-            this.lblposition2.Text = "បុគ្គលិក :";
-            // 
-            // ph31
-            // 
-            this.Transition3.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.ph31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph31.Location = new System.Drawing.Point(0, 0);
-            this.ph31.Name = "ph31";
-            this.ph31.Size = new System.Drawing.Size(918, 637);
-            this.ph31.TabIndex = 2;
-            this.ph31.Visible = false;
-            // 
-            // ph21
-            // 
-            this.Transition3.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.ph21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph21.Location = new System.Drawing.Point(0, 0);
-            this.ph21.Name = "ph21";
-            this.ph21.Size = new System.Drawing.Size(918, 637);
-            this.ph21.TabIndex = 1;
-            this.ph21.Visible = false;
-            // 
-            // ph11
-            // 
-            this.Transition3.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.ph11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph11.Location = new System.Drawing.Point(0, 0);
-            this.ph11.Name = "ph11";
-            this.ph11.Size = new System.Drawing.Size(918, 637);
-            this.ph11.TabIndex = 0;
             // 
             // Form1
             // 
