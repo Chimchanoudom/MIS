@@ -216,10 +216,9 @@
             this.panel3.TabIndex = 18;
             // 
             // groupBox1
-<<<<<<< HEAD
 
-=======
->>>>>>> 02af4452be54dcfec3d3deca21b3af695b26fc76
+
+
             // 
             this.groupBox1.Controls.Add(this.panel12);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -492,10 +491,7 @@
             // 
             // panel12
             // 
-<<<<<<< HEAD
 
-=======
->>>>>>> 02af4452be54dcfec3d3deca21b3af695b26fc76
             this.bunifuThinButton21.ActiveBorderThickness = 1;
             this.bunifuThinButton21.ActiveCornerRadius = 20;
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Blue;
@@ -519,20 +515,14 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(141, 48);
             this.bunifuThinButton21.TabIndex = 9;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-<<<<<<< HEAD
 
-=======
->>>>>>> 02af4452be54dcfec3d3deca21b3af695b26fc76
             this.panel12.Controls.Add(this.panel10);
             this.panel12.Controls.Add(this.panel11);
             this.panel12.Location = new System.Drawing.Point(199, 92);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(200, 59);
             this.panel12.TabIndex = 100018;
-<<<<<<< HEAD
 
-=======
->>>>>>> 02af4452be54dcfec3d3deca21b3af695b26fc76
             // 
             // panel10
             // 
@@ -611,11 +601,7 @@
             // 
             // checkBox1
             // 
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 02af4452be54dcfec3d3deca21b3af695b26fc76
             this.btnAdd.ActiveBorderThickness = 1;
             this.btnAdd.ActiveCornerRadius = 20;
             this.btnAdd.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Windows.Forms;
+using System.Data;
 
 namespace GuestHouse
 {
@@ -151,6 +152,108 @@ namespace GuestHouse
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
                 MessageBox.Show("Successfully DELETED!");
             }
+
+            
+
+        }
+
+        static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
+
+        public static void GetPrice()
+        {
+            string sql = "select roomTypeDesc,HourType,RoomPrice,Fan,ac from roomType r join price p on r.roomTypeID=p.roomTypeID;";
+
+            con.Open();
+            SqlDataReader dataReader = ExecuteQry(sql);
+            while (dataReader.Read())
+            {
+                String roomTypeDesc = dataReader.GetString(0);
+
+                if (Price.Keys.Contains(roomTypeDesc))
+                {
+                    Price[roomTypeDesc].Rows.Add(dataReader.GetInt32(1), Convert.ToDouble(dataReader.GetValue(2)), Convert.ToDouble(dataReader.GetValue(3)), Convert.ToDouble(dataReader.GetValue(4)));
+                }
+                else
+                {
+                    DataTable dt = new DataTable();
+                    dt.Columns.Add("HourType", typeof(int));
+                    dt.Columns.Add("RoomPrice", typeof(double));
+                    dt.Columns.Add("Fan", typeof(double));
+                    dt.Columns.Add("AC", typeof(double));
+
+                    dt.Rows.Add(dataReader.GetInt32(1),Convert.ToDouble(dataReader.GetValue(2)), Convert.ToDouble(dataReader.GetValue(3)), Convert.ToDouble(dataReader.GetValue(4)));
+
+                    Price.Add(roomTypeDesc, dt);
+                }
+            }
+
+            con.Close();
+        }
+
+        static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+        {
+            TimeSpan dif = dtEnd.Date - dtStart.Date;
+
+            if (dif.Hours < 0)
+                return false;
+
+            double overRoomPrice = 0, overElectricity = 0, overSubTotal = 0;
+
+            if (dif.Hours > 24)
+            {
+                int overHour;
+                
+                overHour = dif.Hours % 24;
+
+                GetSubTotal(overHour, roomTypeDesc,ref  overRoomPrice, pickAc,ref overElectricity, ref overSubTotal,1);
+
+                int multiply = dif.Hours / 24;
+
+                GetSubTotal(24, roomTypeDesc, ref overRoomPrice, pickAc, ref overElectricity, ref overSubTotal, multiply);
+            }
+            else
+            {
+                GetSubTotal(dif.Hours, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
+            }
+
+            
+
+            roomPrice += overRoomPrice;
+            electricity += overElectricity;
+            subTotal += subTotal;
+
+            return true;
+
+        }
+
+        static void GetSubTotal(int hour,string roomTypeDesc, ref double roomPrice,bool pickAc, ref double electricity, ref double subTotal,int multiply)
+        {
+
+            if (hour <= 3)
+            {
+                hour = 3;
+            }else if(hour <= 6)
+            {
+                hour = 6;
+            }else if (hour <= 12)
+            {
+                hour = 12;
+            }else if (hour <= 24)
+            {
+                hour = 24;
+            }
+
+
+            DataRow[] dr = Price[roomTypeDesc].Select("HourType="+hour);
+
+            roomPrice = (double)dr[0][1]*multiply;
+
+            if(!pickAc)
+                electricity = (double)dr[0][2];
+            else
+                electricity = (double)dr[0][3];
+
+            subTotal = roomPrice + electricity;
 
         }
     }

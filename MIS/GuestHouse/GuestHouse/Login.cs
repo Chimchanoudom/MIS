@@ -75,6 +75,7 @@ namespace GuestHouse
                 }
                 MessageBox.Show("Welcome "+UserLoginDetail.fName+ " "+UserLoginDetail.lName+"");
                 this.DialogResult = DialogResult.OK;
+                dataCon.GetPrice();
             }
             else
             {
