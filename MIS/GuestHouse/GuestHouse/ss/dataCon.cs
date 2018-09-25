@@ -249,9 +249,9 @@ namespace GuestHouse
             roomPrice = (double)dr[0][1]*multiply;
 
             if(!pickAc)
-                electricity = (double)dr[0][2];
+                electricity = (double)dr[0][2]*multiply;
             else
-                electricity = (double)dr[0][3];
+                electricity = (double)dr[0][3]*multiply;
 
             subTotal = roomPrice + electricity;
 
