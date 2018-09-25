@@ -66,7 +66,7 @@ namespace GuestHouse
 
         private void btncheckin_Click(object sender, EventArgs e)
         {
-            CheckIn CI = new CheckIn();
+            checkin CI = new checkin();
             CI.ShowDialog();
         }
 

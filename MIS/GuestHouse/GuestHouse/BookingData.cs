@@ -31,7 +31,7 @@ namespace GuestHouse
         {
             BookingData BD = new BookingData();
             BD.Close();
-            CheckIn CI = new CheckIn();
+            checkin CI = new checkin();
             CI.Show();
 
 

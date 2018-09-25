@@ -82,11 +82,11 @@
     <Compile Include="BookingData.Designer.cs">
       <DependentUpon>BookingData.cs</DependentUpon>
     </Compile>
-    <Compile Include="CheckIn.cs">
+    <Compile Include="checkin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckIn.Designer.cs">
-      <DependentUpon>CheckIn.cs</DependentUpon>
+    <Compile Include="checkin.Designer.cs">
+      <DependentUpon>checkin.cs</DependentUpon>
     </Compile>
     <Compile Include="CheckInData.cs">
       <SubType>Form</SubType>
@@ -207,8 +207,8 @@
     <EmbeddedResource Include="BookingData.resx">
       <DependentUpon>BookingData.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CheckIn.resx">
-      <DependentUpon>CheckIn.cs</DependentUpon>
+    <EmbeddedResource Include="checkin.resx">
+      <DependentUpon>checkin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckInData.resx">
       <DependentUpon>CheckInData.cs</DependentUpon>
