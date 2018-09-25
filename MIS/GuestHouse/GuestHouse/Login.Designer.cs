@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -42,6 +44,8 @@
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel3.SuspendLayout();
@@ -220,6 +224,18 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "ឈ្មោះគណនី";
             // 
+            // bunifuDragControl1
+            // 
+            bunifuDragControl1.Fixed = false;
+            bunifuDragControl1.Horizontal = true;
+            bunifuDragControl1.TargetControl = this;
+            bunifuDragControl1.Vertical = true;
+            // 
+            // bunifuElipse1
+            // 
+            this.bunifuElipse1.ElipseRadius = 30;
+            this.bunifuElipse1.TargetControl = this;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 30F);
@@ -260,5 +276,6 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label24;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
     }
 }
