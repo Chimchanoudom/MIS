@@ -66,6 +66,7 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -249,6 +250,7 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.rndName);
+            this.panel6.Controls.Add(this.radioButton1);
             this.panel6.Controls.Add(this.rndDateBook);
             this.panel6.Controls.Add(this.rndTell);
             this.panel6.Controls.Add(this.rndID);
@@ -493,6 +495,16 @@
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(173, 47);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(63, 34);
+            this.radioButton1.TabIndex = 1;
+            this.radioButton1.Text = "បន្ទប់";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
             // CheckoutData
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -558,5 +570,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
