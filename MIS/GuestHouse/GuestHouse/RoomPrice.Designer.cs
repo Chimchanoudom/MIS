@@ -42,19 +42,6 @@
             this.btnAdd = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel10 = new System.Windows.Forms.Panel();
             this.cmRoomType = new System.Windows.Forms.ComboBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.txtPrice24H = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.txtPrice12H = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.txtPrice6H = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtPrice3H = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtAirCon = new System.Windows.Forms.TextBox();
             this.txtFanPrice = new System.Windows.Forms.TextBox();
@@ -73,16 +60,15 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtPrice3H = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
             this.panel4.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataRoomPrice)).BeginInit();
@@ -157,7 +143,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 40);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(920, 364);
+            this.panel3.Size = new System.Drawing.Size(920, 270);
             this.panel3.TabIndex = 13;
             // 
             // groupBox1
@@ -168,7 +154,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(501, 362);
+            this.groupBox1.Size = new System.Drawing.Size(501, 268);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ព័ត៌មានតម្លៃបន្ទប់";
@@ -179,7 +165,7 @@
             this.panel11.Controls.Add(this.btnEdit);
             this.panel11.Controls.Add(this.btnAdd);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel11.Location = new System.Drawing.Point(3, 309);
+            this.panel11.Location = new System.Drawing.Point(3, 228);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(495, 39);
             this.panel11.TabIndex = 6;
@@ -265,8 +251,11 @@
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.comboBox1);
+            this.panel10.Controls.Add(this.txtPrice3H);
+            this.panel10.Controls.Add(this.label5);
+            this.panel10.Controls.Add(this.label3);
             this.panel10.Controls.Add(this.cmRoomType);
-            this.panel10.Controls.Add(this.panel5);
             this.panel10.Controls.Add(this.label2);
             this.panel10.Controls.Add(this.txtAirCon);
             this.panel10.Controls.Add(this.txtFanPrice);
@@ -280,7 +269,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(3, 30);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(495, 279);
+            this.panel10.Size = new System.Drawing.Size(495, 198);
             this.panel10.TabIndex = 1;
             // 
             // cmRoomType
@@ -290,133 +279,6 @@
             this.cmRoomType.Name = "cmRoomType";
             this.cmRoomType.Size = new System.Drawing.Size(196, 35);
             this.cmRoomType.TabIndex = 24;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.panel9);
-            this.panel5.Controls.Add(this.panel8);
-            this.panel5.Controls.Add(this.panel7);
-            this.panel5.Controls.Add(this.panel6);
-            this.panel5.Location = new System.Drawing.Point(158, 44);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(327, 140);
-            this.panel5.TabIndex = 23;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.txtPrice24H);
-            this.panel9.Controls.Add(this.label7);
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel9.Location = new System.Drawing.Point(0, 105);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(327, 35);
-            this.panel9.TabIndex = 4;
-            // 
-            // txtPrice24H
-            // 
-            this.txtPrice24H.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtPrice24H.Location = new System.Drawing.Point(155, 0);
-            this.txtPrice24H.Name = "txtPrice24H";
-            this.txtPrice24H.Size = new System.Drawing.Size(172, 34);
-            this.txtPrice24H.TabIndex = 2;
-            // 
-            // label7
-            // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label7.Location = new System.Drawing.Point(0, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 35);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "តម្លៃបន្ទប់ ២៤ ម៉ោង";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.txtPrice12H);
-            this.panel8.Controls.Add(this.label6);
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel8.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel8.Location = new System.Drawing.Point(0, 70);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(327, 35);
-            this.panel8.TabIndex = 3;
-            // 
-            // txtPrice12H
-            // 
-            this.txtPrice12H.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtPrice12H.Location = new System.Drawing.Point(155, 0);
-            this.txtPrice12H.Name = "txtPrice12H";
-            this.txtPrice12H.Size = new System.Drawing.Size(172, 34);
-            this.txtPrice12H.TabIndex = 2;
-            // 
-            // label6
-            // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label6.Location = new System.Drawing.Point(0, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(130, 35);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "តម្លៃបន្ទប់ ១២ ម៉ោង";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.txtPrice6H);
-            this.panel7.Controls.Add(this.label5);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel7.Location = new System.Drawing.Point(0, 35);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(327, 35);
-            this.panel7.TabIndex = 2;
-            // 
-            // txtPrice6H
-            // 
-            this.txtPrice6H.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtPrice6H.Location = new System.Drawing.Point(155, 0);
-            this.txtPrice6H.Name = "txtPrice6H";
-            this.txtPrice6H.Size = new System.Drawing.Size(172, 34);
-            this.txtPrice6H.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label5.Location = new System.Drawing.Point(0, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 35);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "តម្លៃបន្ទប់ ៦ ម៉ោង";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.txtPrice3H);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(327, 35);
-            this.panel6.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label3.Location = new System.Drawing.Point(0, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(145, 35);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "តម្លៃបន្ទប់ ៣ ម៉ោង  ";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // txtPrice3H
-            // 
-            this.txtPrice3H.Dock = System.Windows.Forms.DockStyle.Right;
-            this.txtPrice3H.Location = new System.Drawing.Point(155, 0);
-            this.txtPrice3H.Name = "txtPrice3H";
-            this.txtPrice3H.Size = new System.Drawing.Size(172, 34);
-            this.txtPrice3H.TabIndex = 2;
             // 
             // label2
             // 
@@ -430,7 +292,7 @@
             // txtAirCon
             // 
             this.txtAirCon.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtAirCon.Location = new System.Drawing.Point(158, 238);
+            this.txtAirCon.Location = new System.Drawing.Point(158, 162);
             this.txtAirCon.Name = "txtAirCon";
             this.txtAirCon.Size = new System.Drawing.Size(145, 29);
             this.txtAirCon.TabIndex = 17;
@@ -438,7 +300,7 @@
             // txtFanPrice
             // 
             this.txtFanPrice.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFanPrice.Location = new System.Drawing.Point(158, 203);
+            this.txtFanPrice.Location = new System.Drawing.Point(158, 127);
             this.txtFanPrice.Name = "txtFanPrice";
             this.txtFanPrice.Size = new System.Drawing.Size(145, 29);
             this.txtFanPrice.TabIndex = 18;
@@ -446,7 +308,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 240);
+            this.label13.Location = new System.Drawing.Point(10, 164);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(107, 27);
             this.label13.TabIndex = 14;
@@ -455,7 +317,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 203);
+            this.label9.Location = new System.Drawing.Point(10, 127);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(58, 27);
             this.label9.TabIndex = 15;
@@ -464,7 +326,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 40);
+            this.label4.Location = new System.Drawing.Point(10, 49);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(122, 27);
             this.label4.TabIndex = 16;
@@ -473,7 +335,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(129, 241);
+            this.label11.Location = new System.Drawing.Point(129, 165);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(16, 27);
             this.label11.TabIndex = 19;
@@ -482,7 +344,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(129, 204);
+            this.label8.Location = new System.Drawing.Point(129, 128);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(16, 27);
             this.label8.TabIndex = 20;
@@ -491,7 +353,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(129, 41);
+            this.label12.Location = new System.Drawing.Point(129, 50);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(16, 27);
             this.label12.TabIndex = 21;
@@ -511,9 +373,9 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.groupBox4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 404);
+            this.panel4.Location = new System.Drawing.Point(0, 310);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(920, 456);
+            this.panel4.Size = new System.Drawing.Size(920, 550);
             this.panel4.TabIndex = 14;
             // 
             // groupBox4
@@ -523,7 +385,7 @@
             this.groupBox4.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(918, 454);
+            this.groupBox4.Size = new System.Drawing.Size(918, 548);
             this.groupBox4.TabIndex = 2;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = " បញ្ជីតម្លៃបន្ទប់";
@@ -548,7 +410,7 @@
             this.dataRoomPrice.Location = new System.Drawing.Point(3, 36);
             this.dataRoomPrice.Name = "dataRoomPrice";
             this.dataRoomPrice.ReadOnly = true;
-            this.dataRoomPrice.Size = new System.Drawing.Size(912, 415);
+            this.dataRoomPrice.Size = new System.Drawing.Size(912, 509);
             this.dataRoomPrice.TabIndex = 0;
             // 
             // Column1
@@ -581,6 +443,44 @@
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
             // 
+            // label3
+            // 
+            this.label3.Location = new System.Drawing.Point(12, 87);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(105, 35);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "តម្លៃបន្ទប់";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // txtPrice3H
+            // 
+            this.txtPrice3H.Location = new System.Drawing.Point(158, 87);
+            this.txtPrice3H.Name = "txtPrice3H";
+            this.txtPrice3H.Size = new System.Drawing.Size(172, 34);
+            this.txtPrice3H.TabIndex = 4;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(129, 91);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(16, 27);
+            this.label5.TabIndex = 25;
+            this.label5.Text = ":";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "3Hr",
+            "6Hr",
+            "12Hr",
+            "24Hr"});
+            this.comboBox1.Location = new System.Drawing.Point(158, 46);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(196, 35);
+            this.comboBox1.TabIndex = 26;
+            // 
             // RoomPrice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -602,15 +502,6 @@
             this.panel11.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataRoomPrice)).EndInit();
@@ -629,19 +520,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.ComboBox cmRoomType;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox txtPrice24H;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox txtPrice12H;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox txtPrice6H;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txtPrice3H;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtAirCon;
         private System.Windows.Forms.TextBox txtFanPrice;
@@ -663,5 +541,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtPrice3H;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
     }
 }
