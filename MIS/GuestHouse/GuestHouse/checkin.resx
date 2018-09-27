@@ -135,7 +135,7 @@
         QmCC
 </value>
   </data>
-<<<<<<< HEAD
+
   <data name="btnback.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAFkAAAAxCAYAAACxrAWYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -151,7 +151,7 @@
         4VDVqk8GZfbTrPM28r+g7lYzVecWw13JCHpbDdONLLqUAASHnoWl9eQ512uBZCTcc8HqKA+9veacRv6W
         e9lJ6xf8u2CkSDKC0dEUPyAtz9usKyTbniuD5hW2e2DbR+BuyHPviKfkn8E3giXI+seV9qKaKQoqbti4
         hA1MXg6RVSUzZkLJCqFkhVCyQii57InLMmHKgdDIRbMjAAAAAElFTkSuQmCC
-=======
+
   <data name="bunifuThinButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHoAAAAgCAYAAADdTGx1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -165,7 +165,7 @@
         Zmv6z4wM4KsjPjHD70o0pmOYjTYab/rfGDODXRRW6eU36pVoBKMyjMx4T21uINnna1Gl8rhyuyEaqdWe
         xCQlnb7XL2PMBCaceJPXJSNbohEs45iP4qlA18bDlP0GBw5Qj3EaCONsoyNFhqKXwVOB1hyTs/WzSpz9
         ysHBsWi6cL7PyCOyUzRHnrBoRcKiFQmLViQsWonM6AdniYbpDAjLTAAAAABJRU5ErkJggg==
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
 </value>
   </data>
   <data name="btnDelete.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

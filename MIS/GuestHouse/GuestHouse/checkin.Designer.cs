@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(checkin));
-<<<<<<< HEAD
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-=======
-<<<<<<< HEAD
+
+
             this.panel2 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -46,9 +46,9 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
-=======
+
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
->>>>>>> e244142603f00ea68649ece7a35b916d2b541b09
+
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -153,7 +153,7 @@
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel9.SuspendLayout();
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -167,7 +167,7 @@
             // 
             // panel2
             // 
-<<<<<<< HEAD
+
             this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel2.Location = new System.Drawing.Point(0, 893);
@@ -175,7 +175,7 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1476, 49);
             this.panel2.TabIndex = 19;
-=======
+
             this.panel1.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.btnback);
@@ -185,11 +185,11 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1099, 40);
             this.panel1.TabIndex = 18;
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             // 
             // tableLayoutPanel1
             // 
-<<<<<<< HEAD
+
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -217,7 +217,7 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "ព័ត៌មានអតិថិជន";
-=======
+
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
@@ -228,7 +228,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "ព័ត៌រមានស្នាក់នៅ";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             // 
             // btnback
             // 
@@ -257,7 +257,7 @@
             this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
-<<<<<<< HEAD
+
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
@@ -282,7 +282,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1476, 49);
             this.panel1.TabIndex = 18;
-=======
+
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
@@ -824,11 +824,11 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(195, 29);
             this.textBox3.TabIndex = 100033;
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             // 
             // textBox2
             // 
-<<<<<<< HEAD
+
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 42);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -836,7 +836,7 @@
             this.label2.Size = new System.Drawing.Size(101, 38);
             this.label2.TabIndex = 20;
             this.label2.Text = "ថ្ងៃស្នាក់នៅ";
-=======
+
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(168, 266);
             this.textBox2.Name = "textBox2";
@@ -1093,7 +1093,7 @@
             // 
             // datecheckout
             // 
-<<<<<<< HEAD
+
             this.datecheckout.CustomFormat = "dd-MM-yyyy hh:mm";
             this.datecheckout.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datecheckout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -1101,7 +1101,7 @@
             this.datecheckout.Name = "datecheckout";
             this.datecheckout.Size = new System.Drawing.Size(159, 26);
             this.datecheckout.TabIndex = 1;
-=======
+
             this.dateTimePicker3.CustomFormat = "dd-MM-yyyy HH:mm";
             this.dateTimePicker3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -1109,30 +1109,28 @@
             this.dateTimePicker3.Name = "dateTimePicker3";
             this.dateTimePicker3.Size = new System.Drawing.Size(159, 26);
             this.dateTimePicker3.TabIndex = 1;
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
->>>>>>> e244142603f00ea68649ece7a35b916d2b541b09
+
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-<<<<<<< HEAD
+
             this.label3.Location = new System.Drawing.Point(123, 42);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(23, 38);
             this.label3.TabIndex = 20;
             this.label3.Text = ":";
-=======
+
             this.label3.Location = new System.Drawing.Point(5, 233);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 27);
             this.label3.TabIndex = 100019;
             this.label3.Text = "តម្លៃបន្ទប់";
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             // 
             // label23
-            // 
-<<<<<<< HEAD
+
             this.dateTimePicker1.CustomFormat = "dd/MM/yyyy  HH:mm";
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.Location = new System.Drawing.Point(153, 34);
@@ -1165,7 +1163,7 @@
             this.btnSearch.Size = new System.Drawing.Size(167, 47);
             this.btnSearch.TabIndex = 22;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-=======
+
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(6, 36);
             this.label23.Name = "label23";
@@ -1458,25 +1456,25 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
+
             this.ClientSize = new System.Drawing.Size(1476, 942);
             this.Controls.Add(this.tableLayoutPanel1);
-=======
+
             this.ClientSize = new System.Drawing.Size(1099, 747);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "checkin";
-<<<<<<< HEAD
+
             this.Text = "checkin";
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
-=======
+
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.checkin_Load);
@@ -1490,7 +1488,7 @@
             this.groupBox2.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1513,7 +1511,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox1;
-<<<<<<< HEAD
+
         private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label3;
@@ -1521,7 +1519,7 @@
         private Bunifu.Framework.UI.BunifuThinButton2 btnback;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
-=======
+
         private System.Windows.Forms.ComboBox CmRoomNum;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.RadioButton radioButton5;
@@ -1612,6 +1610,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
     }
 }
