@@ -78,20 +78,20 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.LBLTime = new System.Windows.Forms.Label();
             this.Pntopbar = new System.Windows.Forms.Panel();
+            this.lblposition2 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblPosition = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ph31 = new GuestHouse.Ph3();
+            this.ph21 = new GuestHouse.Ph2();
+            this.ph11 = new GuestHouse.Ph1();
             this.Transition1 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Transition2 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Tslide = new System.Windows.Forms.Timer(this.components);
             this.Transition3 = new BunifuAnimatorNS.BunifuTransition(this.components);
             this.Tdate = new System.Windows.Forms.Timer(this.components);
-            this.lblPosition = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.lblposition2 = new System.Windows.Forms.Label();
-            this.ph31 = new GuestHouse.Ph3();
-            this.ph21 = new GuestHouse.Ph2();
-            this.ph11 = new GuestHouse.Ph1();
             this.pnMenu.SuspendLayout();
             this.pnSetting.SuspendLayout();
             this.pnlogout.SuspendLayout();
@@ -129,8 +129,9 @@
             this.Transition3.SetDecoration(this.pnMenu, BunifuAnimatorNS.DecorationType.None);
             this.pnMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnMenu.Name = "pnMenu";
-            this.pnMenu.Size = new System.Drawing.Size(282, 720);
+            this.pnMenu.Size = new System.Drawing.Size(376, 886);
             this.pnMenu.TabIndex = 1;
             // 
             // pnSetting
@@ -142,9 +143,10 @@
             this.Transition2.SetDecoration(this.pnSetting, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnSetting, BunifuAnimatorNS.DecorationType.None);
             this.pnSetting.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnSetting.Location = new System.Drawing.Point(0, 468);
+            this.pnSetting.Location = new System.Drawing.Point(0, 575);
+            this.pnSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnSetting.Name = "pnSetting";
-            this.pnSetting.Size = new System.Drawing.Size(282, 48);
+            this.pnSetting.Size = new System.Drawing.Size(376, 59);
             this.pnSetting.TabIndex = 15;
             // 
             // btnHelp
@@ -172,13 +174,14 @@
             this.btnHelp.IconVisible = true;
             this.btnHelp.IconZoom = 90D;
             this.btnHelp.IsTab = false;
-            this.btnHelp.Location = new System.Drawing.Point(0, 96);
+            this.btnHelp.Location = new System.Drawing.Point(0, 118);
+            this.btnHelp.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnHelp.Name = "btnHelp";
             this.btnHelp.Normalcolor = System.Drawing.Color.Gray;
             this.btnHelp.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnHelp.OnHoverTextColor = System.Drawing.Color.White;
             this.btnHelp.selected = false;
-            this.btnHelp.Size = new System.Drawing.Size(282, 48);
+            this.btnHelp.Size = new System.Drawing.Size(376, 59);
             this.btnHelp.TabIndex = 2;
             this.btnHelp.Text = "ជំនួយការប្រើប្រាស់";
             this.btnHelp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -210,13 +213,14 @@
             this.btnPlayAndStop.IconVisible = true;
             this.btnPlayAndStop.IconZoom = 90D;
             this.btnPlayAndStop.IsTab = false;
-            this.btnPlayAndStop.Location = new System.Drawing.Point(0, 48);
+            this.btnPlayAndStop.Location = new System.Drawing.Point(0, 59);
+            this.btnPlayAndStop.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnPlayAndStop.Name = "btnPlayAndStop";
             this.btnPlayAndStop.Normalcolor = System.Drawing.Color.Gray;
             this.btnPlayAndStop.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnPlayAndStop.OnHoverTextColor = System.Drawing.Color.White;
             this.btnPlayAndStop.selected = false;
-            this.btnPlayAndStop.Size = new System.Drawing.Size(282, 48);
+            this.btnPlayAndStop.Size = new System.Drawing.Size(376, 59);
             this.btnPlayAndStop.TabIndex = 1;
             this.btnPlayAndStop.Text = "បញ្ឈប់ចលនា";
             this.btnPlayAndStop.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -250,12 +254,13 @@
             this.btnSetting.IconZoom = 90D;
             this.btnSetting.IsTab = false;
             this.btnSetting.Location = new System.Drawing.Point(0, 0);
+            this.btnSetting.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Normalcolor = System.Drawing.Color.Green;
             this.btnSetting.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnSetting.OnHoverTextColor = System.Drawing.Color.White;
             this.btnSetting.selected = false;
-            this.btnSetting.Size = new System.Drawing.Size(282, 48);
+            this.btnSetting.Size = new System.Drawing.Size(376, 59);
             this.btnSetting.TabIndex = 0;
             this.btnSetting.Text = "ការកំណត់";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -271,9 +276,10 @@
             this.Transition2.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnlogout, BunifuAnimatorNS.DecorationType.None);
             this.pnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlogout.Location = new System.Drawing.Point(0, 679);
+            this.pnlogout.Location = new System.Drawing.Point(0, 836);
+            this.pnlogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlogout.Name = "pnlogout";
-            this.pnlogout.Size = new System.Drawing.Size(282, 41);
+            this.pnlogout.Size = new System.Drawing.Size(376, 50);
             this.pnlogout.TabIndex = 2;
             // 
             // bunifuFlatButton2
@@ -301,13 +307,14 @@
             this.bunifuFlatButton2.IconVisible = true;
             this.bunifuFlatButton2.IconZoom = 90D;
             this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(43, 0);
+            this.bunifuFlatButton2.Location = new System.Drawing.Point(57, 0);
+            this.bunifuFlatButton2.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton2.Name = "bunifuFlatButton2";
             this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(43, 41);
+            this.bunifuFlatButton2.Size = new System.Drawing.Size(57, 50);
             this.bunifuFlatButton2.TabIndex = 3;
             this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton2.Textcolor = System.Drawing.Color.White;
@@ -339,12 +346,13 @@
             this.btnExit.IconZoom = 90D;
             this.btnExit.IsTab = false;
             this.btnExit.Location = new System.Drawing.Point(0, 0);
+            this.btnExit.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnExit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnExit.OnHoverTextColor = System.Drawing.Color.White;
             this.btnExit.selected = false;
-            this.btnExit.Size = new System.Drawing.Size(43, 41);
+            this.btnExit.Size = new System.Drawing.Size(57, 50);
             this.btnExit.TabIndex = 2;
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnExit.Textcolor = System.Drawing.Color.White;
@@ -360,9 +368,10 @@
             this.Transition2.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnReport, BunifuAnimatorNS.DecorationType.None);
             this.pnReport.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnReport.Location = new System.Drawing.Point(0, 420);
+            this.pnReport.Location = new System.Drawing.Point(0, 516);
+            this.pnReport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnReport.Name = "pnReport";
-            this.pnReport.Size = new System.Drawing.Size(282, 48);
+            this.pnReport.Size = new System.Drawing.Size(376, 59);
             this.pnReport.TabIndex = 14;
             // 
             // btnreportYears
@@ -390,13 +399,14 @@
             this.btnreportYears.IconVisible = true;
             this.btnreportYears.IconZoom = 90D;
             this.btnreportYears.IsTab = false;
-            this.btnreportYears.Location = new System.Drawing.Point(0, 96);
+            this.btnreportYears.Location = new System.Drawing.Point(0, 118);
+            this.btnreportYears.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnreportYears.Name = "btnreportYears";
             this.btnreportYears.Normalcolor = System.Drawing.Color.Gray;
             this.btnreportYears.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnreportYears.OnHoverTextColor = System.Drawing.Color.White;
             this.btnreportYears.selected = false;
-            this.btnreportYears.Size = new System.Drawing.Size(282, 48);
+            this.btnreportYears.Size = new System.Drawing.Size(376, 59);
             this.btnreportYears.TabIndex = 2;
             this.btnreportYears.Text = "របាយការណ៍ប្រចាំឆ្នាំ";
             this.btnreportYears.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -428,13 +438,14 @@
             this.btnReportMonth.IconVisible = true;
             this.btnReportMonth.IconZoom = 90D;
             this.btnReportMonth.IsTab = false;
-            this.btnReportMonth.Location = new System.Drawing.Point(0, 48);
+            this.btnReportMonth.Location = new System.Drawing.Point(0, 59);
+            this.btnReportMonth.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnReportMonth.Name = "btnReportMonth";
             this.btnReportMonth.Normalcolor = System.Drawing.Color.Gray;
             this.btnReportMonth.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnReportMonth.OnHoverTextColor = System.Drawing.Color.White;
             this.btnReportMonth.selected = false;
-            this.btnReportMonth.Size = new System.Drawing.Size(282, 48);
+            this.btnReportMonth.Size = new System.Drawing.Size(376, 59);
             this.btnReportMonth.TabIndex = 1;
             this.btnReportMonth.Text = "របាយការណ៍ប្រចាំខែ";
             this.btnReportMonth.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -467,12 +478,13 @@
             this.btnAllReport.IconZoom = 90D;
             this.btnAllReport.IsTab = false;
             this.btnAllReport.Location = new System.Drawing.Point(0, 0);
+            this.btnAllReport.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAllReport.Name = "btnAllReport";
             this.btnAllReport.Normalcolor = System.Drawing.Color.Green;
             this.btnAllReport.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnAllReport.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAllReport.selected = false;
-            this.btnAllReport.Size = new System.Drawing.Size(282, 48);
+            this.btnAllReport.Size = new System.Drawing.Size(376, 59);
             this.btnAllReport.TabIndex = 0;
             this.btnAllReport.Text = "របាយការណ៍ ចំណូល នឹង​ ចំណាយ";
             this.btnAllReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -490,9 +502,10 @@
             this.Transition2.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnExpent, BunifuAnimatorNS.DecorationType.None);
             this.pnExpent.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnExpent.Location = new System.Drawing.Point(0, 372);
+            this.pnExpent.Location = new System.Drawing.Point(0, 457);
+            this.pnExpent.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnExpent.Name = "pnExpent";
-            this.pnExpent.Size = new System.Drawing.Size(282, 48);
+            this.pnExpent.Size = new System.Drawing.Size(376, 59);
             this.pnExpent.TabIndex = 18;
             // 
             // btnPaymentAndIncome
@@ -520,13 +533,14 @@
             this.btnPaymentAndIncome.IconVisible = true;
             this.btnPaymentAndIncome.IconZoom = 90D;
             this.btnPaymentAndIncome.IsTab = false;
-            this.btnPaymentAndIncome.Location = new System.Drawing.Point(0, 144);
+            this.btnPaymentAndIncome.Location = new System.Drawing.Point(0, 177);
+            this.btnPaymentAndIncome.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnPaymentAndIncome.Name = "btnPaymentAndIncome";
             this.btnPaymentAndIncome.Normalcolor = System.Drawing.Color.Gray;
             this.btnPaymentAndIncome.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnPaymentAndIncome.OnHoverTextColor = System.Drawing.Color.White;
             this.btnPaymentAndIncome.selected = false;
-            this.btnPaymentAndIncome.Size = new System.Drawing.Size(282, 48);
+            this.btnPaymentAndIncome.Size = new System.Drawing.Size(376, 59);
             this.btnPaymentAndIncome.TabIndex = 3;
             this.btnPaymentAndIncome.Text = "ពិនិត្យចំណូល ចំណាយ";
             this.btnPaymentAndIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -559,13 +573,14 @@
             this.btnExpensType.IconVisible = true;
             this.btnExpensType.IconZoom = 90D;
             this.btnExpensType.IsTab = false;
-            this.btnExpensType.Location = new System.Drawing.Point(0, 96);
+            this.btnExpensType.Location = new System.Drawing.Point(0, 118);
+            this.btnExpensType.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnExpensType.Name = "btnExpensType";
             this.btnExpensType.Normalcolor = System.Drawing.Color.Gray;
             this.btnExpensType.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnExpensType.OnHoverTextColor = System.Drawing.Color.White;
             this.btnExpensType.selected = false;
-            this.btnExpensType.Size = new System.Drawing.Size(282, 48);
+            this.btnExpensType.Size = new System.Drawing.Size(376, 59);
             this.btnExpensType.TabIndex = 2;
             this.btnExpensType.Text = "បង្កើតប្រភេទចំណាយ";
             this.btnExpensType.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -598,13 +613,14 @@
             this.btnNoteExpen.IconVisible = true;
             this.btnNoteExpen.IconZoom = 90D;
             this.btnNoteExpen.IsTab = false;
-            this.btnNoteExpen.Location = new System.Drawing.Point(0, 48);
+            this.btnNoteExpen.Location = new System.Drawing.Point(0, 59);
+            this.btnNoteExpen.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnNoteExpen.Name = "btnNoteExpen";
             this.btnNoteExpen.Normalcolor = System.Drawing.Color.Gray;
             this.btnNoteExpen.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnNoteExpen.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNoteExpen.selected = false;
-            this.btnNoteExpen.Size = new System.Drawing.Size(282, 48);
+            this.btnNoteExpen.Size = new System.Drawing.Size(376, 59);
             this.btnNoteExpen.TabIndex = 1;
             this.btnNoteExpen.Text = "កត់ត្រាការចំណាយ";
             this.btnNoteExpen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -638,12 +654,13 @@
             this.btnExpenAndIncome.IconZoom = 90D;
             this.btnExpenAndIncome.IsTab = false;
             this.btnExpenAndIncome.Location = new System.Drawing.Point(0, 0);
+            this.btnExpenAndIncome.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnExpenAndIncome.Name = "btnExpenAndIncome";
             this.btnExpenAndIncome.Normalcolor = System.Drawing.Color.Green;
             this.btnExpenAndIncome.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnExpenAndIncome.OnHoverTextColor = System.Drawing.Color.White;
             this.btnExpenAndIncome.selected = false;
-            this.btnExpenAndIncome.Size = new System.Drawing.Size(282, 48);
+            this.btnExpenAndIncome.Size = new System.Drawing.Size(376, 59);
             this.btnExpenAndIncome.TabIndex = 0;
             this.btnExpenAndIncome.Text = "ទិន្នន័យចំណូល ចំណាយ";
             this.btnExpenAndIncome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -659,9 +676,10 @@
             this.Transition2.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnEmployee, BunifuAnimatorNS.DecorationType.None);
             this.pnEmployee.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnEmployee.Location = new System.Drawing.Point(0, 324);
+            this.pnEmployee.Location = new System.Drawing.Point(0, 398);
+            this.pnEmployee.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnEmployee.Name = "pnEmployee";
-            this.pnEmployee.Size = new System.Drawing.Size(282, 48);
+            this.pnEmployee.Size = new System.Drawing.Size(376, 59);
             this.pnEmployee.TabIndex = 17;
             // 
             // btnEmployeeData
@@ -689,13 +707,14 @@
             this.btnEmployeeData.IconVisible = true;
             this.btnEmployeeData.IconZoom = 90D;
             this.btnEmployeeData.IsTab = false;
-            this.btnEmployeeData.Location = new System.Drawing.Point(0, 48);
+            this.btnEmployeeData.Location = new System.Drawing.Point(0, 59);
+            this.btnEmployeeData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEmployeeData.Name = "btnEmployeeData";
             this.btnEmployeeData.Normalcolor = System.Drawing.Color.Gray;
             this.btnEmployeeData.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnEmployeeData.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEmployeeData.selected = false;
-            this.btnEmployeeData.Size = new System.Drawing.Size(282, 48);
+            this.btnEmployeeData.Size = new System.Drawing.Size(376, 59);
             this.btnEmployeeData.TabIndex = 2;
             this.btnEmployeeData.Text = "ព័ត៌មានបុគ្គលិក";
             this.btnEmployeeData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -729,12 +748,13 @@
             this.btnEmployee.IconZoom = 90D;
             this.btnEmployee.IsTab = false;
             this.btnEmployee.Location = new System.Drawing.Point(0, 0);
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnEmployee.Name = "btnEmployee";
             this.btnEmployee.Normalcolor = System.Drawing.Color.Green;
             this.btnEmployee.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnEmployee.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEmployee.selected = false;
-            this.btnEmployee.Size = new System.Drawing.Size(282, 48);
+            this.btnEmployee.Size = new System.Drawing.Size(376, 59);
             this.btnEmployee.TabIndex = 0;
             this.btnEmployee.Text = "កត់ត្រាព័ត៌មានបុគ្គលិក";
             this.btnEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -750,9 +770,10 @@
             this.Transition2.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pncustomer, BunifuAnimatorNS.DecorationType.None);
             this.pncustomer.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pncustomer.Location = new System.Drawing.Point(0, 276);
+            this.pncustomer.Location = new System.Drawing.Point(0, 339);
+            this.pncustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pncustomer.Name = "pncustomer";
-            this.pncustomer.Size = new System.Drawing.Size(282, 48);
+            this.pncustomer.Size = new System.Drawing.Size(376, 59);
             this.pncustomer.TabIndex = 16;
             // 
             // btnDataCustomer
@@ -780,13 +801,14 @@
             this.btnDataCustomer.IconVisible = true;
             this.btnDataCustomer.IconZoom = 90D;
             this.btnDataCustomer.IsTab = false;
-            this.btnDataCustomer.Location = new System.Drawing.Point(0, 48);
+            this.btnDataCustomer.Location = new System.Drawing.Point(0, 59);
+            this.btnDataCustomer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnDataCustomer.Name = "btnDataCustomer";
             this.btnDataCustomer.Normalcolor = System.Drawing.Color.Gray;
             this.btnDataCustomer.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnDataCustomer.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDataCustomer.selected = false;
-            this.btnDataCustomer.Size = new System.Drawing.Size(282, 48);
+            this.btnDataCustomer.Size = new System.Drawing.Size(376, 59);
             this.btnDataCustomer.TabIndex = 2;
             this.btnDataCustomer.Text = "ព័តមានអតិថិជន";
             this.btnDataCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -820,12 +842,13 @@
             this.btnCustomer.IconZoom = 90D;
             this.btnCustomer.IsTab = false;
             this.btnCustomer.Location = new System.Drawing.Point(0, 0);
+            this.btnCustomer.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Normalcolor = System.Drawing.Color.Green;
             this.btnCustomer.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnCustomer.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCustomer.selected = false;
-            this.btnCustomer.Size = new System.Drawing.Size(282, 48);
+            this.btnCustomer.Size = new System.Drawing.Size(376, 59);
             this.btnCustomer.TabIndex = 0;
             this.btnCustomer.Text = "កត់ត្រាព័ត៌មានអតិថិជន";
             this.btnCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -843,9 +866,10 @@
             this.Transition2.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnRoom, BunifuAnimatorNS.DecorationType.None);
             this.pnRoom.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnRoom.Location = new System.Drawing.Point(0, 228);
+            this.pnRoom.Location = new System.Drawing.Point(0, 280);
+            this.pnRoom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnRoom.Name = "pnRoom";
-            this.pnRoom.Size = new System.Drawing.Size(282, 48);
+            this.pnRoom.Size = new System.Drawing.Size(376, 59);
             this.pnRoom.TabIndex = 15;
             // 
             // btnRoomPrice
@@ -873,13 +897,14 @@
             this.btnRoomPrice.IconVisible = true;
             this.btnRoomPrice.IconZoom = 90D;
             this.btnRoomPrice.IsTab = false;
-            this.btnRoomPrice.Location = new System.Drawing.Point(0, 144);
+            this.btnRoomPrice.Location = new System.Drawing.Point(0, 177);
+            this.btnRoomPrice.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRoomPrice.Name = "btnRoomPrice";
             this.btnRoomPrice.Normalcolor = System.Drawing.Color.Gray;
             this.btnRoomPrice.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnRoomPrice.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRoomPrice.selected = false;
-            this.btnRoomPrice.Size = new System.Drawing.Size(282, 48);
+            this.btnRoomPrice.Size = new System.Drawing.Size(376, 59);
             this.btnRoomPrice.TabIndex = 3;
             this.btnRoomPrice.Text = "ព័ត៌មានតម្លៃបន្ទប់";
             this.btnRoomPrice.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -912,13 +937,14 @@
             this.btnAddRoom.IconVisible = true;
             this.btnAddRoom.IconZoom = 90D;
             this.btnAddRoom.IsTab = false;
-            this.btnAddRoom.Location = new System.Drawing.Point(0, 96);
+            this.btnAddRoom.Location = new System.Drawing.Point(0, 118);
+            this.btnAddRoom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnAddRoom.Name = "btnAddRoom";
             this.btnAddRoom.Normalcolor = System.Drawing.Color.Gray;
             this.btnAddRoom.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnAddRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnAddRoom.selected = false;
-            this.btnAddRoom.Size = new System.Drawing.Size(282, 48);
+            this.btnAddRoom.Size = new System.Drawing.Size(376, 59);
             this.btnAddRoom.TabIndex = 2;
             this.btnAddRoom.Text = "ព័ត៌មានបន្ទប់";
             this.btnAddRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -951,13 +977,14 @@
             this.btnCheckRoom.IconVisible = true;
             this.btnCheckRoom.IconZoom = 90D;
             this.btnCheckRoom.IsTab = false;
-            this.btnCheckRoom.Location = new System.Drawing.Point(0, 48);
+            this.btnCheckRoom.Location = new System.Drawing.Point(0, 59);
+            this.btnCheckRoom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCheckRoom.Name = "btnCheckRoom";
             this.btnCheckRoom.Normalcolor = System.Drawing.Color.Gray;
             this.btnCheckRoom.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnCheckRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCheckRoom.selected = false;
-            this.btnCheckRoom.Size = new System.Drawing.Size(282, 48);
+            this.btnCheckRoom.Size = new System.Drawing.Size(376, 59);
             this.btnCheckRoom.TabIndex = 1;
             this.btnCheckRoom.Text = "ពិនិត្យបន្ទប់";
             this.btnCheckRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -991,12 +1018,13 @@
             this.btnRoom.IconZoom = 90D;
             this.btnRoom.IsTab = false;
             this.btnRoom.Location = new System.Drawing.Point(0, 0);
+            this.btnRoom.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnRoom.Name = "btnRoom";
             this.btnRoom.Normalcolor = System.Drawing.Color.Green;
             this.btnRoom.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnRoom.OnHoverTextColor = System.Drawing.Color.White;
             this.btnRoom.selected = false;
-            this.btnRoom.Size = new System.Drawing.Size(282, 48);
+            this.btnRoom.Size = new System.Drawing.Size(376, 59);
             this.btnRoom.TabIndex = 0;
             this.btnRoom.Text = "កត់ត្រាការព័ត៌មានបន្ទប់";
             this.btnRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1013,9 +1041,10 @@
             this.Transition2.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pncheckout, BunifuAnimatorNS.DecorationType.None);
             this.pncheckout.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pncheckout.Location = new System.Drawing.Point(0, 180);
+            this.pncheckout.Location = new System.Drawing.Point(0, 221);
+            this.pncheckout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pncheckout.Name = "pncheckout";
-            this.pncheckout.Size = new System.Drawing.Size(282, 48);
+            this.pncheckout.Size = new System.Drawing.Size(376, 59);
             this.pncheckout.TabIndex = 14;
             // 
             // bunifuFlatButton1
@@ -1043,13 +1072,14 @@
             this.bunifuFlatButton1.IconVisible = true;
             this.bunifuFlatButton1.IconZoom = 90D;
             this.bunifuFlatButton1.IsTab = false;
-            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 96);
+            this.bunifuFlatButton1.Location = new System.Drawing.Point(0, 118);
+            this.bunifuFlatButton1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuFlatButton1.Name = "bunifuFlatButton1";
             this.bunifuFlatButton1.Normalcolor = System.Drawing.Color.Gray;
             this.bunifuFlatButton1.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.bunifuFlatButton1.OnHoverTextColor = System.Drawing.Color.White;
             this.bunifuFlatButton1.selected = false;
-            this.bunifuFlatButton1.Size = new System.Drawing.Size(282, 48);
+            this.bunifuFlatButton1.Size = new System.Drawing.Size(376, 59);
             this.bunifuFlatButton1.TabIndex = 2;
             this.bunifuFlatButton1.Text = "ទិន្នន័យចាកចេញប្រចាំថ្ងៃ";
             this.bunifuFlatButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1082,13 +1112,14 @@
             this.btnCheckout.IconVisible = true;
             this.btnCheckout.IconZoom = 90D;
             this.btnCheckout.IsTab = false;
-            this.btnCheckout.Location = new System.Drawing.Point(0, 48);
+            this.btnCheckout.Location = new System.Drawing.Point(0, 59);
+            this.btnCheckout.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnCheckout.Name = "btnCheckout";
             this.btnCheckout.Normalcolor = System.Drawing.Color.Gray;
             this.btnCheckout.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnCheckout.OnHoverTextColor = System.Drawing.Color.White;
             this.btnCheckout.selected = false;
-            this.btnCheckout.Size = new System.Drawing.Size(282, 48);
+            this.btnCheckout.Size = new System.Drawing.Size(376, 59);
             this.btnCheckout.TabIndex = 1;
             this.btnCheckout.Text = "ការចាកចេញ";
             this.btnCheckout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1122,12 +1153,13 @@
             this.btncheckoutNote.IconZoom = 90D;
             this.btncheckoutNote.IsTab = false;
             this.btncheckoutNote.Location = new System.Drawing.Point(0, 0);
+            this.btncheckoutNote.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btncheckoutNote.Name = "btncheckoutNote";
             this.btncheckoutNote.Normalcolor = System.Drawing.Color.Green;
             this.btncheckoutNote.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btncheckoutNote.OnHoverTextColor = System.Drawing.Color.White;
             this.btncheckoutNote.selected = false;
-            this.btncheckoutNote.Size = new System.Drawing.Size(282, 48);
+            this.btncheckoutNote.Size = new System.Drawing.Size(376, 59);
             this.btncheckoutNote.TabIndex = 0;
             this.btncheckoutNote.Text = "កត់ត្រាការចាកចេញ";
             this.btncheckoutNote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1144,9 +1176,10 @@
             this.Transition2.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnBook, BunifuAnimatorNS.DecorationType.None);
             this.pnBook.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnBook.Location = new System.Drawing.Point(0, 132);
+            this.pnBook.Location = new System.Drawing.Point(0, 162);
+            this.pnBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnBook.Name = "pnBook";
-            this.pnBook.Size = new System.Drawing.Size(282, 48);
+            this.pnBook.Size = new System.Drawing.Size(376, 59);
             this.pnBook.TabIndex = 4;
             // 
             // btnbookData
@@ -1174,13 +1207,14 @@
             this.btnbookData.IconVisible = true;
             this.btnbookData.IconZoom = 90D;
             this.btnbookData.IsTab = false;
-            this.btnbookData.Location = new System.Drawing.Point(0, 96);
+            this.btnbookData.Location = new System.Drawing.Point(0, 118);
+            this.btnbookData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnbookData.Name = "btnbookData";
             this.btnbookData.Normalcolor = System.Drawing.Color.Gray;
             this.btnbookData.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnbookData.OnHoverTextColor = System.Drawing.Color.White;
             this.btnbookData.selected = false;
-            this.btnbookData.Size = new System.Drawing.Size(282, 48);
+            this.btnbookData.Size = new System.Drawing.Size(376, 59);
             this.btnbookData.TabIndex = 2;
             this.btnbookData.Text = "ទិន្នន័យប្រចាំថ្ងៃ";
             this.btnbookData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1213,13 +1247,14 @@
             this.btnbooknote.IconVisible = true;
             this.btnbooknote.IconZoom = 90D;
             this.btnbooknote.IsTab = false;
-            this.btnbooknote.Location = new System.Drawing.Point(0, 48);
+            this.btnbooknote.Location = new System.Drawing.Point(0, 59);
+            this.btnbooknote.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnbooknote.Name = "btnbooknote";
             this.btnbooknote.Normalcolor = System.Drawing.Color.Gray;
             this.btnbooknote.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btnbooknote.OnHoverTextColor = System.Drawing.Color.White;
             this.btnbooknote.selected = false;
-            this.btnbooknote.Size = new System.Drawing.Size(282, 48);
+            this.btnbooknote.Size = new System.Drawing.Size(376, 59);
             this.btnbooknote.TabIndex = 1;
             this.btnbooknote.Text = "ការកក់បន្ទប់";
             this.btnbooknote.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1253,12 +1288,13 @@
             this.btnbook.IconZoom = 90D;
             this.btnbook.IsTab = false;
             this.btnbook.Location = new System.Drawing.Point(0, 0);
+            this.btnbook.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnbook.Name = "btnbook";
             this.btnbook.Normalcolor = System.Drawing.Color.Green;
             this.btnbook.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnbook.OnHoverTextColor = System.Drawing.Color.White;
             this.btnbook.selected = false;
-            this.btnbook.Size = new System.Drawing.Size(282, 48);
+            this.btnbook.Size = new System.Drawing.Size(376, 59);
             this.btnbook.TabIndex = 0;
             this.btnbook.Text = "កត់ត្រាការកក់បន្ទប់";
             this.btnbook.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1275,9 +1311,10 @@
             this.Transition2.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.pnStay, BunifuAnimatorNS.DecorationType.None);
             this.pnStay.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnStay.Location = new System.Drawing.Point(0, 84);
+            this.pnStay.Location = new System.Drawing.Point(0, 103);
+            this.pnStay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnStay.Name = "pnStay";
-            this.pnStay.Size = new System.Drawing.Size(282, 48);
+            this.pnStay.Size = new System.Drawing.Size(376, 59);
             this.pnStay.TabIndex = 3;
             // 
             // btncheckINData
@@ -1305,13 +1342,14 @@
             this.btncheckINData.IconVisible = true;
             this.btncheckINData.IconZoom = 90D;
             this.btncheckINData.IsTab = false;
-            this.btncheckINData.Location = new System.Drawing.Point(0, 96);
+            this.btncheckINData.Location = new System.Drawing.Point(0, 118);
+            this.btncheckINData.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btncheckINData.Name = "btncheckINData";
             this.btncheckINData.Normalcolor = System.Drawing.Color.Gray;
             this.btncheckINData.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btncheckINData.OnHoverTextColor = System.Drawing.Color.White;
             this.btncheckINData.selected = false;
-            this.btncheckINData.Size = new System.Drawing.Size(282, 48);
+            this.btncheckINData.Size = new System.Drawing.Size(376, 59);
             this.btncheckINData.TabIndex = 2;
             this.btncheckINData.Text = "ទិន្នន័យការស្នាក់នៅ";
             this.btncheckINData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1344,13 +1382,14 @@
             this.btncheckin.IconVisible = true;
             this.btncheckin.IconZoom = 90D;
             this.btncheckin.IsTab = false;
-            this.btncheckin.Location = new System.Drawing.Point(0, 48);
+            this.btncheckin.Location = new System.Drawing.Point(0, 59);
+            this.btncheckin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btncheckin.Name = "btncheckin";
             this.btncheckin.Normalcolor = System.Drawing.Color.Gray;
             this.btncheckin.OnHovercolor = System.Drawing.Color.DarkSlateBlue;
             this.btncheckin.OnHoverTextColor = System.Drawing.Color.White;
             this.btncheckin.selected = false;
-            this.btncheckin.Size = new System.Drawing.Size(282, 48);
+            this.btncheckin.Size = new System.Drawing.Size(376, 59);
             this.btncheckin.TabIndex = 1;
             this.btncheckin.Text = "ការស្នាក់នៅ";
             this.btncheckin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1384,12 +1423,13 @@
             this.btnstay.IconZoom = 90D;
             this.btnstay.IsTab = false;
             this.btnstay.Location = new System.Drawing.Point(0, 0);
+            this.btnstay.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnstay.Name = "btnstay";
             this.btnstay.Normalcolor = System.Drawing.Color.Green;
             this.btnstay.OnHovercolor = System.Drawing.Color.SlateBlue;
             this.btnstay.OnHoverTextColor = System.Drawing.Color.White;
             this.btnstay.selected = false;
-            this.btnstay.Size = new System.Drawing.Size(282, 48);
+            this.btnstay.Size = new System.Drawing.Size(376, 59);
             this.btnstay.TabIndex = 0;
             this.btnstay.Text = "កត់ត្រាការស្នាក់នៅ";
             this.btnstay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1405,8 +1445,9 @@
             this.Transition3.SetDecoration(this.pnLogo, BunifuAnimatorNS.DecorationType.None);
             this.pnLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnLogo.Location = new System.Drawing.Point(0, 0);
+            this.pnLogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnLogo.Name = "pnLogo";
-            this.pnLogo.Size = new System.Drawing.Size(282, 84);
+            this.pnLogo.Size = new System.Drawing.Size(376, 103);
             this.pnLogo.TabIndex = 2;
             // 
             // pictureBox1
@@ -1417,8 +1458,9 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(282, 84);
+            this.pictureBox1.Size = new System.Drawing.Size(376, 103);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -1431,9 +1473,10 @@
             this.Transition2.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.panel1, BunifuAnimatorNS.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(282, 679);
+            this.panel1.Location = new System.Drawing.Point(376, 836);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(918, 41);
+            this.panel1.Size = new System.Drawing.Size(1224, 50);
             this.panel1.TabIndex = 13;
             // 
             // LBLTime
@@ -1445,9 +1488,10 @@
             this.LBLTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.LBLTime.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LBLTime.ForeColor = System.Drawing.Color.White;
-            this.LBLTime.Location = new System.Drawing.Point(585, 0);
+            this.LBLTime.Location = new System.Drawing.Point(780, 0);
+            this.LBLTime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LBLTime.Name = "LBLTime";
-            this.LBLTime.Size = new System.Drawing.Size(333, 41);
+            this.LBLTime.Size = new System.Drawing.Size(444, 50);
             this.LBLTime.TabIndex = 0;
             this.LBLTime.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -1463,10 +1507,89 @@
             this.Transition2.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.Pntopbar, BunifuAnimatorNS.DecorationType.None);
             this.Pntopbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Pntopbar.Location = new System.Drawing.Point(282, 0);
+            this.Pntopbar.Location = new System.Drawing.Point(376, 0);
+            this.Pntopbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Pntopbar.Name = "Pntopbar";
-            this.Pntopbar.Size = new System.Drawing.Size(918, 42);
+            this.Pntopbar.Size = new System.Drawing.Size(1224, 52);
             this.Pntopbar.TabIndex = 14;
+            // 
+            // lblposition2
+            // 
+            this.lblposition2.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
+            this.lblposition2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblposition2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblposition2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblposition2.Location = new System.Drawing.Point(352, 0);
+            this.lblposition2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblposition2.Name = "lblposition2";
+            this.lblposition2.Size = new System.Drawing.Size(123, 43);
+            this.lblposition2.TabIndex = 5;
+            this.lblposition2.Text = "បុគ្គលិក :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.Transition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
+            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label2.Location = new System.Drawing.Point(246, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(106, 43);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "តួនាទី :";
+            // 
+            // lblName
+            // 
+            this.lblName.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
+            this.lblName.Dock = System.Windows.Forms.DockStyle.Left;
+            this.lblName.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblName.Location = new System.Drawing.Point(123, 0);
+            this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(123, 43);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "បុគ្គលិក :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.Transition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(123, 43);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "បុគ្គលិក :";
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.AutoSize = true;
+            this.Transition3.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
+            this.lblPosition.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.lblPosition.Location = new System.Drawing.Point(159, 5);
+            this.lblPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(0, 43);
+            this.lblPosition.TabIndex = 1;
             // 
             // panel2
             // 
@@ -1478,10 +1601,49 @@
             this.Transition2.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this.panel2, BunifuAnimatorNS.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(282, 42);
+            this.panel2.Location = new System.Drawing.Point(376, 52);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(918, 637);
+            this.panel2.Size = new System.Drawing.Size(1224, 784);
             this.panel2.TabIndex = 15;
+            // 
+            // ph31
+            // 
+            this.Transition3.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
+            this.ph31.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph31.Location = new System.Drawing.Point(0, 0);
+            this.ph31.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ph31.Name = "ph31";
+            this.ph31.Size = new System.Drawing.Size(1224, 784);
+            this.ph31.TabIndex = 2;
+            this.ph31.Visible = false;
+            // 
+            // ph21
+            // 
+            this.Transition3.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
+            this.ph21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph21.Location = new System.Drawing.Point(0, 0);
+            this.ph21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ph21.Name = "ph21";
+            this.ph21.Size = new System.Drawing.Size(1224, 784);
+            this.ph21.TabIndex = 1;
+            this.ph21.Visible = false;
+            // 
+            // ph11
+            // 
+            this.Transition3.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.Transition2.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.Transition1.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
+            this.ph11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ph11.Location = new System.Drawing.Point(0, 0);
+            this.ph11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ph11.Name = "ph11";
+            this.ph11.Size = new System.Drawing.Size(1224, 784);
+            this.ph11.TabIndex = 0;
             // 
             // Transition1
             // 
@@ -1561,119 +1723,11 @@
             // 
             this.Tdate.Tick += new System.EventHandler(this.Tdate_Tick);
             // 
-            // lblPosition
-            // 
-            this.lblPosition.AutoSize = true;
-            this.Transition3.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
-            this.lblPosition.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblPosition.Location = new System.Drawing.Point(119, 4);
-            this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(0, 34);
-            this.lblPosition.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.Transition3.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.label1, BunifuAnimatorNS.DecorationType.None);
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(99, 34);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "បុគ្គលិក :";
-            // 
-            // lblName
-            // 
-            this.lblName.AutoSize = true;
-            this.Transition3.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.lblName, BunifuAnimatorNS.DecorationType.None);
-            this.lblName.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblName.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblName.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblName.Location = new System.Drawing.Point(99, 0);
-            this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(99, 34);
-            this.lblName.TabIndex = 3;
-            this.lblName.Text = "បុគ្គលិក :";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.Transition3.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.label2, BunifuAnimatorNS.DecorationType.None);
-            this.label2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(198, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 34);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "តួនាទី :";
-            // 
-            // lblposition2
-            // 
-            this.lblposition2.AutoSize = true;
-            this.Transition3.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.lblposition2, BunifuAnimatorNS.DecorationType.None);
-            this.lblposition2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblposition2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblposition2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.lblposition2.Location = new System.Drawing.Point(283, 0);
-            this.lblposition2.Name = "lblposition2";
-            this.lblposition2.Size = new System.Drawing.Size(99, 34);
-            this.lblposition2.TabIndex = 5;
-            this.lblposition2.Text = "បុគ្គលិក :";
-            // 
-            // ph31
-            // 
-            this.Transition3.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
-            this.ph31.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph31.Location = new System.Drawing.Point(0, 0);
-            this.ph31.Name = "ph31";
-            this.ph31.Size = new System.Drawing.Size(918, 637);
-            this.ph31.TabIndex = 2;
-            this.ph31.Visible = false;
-            // 
-            // ph21
-            // 
-            this.Transition3.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
-            this.ph21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph21.Location = new System.Drawing.Point(0, 0);
-            this.ph21.Name = "ph21";
-            this.ph21.Size = new System.Drawing.Size(918, 637);
-            this.ph21.TabIndex = 1;
-            this.ph21.Visible = false;
-            // 
-            // ph11
-            // 
-            this.Transition3.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.Transition2.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.Transition1.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
-            this.ph11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ph11.Location = new System.Drawing.Point(0, 0);
-            this.ph11.Name = "ph11";
-            this.ph11.Size = new System.Drawing.Size(918, 637);
-            this.ph11.TabIndex = 0;
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1200, 720);
+            this.ClientSize = new System.Drawing.Size(1600, 886);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.Pntopbar);
             this.Controls.Add(this.panel1);
@@ -1682,6 +1736,7 @@
             this.Transition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.Transition3.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
