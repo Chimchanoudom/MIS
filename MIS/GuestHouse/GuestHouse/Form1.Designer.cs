@@ -1522,10 +1522,16 @@
             this.lblposition2.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblposition2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblposition2.ForeColor = System.Drawing.SystemColors.ControlLight;
+<<<<<<< HEAD
             this.lblposition2.Location = new System.Drawing.Point(352, 0);
             this.lblposition2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblposition2.Name = "lblposition2";
             this.lblposition2.Size = new System.Drawing.Size(123, 43);
+=======
+            this.lblposition2.Location = new System.Drawing.Point(283, 0);
+            this.lblposition2.Name = "lblposition2";
+            this.lblposition2.Size = new System.Drawing.Size(99, 34);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.lblposition2.TabIndex = 5;
             this.lblposition2.Text = "បុគ្គលិក :";
             // 
@@ -1538,10 +1544,16 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Left;
             this.label2.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
+<<<<<<< HEAD
             this.label2.Location = new System.Drawing.Point(246, 0);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(106, 43);
+=======
+            this.label2.Location = new System.Drawing.Point(198, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(85, 34);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.label2.TabIndex = 4;
             this.label2.Text = "តួនាទី :";
             // 
@@ -1554,10 +1566,16 @@
             this.lblName.Dock = System.Windows.Forms.DockStyle.Left;
             this.lblName.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.SystemColors.ControlLight;
+<<<<<<< HEAD
             this.lblName.Location = new System.Drawing.Point(123, 0);
             this.lblName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(123, 43);
+=======
+            this.lblName.Location = new System.Drawing.Point(99, 0);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(99, 34);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.lblName.TabIndex = 3;
             this.lblName.Text = "បុគ្គលិក :";
             // 
@@ -1571,9 +1589,14 @@
             this.label1.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label1.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 43);
+=======
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(99, 34);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.label1.TabIndex = 2;
             this.label1.Text = "បុគ្គលិក :";
             // 
@@ -1585,10 +1608,16 @@
             this.Transition1.SetDecoration(this.lblPosition, BunifuAnimatorNS.DecorationType.None);
             this.lblPosition.Font = new System.Drawing.Font("Khmer OS Muol Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPosition.ForeColor = System.Drawing.SystemColors.ControlLight;
+<<<<<<< HEAD
             this.lblPosition.Location = new System.Drawing.Point(159, 5);
             this.lblPosition.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(0, 43);
+=======
+            this.lblPosition.Location = new System.Drawing.Point(119, 4);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(0, 34);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.lblPosition.TabIndex = 1;
             // 
             // panel2
@@ -1614,9 +1643,14 @@
             this.Transition1.SetDecoration(this.ph31, BunifuAnimatorNS.DecorationType.None);
             this.ph31.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ph31.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
             this.ph31.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ph31.Name = "ph31";
             this.ph31.Size = new System.Drawing.Size(1224, 784);
+=======
+            this.ph31.Name = "ph31";
+            this.ph31.Size = new System.Drawing.Size(918, 637);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.ph31.TabIndex = 2;
             this.ph31.Visible = false;
             // 
@@ -1627,9 +1661,14 @@
             this.Transition1.SetDecoration(this.ph21, BunifuAnimatorNS.DecorationType.None);
             this.ph21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ph21.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
             this.ph21.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ph21.Name = "ph21";
             this.ph21.Size = new System.Drawing.Size(1224, 784);
+=======
+            this.ph21.Name = "ph21";
+            this.ph21.Size = new System.Drawing.Size(918, 637);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.ph21.TabIndex = 1;
             this.ph21.Visible = false;
             // 
@@ -1640,9 +1679,14 @@
             this.Transition1.SetDecoration(this.ph11, BunifuAnimatorNS.DecorationType.None);
             this.ph11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ph11.Location = new System.Drawing.Point(0, 0);
+<<<<<<< HEAD
             this.ph11.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ph11.Name = "ph11";
             this.ph11.Size = new System.Drawing.Size(1224, 784);
+=======
+            this.ph11.Name = "ph11";
+            this.ph11.Size = new System.Drawing.Size(918, 637);
+>>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
             this.ph11.TabIndex = 0;
             // 
             // Transition1
