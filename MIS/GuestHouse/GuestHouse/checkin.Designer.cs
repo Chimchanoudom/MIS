@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(checkin));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -48,13 +48,13 @@
             this.label29 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtIDCus = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.datecheckin = new System.Windows.Forms.DateTimePicker();
             this.bunifuThinButton23 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label28 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
@@ -83,11 +83,11 @@
             this.radioButton5 = new System.Windows.Forms.RadioButton();
             this.radioButton6 = new System.Windows.Forms.RadioButton();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.rndover24 = new System.Windows.Forms.RadioButton();
+            this.rnd24 = new System.Windows.Forms.RadioButton();
+            this.rnd12 = new System.Windows.Forms.RadioButton();
+            this.rnd6 = new System.Windows.Forms.RadioButton();
+            this.rnd3 = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
@@ -95,7 +95,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.datecheckout = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -354,13 +354,13 @@
             this.groupBox3.Controls.Add(this.label29);
             this.groupBox3.Controls.Add(this.textBox9);
             this.groupBox3.Controls.Add(this.label34);
-            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.txtIDCus);
             this.groupBox3.Controls.Add(this.label32);
             this.groupBox3.Controls.Add(this.textBox6);
             this.groupBox3.Controls.Add(this.label9);
             this.groupBox3.Controls.Add(this.textBox7);
             this.groupBox3.Controls.Add(this.label31);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.datecheckin);
             this.groupBox3.Controls.Add(this.bunifuThinButton23);
             this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Controls.Add(this.label30);
@@ -426,13 +426,13 @@
             this.label34.TabIndex = 100019;
             this.label34.Text = "តម្លៃសរុបការស្នាក់នៅ";
             // 
-            // textBox8
+            // txtIDCus
             // 
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(171, 112);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(196, 26);
-            this.textBox8.TabIndex = 100033;
+            this.txtIDCus.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIDCus.Location = new System.Drawing.Point(171, 112);
+            this.txtIDCus.Name = "txtIDCus";
+            this.txtIDCus.Size = new System.Drawing.Size(196, 26);
+            this.txtIDCus.TabIndex = 100033;
             // 
             // label32
             // 
@@ -477,15 +477,16 @@
             this.label31.TabIndex = 100019;
             this.label31.Text = "លេខកូដសម្គាល់";
             // 
-            // dateTimePicker1
+            // datecheckin
             // 
-            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(171, 54);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(195, 26);
-            this.dateTimePicker1.TabIndex = 100015;
+            this.datecheckin.CustomFormat = "dd-MM-yyyy hh:mm";
+            this.datecheckin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datecheckin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datecheckin.Location = new System.Drawing.Point(171, 54);
+            this.datecheckin.Name = "datecheckin";
+            this.datecheckin.Size = new System.Drawing.Size(195, 26);
+            this.datecheckin.TabIndex = 100015;
+            this.datecheckin.ValueChanged += new System.EventHandler(this.datecheckin_ValueChanged);
             // 
             // bunifuThinButton23
             // 
@@ -583,6 +584,9 @@
             this.cmCustomer.Name = "cmCustomer";
             this.cmCustomer.Size = new System.Drawing.Size(196, 25);
             this.cmCustomer.TabIndex = 100031;
+            this.cmCustomer.SelectedIndexChanged += new System.EventHandler(this.cmCustomer_SelectedIndexChanged);
+            this.cmCustomer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmCustomer_KeyPress);
+            this.cmCustomer.MouseLeave += new System.EventHandler(this.cmCustomer_MouseLeave);
             // 
             // textBox5
             // 
@@ -704,7 +708,7 @@
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.dateTimePicker3);
+            this.groupBox1.Controls.Add(this.datecheckout);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label17);
@@ -827,85 +831,90 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.radioButton12);
-            this.panel7.Controls.Add(this.radioButton9);
-            this.panel7.Controls.Add(this.radioButton4);
-            this.panel7.Controls.Add(this.radioButton7);
-            this.panel7.Controls.Add(this.radioButton8);
+            this.panel7.Controls.Add(this.rndover24);
+            this.panel7.Controls.Add(this.rnd24);
+            this.panel7.Controls.Add(this.rnd12);
+            this.panel7.Controls.Add(this.rnd6);
+            this.panel7.Controls.Add(this.rnd3);
             this.panel7.Location = new System.Drawing.Point(132, 29);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(321, 35);
             this.panel7.TabIndex = 0;
             // 
-            // radioButton12
+            // rndover24
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton12.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(216, 0);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(108, 35);
-            this.radioButton12.TabIndex = 4;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "លើសពីមួយថ្ងៃ";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.rndover24.AutoSize = true;
+            this.rndover24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rndover24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rndover24.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rndover24.Location = new System.Drawing.Point(216, 0);
+            this.rndover24.Name = "rndover24";
+            this.rndover24.Size = new System.Drawing.Size(108, 35);
+            this.rndover24.TabIndex = 4;
+            this.rndover24.TabStop = true;
+            this.rndover24.Text = "លើសពីមួយថ្ងៃ";
+            this.rndover24.UseVisualStyleBackColor = true;
+            this.rndover24.CheckedChanged += new System.EventHandler(this.rndover24_CheckedChanged);
             // 
-            // radioButton9
+            // rnd24
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(158, 0);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(58, 35);
-            this.radioButton9.TabIndex = 3;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "24Hr";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rnd24.AutoSize = true;
+            this.rnd24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd24.Location = new System.Drawing.Point(158, 0);
+            this.rnd24.Name = "rnd24";
+            this.rnd24.Size = new System.Drawing.Size(58, 35);
+            this.rnd24.TabIndex = 3;
+            this.rnd24.TabStop = true;
+            this.rnd24.Text = "24Hr";
+            this.rnd24.UseVisualStyleBackColor = true;
+            this.rnd24.CheckedChanged += new System.EventHandler(this.rnd3_CheckedChanged);
             // 
-            // radioButton4
+            // rnd12
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(100, 0);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 35);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "12Hr";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rnd12.AutoSize = true;
+            this.rnd12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd12.Location = new System.Drawing.Point(100, 0);
+            this.rnd12.Name = "rnd12";
+            this.rnd12.Size = new System.Drawing.Size(58, 35);
+            this.rnd12.TabIndex = 3;
+            this.rnd12.TabStop = true;
+            this.rnd12.Text = "12Hr";
+            this.rnd12.UseVisualStyleBackColor = true;
+            this.rnd12.CheckedChanged += new System.EventHandler(this.rnd3_CheckedChanged);
             // 
-            // radioButton7
+            // rnd6
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(50, 0);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(50, 35);
-            this.radioButton7.TabIndex = 2;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "6Hr";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rnd6.AutoSize = true;
+            this.rnd6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd6.Location = new System.Drawing.Point(50, 0);
+            this.rnd6.Name = "rnd6";
+            this.rnd6.Size = new System.Drawing.Size(50, 35);
+            this.rnd6.TabIndex = 2;
+            this.rnd6.TabStop = true;
+            this.rnd6.Text = "6Hr";
+            this.rnd6.UseVisualStyleBackColor = true;
+            this.rnd6.CheckedChanged += new System.EventHandler(this.rnd3_CheckedChanged);
             // 
-            // radioButton8
+            // rnd3
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(0, 0);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(50, 35);
-            this.radioButton8.TabIndex = 1;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "3Hr";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rnd3.AutoSize = true;
+            this.rnd3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rnd3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rnd3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnd3.Location = new System.Drawing.Point(0, 0);
+            this.rnd3.Name = "rnd3";
+            this.rnd3.Size = new System.Drawing.Size(50, 35);
+            this.rnd3.TabIndex = 1;
+            this.rnd3.TabStop = true;
+            this.rnd3.Text = "3Hr";
+            this.rnd3.UseVisualStyleBackColor = true;
+            this.rnd3.CheckedChanged += new System.EventHandler(this.rnd3_CheckedChanged);
             // 
             // panel5
             // 
@@ -986,15 +995,15 @@
             this.label5.TabIndex = 100019;
             this.label5.Text = "តម្លៃកង្ហា ឫ ម៉ាំស៊ីនត្រជាក់";
             // 
-            // dateTimePicker3
+            // datecheckout
             // 
-            this.dateTimePicker3.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dateTimePicker3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(131, 69);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(159, 26);
-            this.dateTimePicker3.TabIndex = 1;
+            this.datecheckout.CustomFormat = "dd-MM-yyyy hh:mm";
+            this.datecheckout.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datecheckout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datecheckout.Location = new System.Drawing.Point(131, 69);
+            this.datecheckout.Name = "datecheckout";
+            this.datecheckout.Size = new System.Drawing.Size(159, 26);
+            this.datecheckout.TabIndex = 1;
             // 
             // label3
             // 
@@ -1230,8 +1239,8 @@
             // 
             this.dataGridView2.AllowUserToAddRows = false;
             this.dataGridView2.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1292,6 +1301,7 @@
             this.Name = "checkin";
             this.Text = " ";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.checkin_Load);
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
@@ -1333,16 +1343,16 @@
         private System.Windows.Forms.RadioButton radioButton5;
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton rnd24;
+        private System.Windows.Forms.RadioButton rnd12;
+        private System.Windows.Forms.RadioButton rnd6;
+        private System.Windows.Forms.RadioButton rnd3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker datecheckout;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label15;
@@ -1363,7 +1373,7 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker datecheckin;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton23;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
@@ -1386,13 +1396,13 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private System.Windows.Forms.RadioButton radioButton12;
+        private System.Windows.Forms.RadioButton rndover24;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtIDCus;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label9;

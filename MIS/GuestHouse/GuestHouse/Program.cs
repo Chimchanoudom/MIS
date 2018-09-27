@@ -50,14 +50,14 @@ namespace GuestHouse
 
             //Application.Run(new RoomData());
 
-            //Application.Run(new CheckIn());
+            Application.Run(new checkin());
             //Application.Run(new CheckInData());
             //Application.Run(new Expense());
 
             //Application.Run(new Form1());
             //Application.Run(new Customer());
             //Application.Run(new ExpensAndIncome());
-            Application.Run(new Booking());
+           // Application.Run(new Booking());
             //Application.Run(new BookingData());
             //Application.Run(new ExpensAndIncome());
             //Application.Run(new ExpensAndIncome());
