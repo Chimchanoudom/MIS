@@ -35,37 +35,37 @@ namespace GuestHouse
             ////{
             ////    Application.Run(new Form1());
             ////}
-<<<<<<< HEAD
-            Application.Run(new Login());
-=======
+
+            //   Application.Run(new Login());
+
             //Application.Run(new checkin());
->>>>>>> 0e9f0f50f542da210888fe0d7bc6edb8e76b264b
+
             //Application.SetCompatibleTextRenderingDefault(false);
             //if (new Login().ShowDialog() == DialogResult.OK)
             //{
 
-            //  Application.Run(new RoomData());
+            Application.Run(new RoomData());
 
-            //Application.Run(new Customer());
-            //Application.Run(new RoomData());
-            //Application.Run(new RoomPrice());
-            //Application.Run(new CheckRoom());
-            //Application.Run(new expensType());
+            Application.Run(new Customer());
+            Application.Run(new RoomData());
+            Application.Run(new RoomPrice());
+            Application.Run(new CheckRoom());
+            Application.Run(new expensType());
 
-            //Application.Run(new RoomData());
+            Application.Run(new RoomData());
 
             Application.Run(new checkin());
-            //Application.Run(new CheckInData());
-            //Application.Run(new Expense());
+            Application.Run(new CheckInData());
+            Application.Run(new Expense());
 
-            //Application.Run(new Form1());
-            //Application.Run(new Customer());
-            //Application.Run(new ExpensAndIncome());
-           // Application.Run(new Booking());
-            //Application.Run(new BookingData());
-            //Application.Run(new ExpensAndIncome());
-            //Application.Run(new ExpensAndIncome());
-            //Application.Run(new ExpensAndIncome());
+            Application.Run(new Form1());
+            Application.Run(new Customer());
+            Application.Run(new ExpensAndIncome());
+            Application.Run(new Booking());
+            Application.Run(new BookingData());
+            Application.Run(new ExpensAndIncome());
+            Application.Run(new ExpensAndIncome());
+            Application.Run(new ExpensAndIncome());
         }
 
 
