@@ -40,8 +40,16 @@ namespace GuestHouse
             if (ID == "")
                 num = 1;
             else
-                num = int.Parse(ID)+1;
-
+            {
+                try
+                {
+                    num = int.Parse(ID) + 1;
+                }
+                catch
+                {
+                    num = int.Parse(ID.Substring(5));
+                }
+            }
             if (Suffix != null)
             {
                 ID = Suffix + (num);

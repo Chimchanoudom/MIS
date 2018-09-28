@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Expense));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -39,10 +39,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.DateSearch = new System.Windows.Forms.DateTimePicker();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.DateSearch = new System.Windows.Forms.DateTimePicker();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.rndSearchNote = new System.Windows.Forms.RadioButton();
             this.rndSearchPay = new System.Windows.Forms.RadioButton();
@@ -183,44 +183,15 @@
             // 
             // panel7
             // 
-
-
-
-            this.panel7.Controls.Add(this.DateSearch);
-            this.panel7.Controls.Add(this.btnSearch);
-            this.panel7.Controls.Add(this.btnCancel);
-            this.panel7.Controls.Add(this.txtSearch);
-
             this.panel7.Controls.Add(this.btnSearch);
             this.panel7.Controls.Add(this.btnCancel);
             this.panel7.Controls.Add(this.txtSearch);
             this.panel7.Controls.Add(this.DateSearch);
-
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(3, 151);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(394, 31);
             this.panel7.TabIndex = 1;
-            // 
-            // DateSearch
-            // 
-            this.DateSearch.Dock = System.Windows.Forms.DockStyle.Left;
-            this.DateSearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-
-            this.DateSearch.Location = new System.Drawing.Point(234, 0);
-
-            this.DateSearch.Location = new System.Drawing.Point(0, 0);
-
-
-            this.DateSearch.Location = new System.Drawing.Point(234, 0);
-
-            this.DateSearch.Location = new System.Drawing.Point(0, 0);
-
-            this.DateSearch.Name = "DateSearch";
-            this.DateSearch.Size = new System.Drawing.Size(234, 26);
-            this.DateSearch.TabIndex = 2;
-            this.DateSearch.Visible = false;
             // 
             // btnSearch
             // 
@@ -247,14 +218,7 @@
             this.btnSearch.Size = new System.Drawing.Size(79, 31);
             this.btnSearch.TabIndex = 18;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-
-
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-
-
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
-
             // 
             // btnCancel
             // 
@@ -281,33 +245,26 @@
             this.btnCancel.Size = new System.Drawing.Size(79, 31);
             this.btnCancel.TabIndex = 17;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-
-
-
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-
-
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-
             // 
             // txtSearch
             // 
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Left;
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-
-
-            this.txtSearch.Location = new System.Drawing.Point(0, 0);
-
             this.txtSearch.Location = new System.Drawing.Point(234, 0);
-
-
-            this.txtSearch.Location = new System.Drawing.Point(0, 0);
-
-            this.txtSearch.Location = new System.Drawing.Point(234, 0);
-
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(234, 29);
             this.txtSearch.TabIndex = 15;
+            // 
+            // DateSearch
+            // 
+            this.DateSearch.Dock = System.Windows.Forms.DockStyle.Left;
+            this.DateSearch.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateSearch.Location = new System.Drawing.Point(0, 0);
+            this.DateSearch.Name = "DateSearch";
+            this.DateSearch.Size = new System.Drawing.Size(234, 26);
+            this.DateSearch.TabIndex = 2;
+            this.DateSearch.Visible = false;
             // 
             // groupBox7
             // 
@@ -332,14 +289,7 @@
             this.rndSearchNote.TabIndex = 12;
             this.rndSearchNote.Text = "ថ្ងៃកត់ត្រា";
             this.rndSearchNote.UseVisualStyleBackColor = true;
-
-
-
             this.rndSearchNote.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
-
-            this.rndSearchNote.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
             // 
             // rndSearchPay
             // 
@@ -350,14 +300,7 @@
             this.rndSearchPay.TabIndex = 13;
             this.rndSearchPay.Text = "ថ្ងៃចំណាយ";
             this.rndSearchPay.UseVisualStyleBackColor = true;
-
-
-
             this.rndSearchPay.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
-
-            this.rndSearchPay.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
             // 
             // rndSearcAll
             // 
@@ -368,14 +311,7 @@
             this.rndSearcAll.TabIndex = 11;
             this.rndSearcAll.Text = "ទាំងអស់";
             this.rndSearcAll.UseVisualStyleBackColor = true;
-
-
-
             this.rndSearcAll.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
-
-            this.rndSearcAll.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
             // 
             // rndSearchID
             // 
@@ -388,14 +324,7 @@
             this.rndSearchID.TabStop = true;
             this.rndSearchID.Text = "លេខកូដសម្គាល់";
             this.rndSearchID.UseVisualStyleBackColor = true;
-
-
-
             this.rndSearchID.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
-
-            this.rndSearchID.CheckedChanged += new System.EventHandler(this.rndSearchID_CheckedChanged);
-
             // 
             // groupBox1
             // 
@@ -734,10 +663,10 @@
             this.DataExpense.Location = new System.Drawing.Point(3, 34);
             this.DataExpense.Name = "DataExpense";
             this.DataExpense.ReadOnly = true;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            this.DataExpense.RowsDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            this.DataExpense.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DataExpense.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataExpense.Size = new System.Drawing.Size(922, 381);
             this.DataExpense.TabIndex = 0;
@@ -751,8 +680,8 @@
             // 
             // Column2
             // 
-            dataGridViewCellStyle13.Format = "ddd-dd-MMMM-yyyy";
-            this.Column2.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.Format = "ddd-dd-MMMM-yyyy";
+            this.Column2.DefaultCellStyle = dataGridViewCellStyle1;
             this.Column2.HeaderText = "ថ្ងៃកត់ត្រា";
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
@@ -771,8 +700,8 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle14.Format = "ddd-dd-MMMM-yyyy";
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Format = "ddd-dd-MMMM-yyyy";
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
             this.Column5.HeaderText = "ថ្ងៃចំណាយ";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;

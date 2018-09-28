@@ -92,10 +92,10 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.groupBox4);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(0, 364);
-            this.panel4.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.panel4.Location = new System.Drawing.Point(0, 296);
+            this.panel4.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1235, 548);
+            this.panel4.Size = new System.Drawing.Size(926, 412);
             this.panel4.TabIndex = 7;
             // 
             // groupBox4
@@ -104,10 +104,8 @@
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox4.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(1233, 546);
+            this.groupBox4.Size = new System.Drawing.Size(924, 410);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = " បញ្ជីបន្ទប់";
@@ -128,12 +126,11 @@
             this.Column2});
             this.dataRoom.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataRoom.GridColor = System.Drawing.Color.Teal;
-            this.dataRoom.Location = new System.Drawing.Point(4, 45);
-            this.dataRoom.Margin = new System.Windows.Forms.Padding(4);
+            this.dataRoom.Location = new System.Drawing.Point(3, 36);
             this.dataRoom.Name = "dataRoom";
             this.dataRoom.ReadOnly = true;
             this.dataRoom.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataRoom.Size = new System.Drawing.Size(1225, 497);
+            this.dataRoom.Size = new System.Drawing.Size(918, 371);
             this.dataRoom.TabIndex = 0;
             this.dataRoom.SelectionChanged += new System.EventHandler(this.dataRoom_SelectionChanged);
             // 
@@ -170,10 +167,10 @@
             this.panel3.Controls.Add(this.groupBox6);
             this.panel3.Controls.Add(this.groupDataEmployee);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 49);
-            this.panel3.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.panel3.Location = new System.Drawing.Point(0, 40);
+            this.panel3.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1235, 315);
+            this.panel3.Size = new System.Drawing.Size(926, 256);
             this.panel3.TabIndex = 6;
             // 
             // groupBox6
@@ -183,11 +180,9 @@
             this.groupBox6.Controls.Add(this.groupBox7);
             this.groupBox6.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox6.Font = new System.Drawing.Font("Khmer SN Kampot", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(723, 0);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox6.Location = new System.Drawing.Point(542, 0);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox6.Size = new System.Drawing.Size(503, 313);
+            this.groupBox6.Size = new System.Drawing.Size(377, 254);
             this.groupBox6.TabIndex = 2;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "ស្វែងរក";
@@ -195,9 +190,10 @@
             // panel8
             // 
             this.panel8.Controls.Add(this.btnCancelSearch);
-            this.panel8.Location = new System.Drawing.Point(315, 234);
+            this.panel8.Location = new System.Drawing.Point(236, 190);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(183, 46);
+            this.panel8.Size = new System.Drawing.Size(137, 37);
             this.panel8.TabIndex = 5;
             // 
             // btnCancelSearch
@@ -220,9 +216,9 @@
             this.btnCancelSearch.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCancelSearch.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCancelSearch.Location = new System.Drawing.Point(0, 0);
-            this.btnCancelSearch.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.btnCancelSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnCancelSearch.Name = "btnCancelSearch";
-            this.btnCancelSearch.Size = new System.Drawing.Size(183, 46);
+            this.btnCancelSearch.Size = new System.Drawing.Size(137, 37);
             this.btnCancelSearch.TabIndex = 5;
             this.btnCancelSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancelSearch.Visible = false;
@@ -233,10 +229,9 @@
             this.panel7.Controls.Add(this.btnSearch);
             this.panel7.Controls.Add(this.txtSearch);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(4, 187);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4);
+            this.panel7.Location = new System.Drawing.Point(3, 151);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(495, 40);
+            this.panel7.Size = new System.Drawing.Size(371, 32);
             this.panel7.TabIndex = 1;
             // 
             // btnSearch
@@ -258,10 +253,10 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.White;
             this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
             this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
-            this.btnSearch.Location = new System.Drawing.Point(311, 0);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.btnSearch.Location = new System.Drawing.Point(234, 0);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(184, 44);
+            this.btnSearch.Size = new System.Drawing.Size(137, 36);
             this.btnSearch.TabIndex = 1;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
@@ -271,9 +266,8 @@
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Left;
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(0, 0);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(311, 34);
+            this.txtSearch.Size = new System.Drawing.Size(234, 29);
             this.txtSearch.TabIndex = 0;
             // 
             // groupBox7
@@ -283,11 +277,9 @@
             this.groupBox7.Controls.Add(this.rndSearchRoomType);
             this.groupBox7.Controls.Add(this.rndSearchRoomNum);
             this.groupBox7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox7.Location = new System.Drawing.Point(4, 42);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox7.Location = new System.Drawing.Point(3, 33);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox7.Size = new System.Drawing.Size(495, 145);
+            this.groupBox7.Size = new System.Drawing.Size(371, 118);
             this.groupBox7.TabIndex = 0;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "លក្ខខណ្ឌ";
@@ -295,10 +287,9 @@
             // rndStutus
             // 
             this.rndStutus.AutoSize = true;
-            this.rndStutus.Location = new System.Drawing.Point(28, 80);
-            this.rndStutus.Margin = new System.Windows.Forms.Padding(4);
+            this.rndStutus.Location = new System.Drawing.Point(21, 65);
             this.rndStutus.Name = "rndStutus";
-            this.rndStutus.Size = new System.Drawing.Size(108, 42);
+            this.rndStutus.Size = new System.Drawing.Size(86, 34);
             this.rndStutus.TabIndex = 1;
             this.rndStutus.Text = "ស្ថានភាព";
             this.rndStutus.UseVisualStyleBackColor = true;
@@ -306,10 +297,9 @@
             // rndSearchFloor
             // 
             this.rndSearchFloor.AutoSize = true;
-            this.rndSearchFloor.Location = new System.Drawing.Point(373, 44);
-            this.rndSearchFloor.Margin = new System.Windows.Forms.Padding(4);
+            this.rndSearchFloor.Location = new System.Drawing.Point(280, 36);
             this.rndSearchFloor.Name = "rndSearchFloor";
-            this.rndSearchFloor.Size = new System.Drawing.Size(69, 42);
+            this.rndSearchFloor.Size = new System.Drawing.Size(55, 34);
             this.rndSearchFloor.TabIndex = 0;
             this.rndSearchFloor.Text = "ជាន់";
             this.rndSearchFloor.UseVisualStyleBackColor = true;
@@ -317,10 +307,9 @@
             // rndSearchRoomType
             // 
             this.rndSearchRoomType.AutoSize = true;
-            this.rndSearchRoomType.Location = new System.Drawing.Point(197, 44);
-            this.rndSearchRoomType.Margin = new System.Windows.Forms.Padding(4);
+            this.rndSearchRoomType.Location = new System.Drawing.Point(148, 36);
             this.rndSearchRoomType.Name = "rndSearchRoomType";
-            this.rndSearchRoomType.Size = new System.Drawing.Size(134, 42);
+            this.rndSearchRoomType.Size = new System.Drawing.Size(107, 34);
             this.rndSearchRoomType.TabIndex = 0;
             this.rndSearchRoomType.Text = "ប្រភេទបន្ទប់";
             this.rndSearchRoomType.UseVisualStyleBackColor = true;
@@ -329,10 +318,9 @@
             // 
             this.rndSearchRoomNum.AutoSize = true;
             this.rndSearchRoomNum.Checked = true;
-            this.rndSearchRoomNum.Location = new System.Drawing.Point(28, 44);
-            this.rndSearchRoomNum.Margin = new System.Windows.Forms.Padding(4);
+            this.rndSearchRoomNum.Location = new System.Drawing.Point(21, 36);
             this.rndSearchRoomNum.Name = "rndSearchRoomNum";
-            this.rndSearchRoomNum.Size = new System.Drawing.Size(161, 42);
+            this.rndSearchRoomNum.Size = new System.Drawing.Size(130, 34);
             this.rndSearchRoomNum.TabIndex = 0;
             this.rndSearchRoomNum.TabStop = true;
             this.rndSearchRoomNum.Text = "លេខកូដសម្គាល់";
@@ -345,10 +333,10 @@
             this.groupDataEmployee.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupDataEmployee.Font = new System.Drawing.Font("Khmer SN Kampot", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupDataEmployee.Location = new System.Drawing.Point(0, 0);
-            this.groupDataEmployee.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.groupDataEmployee.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.groupDataEmployee.Name = "groupDataEmployee";
-            this.groupDataEmployee.Padding = new System.Windows.Forms.Padding(7, 9, 7, 9);
-            this.groupDataEmployee.Size = new System.Drawing.Size(723, 313);
+            this.groupDataEmployee.Padding = new System.Windows.Forms.Padding(5, 7, 5, 7);
+            this.groupDataEmployee.Size = new System.Drawing.Size(542, 254);
             this.groupDataEmployee.TabIndex = 0;
             this.groupDataEmployee.TabStop = false;
             this.groupDataEmployee.Text = "ព័ត៌មានបន្ទប់";
@@ -359,10 +347,9 @@
             this.panel6.Controls.Add(this.btnEdit);
             this.panel6.Controls.Add(this.btnAdd);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel6.Location = new System.Drawing.Point(7, 214);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4);
+            this.panel6.Location = new System.Drawing.Point(5, 173);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(709, 48);
+            this.panel6.Size = new System.Drawing.Size(532, 39);
             this.panel6.TabIndex = 4;
             // 
             // btnDelete
@@ -384,10 +371,10 @@
             this.btnDelete.IdleFillColor = System.Drawing.Color.White;
             this.btnDelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.Location = new System.Drawing.Point(384, 0);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.btnDelete.Location = new System.Drawing.Point(288, 0);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(192, 48);
+            this.btnDelete.Size = new System.Drawing.Size(144, 39);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -411,10 +398,10 @@
             this.btnEdit.IdleFillColor = System.Drawing.Color.White;
             this.btnEdit.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEdit.Location = new System.Drawing.Point(192, 0);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.btnEdit.Location = new System.Drawing.Point(144, 0);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(192, 48);
+            this.btnEdit.Size = new System.Drawing.Size(144, 39);
             this.btnEdit.TabIndex = 3;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -439,9 +426,9 @@
             this.btnAdd.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAdd.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnAdd.Location = new System.Drawing.Point(0, 0);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(5, 8, 5, 8);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(192, 48);
+            this.btnAdd.Size = new System.Drawing.Size(144, 39);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -458,10 +445,9 @@
             this.panel5.Controls.Add(this.txtID);
             this.panel5.Controls.Add(this.label2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(7, 47);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4);
+            this.panel5.Location = new System.Drawing.Point(5, 37);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(709, 167);
+            this.panel5.Size = new System.Drawing.Size(532, 136);
             this.panel5.TabIndex = 2;
             // 
             // CMFloor
@@ -474,39 +460,35 @@
             "2",
             "3",
             "4"});
-            this.CMFloor.Location = new System.Drawing.Point(221, 54);
-            this.CMFloor.Margin = new System.Windows.Forms.Padding(4);
+            this.CMFloor.Location = new System.Drawing.Point(166, 44);
             this.CMFloor.Name = "CMFloor";
-            this.CMFloor.Size = new System.Drawing.Size(192, 35);
+            this.CMFloor.Size = new System.Drawing.Size(145, 29);
             this.CMFloor.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(183, 122);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(137, 99);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 38);
+            this.label4.Size = new System.Drawing.Size(17, 30);
             this.label4.TabIndex = 4;
             this.label4.Text = ":";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(183, 53);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(137, 43);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(23, 38);
+            this.label6.Size = new System.Drawing.Size(17, 30);
             this.label6.TabIndex = 5;
             this.label6.Text = ":";
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(183, 10);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Location = new System.Drawing.Point(137, 8);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(23, 38);
+            this.label10.Size = new System.Drawing.Size(17, 30);
             this.label10.TabIndex = 5;
             this.label10.Text = ":";
             // 
@@ -516,11 +498,9 @@
             this.groupBox9.Controls.Add(this.rndDouble);
             this.groupBox9.Controls.Add(this.rndSingle);
             this.groupBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox9.Location = new System.Drawing.Point(221, 101);
-            this.groupBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox9.Location = new System.Drawing.Point(166, 82);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox9.Size = new System.Drawing.Size(340, 62);
+            this.groupBox9.Size = new System.Drawing.Size(255, 50);
             this.groupBox9.TabIndex = 6;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "   ";
@@ -528,10 +508,9 @@
             // rndVip
             // 
             this.rndVip.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rndVip.Location = new System.Drawing.Point(221, 17);
-            this.rndVip.Margin = new System.Windows.Forms.Padding(4);
+            this.rndVip.Location = new System.Drawing.Point(166, 14);
             this.rndVip.Name = "rndVip";
-            this.rndVip.Size = new System.Drawing.Size(113, 44);
+            this.rndVip.Size = new System.Drawing.Size(85, 36);
             this.rndVip.TabIndex = 2;
             this.rndVip.Text = "VIP";
             this.rndVip.UseVisualStyleBackColor = true;
@@ -539,10 +518,9 @@
             // rndDouble
             // 
             this.rndDouble.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rndDouble.Location = new System.Drawing.Point(112, 17);
-            this.rndDouble.Margin = new System.Windows.Forms.Padding(4);
+            this.rndDouble.Location = new System.Drawing.Point(84, 14);
             this.rndDouble.Name = "rndDouble";
-            this.rndDouble.Size = new System.Drawing.Size(113, 44);
+            this.rndDouble.Size = new System.Drawing.Size(85, 36);
             this.rndDouble.TabIndex = 1;
             this.rndDouble.Text = "Double";
             this.rndDouble.UseVisualStyleBackColor = true;
@@ -551,10 +529,9 @@
             // 
             this.rndSingle.Checked = true;
             this.rndSingle.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rndSingle.Location = new System.Drawing.Point(0, 17);
-            this.rndSingle.Margin = new System.Windows.Forms.Padding(4);
+            this.rndSingle.Location = new System.Drawing.Point(0, 14);
             this.rndSingle.Name = "rndSingle";
-            this.rndSingle.Size = new System.Drawing.Size(113, 44);
+            this.rndSingle.Size = new System.Drawing.Size(85, 36);
             this.rndSingle.TabIndex = 1;
             this.rndSingle.TabStop = true;
             this.rndSingle.Text = "Single";
@@ -563,39 +540,35 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 118);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(18, 96);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 38);
+            this.label3.Size = new System.Drawing.Size(89, 30);
             this.label3.TabIndex = 2;
             this.label3.Text = "ប្រភេទបន្ទប់";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(24, 50);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(18, 41);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(48, 38);
+            this.label5.Size = new System.Drawing.Size(37, 30);
             this.label5.TabIndex = 3;
             this.label5.Text = "ជាន់";
             // 
             // txtID
             // 
             this.txtID.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtID.Location = new System.Drawing.Point(221, 11);
-            this.txtID.Margin = new System.Windows.Forms.Padding(4);
+            this.txtID.Location = new System.Drawing.Point(166, 9);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(192, 34);
+            this.txtID.Size = new System.Drawing.Size(145, 29);
             this.txtID.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 7);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(18, 6);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 38);
+            this.label2.Size = new System.Drawing.Size(112, 30);
             this.label2.TabIndex = 3;
             this.label2.Text = "លេខកូដសម្គាល់";
             // 
@@ -603,10 +576,10 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkSlateBlue;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 912);
-            this.panel2.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.panel2.Location = new System.Drawing.Point(0, 708);
+            this.panel2.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1235, 49);
+            this.panel2.Size = new System.Drawing.Size(926, 40);
             this.panel2.TabIndex = 5;
             // 
             // panel1
@@ -616,9 +589,9 @@
             this.panel1.Controls.Add(this.btnback);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(7, 9, 7, 9);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5, 7, 5, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1235, 49);
+            this.panel1.Size = new System.Drawing.Size(926, 40);
             this.panel1.TabIndex = 4;
             // 
             // label1
@@ -626,10 +599,10 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Right;
             this.label1.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(1046, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label1.Location = new System.Drawing.Point(784, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(189, 49);
+            this.label1.Size = new System.Drawing.Size(142, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "ព័ត៌មានបន្ទប់";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -654,24 +627,23 @@
             this.btnback.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnback.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnback.Location = new System.Drawing.Point(0, 0);
-            this.btnback.Margin = new System.Windows.Forms.Padding(11, 15, 11, 15);
+            this.btnback.Margin = new System.Windows.Forms.Padding(8, 12, 8, 12);
             this.btnback.Name = "btnback";
-            this.btnback.Size = new System.Drawing.Size(89, 49);
+            this.btnback.Size = new System.Drawing.Size(67, 40);
             this.btnback.TabIndex = 2;
             this.btnback.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
             // RoomData
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1235, 961);
+            this.ClientSize = new System.Drawing.Size(926, 748);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RoomData";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "RoomData";

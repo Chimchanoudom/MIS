@@ -28,6 +28,10 @@ namespace GuestHouse
         private void checkin_Load(object sender, EventArgs e)
         {
             FillItem();
+            foreach(String s in cmCustomer.Items)
+            {
+                MessageBox.Show(cmCustomer.ValueMember);
+            }
         }
 
         private void rnd3_CheckedChanged(object sender, EventArgs e)
@@ -65,13 +69,7 @@ namespace GuestHouse
 
         private void cmCustomer_SelectedIndexChanged(object sender, EventArgs e)
         {
-  //foreach(String s in cmCustomer.Items)
-  //          {
-  //              if (cmCustomer.Text != s)
-  //              {
-  //                  txtIDCus.Text = "123";
-  //              }
-  //          }
+            
         }
 
         private void cmCustomer_KeyPress(object sender, KeyPressEventArgs e)
@@ -87,12 +85,32 @@ namespace GuestHouse
 
         private void cmCustomer_MouseLeave(object sender, EventArgs e)
         {
-            foreach (String S in cmCustomer.Items)
+            
+        }
+        String IDCus="",IDcheckIN="";
+        private void cmCustomer_TextChanged(object sender, EventArgs e)
+        {
+            if (cmCustomer.SelectedIndex == -1)
             {
-                if (cmCustomer.Text.ToLower() != S.ToLower())
+                foreach (String S in cmCustomer.Items)
                 {
-                    txtIDCus.Text = "123";
+                    if (cmCustomer.Text.ToLower() != S.ToLower())
+                    {
+                        if (IDCus == "")
+                        {
+                            IDCus = dom_Design.GenerateID(Dom_SqlClass.GetIDFromDB("cusID", "_", "customer"), "Cus_00");
+                        }
+                        else
+                        {
+                            IDCus = dom_Design.GenerateID(IDCus, "Cus_00");
+                        }
+                        txtIDCus.Text = IDCus;
+                    }
                 }
+            }
+            else
+            {
+                
             }
         }
     }

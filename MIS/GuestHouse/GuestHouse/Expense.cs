@@ -77,8 +77,8 @@ namespace GuestHouse
                     DateTime DP = datePay.Value;
                     float Amount =float.Parse( txtAmount.Text);
                     Statement1 = @"INSERT INTO Expense Values( '"+EID+"',"+"'"+DN.ToShortDateString()+"');";
-                    Statement2 = @"INSERT INTO ExpenseDetail Values('" + EID + "', " + "'" + cmType.ValueMember + "', "+"'"+Name+"',"+"'"+Amount+"',"+"'"+DP.ToShortDateString()+"');";
-                   // MessageBox.Show(Statement1 + "\n" + Statement2);
+                    Statement2 = @"INSERT INTO ExpenseDetail Values('" + EID + "', " + "'" + cmType.ValueMember + "', "+"'"+Name+"',"+""+((float)Amount)+","+"'"+DP.ToShortDateString()+"');";
+                    MessageBox.Show(Statement1 + "\n" + Statement2);
                    if( Dom_SqlClass.SQLMultiTable(new string[] { Statement1, Statement2 }) == true)
                     {
                         DataExpense.Rows.Add(new object[] { EID,DN,Type,Name,DP,Amount});
