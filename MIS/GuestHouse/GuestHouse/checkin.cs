@@ -21,12 +21,13 @@ namespace GuestHouse
         {
             this.Close();
         }
-
-        private void checkin_Load(object sender, EventArgs e)
+        void FillItem()
         {
             Dom_SqlClass.FillItemToCombobox(@"SELECT CusID,CONCAT(Customer.Fname,' ',Customer.Lname) AS 'fullName' FROM Customer;", "CusID", "fullName", cmCustomer);
-
-
+        }
+        private void checkin_Load(object sender, EventArgs e)
+        {
+            FillItem();
         }
 
         private void rnd3_CheckedChanged(object sender, EventArgs e)
@@ -45,6 +46,7 @@ namespace GuestHouse
 
             datecheckout.Value = datecheckin.Value.AddHours(time);
             datecheckout.Enabled = false;
+             
           //  MessageBox.Show(datecheckout.Value.ToString("dd/MM/yyyy")+" " +datecheckout.Value.ToShortTimeString());
         }
 
@@ -85,9 +87,12 @@ namespace GuestHouse
 
         private void cmCustomer_MouseLeave(object sender, EventArgs e)
         {
-            if (cmCustomer.SelectedIndex == -1)
+            foreach (String S in cmCustomer.Items)
             {
-                txtIDCus.Text = "123";
+                if (cmCustomer.Text.ToLower() != S.ToLower())
+                {
+                    txtIDCus.Text = "123";
+                }
             }
         }
     }

@@ -51,12 +51,10 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.CmRoomNum = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.radioButton5 = new System.Windows.Forms.RadioButton();
@@ -128,6 +126,7 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox2.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -208,7 +207,7 @@
             this.cmCustomer.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmCustomer.FormattingEnabled = true;
             this.cmCustomer.Location = new System.Drawing.Point(128, 24);
-            this.cmCustomer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmCustomer.Margin = new System.Windows.Forms.Padding(2);
             this.cmCustomer.Name = "cmCustomer";
             this.cmCustomer.Size = new System.Drawing.Size(148, 25);
             this.cmCustomer.TabIndex = 100031;
@@ -220,7 +219,7 @@
             // 
             this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(128, 110);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(148, 26);
             this.textBox5.TabIndex = 100033;
@@ -239,7 +238,7 @@
             // 
             this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.Location = new System.Drawing.Point(128, 80);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(148, 26);
             this.textBox4.TabIndex = 100033;
@@ -279,7 +278,7 @@
             this.panel9.Controls.Add(this.radioButton10);
             this.panel9.Controls.Add(this.radioButton11);
             this.panel9.Location = new System.Drawing.Point(128, 48);
-            this.panel9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel9.Margin = new System.Windows.Forms.Padding(2);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(147, 28);
             this.panel9.TabIndex = 0;
@@ -291,7 +290,7 @@
             this.radioButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton10.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton10.Location = new System.Drawing.Point(57, 0);
-            this.radioButton10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton10.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton10.Name = "radioButton10";
             this.radioButton10.Size = new System.Drawing.Size(46, 28);
             this.radioButton10.TabIndex = 100013;
@@ -306,7 +305,7 @@
             this.radioButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton11.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton11.Location = new System.Drawing.Point(0, 0);
-            this.radioButton11.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton11.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton11.Name = "radioButton11";
             this.radioButton11.Size = new System.Drawing.Size(57, 28);
             this.radioButton11.TabIndex = 100013;
@@ -404,37 +403,11 @@
             this.label3.TabIndex = 100019;
             this.label3.Text = "តម្លៃបន្ទប់";
             // 
-            // btnSearch
-            // 
-            this.btnSearch.ActiveBorderThickness = 1;
-            this.btnSearch.ActiveCornerRadius = 0;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.Fuchsia;
-            this.btnSearch.ActiveForecolor = System.Drawing.Color.Fuchsia;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.Fuchsia;
-            this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
-            this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
-            this.btnSearch.ButtonText = "ស្វែរកការកក់";
-            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSearch.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Fuchsia;
-            this.btnSearch.IdleBorderThickness = 1;
-            this.btnSearch.IdleCornerRadius = 20;
-            this.btnSearch.IdleFillColor = System.Drawing.Color.White;
-            this.btnSearch.IdleForecolor = System.Drawing.Color.Fuchsia;
-            this.btnSearch.IdleLineColor = System.Drawing.Color.Fuchsia;
-            this.btnSearch.Location = new System.Drawing.Point(463, 21);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(85, 38);
-            this.btnSearch.TabIndex = 22;
-            this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.bunifuThinButton22);
             this.groupBox1.Controls.Add(this.CmRoomNum);
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.panel7);
@@ -445,6 +418,7 @@
             this.groupBox1.Controls.Add(this.datecheckout);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label17);
+            this.groupBox1.Controls.Add(this.bunifuThinButton22);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label13);
             this.groupBox1.Controls.Add(this.label6);
@@ -454,14 +428,13 @@
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label12);
-            this.groupBox1.Controls.Add(this.btnSearch);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(555, 353);
+            this.groupBox1.Size = new System.Drawing.Size(466, 353);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ព័ត៌មានស្នាក់នៅ";
@@ -470,7 +443,7 @@
             // 
             this.textBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(136, 251);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(147, 29);
             this.textBox3.TabIndex = 100033;
@@ -479,7 +452,7 @@
             // 
             this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(164, 217);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(120, 29);
             this.textBox2.TabIndex = 100033;
@@ -488,35 +461,10 @@
             // 
             this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(136, 184);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(148, 29);
             this.textBox1.TabIndex = 100033;
-            // 
-            // bunifuThinButton22
-            // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "តម្លៃបន្ទប់";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(289, 183);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(90, 30);
-            this.bunifuThinButton22.TabIndex = 100032;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CmRoomNum
             // 
@@ -526,7 +474,7 @@
             this.CmRoomNum.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CmRoomNum.FormattingEnabled = true;
             this.CmRoomNum.Location = new System.Drawing.Point(136, 155);
-            this.CmRoomNum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CmRoomNum.Margin = new System.Windows.Forms.Padding(2);
             this.CmRoomNum.Name = "CmRoomNum";
             this.CmRoomNum.Size = new System.Drawing.Size(148, 25);
             this.CmRoomNum.TabIndex = 100031;
@@ -536,7 +484,7 @@
             this.panel6.Controls.Add(this.radioButton5);
             this.panel6.Controls.Add(this.radioButton6);
             this.panel6.Location = new System.Drawing.Point(136, 118);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel6.Margin = new System.Windows.Forms.Padding(2);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(182, 28);
             this.panel6.TabIndex = 0;
@@ -548,7 +496,7 @@
             this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton5.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton5.Location = new System.Drawing.Point(57, 0);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton5.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(100, 28);
             this.radioButton5.TabIndex = 100013;
@@ -563,7 +511,7 @@
             this.radioButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton6.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton6.Location = new System.Drawing.Point(0, 0);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton6.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(57, 28);
             this.radioButton6.TabIndex = 100013;
@@ -579,7 +527,7 @@
             this.panel7.Controls.Add(this.rnd6);
             this.panel7.Controls.Add(this.rnd3);
             this.panel7.Location = new System.Drawing.Point(137, 21);
-            this.panel7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel7.Margin = new System.Windows.Forms.Padding(2);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(323, 28);
             this.panel7.TabIndex = 0;
@@ -591,7 +539,7 @@
             this.rndover24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rndover24.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rndover24.Location = new System.Drawing.Point(216, 0);
-            this.rndover24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rndover24.Margin = new System.Windows.Forms.Padding(2);
             this.rndover24.Name = "rndover24";
             this.rndover24.Size = new System.Drawing.Size(108, 28);
             this.rndover24.TabIndex = 4;
@@ -607,7 +555,7 @@
             this.rnd24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rnd24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rnd24.Location = new System.Drawing.Point(158, 0);
-            this.rnd24.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rnd24.Margin = new System.Windows.Forms.Padding(2);
             this.rnd24.Name = "rnd24";
             this.rnd24.Size = new System.Drawing.Size(58, 28);
             this.rnd24.TabIndex = 3;
@@ -623,7 +571,7 @@
             this.rnd12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rnd12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rnd12.Location = new System.Drawing.Point(100, 0);
-            this.rnd12.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rnd12.Margin = new System.Windows.Forms.Padding(2);
             this.rnd12.Name = "rnd12";
             this.rnd12.Size = new System.Drawing.Size(58, 28);
             this.rnd12.TabIndex = 3;
@@ -639,7 +587,7 @@
             this.rnd6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rnd6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rnd6.Location = new System.Drawing.Point(50, 0);
-            this.rnd6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rnd6.Margin = new System.Windows.Forms.Padding(2);
             this.rnd6.Name = "rnd6";
             this.rnd6.Size = new System.Drawing.Size(50, 28);
             this.rnd6.TabIndex = 2;
@@ -655,7 +603,7 @@
             this.rnd3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rnd3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rnd3.Location = new System.Drawing.Point(0, 0);
-            this.rnd3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rnd3.Margin = new System.Windows.Forms.Padding(2);
             this.rnd3.Name = "rnd3";
             this.rnd3.Size = new System.Drawing.Size(50, 28);
             this.rnd3.TabIndex = 1;
@@ -670,7 +618,7 @@
             this.panel5.Controls.Add(this.radioButton2);
             this.panel5.Controls.Add(this.radioButton1);
             this.panel5.Location = new System.Drawing.Point(136, 83);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(267, 28);
             this.panel5.TabIndex = 0;
@@ -682,7 +630,7 @@
             this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton3.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton3.Location = new System.Drawing.Point(135, 0);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(99, 28);
             this.radioButton3.TabIndex = 100013;
@@ -697,7 +645,7 @@
             this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton2.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton2.Location = new System.Drawing.Point(71, 0);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(64, 28);
             this.radioButton2.TabIndex = 100013;
@@ -712,7 +660,7 @@
             this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.radioButton1.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radioButton1.Location = new System.Drawing.Point(0, 0);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(71, 28);
             this.radioButton1.TabIndex = 100013;
@@ -756,7 +704,7 @@
             this.datecheckout.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datecheckout.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datecheckout.Location = new System.Drawing.Point(137, 54);
-            this.datecheckout.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datecheckout.Margin = new System.Windows.Forms.Padding(2);
             this.datecheckout.Name = "datecheckout";
             this.datecheckout.Size = new System.Drawing.Size(158, 26);
             this.datecheckout.TabIndex = 1;
@@ -879,7 +827,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(0, 40);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1074, 355);
             this.panel3.TabIndex = 0;
@@ -890,8 +838,8 @@
             this.panel8.Controls.Add(this.groupBox3);
             this.panel8.Controls.Add(this.groupBox2);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(555, 0);
-            this.panel8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel8.Location = new System.Drawing.Point(466, 0);
+            this.panel8.Margin = new System.Windows.Forms.Padding(2);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(424, 353);
             this.panel8.TabIndex = 1;
@@ -904,7 +852,7 @@
             this.panel10.Controls.Add(this.btnAdd);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 319);
-            this.panel10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel10.Margin = new System.Windows.Forms.Padding(2);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(424, 32);
             this.panel10.TabIndex = 6;
@@ -1034,9 +982,9 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBox3.Location = new System.Drawing.Point(0, 146);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(424, 173);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -1086,9 +1034,9 @@
             // 
             this.textBox9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.Location = new System.Drawing.Point(128, 144);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox9.Margin = new System.Windows.Forms.Padding(2);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(148, 26);
+            this.textBox9.Size = new System.Drawing.Size(161, 26);
             this.textBox9.TabIndex = 100033;
             // 
             // label34
@@ -1105,9 +1053,9 @@
             // 
             this.txtIDCus.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIDCus.Location = new System.Drawing.Point(128, 111);
-            this.txtIDCus.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIDCus.Margin = new System.Windows.Forms.Padding(2);
             this.txtIDCus.Name = "txtIDCus";
-            this.txtIDCus.Size = new System.Drawing.Size(148, 26);
+            this.txtIDCus.Size = new System.Drawing.Size(161, 26);
             this.txtIDCus.TabIndex = 100033;
             // 
             // label32
@@ -1124,9 +1072,9 @@
             // 
             this.textBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(128, 81);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(2);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(148, 26);
+            this.textBox6.Size = new System.Drawing.Size(161, 26);
             this.textBox6.TabIndex = 100033;
             // 
             // label9
@@ -1143,9 +1091,9 @@
             // 
             this.textBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.Location = new System.Drawing.Point(128, 20);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(148, 26);
+            this.textBox7.Size = new System.Drawing.Size(161, 26);
             this.textBox7.TabIndex = 100033;
             // 
             // label31
@@ -1164,9 +1112,9 @@
             this.datecheckin.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.datecheckin.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.datecheckin.Location = new System.Drawing.Point(128, 51);
-            this.datecheckin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.datecheckin.Margin = new System.Windows.Forms.Padding(2);
             this.datecheckin.Name = "datecheckin";
-            this.datecheckin.Size = new System.Drawing.Size(147, 26);
+            this.datecheckin.Size = new System.Drawing.Size(160, 26);
             this.datecheckin.TabIndex = 100015;
             this.datecheckin.ValueChanged += new System.EventHandler(this.datecheckin_ValueChanged);
             // 
@@ -1188,10 +1136,10 @@
             this.bunifuThinButton23.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton23.IdleForecolor = System.Drawing.Color.Fuchsia;
             this.bunifuThinButton23.IdleLineColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton23.Location = new System.Drawing.Point(281, 41);
+            this.bunifuThinButton23.Location = new System.Drawing.Point(299, 44);
             this.bunifuThinButton23.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.bunifuThinButton23.Name = "bunifuThinButton23";
-            this.bunifuThinButton23.Size = new System.Drawing.Size(99, 40);
+            this.bunifuThinButton23.Size = new System.Drawing.Size(112, 40);
             this.bunifuThinButton23.TabIndex = 100032;
             this.bunifuThinButton23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -1223,7 +1171,7 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel4.Location = new System.Drawing.Point(0, 395);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1074, 180);
             this.panel4.TabIndex = 21;
@@ -1232,11 +1180,11 @@
             // 
             this.groupBox5.Controls.Add(this.dataGridView1);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox5.Location = new System.Drawing.Point(405, 0);
-            this.groupBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox5.Location = new System.Drawing.Point(466, 0);
+            this.groupBox5.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox5.Size = new System.Drawing.Size(667, 178);
+            this.groupBox5.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox5.Size = new System.Drawing.Size(606, 178);
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "ព័តមានបន្ទប់ស្នាក់នៅ";
@@ -1259,10 +1207,10 @@
             this.Column11});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(2, 29);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(663, 147);
+            this.dataGridView1.Size = new System.Drawing.Size(602, 147);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column6
@@ -1326,10 +1274,10 @@
             this.groupBox4.Controls.Add(this.dataGridView2);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox4.Size = new System.Drawing.Size(405, 178);
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox4.Size = new System.Drawing.Size(466, 178);
             this.groupBox4.TabIndex = 0;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ព័តមានការស្នាកនៅ";
@@ -1351,10 +1299,10 @@
             this.Column4});
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.Location = new System.Drawing.Point(2, 29);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(401, 147);
+            this.dataGridView2.Size = new System.Drawing.Size(462, 147);
             this.dataGridView2.TabIndex = 1;
             // 
             // Column1
@@ -1386,6 +1334,31 @@
             this.Column4.HeaderText = "តម្លៃសរុប";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
+            // 
+            // bunifuThinButton22
+            // 
+            this.bunifuThinButton22.ActiveBorderThickness = 1;
+            this.bunifuThinButton22.ActiveCornerRadius = 20;
+            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Fuchsia;
+            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
+            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Fuchsia;
+            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
+            this.bunifuThinButton22.ButtonText = "តម្លៃបន្ទប់";
+            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton22.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Fuchsia;
+            this.bunifuThinButton22.IdleBorderThickness = 1;
+            this.bunifuThinButton22.IdleCornerRadius = 20;
+            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
+            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Fuchsia;
+            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Fuchsia;
+            this.bunifuThinButton22.Location = new System.Drawing.Point(295, 184);
+            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.bunifuThinButton22.Name = "bunifuThinButton22";
+            this.bunifuThinButton22.Size = new System.Drawing.Size(75, 32);
+            this.bunifuThinButton22.TabIndex = 100032;
+            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // checkin
             // 
@@ -1434,8 +1407,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox1;
-
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private Bunifu.Framework.UI.BunifuThinButton2 btnback;
@@ -1499,7 +1470,6 @@
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox1;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
         private System.Windows.Forms.RadioButton rndover24;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Label label33;
@@ -1532,6 +1502,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
-
+        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
     }
 }
