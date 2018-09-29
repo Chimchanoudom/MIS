@@ -24,14 +24,12 @@ namespace GuestHouse
         void FillItem()
         {
             Dom_SqlClass.FillItemToCombobox(@"SELECT CusID,CONCAT(Customer.Fname,' ',Customer.Lname) AS 'fullName' FROM Customer;", "CusID", "fullName", cmCustomer);
+
         }
         private void checkin_Load(object sender, EventArgs e)
         {
-            FillItem();
-            foreach(String s in cmCustomer.Items)
-            {
-                MessageBox.Show(cmCustomer.ValueMember);
-            }
+            //FillItem();
+           txtEmpID.Text= UserLoginDetail.empID;
         }
 
         private void rnd3_CheckedChanged(object sender, EventArgs e)
@@ -88,6 +86,30 @@ namespace GuestHouse
             
         }
         String IDCus="",IDcheckIN="";
+
+        private void textBox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
+        private void btngetPrice_Click(object sender, EventArgs e)
+        {
+            String[] Time = new string[2];
+            String  Type = "";
+            String Statement = "";
+            foreach (RadioButton rnd in pnhr.Controls)
+            {
+                if(rnd.Checked)
+                Time = rnd.Text.Split(' ');
+            }
+            foreach (RadioButton rnd in pnRoom.Controls)
+            {
+                if (rnd.Checked)
+                    Type = RndSingle.Name.Substring(3);
+            }
+            
+        }
+
         private void cmCustomer_TextChanged(object sender, EventArgs e)
         {
             if (cmCustomer.SelectedIndex == -1)

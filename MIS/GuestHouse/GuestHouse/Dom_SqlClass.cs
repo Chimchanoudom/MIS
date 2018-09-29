@@ -78,7 +78,6 @@ class Dom_SqlClass:UserLoginDetail
                 SDA = new SqlDataAdapter(SC);
                 SCB = new SqlCommandBuilder(SDA);
                 SDA.Fill(DT);
-               
             }
             catch (Exception e )
             {
@@ -120,27 +119,24 @@ class Dom_SqlClass:UserLoginDetail
             }
             return insert;
         }
+
         public static void  FillItemToCombobox(String StatemenSelect ,String Valuemember,String DisplayMember,ComboBox cm)
         {
             try
             {
                 dataCon.Con.Open();
-                SC = new SqlCommand(StatemenSelect, dataCon.Con);
-                SqlDataReader SDR = SC.ExecuteReader();
-                while (SDR.Read())
-                {
-                    cm.Items.Add(SDR[DisplayMember].ToString());
-                    cm.ValueMember = SDR[Valuemember].ToString();
-                    cm.DisplayMember = SDR[DisplayMember].ToString();
-                }
-                SDR.Close();
-            }
-            catch (Exception)
-            {
-            }
-            finally
-            {
+                SqlDataAdapter dataAdapter = new SqlDataAdapter(StatemenSelect, dataCon.Con);
+                DataTable dataSource = new DataTable();
+                dataAdapter.Fill(dataSource);
+                cm.DataSource = dataSource;
+                cm.DisplayMember = DisplayMember;
+                cm.ValueMember = Valuemember;
                 dataCon.Con.Close();
+                cm.SelectedIndex = -1;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show(e.Message);
             }
         }
         public static Boolean Edit(object Edit)
