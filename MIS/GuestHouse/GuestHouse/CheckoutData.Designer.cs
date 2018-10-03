@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckoutData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -43,9 +43,9 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.rndName = new System.Windows.Forms.RadioButton();
+            this.rndCusID = new System.Windows.Forms.RadioButton();
             this.rndDateBook = new System.Windows.Forms.RadioButton();
-            this.rndTell = new System.Windows.Forms.RadioButton();
+            this.rndEmpName = new System.Windows.Forms.RadioButton();
             this.rndID = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -228,6 +228,7 @@
             this.btnCancel.Size = new System.Drawing.Size(123, 44);
             this.btnCancel.TabIndex = 1;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // dateTimePicker1
             // 
@@ -253,9 +254,9 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.rndName);
+            this.panel6.Controls.Add(this.rndCusID);
             this.panel6.Controls.Add(this.rndDateBook);
-            this.panel6.Controls.Add(this.rndTell);
+            this.panel6.Controls.Add(this.rndEmpName);
             this.panel6.Controls.Add(this.rndID);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(4, 42);
@@ -264,16 +265,16 @@
             this.panel6.Size = new System.Drawing.Size(644, 107);
             this.panel6.TabIndex = 4;
             // 
-            // rndName
+            // rndCusID
             // 
-            this.rndName.AutoSize = true;
-            this.rndName.Location = new System.Drawing.Point(270, 11);
-            this.rndName.Margin = new System.Windows.Forms.Padding(4);
-            this.rndName.Name = "rndName";
-            this.rndName.Size = new System.Drawing.Size(155, 42);
-            this.rndName.TabIndex = 1;
-            this.rndName.Text = "ឈ្មោះអតិថិជន";
-            this.rndName.UseVisualStyleBackColor = true;
+            this.rndCusID.AutoSize = true;
+            this.rndCusID.Location = new System.Drawing.Point(314, 11);
+            this.rndCusID.Margin = new System.Windows.Forms.Padding(4);
+            this.rndCusID.Name = "rndCusID";
+            this.rndCusID.Size = new System.Drawing.Size(170, 42);
+            this.rndCusID.TabIndex = 1;
+            this.rndCusID.Text = "លេខកូដអតិថិជន";
+            this.rndCusID.UseVisualStyleBackColor = true;
             // 
             // rndDateBook
             // 
@@ -281,21 +282,21 @@
             this.rndDateBook.Location = new System.Drawing.Point(178, 11);
             this.rndDateBook.Margin = new System.Windows.Forms.Padding(4);
             this.rndDateBook.Name = "rndDateBook";
-            this.rndDateBook.Size = new System.Drawing.Size(84, 42);
+            this.rndDateBook.Size = new System.Drawing.Size(128, 42);
             this.rndDateBook.TabIndex = 1;
-            this.rndDateBook.Text = "ថ្ងៃកក់";
+            this.rndDateBook.Text = "ថ្ងៃចាកចេញ";
             this.rndDateBook.UseVisualStyleBackColor = true;
             // 
-            // rndTell
+            // rndEmpName
             // 
-            this.rndTell.AutoSize = true;
-            this.rndTell.Location = new System.Drawing.Point(7, 60);
-            this.rndTell.Margin = new System.Windows.Forms.Padding(4);
-            this.rndTell.Name = "rndTell";
-            this.rndTell.Size = new System.Drawing.Size(200, 42);
-            this.rndTell.TabIndex = 3;
-            this.rndTell.Text = "លេខទូរស័ព្ទអតិថិជន";
-            this.rndTell.UseVisualStyleBackColor = true;
+            this.rndEmpName.AutoSize = true;
+            this.rndEmpName.Location = new System.Drawing.Point(7, 60);
+            this.rndEmpName.Margin = new System.Windows.Forms.Padding(4);
+            this.rndEmpName.Name = "rndEmpName";
+            this.rndEmpName.Size = new System.Drawing.Size(98, 42);
+            this.rndEmpName.TabIndex = 3;
+            this.rndEmpName.Text = "បុគ្គលិក";
+            this.rndEmpName.UseVisualStyleBackColor = true;
             // 
             // rndID
             // 
@@ -358,11 +359,11 @@
             this.dgvCheckOutDetail.MultiSelect = false;
             this.dgvCheckOutDetail.Name = "dgvCheckOutDetail";
             this.dgvCheckOutDetail.ReadOnly = true;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvCheckOutDetail.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCheckOutDetail.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCheckOutDetail.RowTemplate.Height = 45;
             this.dgvCheckOutDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCheckOutDetail.Size = new System.Drawing.Size(944, 337);
@@ -463,11 +464,11 @@
             this.dgvCheckOut.Name = "dgvCheckOut";
             this.dgvCheckOut.ReadOnly = true;
             this.dgvCheckOut.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvCheckOut.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCheckOut.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCheckOut.RowTemplate.Height = 45;
             this.dgvCheckOut.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCheckOut.Size = new System.Drawing.Size(847, 337);
@@ -542,9 +543,9 @@
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.RadioButton rndName;
+        private System.Windows.Forms.RadioButton rndCusID;
         private System.Windows.Forms.RadioButton rndDateBook;
-        private System.Windows.Forms.RadioButton rndTell;
+        private System.Windows.Forms.RadioButton rndEmpName;
         private System.Windows.Forms.RadioButton rndID;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.GroupBox groupBox1;

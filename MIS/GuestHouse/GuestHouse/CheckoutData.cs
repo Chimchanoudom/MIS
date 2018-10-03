@@ -72,7 +72,21 @@ namespace GuestHouse
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
+            string filter;
 
+            if (rndID.Checked) filter = "លេខកូដសម្គាល់=";
+            else if (rndDateBook.Checked) filter = "ថ្ងៃចាកចេញ=";
+            else if (rndCusID.Checked) filter = "លេខកូដសម្គាល់អតិថិជន=";
+            else filter = "បុគ្គលិក=";
+
+            filter += "'" + txtSearch.Text + "'";
+
+            dtCheckOut.DefaultView.RowFilter = filter;
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            dtCheckOut.DefaultView.RowFilter = String.Empty;
         }
     }
 }
