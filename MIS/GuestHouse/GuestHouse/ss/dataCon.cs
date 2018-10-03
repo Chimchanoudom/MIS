@@ -13,10 +13,10 @@ namespace GuestHouse
     {
         public static SqlConnection Con {
             get { return con; }
-            set { con=value; }
+            set { con = value; }
         }
 
-        static SqlConnection con=new SqlConnection("Server=localhost;Database=gh;Trusted_Connection=true;");
+        static SqlConnection con = new SqlConnection("Server=localhost;Database=gh;Trusted_Connection=true;");
 
         public static string FormatDateTime(DateTime dt)
         {
@@ -25,13 +25,13 @@ namespace GuestHouse
 
         public static SqlDataReader ExecuteQry(string qry)
         {
-            SqlDataReader dataReader=null;
+            SqlDataReader dataReader = null;
             SqlCommand sql = new SqlCommand(qry, con);
             dataReader = sql.ExecuteReader();
             return dataReader;
         }
 
-        
+
 
         public static DateTime ConvertStringToDateTime(string st)
         {
@@ -46,19 +46,19 @@ namespace GuestHouse
             return dt;
         }
 
-        public static void ExecuteActionQry(string qry,ref bool error)
+        public static void ExecuteActionQry(string qry, ref bool error)
         {
             error = false;
-            SqlTransaction trans=null;
+            SqlTransaction trans = null;
             try
             {
                 con.Open();
-                trans=con.BeginTransaction();          
+                trans = con.BeginTransaction();
                 SqlCommand sql = new SqlCommand(qry, con, trans);
                 sql.ExecuteNonQuery();
                 trans.Commit();
                 error = false;
-            }catch(Exception ex)
+            } catch (Exception ex)
             {
                 trans.Rollback();
                 MessageBox.Show(ex.Message);
@@ -78,16 +78,16 @@ namespace GuestHouse
                 string cmdInsert = "INSERT INTO " + TableName + " ";
                 string columns = "(";
                 string values = " VALUES (";
-          
+
                 foreach (string columnName in columnNameAndDataValues.Keys)
                 {
                     columns += columnName + ",";
-                    values += "N'"+columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
+                    values += "N'" + columnNameAndDataValues[columnName] + "'COLLATE Latin1_General_100_CI_AI,";
                 }
                 columns = columns.Substring(0, columns.Length - 1) + ")";
                 values = values.Substring(0, values.Length - 1) + ")";
 
-                string sqlCmd =cmdInsert+ columns + values + ";";
+                string sqlCmd = cmdInsert + columns + values + ";";
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
@@ -100,9 +100,9 @@ namespace GuestHouse
                 string cmdInsert = "INSERT INTO " + TableName + " ";
                 string values = " VALUES (";
 
-                for(int i = 0; i < dataToInsert.Length; i++)
+                for (int i = 0; i < dataToInsert.Length; i++)
                 {
-                    values+= "N'"+dataToInsert[i]+ "'COLLATE Latin1_General_100_CI_AI,"; 
+                    values += "N'" + dataToInsert[i] + "'COLLATE Latin1_General_100_CI_AI,";
                 }
                 values = values.Substring(0, values.Length - 1) + ");";
                 string sqlCmd = cmdInsert + values;
@@ -140,24 +140,32 @@ namespace GuestHouse
                 data = temp;
             }
 
-            public static void deleteDataFromDB(string TableName,string condition="")
+            public static void deleteDataFromDB(string TableName, string condition = "")
             {
                 string cmdDelete = "DELETE FROM " + TableName + " ";
 
                 condition = (condition == String.Empty) ? "WHERE 1=1;" : ((condition[condition.Length - 1]).ToString() == ";") ? condition : condition + ";";
 
-                string sqlCmd = cmdDelete+ condition;
+                string sqlCmd = cmdDelete + condition;
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
                 MessageBox.Show("Successfully DELETED!");
             }
 
-            
+
 
         }
 
         static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
+
+        public static void GetSpecificPrice(string roomTypeDesc,int hour,ref double roomPrice,ref double fan,ref double ac)
+        {
+            DataRow[] row = Price[roomTypeDesc].Select("HourType="+hour+"");
+            roomPrice = (double)row[0][1];
+            fan = (double)row[0][2];
+            ac = (double)row[0][3];
+        }
 
         public static void GetPrice()
         {
@@ -190,7 +198,8 @@ namespace GuestHouse
             con.Close();
         }
 
-        static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+        //getprice
+        public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
         {
             TimeSpan dif = dtEnd.Date - dtStart.Date;
 
