@@ -94,20 +94,48 @@ namespace GuestHouse
 
         private void btngetPrice_Click(object sender, EventArgs e)
         {
+            int Over24 = 0;
+            int OverDay = 0;
+
             String[] Time = new string[2];
             String  Type = "";
+            String Room = "";
             String Statement = "";
+            double Roomprice = 0;
+            double electricity = 0;
+            double subtotal = 0;
             foreach (RadioButton rnd in pnhr.Controls)
             {
-                if(rnd.Checked)
+                if(rnd.Checked&&rnd.Name!=rndover24.Name)
                 Time = rnd.Text.Split(' ');
+                else
+                {
+                    TimeSpan Over = (datecheckout.Value-datecheckin.Value);
+                    String over = Over.ToString();
+                    if (Over.TotalHours >= 24)
+                    {
+                        OverDay = int.Parse(over.Substring(1, 1));
+                    }
+                    else
+                    {
+
+                    }
+                    MessageBox.Show(Over+ "");
+
+                   
+                    Time = rnd24.Text.Split(' ');
+                }
             }
             foreach (RadioButton rnd in pnRoom.Controls)
             {
                 if (rnd.Checked)
                     Type = RndSingle.Name.Substring(3);
             }
-            
+            Room = CmRoomNum.SelectedItem.ToString();
+            // MessageBox.Show(Time[0] + " " + Type+" "+Room+" "+Over24);
+
+            dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, Type,ref Roomprice,true,ref electricity,ref subtotal);
+            MessageBox.Show(Roomprice+" "+electricity+" "+subtotal);
         }
 
         private void cmCustomer_TextChanged(object sender, EventArgs e)
