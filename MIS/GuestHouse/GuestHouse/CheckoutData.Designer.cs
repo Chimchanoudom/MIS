@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckoutData));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -50,12 +50,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dgvCheckOutDetail = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dgvCheckOut = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +58,12 @@
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dgvCheckOut = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -300,11 +300,13 @@
             // rndID
             // 
             this.rndID.AutoSize = true;
+            this.rndID.Checked = true;
             this.rndID.Location = new System.Drawing.Point(9, 10);
             this.rndID.Margin = new System.Windows.Forms.Padding(4);
             this.rndID.Name = "rndID";
             this.rndID.Size = new System.Drawing.Size(161, 42);
             this.rndID.TabIndex = 4;
+            this.rndID.TabStop = true;
             this.rndID.Text = "លេខកូដសម្គាល់";
             this.rndID.UseVisualStyleBackColor = true;
             // 
@@ -356,84 +358,15 @@
             this.dgvCheckOutDetail.MultiSelect = false;
             this.dgvCheckOutDetail.Name = "dgvCheckOutDetail";
             this.dgvCheckOutDetail.ReadOnly = true;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvCheckOutDetail.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCheckOutDetail.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCheckOutDetail.RowTemplate.Height = 45;
             this.dgvCheckOutDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCheckOutDetail.Size = new System.Drawing.Size(944, 337);
             this.dgvCheckOutDetail.TabIndex = 1;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.dgvCheckOut);
-            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.groupBox4.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(0, 0);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox4.Size = new System.Drawing.Size(855, 383);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "ទិន្នន័យការ";
-            // 
-            // dgvCheckOut
-            // 
-            this.dgvCheckOut.AllowUserToAddRows = false;
-            this.dgvCheckOut.AllowUserToDeleteRows = false;
-            this.dgvCheckOut.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvCheckOut.BackgroundColor = System.Drawing.Color.White;
-            this.dgvCheckOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCheckOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column5});
-            this.dgvCheckOut.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvCheckOut.GridColor = System.Drawing.Color.DarkSlateBlue;
-            this.dgvCheckOut.Location = new System.Drawing.Point(4, 42);
-            this.dgvCheckOut.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvCheckOut.MultiSelect = false;
-            this.dgvCheckOut.Name = "dgvCheckOut";
-            this.dgvCheckOut.ReadOnly = true;
-            this.dgvCheckOut.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvCheckOut.RowsDefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvCheckOut.RowTemplate.Height = 45;
-            this.dgvCheckOut.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCheckOut.Size = new System.Drawing.Size(847, 337);
-            this.dgvCheckOut.TabIndex = 0;
-            this.dgvCheckOut.SelectionChanged += new System.EventHandler(this.dgvCheckOut_SelectionChanged);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "លេខកូដសម្គាល់";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "ថ្ងៃចាកចេញ";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "លេខកូដសម្គាល់អតិថិជន";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "បុគ្គលិក";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // Column7
             // 
@@ -495,6 +428,75 @@
             this.Column13.HeaderText = "តម្លៃសរុប";
             this.Column13.Name = "Column13";
             this.Column13.ReadOnly = true;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.dgvCheckOut);
+            this.groupBox4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.groupBox4.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(0, 0);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox4.Size = new System.Drawing.Size(855, 383);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "ទិន្នន័យការ";
+            // 
+            // dgvCheckOut
+            // 
+            this.dgvCheckOut.AllowUserToAddRows = false;
+            this.dgvCheckOut.AllowUserToDeleteRows = false;
+            this.dgvCheckOut.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCheckOut.BackgroundColor = System.Drawing.Color.White;
+            this.dgvCheckOut.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCheckOut.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column5});
+            this.dgvCheckOut.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCheckOut.GridColor = System.Drawing.Color.DarkSlateBlue;
+            this.dgvCheckOut.Location = new System.Drawing.Point(4, 42);
+            this.dgvCheckOut.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvCheckOut.MultiSelect = false;
+            this.dgvCheckOut.Name = "dgvCheckOut";
+            this.dgvCheckOut.ReadOnly = true;
+            this.dgvCheckOut.RowHeadersVisible = false;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCheckOut.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvCheckOut.RowTemplate.Height = 45;
+            this.dgvCheckOut.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCheckOut.Size = new System.Drawing.Size(847, 337);
+            this.dgvCheckOut.TabIndex = 0;
+            this.dgvCheckOut.SelectionChanged += new System.EventHandler(this.dgvCheckOut_SelectionChanged);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "លេខកូដសម្គាល់";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "ថ្ងៃចាកចេញ";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "លេខកូដសម្គាល់អតិថិជន";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "បុគ្គលិក";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
             // 
             // CheckoutData
             // 
