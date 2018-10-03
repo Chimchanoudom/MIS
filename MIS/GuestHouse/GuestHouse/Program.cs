@@ -38,7 +38,7 @@ namespace GuestHouse
 
             //   Application.Run(new Login());
 
-            Application.Run(new checkin());
+            Application.Run(new CheckoutData());
 
             //Application.SetCompatibleTextRenderingDefault(false);
             //if (new Login().ShowDialog() == DialogResult.OK)
