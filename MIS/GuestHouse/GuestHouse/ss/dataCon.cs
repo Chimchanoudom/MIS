@@ -204,20 +204,20 @@ namespace GuestHouse
         {
             TimeSpan dif = dtEnd - dtStart;
 
-            if (dif.Hours < 0)
+            if (dif.TotalHours < 0)
                 return false;
 
             double overRoomPrice = 0, overElectricity = 0, overSubTotal = 0;
 
-            if (dif.Hours > 24)
+            if (dif.TotalHours > 24)
             {
                 int overHour;
                 
-                overHour = dif.Hours % 24;
+                overHour = (int)dif.TotalHours % 24;
 
                 GetSubTotal(overHour, roomTypeDesc,ref  overRoomPrice, pickAc,ref overElectricity, ref overSubTotal,1);
 
-                int multiply = dif.Hours / 24;
+                int multiply = (int)dif.TotalHours / 24;
 
                 GetSubTotal(24, roomTypeDesc, ref overRoomPrice, pickAc, ref overElectricity, ref overSubTotal, multiply);
 
@@ -225,7 +225,7 @@ namespace GuestHouse
             }
             else
             {
-                GetSubTotal(dif.Hours, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
+                GetSubTotal((int)dif.TotalHours, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
             }
 
             
@@ -233,7 +233,7 @@ namespace GuestHouse
             roomPrice += overRoomPrice;
             electricity += overElectricity;
             subTotal += overSubTotal;
-            hour = dif.Hours;
+            hour = (int)dif.TotalHours;
 
             return true;
 

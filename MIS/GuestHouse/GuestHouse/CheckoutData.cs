@@ -55,8 +55,8 @@ namespace GuestHouse
 
             dataCon.GetPrice();
 
-            DateTime dtStart = new DateTime(2018, 10, 4, 21, 0, 0);
-            DateTime dtEnd = new DateTime(2018, 10, 5, 0, 0, 0);
+            DateTime dtStart = new DateTime(2018, 10, 4, 0, 0, 0);
+            DateTime dtEnd = new DateTime(2018, 10, 5, 1, 0, 0);
             double roomPrice,electricity,subTotal;
 
             roomPrice = electricity=subTotal = 0;
