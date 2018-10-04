@@ -232,7 +232,7 @@ namespace GuestHouse
 
             roomPrice += overRoomPrice;
             electricity += overElectricity;
-            subTotal += subTotal;
+            subTotal += overSubTotal;
             hour = dif.Hours;
 
             return true;

@@ -60,7 +60,8 @@ namespace GuestHouse
             double roomPrice,electricity,subTotal;
 
             roomPrice = electricity=subTotal = 0;
-           
+            int hour = 0;
+            dataCon.CalculatePrice(dtStart, dtEnd, ref hour, "Single", ref roomPrice, false, ref electricity, ref subTotal);
 
             MessageBox.Show("");
         }

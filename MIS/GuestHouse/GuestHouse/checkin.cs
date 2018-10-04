@@ -134,7 +134,7 @@ namespace GuestHouse
             Room = CmRoomNum.SelectedItem.ToString();
             // MessageBox.Show(Time[0] + " " + Type+" "+Room+" "+Over24);
 
-            dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, Type,ref Roomprice,true,ref electricity,ref subtotal);
+            //dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, Type,ref Roomprice,true,ref electricity,ref subtotal);
             MessageBox.Show(Roomprice+" "+electricity+" "+subtotal);
         }
 
