@@ -52,6 +52,18 @@ namespace GuestHouse
             dgvCheckOut.DataSource = dtCheckOut;
 
             dgvCheckOut.ClearSelection();
+
+            dataCon.GetPrice();
+
+            DateTime dtStart = new DateTime(2018, 10, 4, 0, 0, 0);
+            DateTime dtEnd = new DateTime(2018, 10, 6, 1, 0, 0);
+            double roomPrice,electricity,subTotal;
+
+            roomPrice = electricity=subTotal = 0;
+            int hour = 0;
+            dataCon.CalculatePrice(dtStart, dtEnd, ref hour, "Single", ref roomPrice, false, ref electricity, ref subTotal);
+
+            MessageBox.Show("");
         }
 
         private void dgvCheckOut_SelectionChanged(object sender, EventArgs e)

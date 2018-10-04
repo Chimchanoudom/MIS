@@ -157,7 +157,7 @@ namespace GuestHouse
 
         }
 
-        static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
+        static Dictionary<string, DataTable> Price;
 
         public static void GetSpecificPrice(string roomTypeDesc,int hour,ref double roomPrice,ref double fan,ref double ac)
         {
@@ -169,6 +169,7 @@ namespace GuestHouse
 
         public static void GetPrice()
         {
+            Price = new Dictionary<string, DataTable>();
             string sql = "select roomTypeDesc,HourType,RoomPrice,Fan,ac from roomType r join price p on r.roomTypeID=p.roomTypeID;";
 
             con.Open();
@@ -199,15 +200,24 @@ namespace GuestHouse
         }
 
         //getprice
+<<<<<<< HEAD
         public static bool CalculatePrice(int dtStart, int dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
         {
             int dif = (dtEnd - dtStart);
 
             if (dif < 0)
+=======
+        public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,ref int hour,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+        {
+            TimeSpan dif = dtEnd - dtStart;
+
+            if (dif.TotalHours < 0)
+>>>>>>> e5f60d3aeaaa2ce2c4cec264a3ea7370bb4ea357
                 return false;
 
             double overRoomPrice = 0, overElectricity = 0, overSubTotal = 0;
 
+<<<<<<< HEAD
             if (dif > 24)
             {
                 int overHour;
@@ -217,19 +227,37 @@ namespace GuestHouse
                 GetSubTotal(overHour, roomTypeDesc,ref  overRoomPrice, pickAc,ref overElectricity, ref overSubTotal,1);
 
                 int multiply = dif / 24;
+=======
+            if (dif.TotalHours > 24)
+            {
+                int overHour;
+                
+                overHour = (int)dif.TotalHours % 24;
 
-                GetSubTotal(24, roomTypeDesc, ref overRoomPrice, pickAc, ref overElectricity, ref overSubTotal, multiply);
+                GetSubTotal(overHour, roomTypeDesc,ref  overRoomPrice, pickAc,ref overElectricity, ref overSubTotal,1);
+
+                int multiply = (int)dif.TotalHours / 24;
+
+                GetSubTotal(24, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal, multiply);
+
+>>>>>>> e5f60d3aeaaa2ce2c4cec264a3ea7370bb4ea357
+
             }
             else
             {
+<<<<<<< HEAD
                 GetSubTotal(dif, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
+=======
+                GetSubTotal((int)dif.TotalHours, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
+>>>>>>> e5f60d3aeaaa2ce2c4cec264a3ea7370bb4ea357
             }
 
             
 
             roomPrice += overRoomPrice;
             electricity += overElectricity;
-            subTotal += subTotal;
+            subTotal += overSubTotal;
+            hour = (int)dif.TotalHours;
 
             return true;
 
