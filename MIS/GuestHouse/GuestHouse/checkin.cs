@@ -94,6 +94,7 @@ namespace GuestHouse
 
         private void btngetPrice_Click(object sender, EventArgs e)
         {
+            dataCon.GetPrice();
             int Over24 = 0;
             int OverDay = 0;
 
@@ -120,7 +121,7 @@ namespace GuestHouse
                     {
 
                     }
-                    MessageBox.Show(Over+ "");
+                    //MessageBox.Show(Over+ "");
 
                    
                     Time = rnd24.Text.Split(' ');
@@ -132,9 +133,9 @@ namespace GuestHouse
                     Type = RndSingle.Name.Substring(3);
             }
             Room = CmRoomNum.SelectedItem.ToString();
-            // MessageBox.Show(Time[0] + " " + Type+" "+Room+" "+Over24);
+            MessageBox.Show(Time[0] + " " + Type+" "+Room+" "+Over24);
 
-            dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, Type,ref Roomprice,true,ref electricity,ref subtotal);
+            dataCon.CalculatePrice(datecheckin.Value.Hour, datecheckout.Value.Hour, "Single",ref Roomprice,true,ref electricity,ref subtotal);
             MessageBox.Show(Roomprice+" "+electricity+" "+subtotal);
         }
 

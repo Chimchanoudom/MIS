@@ -199,30 +199,30 @@ namespace GuestHouse
         }
 
         //getprice
-        public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+        public static bool CalculatePrice(int dtStart, int dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
         {
-            TimeSpan dif = dtEnd.Date - dtStart.Date;
+            int dif = (dtEnd - dtStart);
 
-            if (dif.Hours < 0)
+            if (dif < 0)
                 return false;
 
             double overRoomPrice = 0, overElectricity = 0, overSubTotal = 0;
 
-            if (dif.Hours > 24)
+            if (dif > 24)
             {
                 int overHour;
                 
-                overHour = dif.Hours % 24;
+                overHour = dif% 24;
 
                 GetSubTotal(overHour, roomTypeDesc,ref  overRoomPrice, pickAc,ref overElectricity, ref overSubTotal,1);
 
-                int multiply = dif.Hours / 24;
+                int multiply = dif / 24;
 
                 GetSubTotal(24, roomTypeDesc, ref overRoomPrice, pickAc, ref overElectricity, ref overSubTotal, multiply);
             }
             else
             {
-                GetSubTotal(dif.Hours, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
+                GetSubTotal(dif, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
             }
 
             
