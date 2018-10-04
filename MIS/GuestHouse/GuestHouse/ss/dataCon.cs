@@ -219,9 +219,9 @@ namespace GuestHouse
 
                 int multiply = (int)dif.TotalHours / 24;
 
-                GetSubTotal(24, roomTypeDesc, ref overRoomPrice, pickAc, ref overElectricity, ref overSubTotal, multiply);
+                GetSubTotal(24, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal, multiply);
 
-                
+
             }
             else
             {
