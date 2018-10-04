@@ -157,7 +157,7 @@ namespace GuestHouse
 
         }
 
-        static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
+        static Dictionary<string, DataTable> Price;
 
         public static void GetSpecificPrice(string roomTypeDesc,int hour,ref double roomPrice,ref double fan,ref double ac)
         {
@@ -169,6 +169,7 @@ namespace GuestHouse
 
         public static void GetPrice()
         {
+            Price = new Dictionary<string, DataTable>();
             string sql = "select roomTypeDesc,HourType,RoomPrice,Fan,ac from roomType r join price p on r.roomTypeID=p.roomTypeID;";
 
             con.Open();
@@ -199,9 +200,9 @@ namespace GuestHouse
         }
 
         //getprice
-        public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+        public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,ref int hour,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
         {
-            TimeSpan dif = dtEnd.Date - dtStart.Date;
+            TimeSpan dif = dtEnd - dtStart;
 
             if (dif.Hours < 0)
                 return false;
@@ -219,6 +220,8 @@ namespace GuestHouse
                 int multiply = dif.Hours / 24;
 
                 GetSubTotal(24, roomTypeDesc, ref overRoomPrice, pickAc, ref overElectricity, ref overSubTotal, multiply);
+
+                
             }
             else
             {
@@ -230,6 +233,7 @@ namespace GuestHouse
             roomPrice += overRoomPrice;
             electricity += overElectricity;
             subTotal += subTotal;
+            hour = dif.Hours;
 
             return true;
 
