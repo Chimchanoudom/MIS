@@ -152,7 +152,7 @@
             this.panel3.Controls.Add(this.groupBox3);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 49);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1899, 196);
             this.panel3.TabIndex = 22;
@@ -164,9 +164,9 @@
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox3.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(0, 0);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox3.Size = new System.Drawing.Size(652, 196);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
@@ -180,7 +180,7 @@
             this.panel5.Controls.Add(this.txtSearch);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(4, 149);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(644, 44);
             this.panel5.TabIndex = 5;
@@ -242,7 +242,7 @@
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Left;
             this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Location = new System.Drawing.Point(385, 0);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(411, 38);
             this.dateTimePicker1.TabIndex = 3;
@@ -253,7 +253,7 @@
             this.txtSearch.Dock = System.Windows.Forms.DockStyle.Left;
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.Location = new System.Drawing.Point(0, 0);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSearch.Margin = new System.Windows.Forms.Padding(4);
             this.txtSearch.Multiline = true;
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(385, 44);
@@ -270,7 +270,7 @@
             this.panel6.Controls.Add(this.rndAll);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel6.Location = new System.Drawing.Point(4, 42);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(644, 107);
             this.panel6.TabIndex = 4;
@@ -279,7 +279,7 @@
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Location = new System.Drawing.Point(367, 58);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(117, 42);
             this.radioButton2.TabIndex = 7;
@@ -290,7 +290,7 @@
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Location = new System.Drawing.Point(221, 58);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(4);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(128, 42);
             this.radioButton1.TabIndex = 6;
@@ -301,7 +301,7 @@
             // 
             this.rndName.AutoSize = true;
             this.rndName.Location = new System.Drawing.Point(465, 11);
-            this.rndName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rndName.Margin = new System.Windows.Forms.Padding(4);
             this.rndName.Name = "rndName";
             this.rndName.Size = new System.Drawing.Size(155, 42);
             this.rndName.TabIndex = 1;
@@ -312,7 +312,7 @@
             // 
             this.rndDateBook.AutoSize = true;
             this.rndDateBook.Location = new System.Drawing.Point(301, 11);
-            this.rndDateBook.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rndDateBook.Margin = new System.Windows.Forms.Padding(4);
             this.rndDateBook.Name = "rndDateBook";
             this.rndDateBook.Size = new System.Drawing.Size(155, 42);
             this.rndDateBook.TabIndex = 1;
@@ -323,7 +323,7 @@
             // 
             this.rndTell.AutoSize = true;
             this.rndTell.Location = new System.Drawing.Point(7, 60);
-            this.rndTell.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rndTell.Margin = new System.Windows.Forms.Padding(4);
             this.rndTell.Name = "rndTell";
             this.rndTell.Size = new System.Drawing.Size(200, 42);
             this.rndTell.TabIndex = 3;
@@ -334,7 +334,7 @@
             // 
             this.rndID.AutoSize = true;
             this.rndID.Location = new System.Drawing.Point(121, 11);
-            this.rndID.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rndID.Margin = new System.Windows.Forms.Padding(4);
             this.rndID.Name = "rndID";
             this.rndID.Size = new System.Drawing.Size(161, 42);
             this.rndID.TabIndex = 4;
@@ -346,7 +346,7 @@
             this.rndAll.AutoSize = true;
             this.rndAll.Checked = true;
             this.rndAll.Location = new System.Drawing.Point(7, 11);
-            this.rndAll.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rndAll.Margin = new System.Windows.Forms.Padding(4);
             this.rndAll.Name = "rndAll";
             this.rndAll.Size = new System.Drawing.Size(105, 42);
             this.rndAll.TabIndex = 5;
@@ -360,7 +360,7 @@
             this.panel4.Controls.Add(this.bunifuThinButton21);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(0, 662);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(1899, 42);
             this.panel4.TabIndex = 23;
@@ -424,7 +424,7 @@
             this.panel7.Controls.Add(this.groupBox1);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 245);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(1899, 417);
             this.panel7.TabIndex = 24;
@@ -435,9 +435,9 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(784, 0);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(1115, 417);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
@@ -462,7 +462,7 @@
             this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView2.GridColor = System.Drawing.Color.DarkSlateBlue;
             this.dataGridView2.Location = new System.Drawing.Point(4, 42);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.ReadOnly = true;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -535,9 +535,9 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(784, 417);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -560,7 +560,7 @@
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.GridColor = System.Drawing.Color.DarkSlateBlue;
             this.dataGridView1.Location = new System.Drawing.Point(4, 42);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -619,7 +619,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CheckInData";
             this.Text = "CheckInData";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
