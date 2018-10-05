@@ -200,15 +200,34 @@ namespace GuestHouse
         }
 
         //getprice
+<<<<<<< HEAD
+        public static bool CalculatePrice(int dtStart, int dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+        {
+            int dif = (dtEnd - dtStart);
+
+            if (dif < 0)
+=======
         public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,ref int hour,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
         {
             TimeSpan dif = dtEnd - dtStart;
 
             if (dif.TotalHours < 0)
+>>>>>>> e5f60d3aeaaa2ce2c4cec264a3ea7370bb4ea357
                 return false;
 
             double overRoomPrice = 0, overElectricity = 0, overSubTotal = 0;
 
+<<<<<<< HEAD
+            if (dif > 24)
+            {
+                int overHour;
+                
+                overHour = dif% 24;
+
+                GetSubTotal(overHour, roomTypeDesc,ref  overRoomPrice, pickAc,ref overElectricity, ref overSubTotal,1);
+
+                int multiply = dif / 24;
+=======
             if (dif.TotalHours > 24)
             {
                 int overHour;
@@ -221,11 +240,16 @@ namespace GuestHouse
 
                 GetSubTotal(24, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal, multiply);
 
+>>>>>>> e5f60d3aeaaa2ce2c4cec264a3ea7370bb4ea357
 
             }
             else
             {
+<<<<<<< HEAD
+                GetSubTotal(dif, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
+=======
                 GetSubTotal((int)dif.TotalHours, roomTypeDesc, ref roomPrice, pickAc, ref electricity, ref subTotal,1);
+>>>>>>> e5f60d3aeaaa2ce2c4cec264a3ea7370bb4ea357
             }
 
             
