@@ -241,7 +241,7 @@ namespace GuestHouse
 
         static void GetSubTotal(int hour,string roomTypeDesc, ref double roomPrice,bool pickAc, ref double electricity, ref double subTotal,int multiply)
         {
-
+            if (hour == 0) return;
             if (hour <= 3)
             {
                 hour = 3;
