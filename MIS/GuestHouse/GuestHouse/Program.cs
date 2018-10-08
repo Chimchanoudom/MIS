@@ -40,7 +40,7 @@ namespace GuestHouse
 
 
             //Application.Run(new CheckoutData());
-            Application.Run(new RoomPrice());
+           // Application.Run(new RoomPrice());
 
 
             //Application.SetCompatibleTextRenderingDefault(false);
