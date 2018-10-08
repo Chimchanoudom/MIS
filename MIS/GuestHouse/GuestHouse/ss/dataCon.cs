@@ -204,7 +204,7 @@ namespace GuestHouse
         {
             TimeSpan dif = dtEnd - dtStart;
 
-            if (dif.TotalHours < 0)
+            if (dif.TotalHours <= 0)
                 return false;
 
             double overRoomPrice = 0, overElectricity = 0, overSubTotal = 0;
@@ -241,7 +241,7 @@ namespace GuestHouse
 
         static void GetSubTotal(int hour,string roomTypeDesc, ref double roomPrice,bool pickAc, ref double electricity, ref double subTotal,int multiply)
         {
-
+            if (hour == 0) return;
             if (hour <= 3)
             {
                 hour = 3;
