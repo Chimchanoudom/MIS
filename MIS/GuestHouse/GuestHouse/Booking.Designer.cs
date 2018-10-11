@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.radVIP = new System.Windows.Forms.RadioButton();
             this.radOver24 = new System.Windows.Forms.RadioButton();
             this.rad24 = new System.Windows.Forms.RadioButton();
@@ -127,6 +127,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnNewRecord = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -666,8 +667,8 @@
             // 
             this.dgvMaster.AllowUserToAddRows = false;
             this.dgvMaster.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMaster.BackgroundColor = System.Drawing.Color.White;
             this.dgvMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -883,10 +884,10 @@
             this.btnSave.IdleFillColor = System.Drawing.Color.White;
             this.btnSave.IdleForecolor = System.Drawing.Color.Blue;
             this.btnSave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnSave.Location = new System.Drawing.Point(366, 0);
+            this.btnSave.Location = new System.Drawing.Point(285, 0);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(122, 36);
+            this.btnSave.Size = new System.Drawing.Size(95, 51);
             this.btnSave.TabIndex = 9;
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
@@ -910,10 +911,10 @@
             this.btnDelete.IdleFillColor = System.Drawing.Color.White;
             this.btnDelete.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnDelete.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDelete.Location = new System.Drawing.Point(244, 0);
+            this.btnDelete.Location = new System.Drawing.Point(190, 0);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(122, 36);
+            this.btnDelete.Size = new System.Drawing.Size(95, 51);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -946,10 +947,10 @@
             this.btnEdit.IdleFillColor = System.Drawing.Color.White;
             this.btnEdit.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.btnEdit.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnEdit.Location = new System.Drawing.Point(122, 0);
+            this.btnEdit.Location = new System.Drawing.Point(95, 0);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(122, 36);
+            this.btnEdit.Size = new System.Drawing.Size(95, 51);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -994,13 +995,14 @@
             this.btnAdd.Location = new System.Drawing.Point(0, 0);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(122, 36);
+            this.btnAdd.Size = new System.Drawing.Size(95, 51);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel10
             // 
+            this.panel10.Controls.Add(this.btnNewRecord);
             this.panel10.Controls.Add(this.btnSave);
             this.panel10.Controls.Add(this.btnDelete);
             this.panel10.Controls.Add(this.btnEdit);
@@ -1008,7 +1010,7 @@
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel10.Location = new System.Drawing.Point(0, 317);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(493, 36);
+            this.panel10.Size = new System.Drawing.Size(493, 51);
             this.panel10.TabIndex = 6;
             // 
             // panel8
@@ -1279,6 +1281,33 @@
             this.panel1.Size = new System.Drawing.Size(1095, 40);
             this.panel1.TabIndex = 23;
             // 
+            // btnNewRecord
+            // 
+            this.btnNewRecord.ActiveBorderThickness = 1;
+            this.btnNewRecord.ActiveCornerRadius = 20;
+            this.btnNewRecord.ActiveFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnNewRecord.ActiveForecolor = System.Drawing.Color.DodgerBlue;
+            this.btnNewRecord.ActiveLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnNewRecord.BackColor = System.Drawing.SystemColors.Control;
+            this.btnNewRecord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewRecord.BackgroundImage")));
+            this.btnNewRecord.ButtonText = "ទិន្ន័យថ្មី";
+            this.btnNewRecord.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNewRecord.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnNewRecord.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewRecord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnNewRecord.IdleBorderThickness = 1;
+            this.btnNewRecord.IdleCornerRadius = 20;
+            this.btnNewRecord.IdleFillColor = System.Drawing.Color.White;
+            this.btnNewRecord.IdleForecolor = System.Drawing.Color.DodgerBlue;
+            this.btnNewRecord.IdleLineColor = System.Drawing.Color.DodgerBlue;
+            this.btnNewRecord.Location = new System.Drawing.Point(380, 0);
+            this.btnNewRecord.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnNewRecord.Name = "btnNewRecord";
+            this.btnNewRecord.Size = new System.Drawing.Size(95, 51);
+            this.btnNewRecord.TabIndex = 10;
+            this.btnNewRecord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnNewRecord.Click += new System.EventHandler(this.btnNewRecord_Click);
+            // 
             // Booking
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1420,5 +1449,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RoomCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn FanAndAirConCost;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalCostOfSingleRoom;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnNewRecord;
     }
 }

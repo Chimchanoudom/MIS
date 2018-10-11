@@ -157,10 +157,9 @@ namespace GuestHouse
 
         }
 
-<<<<<<< HEAD
+
         public static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
-=======
-        static Dictionary<string, DataTable> Price;
+
 
         public static void GetSpecificPrice(string roomTypeDesc,int hour,ref double roomPrice,ref double fan,ref double ac)
         {
@@ -169,7 +168,7 @@ namespace GuestHouse
             fan = (double)row[0][2];
             ac = (double)row[0][3];
         }
->>>>>>> 18037f7fa2954a4eaac97d6b8d8a3306ba15b56d
+
 
         public static void GetPrice()
         {
@@ -203,12 +202,11 @@ namespace GuestHouse
             con.Close();
         }
 
-<<<<<<< HEAD
-        public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
-=======
-        //getprice
+
+
+
         public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,ref int hour,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
->>>>>>> 18037f7fa2954a4eaac97d6b8d8a3306ba15b56d
+
         {
             TimeSpan dif = dtEnd - dtStart;
 

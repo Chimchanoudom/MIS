@@ -38,17 +38,15 @@ namespace GuestHouse
 
             //   Application.Run(new Login());
 
-<<<<<<< HEAD
+
             //Application.Run(new checkin());
-=======
+
 
             //Application.Run(new CheckoutData());
 
            // Application.Run(new RoomPrice());
            // Application.Run(new CheckoutData());
 
-
->>>>>>> 18037f7fa2954a4eaac97d6b8d8a3306ba15b56d
 
             //Application.SetCompatibleTextRenderingDefault(false);
             //if (new Login().ShowDialog() == DialogResult.OK)
@@ -64,7 +62,7 @@ namespace GuestHouse
 
             //Application.Run(new RoomData());
 
-            Application.Run(new checkin());
+            //Application.Run(new checkin());
             //Application.Run(new CheckInData());
             //Application.Run(new Expense());
 

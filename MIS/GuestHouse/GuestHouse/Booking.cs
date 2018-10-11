@@ -297,7 +297,14 @@ namespace GuestHouse
 
         private void dgvMaster_SelectionChanged(object sender, EventArgs e)
         {
-
+            cbxCustName.SelectedIndex = -1;
+            radMale.Checked = true;
+            txtTel.Text = String.Empty;
+            dateBook.Value = DateTime.Now;
+            foreach(TextBox txt in groupBox3.Controls.OfType<TextBox>())
+            {
+                txt.Clear();
+            }
         }
 
         bool isFirstSaveClicked = true;
@@ -377,6 +384,25 @@ namespace GuestHouse
                 if (dialog == DialogResult.Yes)
                     btnSave_Click(null, null);
             }
+        }
+
+        private void btnNewRecord_Click(object sender, EventArgs e)
+        {
+            if (dgvMaster.RowCount < 1)
+                return;
+            if (isFirstSaveClicked)
+            {
+                DialogResult dialog = MessageBox.Show("Do you want to save?", "Warning", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                    btnSave_Click(null, null);
+            }
+
+            while (dvgDetail.RowCount < 0)
+            {
+                dvgDetail.Rows.RemoveAt(0);
+            }
+            dgvMaster.Rows.RemoveAt(0);
+
         }
     }
 }
