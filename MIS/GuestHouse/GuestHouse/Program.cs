@@ -38,7 +38,7 @@ namespace GuestHouse
 
             //   Application.Run(new Login());
 
-            Application.Run(new checkin());
+            //Application.Run(new checkin());
 
             //Application.SetCompatibleTextRenderingDefault(false);
             //if (new Login().ShowDialog() == DialogResult.OK)
@@ -56,11 +56,11 @@ namespace GuestHouse
 
             //Application.Run(new checkin());
             //Application.Run(new CheckInData());
-           //Application.Run(new Expense());
+            //Application.Run(new Expense());
 
             //Application.Run(new Form1());
             //Application.Run(new Customer());
-            //Application.Run(new Booking());
+            Application.Run(new Booking());
             //Application.Run(new BookingData());
             //Application.Run(new ExpensAndIncome());
 

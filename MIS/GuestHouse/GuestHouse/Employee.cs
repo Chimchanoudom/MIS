@@ -395,5 +395,10 @@ namespace GuestHouse
             }
             
         }
+
+        private void dataEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

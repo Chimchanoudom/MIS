@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.radVIP = new System.Windows.Forms.RadioButton();
+            this.radOver24 = new System.Windows.Forms.RadioButton();
+            this.rad24 = new System.Windows.Forms.RadioButton();
+            this.rad12 = new System.Windows.Forms.RadioButton();
+            this.rad6 = new System.Windows.Forms.RadioButton();
+            this.txtTotalCost = new System.Windows.Forms.TextBox();
+            this.txtFanAndAirConCost = new System.Windows.Forms.TextBox();
+            this.txtRoomCost = new System.Windows.Forms.TextBox();
+            this.radAirCon = new System.Windows.Forms.RadioButton();
+            this.radFan = new System.Windows.Forms.RadioButton();
+            this.btnRoomCost = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.rad3 = new System.Windows.Forms.RadioButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbxRoomNumber = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radTwoBed = new System.Windows.Forms.RadioButton();
+            this.radOneBed = new System.Windows.Forms.RadioButton();
             this.label7 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dateIn = new System.Windows.Forms.DateTimePicker();
+            this.dateOut = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -71,32 +71,32 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
+            this.radMale = new System.Windows.Forms.RadioButton();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.radFemale = new System.Windows.Forms.RadioButton();
+            this.dgvMaster = new System.Windows.Forms.DataGridView();
+            this.BookingID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.BookingDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CustomerID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.EmployeeID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvgDetail = new System.Windows.Forms.DataGridView();
+            this.CheckInDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CheckOutDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Duration = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FanAndAirCon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.RoomCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FanAndAirConCost = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalCostOfSingleRoom = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.txtTotalCostOfAllRooms = new System.Windows.Forms.TextBox();
+            this.btnSave = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnDelete = new Bunifu.Framework.UI.BunifuThinButton2();
             this.label11 = new System.Windows.Forms.Label();
             this.btnEdit = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -107,19 +107,19 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.txtCusID = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtEmpID = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtBookID = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dateBook = new System.Windows.Forms.DateTimePicker();
             this.label28 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label25 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.cbxCustName = new System.Windows.Forms.ComboBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -132,9 +132,9 @@
             this.panel7.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaster)).BeginInit();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgDetail)).BeginInit();
             this.groupBox5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -145,182 +145,187 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // radioButton3
+            // radVIP
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton3.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(135, 0);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(99, 35);
-            this.radioButton3.TabIndex = 100013;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "បន្ទប់ពិសេស";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radVIP.AutoSize = true;
+            this.radVIP.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radVIP.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radVIP.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radVIP.Location = new System.Drawing.Point(135, 0);
+            this.radVIP.Name = "radVIP";
+            this.radVIP.Size = new System.Drawing.Size(99, 35);
+            this.radVIP.TabIndex = 100013;
+            this.radVIP.Text = "បន្ទប់ពិសេស";
+            this.radVIP.UseVisualStyleBackColor = true;
+            this.radVIP.CheckedChanged += new System.EventHandler(this.radAirCon_CheckedChanged);
             // 
-            // radioButton12
+            // radOver24
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton12.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton12.Location = new System.Drawing.Point(216, 0);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(108, 35);
-            this.radioButton12.TabIndex = 4;
-            this.radioButton12.TabStop = true;
-            this.radioButton12.Text = "លើសពីមួយថ្ងៃ";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.radOver24.AutoSize = true;
+            this.radOver24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radOver24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radOver24.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radOver24.Location = new System.Drawing.Point(216, 0);
+            this.radOver24.Name = "radOver24";
+            this.radOver24.Size = new System.Drawing.Size(108, 35);
+            this.radOver24.TabIndex = 4;
+            this.radOver24.Text = "លើសពីមួយថ្ងៃ";
+            this.radOver24.UseVisualStyleBackColor = true;
+            this.radOver24.CheckedChanged += new System.EventHandler(this.radTime_CheckedChanged);
             // 
-            // radioButton9
+            // rad24
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton9.Location = new System.Drawing.Point(158, 0);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(58, 35);
-            this.radioButton9.TabIndex = 3;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "24Hr";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.rad24.AutoSize = true;
+            this.rad24.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rad24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rad24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad24.Location = new System.Drawing.Point(158, 0);
+            this.rad24.Name = "rad24";
+            this.rad24.Size = new System.Drawing.Size(58, 35);
+            this.rad24.TabIndex = 3;
+            this.rad24.Text = "24Hr";
+            this.rad24.UseVisualStyleBackColor = true;
+            this.rad24.CheckedChanged += new System.EventHandler(this.radTime_CheckedChanged);
             // 
-            // radioButton4
+            // rad12
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(100, 0);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(58, 35);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "12Hr";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rad12.AutoSize = true;
+            this.rad12.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rad12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rad12.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad12.Location = new System.Drawing.Point(100, 0);
+            this.rad12.Name = "rad12";
+            this.rad12.Size = new System.Drawing.Size(58, 35);
+            this.rad12.TabIndex = 3;
+            this.rad12.Text = "12Hr";
+            this.rad12.UseVisualStyleBackColor = true;
+            this.rad12.CheckedChanged += new System.EventHandler(this.radTime_CheckedChanged);
             // 
-            // radioButton7
+            // rad6
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton7.Location = new System.Drawing.Point(50, 0);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(50, 35);
-            this.radioButton7.TabIndex = 2;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "6Hr";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rad6.AutoSize = true;
+            this.rad6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rad6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rad6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad6.Location = new System.Drawing.Point(50, 0);
+            this.rad6.Name = "rad6";
+            this.rad6.Size = new System.Drawing.Size(50, 35);
+            this.rad6.TabIndex = 2;
+            this.rad6.Text = "6Hr";
+            this.rad6.UseVisualStyleBackColor = true;
+            this.rad6.CheckedChanged += new System.EventHandler(this.radTime_CheckedChanged);
             // 
-            // textBox3
+            // txtTotalCost
             // 
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(132, 341);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(195, 29);
-            this.textBox3.TabIndex = 100033;
+            this.txtTotalCost.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalCost.Location = new System.Drawing.Point(132, 341);
+            this.txtTotalCost.Name = "txtTotalCost";
+            this.txtTotalCost.Size = new System.Drawing.Size(195, 29);
+            this.txtTotalCost.TabIndex = 100033;
             // 
-            // textBox2
+            // txtFanAndAirConCost
             // 
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(168, 305);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(159, 29);
-            this.textBox2.TabIndex = 100033;
+            this.txtFanAndAirConCost.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFanAndAirConCost.Location = new System.Drawing.Point(168, 305);
+            this.txtFanAndAirConCost.Name = "txtFanAndAirConCost";
+            this.txtFanAndAirConCost.Size = new System.Drawing.Size(159, 29);
+            this.txtFanAndAirConCost.TabIndex = 100033;
             // 
-            // textBox1
+            // txtRoomCost
             // 
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(131, 269);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(196, 29);
-            this.textBox1.TabIndex = 100033;
+            this.txtRoomCost.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRoomCost.Location = new System.Drawing.Point(131, 269);
+            this.txtRoomCost.Name = "txtRoomCost";
+            this.txtRoomCost.Size = new System.Drawing.Size(196, 29);
+            this.txtRoomCost.TabIndex = 100033;
             // 
-            // radioButton5
+            // radAirCon
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton5.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton5.Location = new System.Drawing.Point(57, 0);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(100, 35);
-            this.radioButton5.TabIndex = 100013;
-            this.radioButton5.Text = "ម៉ាស៊ីនត្រជាក់";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.radAirCon.AutoSize = true;
+            this.radAirCon.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radAirCon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radAirCon.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radAirCon.Location = new System.Drawing.Point(57, 0);
+            this.radAirCon.Name = "radAirCon";
+            this.radAirCon.Size = new System.Drawing.Size(100, 35);
+            this.radAirCon.TabIndex = 100013;
+            this.radAirCon.Text = "ម៉ាស៊ីនត្រជាក់";
+            this.radAirCon.UseVisualStyleBackColor = true;
+            this.radAirCon.CheckedChanged += new System.EventHandler(this.radAirCon_CheckedChanged);
             // 
-            // radioButton6
+            // radFan
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Checked = true;
-            this.radioButton6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton6.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton6.Location = new System.Drawing.Point(0, 0);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(57, 35);
-            this.radioButton6.TabIndex = 100013;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "កង្ហារ";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.radFan.AutoSize = true;
+            this.radFan.Checked = true;
+            this.radFan.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radFan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radFan.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radFan.Location = new System.Drawing.Point(0, 0);
+            this.radFan.Name = "radFan";
+            this.radFan.Size = new System.Drawing.Size(57, 35);
+            this.radFan.TabIndex = 100013;
+            this.radFan.TabStop = true;
+            this.radFan.Text = "កង្ហារ";
+            this.radFan.UseVisualStyleBackColor = true;
+            this.radFan.CheckedChanged += new System.EventHandler(this.radAirCon_CheckedChanged);
             // 
-            // bunifuThinButton22
+            // btnRoomCost
             // 
-            this.bunifuThinButton22.ActiveBorderThickness = 1;
-            this.bunifuThinButton22.ActiveCornerRadius = 20;
-            this.bunifuThinButton22.ActiveFillColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton22.ActiveLineColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton22.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton22.BackgroundImage")));
-            this.bunifuThinButton22.ButtonText = "តម្លៃបន្ទប់";
-            this.bunifuThinButton22.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton22.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton22.ForeColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.IdleBorderThickness = 1;
-            this.bunifuThinButton22.IdleCornerRadius = 20;
-            this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.Fuchsia;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(334, 269);
-            this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.bunifuThinButton22.Name = "bunifuThinButton22";
-            this.bunifuThinButton22.Size = new System.Drawing.Size(82, 30);
-            this.bunifuThinButton22.TabIndex = 100032;
-            this.bunifuThinButton22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRoomCost.ActiveBorderThickness = 1;
+            this.btnRoomCost.ActiveCornerRadius = 20;
+            this.btnRoomCost.ActiveFillColor = System.Drawing.Color.Fuchsia;
+            this.btnRoomCost.ActiveForecolor = System.Drawing.Color.White;
+            this.btnRoomCost.ActiveLineColor = System.Drawing.Color.Fuchsia;
+            this.btnRoomCost.BackColor = System.Drawing.SystemColors.Control;
+            this.btnRoomCost.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnRoomCost.BackgroundImage")));
+            this.btnRoomCost.ButtonText = "តម្លៃបន្ទប់";
+            this.btnRoomCost.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRoomCost.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRoomCost.ForeColor = System.Drawing.Color.Fuchsia;
+            this.btnRoomCost.IdleBorderThickness = 1;
+            this.btnRoomCost.IdleCornerRadius = 20;
+            this.btnRoomCost.IdleFillColor = System.Drawing.Color.White;
+            this.btnRoomCost.IdleForecolor = System.Drawing.Color.Fuchsia;
+            this.btnRoomCost.IdleLineColor = System.Drawing.Color.Fuchsia;
+            this.btnRoomCost.Location = new System.Drawing.Point(334, 269);
+            this.btnRoomCost.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnRoomCost.Name = "btnRoomCost";
+            this.btnRoomCost.Size = new System.Drawing.Size(82, 30);
+            this.btnRoomCost.TabIndex = 100032;
+            this.btnRoomCost.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRoomCost.Click += new System.EventHandler(this.btnRoomCost_Click);
             // 
-            // radioButton8
+            // rad3
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton8.Location = new System.Drawing.Point(0, 0);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(50, 35);
-            this.radioButton8.TabIndex = 1;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "3Hr";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.rad3.AutoSize = true;
+            this.rad3.Checked = true;
+            this.rad3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.rad3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rad3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rad3.Location = new System.Drawing.Point(0, 0);
+            this.rad3.Name = "rad3";
+            this.rad3.Size = new System.Drawing.Size(50, 35);
+            this.rad3.TabIndex = 1;
+            this.rad3.TabStop = true;
+            this.rad3.Text = "3Hr";
+            this.rad3.UseVisualStyleBackColor = true;
+            this.rad3.CheckedChanged += new System.EventHandler(this.radTime_CheckedChanged);
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.bunifuThinButton22);
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.txtTotalCost);
+            this.groupBox1.Controls.Add(this.txtFanAndAirConCost);
+            this.groupBox1.Controls.Add(this.txtRoomCost);
+            this.groupBox1.Controls.Add(this.btnRoomCost);
+            this.groupBox1.Controls.Add(this.cbxRoomNumber);
             this.groupBox1.Controls.Add(this.panel6);
             this.groupBox1.Controls.Add(this.panel7);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label21);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.dateTimePicker2);
-            this.groupBox1.Controls.Add(this.dateTimePicker3);
+            this.groupBox1.Controls.Add(this.dateIn);
+            this.groupBox1.Controls.Add(this.dateOut);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label23);
             this.groupBox1.Controls.Add(this.label17);
@@ -345,22 +350,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ព័ត៌មានបន្ទប់ស្នាក់នៅ";
             // 
-            // comboBox1
+            // cbxRoomNumber
             // 
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(131, 234);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(196, 25);
-            this.comboBox1.TabIndex = 100031;
+            this.cbxRoomNumber.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbxRoomNumber.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbxRoomNumber.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbxRoomNumber.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxRoomNumber.FormattingEnabled = true;
+            this.cbxRoomNumber.Location = new System.Drawing.Point(131, 234);
+            this.cbxRoomNumber.Name = "cbxRoomNumber";
+            this.cbxRoomNumber.Size = new System.Drawing.Size(196, 25);
+            this.cbxRoomNumber.TabIndex = 100031;
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.radioButton5);
-            this.panel6.Controls.Add(this.radioButton6);
+            this.panel6.Controls.Add(this.radAirCon);
+            this.panel6.Controls.Add(this.radFan);
             this.panel6.Location = new System.Drawing.Point(131, 188);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(242, 35);
@@ -368,11 +373,11 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.radioButton12);
-            this.panel7.Controls.Add(this.radioButton9);
-            this.panel7.Controls.Add(this.radioButton4);
-            this.panel7.Controls.Add(this.radioButton7);
-            this.panel7.Controls.Add(this.radioButton8);
+            this.panel7.Controls.Add(this.radOver24);
+            this.panel7.Controls.Add(this.rad24);
+            this.panel7.Controls.Add(this.rad12);
+            this.panel7.Controls.Add(this.rad6);
+            this.panel7.Controls.Add(this.rad3);
             this.panel7.Location = new System.Drawing.Point(132, 68);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(321, 35);
@@ -380,41 +385,43 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.radioButton3);
-            this.panel5.Controls.Add(this.radioButton2);
-            this.panel5.Controls.Add(this.radioButton1);
+            this.panel5.Controls.Add(this.radVIP);
+            this.panel5.Controls.Add(this.radTwoBed);
+            this.panel5.Controls.Add(this.radOneBed);
             this.panel5.Location = new System.Drawing.Point(131, 145);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(242, 35);
             this.panel5.TabIndex = 0;
             // 
-            // radioButton2
+            // radTwoBed
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton2.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(71, 0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(64, 35);
-            this.radioButton2.TabIndex = 100013;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "គ្រែពីរ";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radTwoBed.AutoSize = true;
+            this.radTwoBed.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radTwoBed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radTwoBed.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radTwoBed.Location = new System.Drawing.Point(71, 0);
+            this.radTwoBed.Name = "radTwoBed";
+            this.radTwoBed.Size = new System.Drawing.Size(64, 35);
+            this.radTwoBed.TabIndex = 100013;
+            this.radTwoBed.Text = "គ្រែពីរ";
+            this.radTwoBed.UseVisualStyleBackColor = true;
+            this.radTwoBed.CheckedChanged += new System.EventHandler(this.radAirCon_CheckedChanged);
             // 
-            // radioButton1
+            // radOneBed
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton1.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(0, 0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(71, 35);
-            this.radioButton1.TabIndex = 100013;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "គ្រែមួយ";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radOneBed.AutoSize = true;
+            this.radOneBed.Checked = true;
+            this.radOneBed.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radOneBed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radOneBed.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radOneBed.Location = new System.Drawing.Point(0, 0);
+            this.radOneBed.Name = "radOneBed";
+            this.radOneBed.Size = new System.Drawing.Size(71, 35);
+            this.radOneBed.TabIndex = 100013;
+            this.radOneBed.TabStop = true;
+            this.radOneBed.Text = "គ្រែមួយ";
+            this.radOneBed.UseVisualStyleBackColor = true;
+            this.radOneBed.CheckedChanged += new System.EventHandler(this.radAirCon_CheckedChanged);
             // 
             // label7
             // 
@@ -443,25 +450,27 @@
             this.label5.TabIndex = 100019;
             this.label5.Text = "តម្លៃកង្ហា ឫ ម៉ាំស៊ីនត្រជាក់";
             // 
-            // dateTimePicker2
+            // dateIn
             // 
-            this.dateTimePicker2.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(132, 36);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(159, 26);
-            this.dateTimePicker2.TabIndex = 1;
+            this.dateIn.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dateIn.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateIn.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateIn.Location = new System.Drawing.Point(132, 36);
+            this.dateIn.Name = "dateIn";
+            this.dateIn.Size = new System.Drawing.Size(159, 26);
+            this.dateIn.TabIndex = 1;
+            this.dateIn.ValueChanged += new System.EventHandler(this.dateOut_ValueChanged);
             // 
-            // dateTimePicker3
+            // dateOut
             // 
-            this.dateTimePicker3.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dateTimePicker3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker3.Location = new System.Drawing.Point(131, 108);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(159, 26);
-            this.dateTimePicker3.TabIndex = 1;
+            this.dateOut.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dateOut.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateOut.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateOut.Location = new System.Drawing.Point(131, 108);
+            this.dateOut.Name = "dateOut";
+            this.dateOut.Size = new System.Drawing.Size(159, 26);
+            this.dateOut.TabIndex = 1;
+            this.dateOut.ValueChanged += new System.EventHandler(this.dateOut_ValueChanged);
             // 
             // label3
             // 
@@ -616,98 +625,100 @@
             this.label19.TabIndex = 100017;
             this.label19.Text = "ភេទ";
             // 
-            // radioButton11
+            // radMale
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Checked = true;
-            this.radioButton11.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton11.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton11.Location = new System.Drawing.Point(0, 0);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(57, 35);
-            this.radioButton11.TabIndex = 100013;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "ប្រុស";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.radMale.AutoSize = true;
+            this.radMale.Checked = true;
+            this.radMale.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radMale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radMale.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radMale.Location = new System.Drawing.Point(0, 0);
+            this.radMale.Name = "radMale";
+            this.radMale.Size = new System.Drawing.Size(57, 35);
+            this.radMale.TabIndex = 100013;
+            this.radMale.TabStop = true;
+            this.radMale.Text = "ប្រុស";
+            this.radMale.UseVisualStyleBackColor = true;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.radioButton10);
-            this.panel9.Controls.Add(this.radioButton11);
+            this.panel9.Controls.Add(this.radFemale);
+            this.panel9.Controls.Add(this.radMale);
             this.panel9.Location = new System.Drawing.Point(171, 59);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(196, 35);
             this.panel9.TabIndex = 0;
             // 
-            // radioButton10
+            // radFemale
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton10.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton10.Location = new System.Drawing.Point(57, 0);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(46, 35);
-            this.radioButton10.TabIndex = 100013;
-            this.radioButton10.Text = "ស្រី";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.radFemale.AutoSize = true;
+            this.radFemale.Dock = System.Windows.Forms.DockStyle.Left;
+            this.radFemale.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radFemale.Font = new System.Drawing.Font("Khmer SN Kampot", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radFemale.Location = new System.Drawing.Point(57, 0);
+            this.radFemale.Name = "radFemale";
+            this.radFemale.Size = new System.Drawing.Size(46, 35);
+            this.radFemale.TabIndex = 100013;
+            this.radFemale.Text = "ស្រី";
+            this.radFemale.UseVisualStyleBackColor = true;
             // 
-            // dataGridView2
+            // dgvMaster
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column5,
-            this.Column3,
-            this.Column4});
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 30);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.Size = new System.Drawing.Size(534, 164);
-            this.dataGridView2.TabIndex = 1;
+            this.dgvMaster.AllowUserToAddRows = false;
+            this.dgvMaster.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvMaster.BackgroundColor = System.Drawing.Color.White;
+            this.dgvMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMaster.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.BookingID,
+            this.BookingDate,
+            this.CustomerID,
+            this.EmployeeID,
+            this.TotalCost});
+            this.dgvMaster.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvMaster.Location = new System.Drawing.Point(3, 30);
+            this.dgvMaster.Name = "dgvMaster";
+            this.dgvMaster.ReadOnly = true;
+            this.dgvMaster.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvMaster.Size = new System.Drawing.Size(534, 164);
+            this.dgvMaster.TabIndex = 1;
+            this.dgvMaster.SelectionChanged += new System.EventHandler(this.dgvMaster_SelectionChanged);
             // 
-            // Column1
+            // BookingID
             // 
-            this.Column1.HeaderText = "លេខកូដស្នាកនៅ";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.BookingID.HeaderText = "លេខកូដស្នាកនៅ";
+            this.BookingID.Name = "BookingID";
+            this.BookingID.ReadOnly = true;
             // 
-            // Column2
+            // BookingDate
             // 
-            this.Column2.HeaderText = "ថ្ងៃចូលកក់";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.BookingDate.HeaderText = "ថ្ងៃចូលកក់";
+            this.BookingDate.Name = "BookingDate";
+            this.BookingDate.ReadOnly = true;
             // 
-            // Column5
+            // CustomerID
             // 
-            this.Column5.HeaderText = "លេខកូដតិថិជន";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
+            this.CustomerID.HeaderText = "លេខកូដតិថិជន";
+            this.CustomerID.Name = "CustomerID";
+            this.CustomerID.ReadOnly = true;
             // 
-            // Column3
+            // EmployeeID
             // 
-            this.Column3.HeaderText = "លេខកូដបុគ្គលិក";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
+            this.EmployeeID.HeaderText = "លេខកូដបុគ្គលិក";
+            this.EmployeeID.Name = "EmployeeID";
+            this.EmployeeID.ReadOnly = true;
             // 
-            // Column4
+            // TotalCost
             // 
-            this.Column4.HeaderText = "តម្លៃសរុប";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
+            this.TotalCost.HeaderText = "តម្លៃសរុប";
+            this.TotalCost.Name = "TotalCost";
+            this.TotalCost.ReadOnly = true;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.dataGridView2);
+            this.groupBox4.Controls.Add(this.dgvMaster);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox4.Location = new System.Drawing.Point(0, 0);
             this.groupBox4.Name = "groupBox4";
@@ -716,95 +727,97 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "ព័តមានការស្នាកនៅ";
             // 
-            // dataGridView1
+            // dvgDetail
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column14,
-            this.Column6,
-            this.Column12,
-            this.Column8,
-            this.Column9,
-            this.Column7,
-            this.Column10,
-            this.Column13,
-            this.Column11});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 30);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(547, 164);
-            this.dataGridView1.TabIndex = 0;
+            this.dvgDetail.AllowUserToAddRows = false;
+            this.dvgDetail.AllowUserToDeleteRows = false;
+            this.dvgDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dvgDetail.BackgroundColor = System.Drawing.Color.White;
+            this.dvgDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dvgDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CheckInDate,
+            this.CheckOutDate,
+            this.Duration,
+            this.FanAndAirCon,
+            this.RoomType,
+            this.RoomNumber,
+            this.RoomCost,
+            this.FanAndAirConCost,
+            this.TotalCostOfSingleRoom});
+            this.dvgDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dvgDetail.Location = new System.Drawing.Point(3, 30);
+            this.dvgDetail.Name = "dvgDetail";
+            this.dvgDetail.ReadOnly = true;
+            this.dvgDetail.Size = new System.Drawing.Size(547, 164);
+            this.dvgDetail.TabIndex = 0;
+            this.dvgDetail.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dvgDetail_RowStateChanged);
+            this.dvgDetail.SelectionChanged += new System.EventHandler(this.dvgDetail_SelectionChanged);
             // 
-            // Column14
+            // CheckInDate
             // 
-            this.Column14.HeaderText = "ថ្ងៃចូលស្នាក់នៅ";
-            this.Column14.Name = "Column14";
-            this.Column14.ReadOnly = true;
+            this.CheckInDate.HeaderText = "ថ្ងៃចូលស្នាក់នៅ";
+            this.CheckInDate.Name = "CheckInDate";
+            this.CheckInDate.ReadOnly = true;
             // 
-            // Column6
+            // CheckOutDate
             // 
-            this.Column6.FillWeight = 56.27266F;
-            this.Column6.HeaderText = "ថ្ងៃចាកចេញ";
-            this.Column6.Name = "Column6";
-            this.Column6.ReadOnly = true;
+            this.CheckOutDate.FillWeight = 56.27266F;
+            this.CheckOutDate.HeaderText = "ថ្ងៃចាកចេញ";
+            this.CheckOutDate.Name = "CheckOutDate";
+            this.CheckOutDate.ReadOnly = true;
             // 
-            // Column12
+            // Duration
             // 
-            this.Column12.FillWeight = 56.27266F;
-            this.Column12.HeaderText = "ប្រភេទម៉ោង";
-            this.Column12.Name = "Column12";
-            this.Column12.ReadOnly = true;
+            this.Duration.FillWeight = 56.27266F;
+            this.Duration.HeaderText = "ប្រភេទម៉ោង";
+            this.Duration.Name = "Duration";
+            this.Duration.ReadOnly = true;
             // 
-            // Column8
+            // FanAndAirCon
             // 
-            this.Column8.FillWeight = 56.27266F;
-            this.Column8.HeaderText = "ជម្រើស";
-            this.Column8.Name = "Column8";
-            this.Column8.ReadOnly = true;
+            this.FanAndAirCon.FillWeight = 56.27266F;
+            this.FanAndAirCon.HeaderText = "ជម្រើស";
+            this.FanAndAirCon.Name = "FanAndAirCon";
+            this.FanAndAirCon.ReadOnly = true;
             // 
-            // Column9
+            // RoomType
             // 
-            this.Column9.FillWeight = 56.27266F;
-            this.Column9.HeaderText = "ប្រភេទបន្ទប់";
-            this.Column9.Name = "Column9";
-            this.Column9.ReadOnly = true;
+            this.RoomType.FillWeight = 56.27266F;
+            this.RoomType.HeaderText = "ប្រភេទបន្ទប់";
+            this.RoomType.Name = "RoomType";
+            this.RoomType.ReadOnly = true;
             // 
-            // Column7
+            // RoomNumber
             // 
-            this.Column7.FillWeight = 56.27266F;
-            this.Column7.HeaderText = "លេខបន្ទប់";
-            this.Column7.Name = "Column7";
-            this.Column7.ReadOnly = true;
+            this.RoomNumber.FillWeight = 56.27266F;
+            this.RoomNumber.HeaderText = "លេខបន្ទប់";
+            this.RoomNumber.Name = "RoomNumber";
+            this.RoomNumber.ReadOnly = true;
             // 
-            // Column10
+            // RoomCost
             // 
-            this.Column10.FillWeight = 56.27266F;
-            this.Column10.HeaderText = "តម្លៃបន្ទប់";
-            this.Column10.Name = "Column10";
-            this.Column10.ReadOnly = true;
+            this.RoomCost.FillWeight = 56.27266F;
+            this.RoomCost.HeaderText = "តម្លៃបន្ទប់";
+            this.RoomCost.Name = "RoomCost";
+            this.RoomCost.ReadOnly = true;
             // 
-            // Column13
+            // FanAndAirConCost
             // 
-            this.Column13.FillWeight = 120F;
-            this.Column13.HeaderText = "តម្លៃកង្ហា ឫ ម៉ាស៊ីន";
-            this.Column13.Name = "Column13";
-            this.Column13.ReadOnly = true;
+            this.FanAndAirConCost.FillWeight = 120F;
+            this.FanAndAirConCost.HeaderText = "តម្លៃកង្ហា ឫ ម៉ាស៊ីន";
+            this.FanAndAirConCost.Name = "FanAndAirConCost";
+            this.FanAndAirConCost.ReadOnly = true;
             // 
-            // Column11
+            // TotalCostOfSingleRoom
             // 
-            this.Column11.FillWeight = 56.27266F;
-            this.Column11.HeaderText = "តម្លៃសរុប";
-            this.Column11.Name = "Column11";
-            this.Column11.ReadOnly = true;
+            this.TotalCostOfSingleRoom.FillWeight = 56.27266F;
+            this.TotalCostOfSingleRoom.HeaderText = "តម្លៃសរុប";
+            this.TotalCostOfSingleRoom.Name = "TotalCostOfSingleRoom";
+            this.TotalCostOfSingleRoom.ReadOnly = true;
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.dataGridView1);
+            this.groupBox5.Controls.Add(this.dvgDetail);
             this.groupBox5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox5.Location = new System.Drawing.Point(540, 0);
             this.groupBox5.Name = "groupBox5";
@@ -843,39 +856,40 @@
             this.label29.TabIndex = 100024;
             this.label29.Text = ":";
             // 
-            // textBox9
+            // txtTotalCostOfAllRooms
             // 
-            this.textBox9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(171, 140);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(196, 26);
-            this.textBox9.TabIndex = 100033;
+            this.txtTotalCostOfAllRooms.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTotalCostOfAllRooms.Location = new System.Drawing.Point(171, 140);
+            this.txtTotalCostOfAllRooms.Name = "txtTotalCostOfAllRooms";
+            this.txtTotalCostOfAllRooms.Size = new System.Drawing.Size(196, 26);
+            this.txtTotalCostOfAllRooms.TabIndex = 100033;
             // 
-            // bunifuThinButton21
+            // btnSave
             // 
-            this.bunifuThinButton21.ActiveBorderThickness = 1;
-            this.bunifuThinButton21.ActiveCornerRadius = 20;
-            this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Blue;
-            this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.White;
-            this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.Blue;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
-            this.bunifuThinButton21.ButtonText = "រក្សាទុក";
-            this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuThinButton21.Dock = System.Windows.Forms.DockStyle.Left;
-            this.bunifuThinButton21.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuThinButton21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.bunifuThinButton21.IdleBorderThickness = 1;
-            this.bunifuThinButton21.IdleCornerRadius = 20;
-            this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
-            this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Blue;
-            this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bunifuThinButton21.Location = new System.Drawing.Point(366, 0);
-            this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.bunifuThinButton21.Name = "bunifuThinButton21";
-            this.bunifuThinButton21.Size = new System.Drawing.Size(122, 36);
-            this.bunifuThinButton21.TabIndex = 9;
-            this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSave.ActiveBorderThickness = 1;
+            this.btnSave.ActiveCornerRadius = 20;
+            this.btnSave.ActiveFillColor = System.Drawing.Color.Blue;
+            this.btnSave.ActiveForecolor = System.Drawing.Color.White;
+            this.btnSave.ActiveLineColor = System.Drawing.Color.Blue;
+            this.btnSave.BackColor = System.Drawing.SystemColors.Control;
+            this.btnSave.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSave.BackgroundImage")));
+            this.btnSave.ButtonText = "រក្សាទុក";
+            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnSave.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnSave.IdleBorderThickness = 1;
+            this.btnSave.IdleCornerRadius = 20;
+            this.btnSave.IdleFillColor = System.Drawing.Color.White;
+            this.btnSave.IdleForecolor = System.Drawing.Color.Blue;
+            this.btnSave.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.btnSave.Location = new System.Drawing.Point(366, 0);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(122, 36);
+            this.btnSave.TabIndex = 9;
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnDelete
             // 
@@ -902,6 +916,7 @@
             this.btnDelete.Size = new System.Drawing.Size(122, 36);
             this.btnDelete.TabIndex = 8;
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label11
             // 
@@ -937,6 +952,7 @@
             this.btnEdit.Size = new System.Drawing.Size(122, 36);
             this.btnEdit.TabIndex = 7;
             this.btnEdit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // label35
             // 
@@ -981,10 +997,11 @@
             this.btnAdd.Size = new System.Drawing.Size(122, 36);
             this.btnAdd.TabIndex = 6;
             this.btnAdd.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.bunifuThinButton21);
+            this.panel10.Controls.Add(this.btnSave);
             this.panel10.Controls.Add(this.btnDelete);
             this.panel10.Controls.Add(this.btnEdit);
             this.panel10.Controls.Add(this.btnAdd);
@@ -1011,15 +1028,15 @@
             this.groupBox3.Controls.Add(this.label33);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.label29);
-            this.groupBox3.Controls.Add(this.textBox9);
+            this.groupBox3.Controls.Add(this.txtTotalCostOfAllRooms);
             this.groupBox3.Controls.Add(this.label34);
-            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Controls.Add(this.txtCusID);
             this.groupBox3.Controls.Add(this.label32);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.txtEmpID);
             this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.txtBookID);
             this.groupBox3.Controls.Add(this.label31);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.dateBook);
             this.groupBox3.Controls.Add(this.label28);
             this.groupBox3.Controls.Add(this.label30);
             this.groupBox3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1040,30 +1057,30 @@
             this.label34.TabIndex = 100019;
             this.label34.Text = "តម្លៃសរុបការស្នាក់នៅ";
             // 
-            // textBox8
+            // txtCusID
             // 
-            this.textBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(171, 112);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(196, 26);
-            this.textBox8.TabIndex = 100033;
+            this.txtCusID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCusID.Location = new System.Drawing.Point(171, 112);
+            this.txtCusID.Name = "txtCusID";
+            this.txtCusID.Size = new System.Drawing.Size(196, 26);
+            this.txtCusID.TabIndex = 100033;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.Location = new System.Drawing.Point(16, 115);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(85, 27);
+            this.label32.Size = new System.Drawing.Size(102, 27);
             this.label32.TabIndex = 100019;
-            this.label32.Text = "លេខអតិថិជន";
+            this.label32.Text = "លេខកូដអតិថិជន";
             // 
-            // textBox6
+            // txtEmpID
             // 
-            this.textBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(171, 83);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(196, 26);
-            this.textBox6.TabIndex = 100033;
+            this.txtEmpID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmpID.Location = new System.Drawing.Point(171, 83);
+            this.txtEmpID.Name = "txtEmpID";
+            this.txtEmpID.Size = new System.Drawing.Size(196, 26);
+            this.txtEmpID.TabIndex = 100033;
             // 
             // label9
             // 
@@ -1074,13 +1091,13 @@
             this.label9.TabIndex = 100019;
             this.label9.Text = "លេខកូដបុគ្កលិក";
             // 
-            // textBox7
+            // txtBookID
             // 
-            this.textBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(171, 25);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(196, 26);
-            this.textBox7.TabIndex = 100033;
+            this.txtBookID.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBookID.Location = new System.Drawing.Point(171, 25);
+            this.txtBookID.Name = "txtBookID";
+            this.txtBookID.Size = new System.Drawing.Size(196, 26);
+            this.txtBookID.TabIndex = 100033;
             // 
             // label31
             // 
@@ -1091,15 +1108,15 @@
             this.label31.TabIndex = 100019;
             this.label31.Text = "លេខកូដសម្គាល់";
             // 
-            // dateTimePicker1
+            // dateBook
             // 
-            this.dateTimePicker1.CustomFormat = "dd-MM-yyyy HH:mm";
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(171, 54);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(157, 26);
-            this.dateTimePicker1.TabIndex = 100015;
+            this.dateBook.CustomFormat = "dd-MM-yyyy HH:mm";
+            this.dateBook.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateBook.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateBook.Location = new System.Drawing.Point(171, 54);
+            this.dateBook.Name = "dateBook";
+            this.dateBook.Size = new System.Drawing.Size(157, 26);
+            this.dateBook.TabIndex = 100015;
             // 
             // label28
             // 
@@ -1122,8 +1139,8 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label25);
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.textBox4);
+            this.groupBox2.Controls.Add(this.cbxCustName);
+            this.groupBox2.Controls.Add(this.txtTel);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label10);
@@ -1149,25 +1166,26 @@
             this.label25.TabIndex = 100024;
             this.label25.Text = ":";
             // 
-            // comboBox2
+            // cbxCustName
             // 
-            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(171, 29);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(196, 25);
-            this.comboBox2.TabIndex = 100031;
+            this.cbxCustName.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.cbxCustName.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbxCustName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbxCustName.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxCustName.FormattingEnabled = true;
+            this.cbxCustName.Location = new System.Drawing.Point(171, 29);
+            this.cbxCustName.Name = "cbxCustName";
+            this.cbxCustName.Size = new System.Drawing.Size(196, 25);
+            this.cbxCustName.TabIndex = 100031;
+            this.cbxCustName.SelectedIndexChanged += new System.EventHandler(this.cbxCustName_SelectedIndexChanged);
             // 
-            // textBox4
+            // txtTel
             // 
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(171, 98);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(196, 26);
-            this.textBox4.TabIndex = 100033;
+            this.txtTel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTel.Location = new System.Drawing.Point(171, 98);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(196, 26);
+            this.txtTel.TabIndex = 100033;
             // 
             // label24
             // 
@@ -1274,6 +1292,8 @@
             this.Name = "Booking";
             this.Text = "Booking";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Booking_FormClosing);
+            this.Load += new System.EventHandler(this.Booking_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -1284,9 +1304,9 @@
             this.panel5.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvMaster)).EndInit();
             this.groupBox4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgDetail)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
@@ -1303,29 +1323,29 @@
 
         #endregion
 
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton22;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton radVIP;
+        private System.Windows.Forms.RadioButton radOver24;
+        private System.Windows.Forms.RadioButton rad24;
+        private System.Windows.Forms.RadioButton rad12;
+        private System.Windows.Forms.RadioButton rad6;
+        private System.Windows.Forms.TextBox txtTotalCost;
+        private System.Windows.Forms.TextBox txtFanAndAirConCost;
+        private System.Windows.Forms.TextBox txtRoomCost;
+        private System.Windows.Forms.RadioButton radAirCon;
+        private System.Windows.Forms.RadioButton radFan;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnRoomCost;
+        private System.Windows.Forms.RadioButton rad3;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbxRoomNumber;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radTwoBed;
+        private System.Windows.Forms.RadioButton radOneBed;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker3;
+        private System.Windows.Forms.DateTimePicker dateOut;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label17;
@@ -1341,18 +1361,18 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.RadioButton radioButton11;
+        private System.Windows.Forms.RadioButton radMale;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.RadioButton radFemale;
+        private System.Windows.Forms.DataGridView dgvMaster;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dvgDetail;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.TextBox textBox9;
-        private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
+        private System.Windows.Forms.TextBox txtTotalCostOfAllRooms;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSave;
         private Bunifu.Framework.UI.BunifuThinButton2 btnDelete;
         private System.Windows.Forms.Label label11;
         private Bunifu.Framework.UI.BunifuThinButton2 btnEdit;
@@ -1363,19 +1383,19 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox txtCusID;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtEmpID;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtBookID;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateBook;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.ComboBox cbxCustName;
+        private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Panel panel3;
@@ -1383,22 +1403,22 @@
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuThinButton2 btnback;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker dateIn;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column14;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column13;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookingID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn BookingDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CustomerID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn EmployeeID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CheckInDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CheckOutDate;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Duration;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FanAndAirCon;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoomType;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoomNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn RoomCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FanAndAirConCost;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TotalCostOfSingleRoom;
     }
 }

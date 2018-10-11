@@ -157,7 +157,7 @@ namespace GuestHouse
 
         }
 
-        static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
+        public static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
 
         public static void GetPrice()
         {
@@ -190,7 +190,7 @@ namespace GuestHouse
             con.Close();
         }
 
-        static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+        public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
         {
             TimeSpan dif = dtEnd.Date - dtStart.Date;
 

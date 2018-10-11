@@ -197,8 +197,10 @@
     <Compile Include="RoomPrice.Designer.cs">
       <DependentUpon>RoomPrice.cs</DependentUpon>
     </Compile>
+    <Compile Include="ss\CustomerDetail.cs" />
     <Compile Include="ss\dataCon.cs" />
     <Compile Include="ss\EmpClass.cs" />
+    <Compile Include="ss\getRoomDetail.cs" />
     <Compile Include="ss\RestrictionClass.cs" />
     <Compile Include="ss\UserLoginDetail.cs" />
     <EmbeddedResource Include="Booking.resx">

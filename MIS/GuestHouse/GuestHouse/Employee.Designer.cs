@@ -1151,6 +1151,7 @@
             this.dataEmployee.ReadOnly = true;
             this.dataEmployee.Size = new System.Drawing.Size(1472, 379);
             this.dataEmployee.TabIndex = 0;
+            this.dataEmployee.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataEmployee_CellContentClick);
             this.dataEmployee.SelectionChanged += new System.EventHandler(this.dataEmployee_SelectionChanged);
             // 
             // EmpID
