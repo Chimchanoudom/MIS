@@ -94,20 +94,80 @@ namespace GuestHouse
 
         private void btngetPrice_Click(object sender, EventArgs e)
         {
+            dataCon.GetPrice();
+            int Over24 = 0;
+            int TimeGreater = 0;
+            int TimeLess = 0;
+
             String[] Time = new string[2];
             String  Type = "";
-            String Statement = "";
+            String Room = "";
+            double Roomprice = 0;
+            double electricity = 0;
+            double subtotal = 0;
             foreach (RadioButton rnd in pnhr.Controls)
             {
-                if(rnd.Checked)
-                Time = rnd.Text.Split(' ');
+                if (rnd.Checked && rnd.Name != rndover24.Name)
+                { Time = rnd.Text.Split(' ');
+                }
+                else
+                {
+                    TimeSpan Over = (datecheckout.Value - datecheckin.Value);
+                    int over = (int)Over.TotalHours;
+                    if (Over.TotalHours > 24)
+                    {
+                        while (over > 24)
+                        {
+                            TimeGreater += 1;
+                            over -= 24;
+                            TimeLess = over;
+                            
+                        }
+                    }
+                    break;
+                }
             }
             foreach (RadioButton rnd in pnRoom.Controls)
             {
                 if (rnd.Checked)
                     Type = RndSingle.Name.Substring(3);
             }
-            
+            Room = CmRoomNum.SelectedItem.ToString();
+            //  MessageBox.Show(Time[0] + " " + Type+" "+Room+" "+Over24);
+            if (TimeGreater == 0)
+            {
+                int time = int.Parse(Time[0]);
+                dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, ref time, "Single", ref Roomprice, RndFan.Checked = true ? true : false, ref electricity, ref subtotal);
+                //dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, Type,ref Roomprice,true,ref electricity,ref subtotal);
+                //MessageBox.Show("RoomPrice="+Roomprice+" \n Time="+time+"\n Elictricity Price= "+electricity+" \nSubtotal="+subtotal);
+            }
+            else
+            {
+                int less = 0;
+                int Oneday = 24;
+                double totalRoomprice =0, totalElictricity = 0,TotalSub=0;
+                if (TimeLess > 12)
+                    less = 24;
+                else if (TimeLess > 6)
+                    less = 12;
+                else if (TimeLess > 3)
+                    less = 6;
+                else
+                    less = 3;
+                dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, ref Oneday , Type, ref Roomprice, RndFan.Checked = true ? true : false, ref electricity, ref subtotal);
+               //totalRoomprice= Roomprice *(double)TimeGreater;
+               // totalElictricity=electricity *(double) TimeGreater;
+               // TotalSub = subtotal * (double)TimeGreater;
+               // Roomprice = 0;
+               // electricity = 0;
+               // subtotal = 0;
+               // dataCon.CalculatePrice(datecheckin.Value, datecheckout.Value, ref less, Type, ref Roomprice, RndFan.Checked = true ? true : false, ref electricity, ref subtotal);
+               // totalElictricity += electricity;
+               // totalRoomprice += Roomprice;
+               // TotalSub += subtotal;
+
+                MessageBox.Show("RoomPrice="+Roomprice+" \n Time="+((TimeGreater*24)+TimeLess)+"\n Elictricity Price= "+electricity+" \nSubtotal="+subtotal);
+            }
         }
 
         private void cmCustomer_TextChanged(object sender, EventArgs e)
