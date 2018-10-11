@@ -43,12 +43,35 @@ namespace GuestHouse
             int roomType = radOneBed.Checked ? 1 : radTwoBed.Checked ? 2 : 3;
             List<string> room = getRoomDetail.getFreeRoom(new DateTime(dateIn.Value.Year, dateIn.Value.Month, dateIn.Value.Day, dateIn.Value.Hour, dateIn.Value.Minute, 0), new DateTime(dateOut.Value.Year, dateOut.Value.Month, dateOut.Value.Day, dateOut.Value.Hour, dateOut.Value.Minute, 0), roomType);
             cbxRoomNumber.Items.Clear();
-            cbxRoomNumber.Text = String.Empty;
+            cbxCustName.DataSource = new ComboBox().DataSource;
+            //cbxRoomNumber.Text = String.Empty;
+            if(dvgDetail.SelectedRows.Count<1)
+                for(int i = 0; i < dvgDetail.RowCount; i++)
+                {
+                    string bookedRoom = dvgDetail.Rows[i].Cells[5].Value!=null? dvgDetail.Rows[i].Cells[5].Value.ToString():"";
+                    for(int j= room.Count-1; j>=0;j--)
+                    {
+                        if (room[j] == bookedRoom)
+                            room.RemoveAt(j);
+                    }
+                }
             foreach (string tem in room)
             {
                 cbxRoomNumber.Items.Add(tem);
             }
             cbxRoomNumber.SelectedIndex = cbxRoomNumber.Items.Count>0?0:-1;
+
+            if (cbxRoomNumber.Items.Count == 0)
+            {
+                txtRoomCost.Text = String.Empty;
+                txtTotalCost.Text = string.Empty;
+                txtFanAndAirConCost.Text = string.Empty;
+                cbxRoomNumber.Text = string.Empty;
+            }
+            else
+            {
+                cbxCustName.SelectedIndex = 0;
+            }
         }
 
         private void btnback_Click(object sender, EventArgs e)
@@ -68,15 +91,17 @@ namespace GuestHouse
             RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtEmpID);
             RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtTotalCost);
             RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtTotalCostOfAllRooms);
-            RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtRoomCost);
+            RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtRoomCost);     
             txtEmpID.Text = UserLoginDetail.empID!=null? UserLoginDetail.empID:"";
+
+            cbxRoomNumber.KeyPress += cbxRoomNumber_KeyPress;
 
             CustomerDetail.getData();
             foreach(string tem in CustomerDetail.cusDetail.Keys)
             {
                 cbxCustName.Items.Add(CustomerDetail.cusDetail[tem][0] + " " + CustomerDetail.cusDetail[tem][1]);
             }
-
+            dateOut.Value = dateIn.Value.AddHours(3);
             dateOut_ValueChanged(null, null);
             DefaultBookID = getBookIdFromDB();
             txtBookID.Text = DefaultBookID;
@@ -84,8 +109,14 @@ namespace GuestHouse
             radTime_CheckedChanged(null, null);
         }
 
+        private void cbxRoomNumber_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
+        }
+
         string DefaultBookID;
         bool isFirstInsert = true;
+
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -108,6 +139,7 @@ namespace GuestHouse
             dvgDetail.Rows.Add(dateIn.Text, dateOut.Text, duration, coolerSelection, room, cbxRoomNumber.SelectedItem, txtRoomCost.Text, txtFanAndAirConCost.Text, txtTotalCost.Text);
 
             isFirstInsert = false;
+            getroom();
         }
 
         private void cbxCustName_SelectedIndexChanged(object sender, EventArgs e)
@@ -127,11 +159,16 @@ namespace GuestHouse
             }
         }
 
-        bool isCorrectedDate = true;
         private void dateOut_ValueChanged(object sender, EventArgs e)
         {
-            //DateTime dateCIn = new DateTime(dateIn.Value.Year, dateIn.Value.Month, dateIn.Value.Day, dateIn.Value.Hour, dateIn.Value.Minute, 0);
-            //DateTime dateCout = new DateTime(dateOut.Value.Year, dateOut.Value.Month, dateOut.Value.Day, dateOut.Value.Hour, dateOut.Value.Minute, 0);
+            DateTime dateCIn = new DateTime(dateIn.Value.Year, dateIn.Value.Month, dateIn.Value.Day, dateIn.Value.Hour, dateIn.Value.Minute, 0);
+            DateTime dateCout = new DateTime(dateOut.Value.Year, dateOut.Value.Month, dateOut.Value.Day, dateOut.Value.Hour, dateOut.Value.Minute, 0);
+            if (dvgDetail.SelectedRows.Count==0&&(dateCout.Subtract(dateCIn)).TotalHours < 3)
+            {
+                MessageBox.Show("Incorrected Input");
+                dateOut.Value = dateCIn.AddHours(3);
+                rad3.Checked = true;
+            }
             //int duration = rad3.Checked ? 3 : rad6.Checked ? 6 : rad12.Checked ? 12 : rad24.Checked ? 24 : (int)(dateCout - dateCIn).TotalDays;
 
             //if (duration < 0)
@@ -154,10 +191,12 @@ namespace GuestHouse
         private void btnRoomCost_Click(object sender, EventArgs e)
         {
             
-            if (cbxRoomNumber.SelectedIndex == -1)
+            if (dvgDetail.SelectedRows.Count==0&&cbxRoomNumber.SelectedIndex == -1)
             {
                 MessageBox.Show("No Room Available During that period!!");
                 txtRoomCost.Text = String.Empty;
+                txtTotalCost.Text = string.Empty;
+                txtFanAndAirConCost.Text = string.Empty;
                 return;
             }
             dataCon.GetPrice();
@@ -227,8 +266,8 @@ namespace GuestHouse
             else
             {
                 getroom();
-                dateIn.Value = DateTime.Now;
-                dateOut.Value = DateTime.Now;
+                dateOut.Value = DateTime.Now.AddHours(3);
+                dateIn.Value = DateTime.Now;                
                 foreach (TextBox txt in groupBox1.Controls.OfType<TextBox>())
                     txt.Clear();
                 foreach (ComboBox cbx in groupBox1.Controls.OfType<ComboBox>())
@@ -242,7 +281,10 @@ namespace GuestHouse
         {
             if (dvgDetail.SelectedRows.Count == 1)
             {
-
+                if (txtRoomCost.Text == String.Empty)
+                    btnRoomCost_Click(null, null);
+                if (txtRoomCost.Text == String.Empty)
+                    return;
                 int rowIndex = dvgDetail.SelectedRows[0].Index;
 
                 DateTime dateCIn = new DateTime(dateIn.Value.Year, dateIn.Value.Month, dateIn.Value.Day, dateIn.Value.Hour, dateIn.Value.Minute, 0);
@@ -267,6 +309,8 @@ namespace GuestHouse
                 dvgDetail.Rows[rowIndex].Cells[6].Value = txtRoomCost.Text;
                 dvgDetail.Rows[rowIndex].Cells[7].Value = txtFanAndAirConCost.Text;
                 dvgDetail.Rows[rowIndex].Cells[8].Value = txtTotalCost.Text;
+
+                getroom();
             }
             else
             {
@@ -274,15 +318,32 @@ namespace GuestHouse
             }
         }
 
+        bool IsClickedDeleted = false;
         private void btnDelete_Click(object sender, EventArgs e)
         {
             if (dvgDetail.SelectedRows.Count > 0)
             {
-                while (dvgDetail.SelectedRows.Count != 0)
+                if (dvgDetail.RowCount > 1)
                 {
-                    int index = dvgDetail.SelectedRows[0].Index;
-                    dvgDetail.Rows.RemoveAt(index);
+                    while (dvgDetail.SelectedRows.Count > 1)
+                    {
+                        int index = dvgDetail.SelectedRows[0].Index;
+                        dvgDetail.Rows.RemoveAt(index);
+                    }
                 }
+                else
+                {
+                    DialogResult dialog = MessageBox.Show("Are you sure, you want to delete this record?", "Warning", MessageBoxButtons.YesNo);
+                    if (dialog == DialogResult.Yes)
+                    {
+                        
+                        IsClickedDeleted = true;
+                        btnNewRecord_Click(null, null);
+                        IsClickedDeleted = false;
+                    }
+                        
+                }
+                getroom();
             }
         }
 
@@ -297,55 +358,69 @@ namespace GuestHouse
 
         private void dgvMaster_SelectionChanged(object sender, EventArgs e)
         {
-            cbxCustName.SelectedIndex = -1;
-            radMale.Checked = true;
-            txtTel.Text = String.Empty;
-            dateBook.Value = DateTime.Now;
-            foreach(TextBox txt in groupBox3.Controls.OfType<TextBox>())
+            if (dgvMaster.SelectedRows.Count < 1)
             {
-                txt.Clear();
-            }
+                cbxCustName.SelectedIndex = -1;
+                radMale.Checked = true;
+                txtTel.Text = String.Empty;
+                dateBook.Value = DateTime.Now;
+                foreach (TextBox txt in groupBox3.Controls.OfType<TextBox>())
+                {
+                    if(txt.Name!= txtEmpID.Name)
+                        txt.Clear();
+                }
+            }    
         }
 
+        string bookID;
         bool isFirstSaveClicked = true;
         private void btnSave_Click(object sender, EventArgs e)
         {
             if (dvgDetail.RowCount < 1)
             {
+                if (!isFirstSaveClicked)
+                {
+                    dataCon.exActionQuery.deleteDataFromDB("Book", "WHERE BookID='" + bookID + "';");
+                }
                 return;
             }
 
-            string bookID = dgvMaster.Rows[0].Cells[0].Value.ToString();
-            if (isFirstSaveClicked)
-            {
-                string bookDate = dgvMaster.Rows[0].Cells[1].Value.ToString();
-                string cusID = dgvMaster.Rows[0].Cells[2].Value.ToString();
-                string empID = dgvMaster.Rows[0].Cells[3].Value.ToString();
-                string totalCost = dgvMaster.Rows[0].Cells[4].Value.ToString();
-
-                string[] dataToBook = { bookID, bookDate, cusID, empID, totalCost };
-                dataCon.exActionQuery.insertDataToDB("Book", dataToBook);
-            }
+            bookID = dgvMaster.Rows[0].Cells[0].Value.ToString();
             
-
-            for(int i = 0; i < dvgDetail.RowCount; i++)
+            if (!isFirstSaveClicked)
             {
-                dvgDetail.Rows[i].Cells[2].Value.ToString();
+                dataCon.exActionQuery.deleteDataFromDB("Book", "WHERE BookID='" + bookID + "';");
+            }
+
+            string totalCost = dgvMaster.Rows[0].Cells[4].Value.ToString();
+            string cusID = dgvMaster.Rows[0].Cells[2].Value.ToString();
+            string bookDate = dgvMaster.Rows[0].Cells[1].Value.ToString();
+            string empID = dgvMaster.Rows[0].Cells[3].Value.ToString();
+
+            string[] dataToBook = { bookID, bookDate, cusID, empID, totalCost };
+            dataCon.exActionQuery.insertDataToDB("Book", dataToBook);
+
+            //Detail
+            
+            for (int i = 0; i < dvgDetail.RowCount; i++)
+            {
                 string datein = dvgDetail.Rows[i].Cells[0].Value.ToString();
-                string dateout= dvgDetail.Rows[0].Cells[2].Value.ToString().Trim('H', 'r');
-                string duration = dvgDetail.Rows[i].Cells[2].Value.ToString();
-                bool ac = radAirCon.Checked;
-                string room = (dvgDetail.Rows[i].Cells[4].Value.ToString()== "គ្រែមួយ")? "Single": (dvgDetail.Rows[i].Cells[4].Value.ToString() == "គ្រែពីរ") ? "Double": "VIP";
+                string dateout = dvgDetail.Rows[i].Cells[1].Value.ToString();
+                string duration = dvgDetail.Rows[i].Cells[2].Value.ToString().Trim('H', 'r');
+                bool ac = (dvgDetail.Rows[i].Cells[3].Value.ToString() == "ម៉ាស៊ីនត្រជាក់") ? true : false;
+                string room = (dvgDetail.Rows[i].Cells[4].Value.ToString() == "គ្រែមួយ") ? "Single" : (dvgDetail.Rows[i].Cells[4].Value.ToString() == "គ្រែពីរ") ? "Double" : "VIP";
                 string roomNumber = dvgDetail.Rows[i].Cells[5].Value.ToString();
                 string roomCost = dvgDetail.Rows[i].Cells[6].Value.ToString();
                 string costOFAcandFan = dvgDetail.Rows[i].Cells[7].Value.ToString();
                 string subtotal = dvgDetail.Rows[i].Cells[8].Value.ToString();
 
-                string[] dataToBookDetail = { bookID, datein, dateout, roomNumber, "Pending", ac.ToString(), "", duration, room, roomCost, costOFAcandFan, subtotal };
-                dataCon.exActionQuery.insertDataToDB("BookDetail",dataToBookDetail);
+                string[] dataToBookDetail = { bookID, datein, dateout, roomNumber, "Pending", ac.ToString(), duration, room, roomCost, costOFAcandFan, subtotal };
+                dataCon.exActionQuery.insertDataToDB("BookDetail", dataToBookDetail);
+
             }
 
             isFirstSaveClicked = false;
+
             MessageBox.Show("Successfully Saved!");
         }
 
@@ -369,16 +444,18 @@ namespace GuestHouse
         private void dvgDetail_RowStateChanged(object sender, DataGridViewRowStateChangedEventArgs e)
         {
             double total = 0;
-            for(int i = 0; i < dvgDetail.Rows.Count; i++)
+            for (int i = 0; i < dvgDetail.Rows.Count; i++)
             {
                 total += double.Parse(dvgDetail.Rows[i].Cells[8].Value.ToString());
             }
-            txtTotalCostOfAllRooms.Text = total.ToString()+ "$";
+            txtTotalCostOfAllRooms.Text = total.ToString();
+            if(dgvMaster.RowCount>0)
+                dgvMaster.Rows[0].Cells[4].Value = txtTotalCostOfAllRooms.Text;
         }
 
         private void Booking_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (isFirstSaveClicked)
+            if (isFirstSaveClicked&&dgvMaster.RowCount>0)
             {
                 DialogResult dialog = MessageBox.Show("Do you want to save?", "Warning", MessageBoxButtons.YesNo);
                 if (dialog == DialogResult.Yes)
@@ -390,6 +467,8 @@ namespace GuestHouse
         {
             if (dgvMaster.RowCount < 1)
                 return;
+            if (!isFirstSaveClicked&&IsClickedDeleted)
+                dataCon.exActionQuery.deleteDataFromDB("Book", "WHERE BookID='" + bookID + "';");
             if (isFirstSaveClicked)
             {
                 DialogResult dialog = MessageBox.Show("Do you want to save?", "Warning", MessageBoxButtons.YesNo);
@@ -397,12 +476,26 @@ namespace GuestHouse
                     btnSave_Click(null, null);
             }
 
-            while (dvgDetail.RowCount < 0)
+            while (dvgDetail.RowCount > 0)
             {
                 dvgDetail.Rows.RemoveAt(0);
             }
             dgvMaster.Rows.RemoveAt(0);
 
+            DefaultBookID = getBookIdFromDB();
+            txtBookID.Text = DefaultBookID;
+            isFirstInsert = true;
+        }
+
+        private void dvgDetail_CellValueChanged(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dvgDetail.RowCount>0)
+                dvgDetail_RowStateChanged(null, null);
+        }
+
+        private void cbxRoomNumber_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            btnRoomCost_Click(null, null);
         }
     }
 }

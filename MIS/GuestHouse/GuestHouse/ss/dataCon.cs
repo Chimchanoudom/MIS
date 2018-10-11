@@ -91,7 +91,7 @@ namespace GuestHouse
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully ADDED!");
+                //MessageBox.Show("Successfully ADDED!");
             }
 
             public static void insertDataToDB(string TableName, string[] dataToInsert)
@@ -108,7 +108,7 @@ namespace GuestHouse
                 string sqlCmd = cmdInsert + values;
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully ADDED!");
+                //MessageBox.Show("Successfully ADDED!");
             }
 
             public static void updateDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues, string condition = "")
@@ -126,7 +126,7 @@ namespace GuestHouse
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully UPDATED!");
+                //MessageBox.Show("Successfully UPDATED!");
             }
 
             public static void CollateData(ref List<string> data)
@@ -150,7 +150,7 @@ namespace GuestHouse
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully DELETED!");
+                //MessageBox.Show("Successfully DELETED!");
             }
 
 

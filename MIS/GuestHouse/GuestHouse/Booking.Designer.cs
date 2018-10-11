@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.radVIP = new System.Windows.Forms.RadioButton();
             this.radOver24 = new System.Windows.Forms.RadioButton();
             this.rad24 = new System.Windows.Forms.RadioButton();
@@ -362,6 +362,7 @@
             this.cbxRoomNumber.Name = "cbxRoomNumber";
             this.cbxRoomNumber.Size = new System.Drawing.Size(196, 25);
             this.cbxRoomNumber.TabIndex = 100031;
+            this.cbxRoomNumber.SelectedIndexChanged += new System.EventHandler(this.cbxRoomNumber_SelectedIndexChanged);
             // 
             // panel6
             // 
@@ -667,8 +668,8 @@
             // 
             this.dgvMaster.AllowUserToAddRows = false;
             this.dgvMaster.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMaster.BackgroundColor = System.Drawing.Color.White;
             this.dgvMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -751,6 +752,7 @@
             this.dvgDetail.ReadOnly = true;
             this.dvgDetail.Size = new System.Drawing.Size(547, 164);
             this.dvgDetail.TabIndex = 0;
+            this.dvgDetail.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgDetail_CellValueChanged);
             this.dvgDetail.RowStateChanged += new System.Windows.Forms.DataGridViewRowStateChangedEventHandler(this.dvgDetail_RowStateChanged);
             this.dvgDetail.SelectionChanged += new System.EventHandler(this.dvgDetail_SelectionChanged);
             // 
@@ -1286,7 +1288,7 @@
             this.btnNewRecord.ActiveBorderThickness = 1;
             this.btnNewRecord.ActiveCornerRadius = 20;
             this.btnNewRecord.ActiveFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnNewRecord.ActiveForecolor = System.Drawing.Color.DodgerBlue;
+            this.btnNewRecord.ActiveForecolor = System.Drawing.Color.AliceBlue;
             this.btnNewRecord.ActiveLineColor = System.Drawing.Color.DodgerBlue;
             this.btnNewRecord.BackColor = System.Drawing.SystemColors.Control;
             this.btnNewRecord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewRecord.BackgroundImage")));

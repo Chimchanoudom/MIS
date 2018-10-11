@@ -170,6 +170,11 @@ namespace GuestHouse
             }
         }
 
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void cmCustomer_TextChanged(object sender, EventArgs e)
         {
             if (cmCustomer.SelectedIndex == -1)

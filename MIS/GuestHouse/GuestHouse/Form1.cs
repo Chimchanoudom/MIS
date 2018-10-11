@@ -55,6 +55,7 @@ namespace GuestHouse
         private void btnbooknote_Click_1(object sender, EventArgs e)
         {
             Booking bk = new Booking();
+            bk.ShowDialog();
         }
 
         private void btnbookData_Click_1(object sender, EventArgs e)
