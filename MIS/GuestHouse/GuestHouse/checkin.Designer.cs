@@ -34,11 +34,11 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.cmCustomer = new System.Windows.Forms.ComboBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -199,6 +199,16 @@
             this.label25.TabIndex = 100024;
             this.label25.Text = ":";
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(13, 79);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(75, 27);
+            this.label24.TabIndex = 100019;
+            this.label24.Text = "លេខទូរស័ព្ទ";
+            // 
             // cmCustomer
             // 
             this.cmCustomer.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
@@ -243,16 +253,6 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(148, 26);
             this.textBox4.TabIndex = 100033;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(13, 79);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(75, 27);
-            this.label24.TabIndex = 100019;
-            this.label24.Text = "លេខទូរស័ព្ទ";
             // 
             // label8
             // 
@@ -916,6 +916,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(92, 32);
             this.bunifuThinButton21.TabIndex = 9;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // btnDelete
             // 

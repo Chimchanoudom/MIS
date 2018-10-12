@@ -20,10 +20,10 @@ namespace GuestHouse
 
             //Application.Run(new Employee());
 
-            //if (new Login().ShowDialog() == DialogResult.OK)
-            //{
-            //    Application.Run(new Form1());
-            //}
+            if (new Login().ShowDialog() == DialogResult.OK)
+            {
+                Application.Run(new Form1());
+            }
 
 
             //Application.Run(new Employee());
@@ -39,8 +39,13 @@ namespace GuestHouse
             //   Application.Run(new Login());
 
 
+            //Application.Run(new checkin());
+
+
             //Application.Run(new CheckoutData());
-            Application.Run(new CheckoutData());
+
+            // Application.Run(new RoomPrice());
+            // Application.Run(new CheckoutData());
 
 
             //Application.SetCompatibleTextRenderingDefault(false);
@@ -57,9 +62,9 @@ namespace GuestHouse
 
             //Application.Run(new RoomData());
 
-            Application.Run(new checkin());
+            //Application.Run(new checkin());
             //Application.Run(new CheckInData());
-           //Application.Run(new Expense());
+            //Application.Run(new Expense());
 
             //Application.Run(new Form1());
             //Application.Run(new Customer());

@@ -91,7 +91,7 @@ namespace GuestHouse
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully ADDED!");
+                //MessageBox.Show("Successfully ADDED!");
             }
 
             public static void insertDataToDB(string TableName, string[] dataToInsert)
@@ -108,7 +108,7 @@ namespace GuestHouse
                 string sqlCmd = cmdInsert + values;
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully ADDED!");
+                //MessageBox.Show("Successfully ADDED!");
             }
 
             public static void updateDataToDB(string TableName, Dictionary<string, string> columnNameAndDataValues, string condition = "")
@@ -126,7 +126,7 @@ namespace GuestHouse
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully UPDATED!");
+                //MessageBox.Show("Successfully UPDATED!");
             }
 
             public static void CollateData(ref List<string> data)
@@ -150,14 +150,16 @@ namespace GuestHouse
                 //MessageBox.Show(sqlCmd);
                 bool error = false;
                 dataCon.ExecuteActionQry(sqlCmd, ref error);
-                MessageBox.Show("Successfully DELETED!");
+                //MessageBox.Show("Successfully DELETED!");
             }
 
 
 
         }
 
-        static Dictionary<string, DataTable> Price;
+
+        public static Dictionary<string, DataTable> Price = new Dictionary<string, DataTable>();
+
 
         public static void GetSpecificPrice(string roomTypeDesc,int hour,ref double roomPrice,ref double fan,ref double ac)
         {
@@ -166,6 +168,7 @@ namespace GuestHouse
             fan = (double)row[0][2];
             ac = (double)row[0][3];
         }
+
 
         public static void GetPrice()
         {
@@ -199,8 +202,11 @@ namespace GuestHouse
             con.Close();
         }
 
-        //getprice
+
+
+
         public static bool CalculatePrice(DateTime dtStart, DateTime dtEnd,ref int hour,string roomTypeDesc, ref double roomPrice, bool pickAc, ref double electricity, ref double subTotal)
+
         {
             TimeSpan dif = dtEnd - dtStart;
 
