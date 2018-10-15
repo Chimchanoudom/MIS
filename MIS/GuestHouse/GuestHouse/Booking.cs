@@ -17,6 +17,34 @@ namespace GuestHouse
         public Booking()
         {
             InitializeComponent();
+
+        }
+
+        string newCustomerID;
+
+        public void selectedCustomer(bool status)
+        {
+            string id = txtCusID.Text;
+            if (status)
+            {
+                RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtTel);
+                radMale.Enabled = (radMale.Checked);
+                radFemale.Enabled = !radMale.Enabled;
+            }
+            else
+            {
+                RestrictionClass.restrictFromKeyboard.DisablerestrictAnyKeyFromKeyboard(txtTel);
+                radMale.Enabled = radFemale.Enabled = true;
+            }
+        }
+
+        public void refreshCustomers()
+        {
+            CustomerDetail.getData();
+            foreach (string tem in CustomerDetail.cusDetail.Keys)
+            {
+                cbxCustName.Items.Add(CustomerDetail.cusDetail[tem][0] + " " + CustomerDetail.cusDetail[tem][1]);
+            }
         }
 
         public static string getBookIdFromDB()
@@ -36,6 +64,25 @@ namespace GuestHouse
             { System.Windows.Forms.MessageBox.Show("Unable to perform the action!"); }
             dataCon.Con.Close();
             return (id.Length == 2) ? "B_0" + id : "B_00" + id;
+        }
+
+        public static string getCusIdFromDB()
+        {
+            string id = "";
+            try
+            {
+                dataCon.Con.Open();
+                string sqlCmd = "GetAutoID CusID,'_',Customer;";
+                SqlDataReader dr = dataCon.ExecuteQry(sqlCmd);
+                while (dr.Read())
+                {
+                    id = dr.GetInt32(0) + "";
+                }
+            }
+            catch (Exception)
+            { System.Windows.Forms.MessageBox.Show("Unable to perform the action!"); }
+            dataCon.Con.Close();
+            return (id.Length == 2) ? "Cus_0" + id : "Cus_00" + id;
         }
 
         public void getroom()
@@ -84,8 +131,16 @@ namespace GuestHouse
             this.Close();
         }
 
+
+        Timer timerForBookingDate;
+
         private void Booking_Load(object sender, EventArgs e)
         {
+            timerForBookingDate = new Timer();
+            timerForBookingDate.Tick += TimerForBookingDate_Tick;
+            timerForBookingDate.Interval = 1000;
+            timerForBookingDate.Start();
+            
             RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtCusID);
             RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtBookID);
             RestrictionClass.restrictFromKeyboard.restrictAnyKeyFromKeyboard(txtEmpID);
@@ -96,17 +151,37 @@ namespace GuestHouse
 
             cbxRoomNumber.KeyPress += cbxRoomNumber_KeyPress;
 
-            CustomerDetail.getData();
-            foreach(string tem in CustomerDetail.cusDetail.Keys)
-            {
-                cbxCustName.Items.Add(CustomerDetail.cusDetail[tem][0] + " " + CustomerDetail.cusDetail[tem][1]);
-            }
+            refreshCustomers();
             dateOut.Value = dateIn.Value.AddHours(3);
             dateOut_ValueChanged(null, null);
             DefaultBookID = getBookIdFromDB();
             txtBookID.Text = DefaultBookID;
             getroom();
             radTime_CheckedChanged(null, null);
+        }
+
+        private void TimerForBookingDate_Tick(object sender, EventArgs e)
+        {
+            if (dgvMaster.SelectedRows.Count < 1)
+            {
+                dateBook.MaxDate = DateTime.Now.AddSeconds(1);
+                dateBook.MinDate = DateTime.Now;
+                dateBook.Value = DateTime.Now;
+
+            }
+            else
+            {
+                DateTime dt = Convert.ToDateTime(dgvMaster.Rows[0].Cells[1].Value.ToString());
+                dateBook.MinDate = dt;
+                dateBook.MaxDate = dt.AddSeconds(1);
+                dateBook.Value = dt;
+            }
+            dateBook.KeyPress += DateBook_KeyPress;
+        }
+
+        private void DateBook_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
 
         private void cbxRoomNumber_KeyPress(object sender, KeyPressEventArgs e)
@@ -127,6 +202,26 @@ namespace GuestHouse
             DateTime dateCIn = new DateTime(dateIn.Value.Year, dateIn.Value.Month, dateIn.Value.Day, dateIn.Value.Hour, dateIn.Value.Minute,0);
             DateTime dateCout = new DateTime(dateOut.Value.Year, dateOut.Value.Month, dateOut.Value.Day, dateOut.Value.Hour, dateOut.Value.Minute, 0);
 
+            //newCustomer
+            if (!CustomerDetail.cusDetail.ContainsKey(txtCusID.Text))
+            {
+                DialogResult dialog = MessageBox.Show("Do you want to add a new customer?", "Warning", MessageBoxButtons.YesNo);
+                if (dialog == DialogResult.Yes)
+                {
+                    string[] name = cbxCustName.Text.Split(' ');
+                    string lastname = name.Length == 2 ? name[1] : "";
+                    string firstname = name[0];
+                    string tel = txtTel.Text;
+                    string gender = radMale.Checked ? "Male" : "Female";
+                    string[] data = { txtCusID.Text, firstname, lastname, gender, "", tel };
+
+                    dataCon.exActionQuery.insertDataToDB("Customer", data);
+                    refreshCustomers();
+                    cbxCustName.SelectedItem = (firstname + " " + lastname).ToString();
+                }
+                else
+                    return;
+            }
 
             if (isFirstInsert)
                 dgvMaster.Rows.Add(txtBookID.Text, dateBook.Text, txtCusID.Text, txtEmpID.Text, txtTotalCostOfAllRooms.Text);
@@ -137,6 +232,9 @@ namespace GuestHouse
 
 
             dvgDetail.Rows.Add(dateIn.Text, dateOut.Text, duration, coolerSelection, room, cbxRoomNumber.SelectedItem, txtRoomCost.Text, txtFanAndAirConCost.Text, txtTotalCost.Text);
+
+            
+            
 
             isFirstInsert = false;
             getroom();
@@ -153,10 +251,15 @@ namespace GuestHouse
                         txtCusID.Text = tem;
                         txtTel.Text = CustomerDetail.cusDetail[tem][4];
                         radMale.Checked = !(radFemale.Checked = CustomerDetail.cusDetail[tem][2] == "Female");
+                        selectedCustomer(true);
+                        break;
                     }
-                        
+                    else
+                        selectedCustomer(false);
                 }
             }
+            else
+                selectedCustomer(false);
         }
 
         private void dateOut_ValueChanged(object sender, EventArgs e)
@@ -363,7 +466,6 @@ namespace GuestHouse
                 cbxCustName.SelectedIndex = -1;
                 radMale.Checked = true;
                 txtTel.Text = String.Empty;
-                dateBook.Value = DateTime.Now;
                 foreach (TextBox txt in groupBox3.Controls.OfType<TextBox>())
                 {
                     if(txt.Name!= txtEmpID.Name)
@@ -392,8 +494,10 @@ namespace GuestHouse
                 dataCon.exActionQuery.deleteDataFromDB("Book", "WHERE BookID='" + bookID + "';");
             }
 
-            string totalCost = dgvMaster.Rows[0].Cells[4].Value.ToString();
+            //customer
             string cusID = dgvMaster.Rows[0].Cells[2].Value.ToString();
+
+            string totalCost = dgvMaster.Rows[0].Cells[4].Value.ToString();
             string bookDate = dgvMaster.Rows[0].Cells[1].Value.ToString();
             string empID = dgvMaster.Rows[0].Cells[3].Value.ToString();
 
@@ -496,6 +600,28 @@ namespace GuestHouse
         private void cbxRoomNumber_SelectedIndexChanged(object sender, EventArgs e)
         {
             btnRoomCost_Click(null, null);
+        }
+
+        private void cbxCustName_TextChanged(object sender, EventArgs e)
+        {
+            if (cbxCustName.SelectedText == string.Empty)
+            {
+                txtCusID.Text = string.Empty;
+                txtCusID_TextChanged(null, null);
+                txtTel.Text = string.Empty;
+            }
+
+        }
+
+        string defaultCusID;
+        private void txtCusID_TextChanged(object sender, EventArgs e)
+        {
+            if (txtCusID.Text == string.Empty)
+            {
+                defaultCusID = getCusIdFromDB();
+                txtCusID.Text = defaultCusID;
+                selectedCustomer(false);
+            }
         }
     }
 }
