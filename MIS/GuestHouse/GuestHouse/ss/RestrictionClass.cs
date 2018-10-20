@@ -11,6 +11,21 @@ namespace GuestHouse.ss
     {
         public static class restrictFromKeyboard
         {
+<<<<<<< HEAD
+=======
+            public static void DisablerestrictAnyKeyFromKeyboard(TextBox txt)
+            {
+                txt.ContextMenuStrip = new TextBox().ContextMenuStrip;
+                txt.ShortcutsEnabled = true;
+                txt.KeyPress += Txt_KeyPress1;
+            }
+
+            private static void Txt_KeyPress1(object sender, KeyPressEventArgs e)
+            {
+                e.Handled = false;
+            }
+
+>>>>>>> d4b1cd86c1903a38096506dc81dafe081c5541fe
             public static void restrictAnyKeyFromKeyboard(TextBox txt)
             {
                 ContextMenuStrip cms = new ContextMenuStrip();
