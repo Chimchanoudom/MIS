@@ -210,6 +210,7 @@
             this.btnSearch.Size = new System.Drawing.Size(133, 44);
             this.btnSearch.TabIndex = 2;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // btnCancel
             // 

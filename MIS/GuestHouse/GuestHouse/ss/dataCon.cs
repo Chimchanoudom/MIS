@@ -239,7 +239,7 @@ namespace GuestHouse
             roomPrice += overRoomPrice;
             electricity += overElectricity;
             subTotal += overSubTotal;
-            hour = (int)dif.TotalHours;
+            if(hour>24) hour = (int)dif.TotalHours;
 
             return true;
 

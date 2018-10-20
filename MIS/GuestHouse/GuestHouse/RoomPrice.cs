@@ -19,6 +19,7 @@ namespace GuestHouse
         }
 
         SqlDataReader dataReader;
+        bool update;
         private void RoomPrice_Load(object sender, EventArgs e)
         {
 
@@ -48,6 +49,7 @@ namespace GuestHouse
         string sql;
         private void btnback_Click(object sender, EventArgs e)
         {
+            if (update) dataCon.GetPrice();
             this.Close();
         }
 
@@ -92,8 +94,10 @@ namespace GuestHouse
             dataCon.ExecuteActionQry(sql,ref error);
             if (!error)
             {
-                GetDataFromRoomPrice();
+                
                 MessageBox.Show("Update Successful", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                GetDataFromRoomPrice();
+                update = true;
             }
         }
 

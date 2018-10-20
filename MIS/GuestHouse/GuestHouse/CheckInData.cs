@@ -27,5 +27,10 @@ namespace GuestHouse
             new CheckOut().Show();
             btnback_Click(null,null);
         }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
