@@ -29,11 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Booking));
-<<<<<<< HEAD
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-=======
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
->>>>>>> d4b1cd86c1903a38096506dc81dafe081c5541fe
             this.radVIP = new System.Windows.Forms.RadioButton();
             this.radOver24 = new System.Windows.Forms.RadioButton();
             this.rad24 = new System.Windows.Forms.RadioButton();
@@ -132,7 +128,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnNewRecord = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupBox1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -673,13 +668,8 @@
             // 
             this.dgvMaster.AllowUserToAddRows = false;
             this.dgvMaster.AllowUserToDeleteRows = false;
-<<<<<<< HEAD
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
-=======
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvMaster.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
->>>>>>> d4b1cd86c1903a38096506dc81dafe081c5541fe
             this.dgvMaster.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMaster.BackgroundColor = System.Drawing.Color.White;
             this.dgvMaster.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1105,10 +1095,7 @@
             this.txtCusID.Name = "txtCusID";
             this.txtCusID.Size = new System.Drawing.Size(196, 26);
             this.txtCusID.TabIndex = 100033;
-<<<<<<< HEAD
-=======
             this.txtCusID.TextChanged += new System.EventHandler(this.txtCusID_TextChanged);
->>>>>>> d4b1cd86c1903a38096506dc81dafe081c5541fe
             // 
             // label32
             // 
@@ -1223,10 +1210,7 @@
             this.cbxCustName.Size = new System.Drawing.Size(196, 25);
             this.cbxCustName.TabIndex = 100031;
             this.cbxCustName.SelectedIndexChanged += new System.EventHandler(this.cbxCustName_SelectedIndexChanged);
-<<<<<<< HEAD
-=======
             this.cbxCustName.TextChanged += new System.EventHandler(this.cbxCustName_TextChanged);
->>>>>>> d4b1cd86c1903a38096506dc81dafe081c5541fe
             // 
             // txtTel
             // 
@@ -1327,33 +1311,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1095, 40);
             this.panel1.TabIndex = 23;
-            // 
-            // btnNewRecord
-            // 
-            this.btnNewRecord.ActiveBorderThickness = 1;
-            this.btnNewRecord.ActiveCornerRadius = 20;
-            this.btnNewRecord.ActiveFillColor = System.Drawing.Color.DodgerBlue;
-            this.btnNewRecord.ActiveForecolor = System.Drawing.Color.AliceBlue;
-            this.btnNewRecord.ActiveLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnNewRecord.BackColor = System.Drawing.SystemColors.Control;
-            this.btnNewRecord.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNewRecord.BackgroundImage")));
-            this.btnNewRecord.ButtonText = "ទិន្ន័យថ្មី";
-            this.btnNewRecord.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNewRecord.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnNewRecord.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewRecord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnNewRecord.IdleBorderThickness = 1;
-            this.btnNewRecord.IdleCornerRadius = 20;
-            this.btnNewRecord.IdleFillColor = System.Drawing.Color.White;
-            this.btnNewRecord.IdleForecolor = System.Drawing.Color.DodgerBlue;
-            this.btnNewRecord.IdleLineColor = System.Drawing.Color.DodgerBlue;
-            this.btnNewRecord.Location = new System.Drawing.Point(380, 0);
-            this.btnNewRecord.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.btnNewRecord.Name = "btnNewRecord";
-            this.btnNewRecord.Size = new System.Drawing.Size(95, 51);
-            this.btnNewRecord.TabIndex = 10;
-            this.btnNewRecord.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnNewRecord.Click += new System.EventHandler(this.btnNewRecord_Click);
             // 
             // Booking
             // 

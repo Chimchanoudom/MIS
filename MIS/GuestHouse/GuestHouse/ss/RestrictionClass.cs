@@ -11,8 +11,7 @@ namespace GuestHouse.ss
     {
         public static class restrictFromKeyboard
         {
-<<<<<<< HEAD
-=======
+
             public static void DisablerestrictAnyKeyFromKeyboard(TextBox txt)
             {
                 txt.ContextMenuStrip = new TextBox().ContextMenuStrip;
@@ -25,7 +24,6 @@ namespace GuestHouse.ss
                 e.Handled = false;
             }
 
->>>>>>> d4b1cd86c1903a38096506dc81dafe081c5541fe
             public static void restrictAnyKeyFromKeyboard(TextBox txt)
             {
                 ContextMenuStrip cms = new ContextMenuStrip();
