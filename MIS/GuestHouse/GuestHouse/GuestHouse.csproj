@@ -88,6 +88,12 @@
     <Compile Include="checkin.Designer.cs">
       <DependentUpon>checkin.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataForCheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataForCheckOut.Designer.cs">
+      <DependentUpon>DataForCheckOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="CheckInData.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +217,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="checkin.resx">
       <DependentUpon>checkin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataForCheckOut.resx">
+      <DependentUpon>DataForCheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckInData.resx">
       <DependentUpon>CheckInData.cs</DependentUpon>

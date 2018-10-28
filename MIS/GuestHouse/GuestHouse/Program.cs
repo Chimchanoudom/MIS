@@ -43,7 +43,7 @@ namespace GuestHouse
 
 
 
-            Application.Run(new CheckoutData());
+            Application.Run(new DataForCheckOut());
 
             //Application.Run(new CheckoutData());
 
@@ -75,7 +75,7 @@ namespace GuestHouse
 
             //Application.Run(new Form1());
             //Application.Run(new Customer());
-            Application.Run(new Booking());
+            //Application.Run(new Booking());
             //Application.Run(new BookingData());
             //Application.Run(new ExpensAndIncome());
 
