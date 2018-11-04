@@ -43,7 +43,7 @@ namespace GuestHouse
 
 
 
-            Application.Run(new DataForCheckOut());
+            Application.Run(new CheckOut());
 
             //Application.Run(new CheckoutData());
 

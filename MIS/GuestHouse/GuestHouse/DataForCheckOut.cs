@@ -18,6 +18,12 @@ namespace GuestHouse
             InitializeComponent();
         }
 
+        public DataForCheckOut(DataTable dtCheckInDetail)
+        {
+            this.dtCheckInDetail = dtCheckInDetail;
+            InitializeComponent();
+        }
+
         private void btnback_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -43,36 +49,60 @@ namespace GuestHouse
 
 
         }
-        DataTable dtCheckInDetail = new DataTable();
-        string sql;
+        DataTable dtCheckInDetail;
+        
 
         private void DataForCheckOut_Load(object sender, EventArgs e)
         {
-            sql = @"select m.CheckInID as 'លេខកូដសម្គាល់',CheckInDate as 'ថ្ងៃចូលស្នាក់នៅ',CheckOutDate as 'ថ្ងៃចាកចេញ',RoomTypeDesc as 'ប្រភេទបន្ទប់',
-            case PickAc
-            when 0 then N'កង្ហា'COLLATE Latin1_General_100_CI_AI
-            else N'ម៉ាស៊ីនត្រជាក់'COLLATE Latin1_General_100_CI_AI
-            end as 'ជម្រើស',RoomID as 'លេខបន្ទប់',HourType as 'ប្រភេទម៉ោង',concat(fname, ' ', lname) as 'អតិថិជន',phone as 'លេខទូរស័ព្ទ'
-             from CheckInDetail d join CheckIn m on d.CheckInID = m.CheckInID join Customer c on m.CusID = c.CusID
-             where status = 'Success'; ";
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(sql,dataCon.Con);
-            dgvCheckInDetail.Columns.Clear();
-            dataAdapter.Fill(dtCheckInDetail);
             
-
-            dtCheckInDetail.Columns.Add(new DataColumn(" ", typeof(Boolean)));
-            int lastIndexInDt = dtCheckInDetail.Columns.Count - 1;
-
-            for (int i = 0; i < lastIndexInDt; i++)
-                dtCheckInDetail.Columns[i].ReadOnly = true;
-       
-            dtCheckInDetail.Columns[lastIndexInDt].SetOrdinal(0);
+            dgvCheckInDetail.Columns.Clear();
+           
             dgvCheckInDetail.DataSource = dtCheckInDetail;
+
+
+            ckBox =new CheckBox();
+            Rectangle rect =
+
+               this.dgvCheckInDetail.GetCellDisplayRectangle(0, -1, true);
+            rect.X = rect.Location.X + (rect.Width / 2);
+            rect.Y= rect.Location.Y + (rect.Height /3);
+            ckBox.Size = new Size(18, 18);
+            ckBox.Location = rect.Location;
+            ckBox.CheckedChanged += new EventHandler(ckBox_CheckedChanged);
+            this.dgvCheckInDetail.Controls.Add(ckBox);
+
+            dgvCheckInDetail.Columns[0].HeaderText = "";
+
+
+            dgvCheckInDetail.Columns[1].DefaultCellStyle.Format = "yyyy/MM/dd hh:mm tt";
+            dgvCheckInDetail.Columns[2].DefaultCellStyle.Format = "yyyy/MM/dd hh:mm tt";
+        }
+
+       
+
+        private void ckBox_CheckedChanged(object sender, EventArgs e)
+        {
+
+            for (int i = 0; i < dgvCheckInDetail.Rows.Count; i++)
+            {
+                dgvCheckInDetail.Rows[i].Cells[0].Value = ckBox.Checked;
+            }
+            dgvCheckInDetail.EndEdit();
+
+
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
             dtCheckInDetail.DefaultView.RowFilter= string.Empty;
+        }
+
+        CheckBox ckBox;
+
+        private void btnCheckOut_Click(object sender, EventArgs e)
+        {
+            dgvCheckInDetail.EndEdit();
+            this.Close();
         }
     }
 }

@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataForCheckOut));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnback = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -39,9 +40,10 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnSearch = new Bunifu.Framework.UI.BunifuThinButton2();
             this.btnCancel = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.btnCheckOut = new Bunifu.Framework.UI.BunifuThinButton2();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.rndRoomID = new System.Windows.Forms.RadioButton();
             this.rndName = new System.Windows.Forms.RadioButton();
             this.rndTell = new System.Windows.Forms.RadioButton();
             this.rndID = new System.Windows.Forms.RadioButton();
@@ -60,7 +62,6 @@
             this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column13 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rndRoomID = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -154,7 +155,7 @@
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(652, 196);
+            this.groupBox3.Size = new System.Drawing.Size(882, 196);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "លក្ខខណ្ធពិនិត្យការស្នាក់នៅ";
@@ -163,22 +164,22 @@
             // 
             this.panel5.Controls.Add(this.btnSearch);
             this.panel5.Controls.Add(this.btnCancel);
-            this.panel5.Controls.Add(this.dateTimePicker1);
+            this.panel5.Controls.Add(this.btnCheckOut);
             this.panel5.Controls.Add(this.txtSearch);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(4, 149);
             this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(644, 44);
+            this.panel5.Size = new System.Drawing.Size(874, 44);
             this.panel5.TabIndex = 5;
             // 
             // btnSearch
             // 
             this.btnSearch.ActiveBorderThickness = 1;
             this.btnSearch.ActiveCornerRadius = 20;
-            this.btnSearch.ActiveFillColor = System.Drawing.Color.Purple;
+            this.btnSearch.ActiveFillColor = System.Drawing.Color.Red;
             this.btnSearch.ActiveForecolor = System.Drawing.Color.White;
-            this.btnSearch.ActiveLineColor = System.Drawing.Color.Purple;
+            this.btnSearch.ActiveLineColor = System.Drawing.Color.Red;
             this.btnSearch.BackColor = System.Drawing.SystemColors.Control;
             this.btnSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSearch.BackgroundImage")));
             this.btnSearch.ButtonText = " ស្វែងរក";
@@ -191,11 +192,11 @@
             this.btnSearch.IdleFillColor = System.Drawing.Color.White;
             this.btnSearch.IdleForecolor = System.Drawing.Color.Purple;
             this.btnSearch.IdleLineColor = System.Drawing.Color.Purple;
-            this.btnSearch.Location = new System.Drawing.Point(388, 0);
+            this.btnSearch.Location = new System.Drawing.Point(393, 0);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(133, 44);
-            this.btnSearch.TabIndex = 2;
+            this.btnSearch.TabIndex = 4;
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
@@ -203,9 +204,9 @@
             // 
             this.btnCancel.ActiveBorderThickness = 1;
             this.btnCancel.ActiveCornerRadius = 20;
-            this.btnCancel.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnCancel.ActiveFillColor = System.Drawing.Color.Purple;
             this.btnCancel.ActiveForecolor = System.Drawing.Color.White;
-            this.btnCancel.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnCancel.ActiveLineColor = System.Drawing.Color.Purple;
             this.btnCancel.BackColor = System.Drawing.SystemColors.Control;
             this.btnCancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCancel.BackgroundImage")));
             this.btnCancel.ButtonText = "បោះបង់";
@@ -218,24 +219,40 @@
             this.btnCancel.IdleFillColor = System.Drawing.Color.White;
             this.btnCancel.IdleForecolor = System.Drawing.Color.Red;
             this.btnCancel.IdleLineColor = System.Drawing.Color.Red;
-            this.btnCancel.Location = new System.Drawing.Point(521, 0);
+            this.btnCancel.Location = new System.Drawing.Point(526, 0);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(123, 44);
-            this.btnCancel.TabIndex = 1;
+            this.btnCancel.TabIndex = 3;
             this.btnCancel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // dateTimePicker1
+            // btnCheckOut
             // 
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(385, 0);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(411, 38);
-            this.dateTimePicker1.TabIndex = 3;
-            this.dateTimePicker1.Visible = false;
+            this.btnCheckOut.ActiveBorderThickness = 1;
+            this.btnCheckOut.ActiveCornerRadius = 20;
+            this.btnCheckOut.ActiveFillColor = System.Drawing.Color.Red;
+            this.btnCheckOut.ActiveForecolor = System.Drawing.Color.White;
+            this.btnCheckOut.ActiveLineColor = System.Drawing.Color.Red;
+            this.btnCheckOut.BackColor = System.Drawing.SystemColors.Control;
+            this.btnCheckOut.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCheckOut.BackgroundImage")));
+            this.btnCheckOut.ButtonText = "Check Out";
+            this.btnCheckOut.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCheckOut.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnCheckOut.Font = new System.Drawing.Font("Khmer SN Kampot", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCheckOut.ForeColor = System.Drawing.Color.SeaGreen;
+            this.btnCheckOut.IdleBorderThickness = 1;
+            this.btnCheckOut.IdleCornerRadius = 20;
+            this.btnCheckOut.IdleFillColor = System.Drawing.Color.White;
+            this.btnCheckOut.IdleForecolor = System.Drawing.Color.Purple;
+            this.btnCheckOut.IdleLineColor = System.Drawing.Color.Purple;
+            this.btnCheckOut.Location = new System.Drawing.Point(649, 0);
+            this.btnCheckOut.Margin = new System.Windows.Forms.Padding(7, 10, 7, 10);
+            this.btnCheckOut.Name = "btnCheckOut";
+            this.btnCheckOut.Size = new System.Drawing.Size(225, 44);
+            this.btnCheckOut.TabIndex = 2;
+            this.btnCheckOut.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnCheckOut.Click += new System.EventHandler(this.btnCheckOut_Click);
             // 
             // txtSearch
             // 
@@ -258,8 +275,19 @@
             this.panel6.Location = new System.Drawing.Point(4, 42);
             this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(644, 107);
+            this.panel6.Size = new System.Drawing.Size(874, 107);
             this.panel6.TabIndex = 4;
+            // 
+            // rndRoomID
+            // 
+            this.rndRoomID.AutoSize = true;
+            this.rndRoomID.Location = new System.Drawing.Point(215, 57);
+            this.rndRoomID.Margin = new System.Windows.Forms.Padding(4);
+            this.rndRoomID.Name = "rndRoomID";
+            this.rndRoomID.Size = new System.Drawing.Size(117, 42);
+            this.rndRoomID.TabIndex = 7;
+            this.rndRoomID.Text = "លេខបន្ទប់";
+            this.rndRoomID.UseVisualStyleBackColor = true;
             // 
             // rndName
             // 
@@ -388,6 +416,14 @@
             this.dgvCheckInDetail.AllowUserToDeleteRows = false;
             this.dgvCheckInDetail.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCheckInDetail.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Khmer SN Kampot", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCheckInDetail.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvCheckInDetail.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCheckInDetail.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column6,
@@ -404,11 +440,11 @@
             this.dgvCheckInDetail.Location = new System.Drawing.Point(4, 42);
             this.dgvCheckInDetail.Margin = new System.Windows.Forms.Padding(4);
             this.dgvCheckInDetail.Name = "dgvCheckInDetail";
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvCheckInDetail.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvCheckInDetail.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCheckInDetail.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
             this.dgvCheckInDetail.Size = new System.Drawing.Size(1891, 371);
             this.dgvCheckInDetail.TabIndex = 1;
@@ -465,17 +501,6 @@
             this.Column1.HeaderText = "លេខទូរស័ព្ទ";
             this.Column1.Name = "Column1";
             // 
-            // rndRoomID
-            // 
-            this.rndRoomID.AutoSize = true;
-            this.rndRoomID.Location = new System.Drawing.Point(215, 57);
-            this.rndRoomID.Margin = new System.Windows.Forms.Padding(4);
-            this.rndRoomID.Name = "rndRoomID";
-            this.rndRoomID.Size = new System.Drawing.Size(117, 42);
-            this.rndRoomID.TabIndex = 7;
-            this.rndRoomID.Text = "លេខបន្ទប់";
-            this.rndRoomID.UseVisualStyleBackColor = true;
-            // 
             // DataForCheckOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -516,9 +541,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Panel panel5;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
-        private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.RadioButton rndName;
@@ -529,6 +551,9 @@
         private Bunifu.Framework.UI.BunifuThinButton2 bunifuThinButton21;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton rndRoomID;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCancel;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnCheckOut;
         private System.Windows.Forms.DataGridView dgvCheckInDetail;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
@@ -539,6 +564,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewButtonColumn Column13;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.RadioButton rndRoomID;
+        private Bunifu.Framework.UI.BunifuThinButton2 btnSearch;
     }
 }
